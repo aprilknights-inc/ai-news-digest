@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 今朝のAI ─ 日次テンプレート。ルーティンはこの構造を厳守し、本文(CONTENTマーカー間)とマスト頭の日付トークンだけ差し替える。CSSは style.css に固定。 -->
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
@@ -14,66 +14,113 @@
 <div class="wrap">
 
   <header class="mast reveal">
-    <div class="kicker"><span>APRIL KNIGHTS &nbsp;/&nbsp; DAILY AI BRIEF</span><b>2026.06.19 FRI</b></div>
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.06.19 FRI</b></div>
     <h1 class="title">今朝のAI<span class="dot">.</span></h1>
-    <p class="standfirst">OpenAI IPO申請、自律エージェント本格化、プロンプトインジェクション急増──6月第3週の6本。</p>
+    <p class="standfirst">半導体株の急落と反発、OpenAIのIPO申請、エージェント競争の激化、プロンプトインジェクションの脅威──6月第3週のAIを6つの切り口で。</p>
   </header>
 
-  <!-- CONTENT:START -->
   <section class="take reveal">
     <div class="lbl">今日の要点</div>
-    <p>今週のAIは「自律化」と「脅威の激化」の二面を映し出す。OpenAIが証券取引委員会への上場申請を進める一方、AIエージェントを標的にした攻撃が前年比3倍超に膨らんでいる。</p>
+    <p>今週のAIは「マネーと競争」が主役。OpenAIが9月上場をにらみ機密でIPO申請に動き、半導体株はBroadcom決算をきっかけに一度1.3兆ドル超を失った後に反発した。足元では、AIエージェントの実用化と、それを狙うプロンプトインジェクション攻撃の急増が同時に進んでいる。</p>
   </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
 
   <section class="sec s-global reveal">
-    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">3 / 今日これだけは</span></div>
-    <!-- 記事カードを並べる。1枚 = .card / .h(見出し) / .sum(1〜2文) / .meta(.chip 効きどころ + .src 出典 + a.go リンク) -->
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
     <article class="card">
-      <div class="h">OpenAI、IPO機密申請を提出──評価額850億ドル超、年内上場を目指す</div>
-      <p class="sum">Goldman SachsとMorgan Stanleyを起用してSECに機密申請。年間収益は250億ドル超に達しているが、黒字化は2030年頃の見通し。Nasdaq上場は2026年Q4を目標とする。</p>
-      <div class="meta"><span class="chip">経営判断</span><span class="src">TechJournal</span><a class="go" href="https://techjournal.org/openai-ipo-confidential-filing-2026">読む →</a></div>
+      <div class="h">OpenAI、9月上場めざし機密でIPO申請</div>
+      <p class="sum">OpenAIは6月8日、Goldman SachsとMorgan Stanleyを起用してSECに機密申請。評価額7,300〜8,500億ドル規模で、早ければ9月の上場を狙う。一方、2026年見込み売上250億ドル超に対し現金燃焼は270億ドルと、黒字化の道筋には課題も残る。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">AI Weekly</span><a class="go" href="https://aiweekly.co/alerts/openai-files-confidential-ipo-targeting-850b-valuation">読む →</a></div>
     </article>
     <article class="card">
-      <div class="h">Anthropic、AIエージェントにCronスケジュールと認証情報金庫を追加</div>
-      <p class="sum">Claude Managed AgentsがCron定期実行と環境変数の安全保管に対応。人が操作しなくても定時で自律稼働できるようになり、企業の「パイロット止まり」問題をまとめて解消する。</p>
-      <div class="meta"><span class="chip">伴走事業</span><span class="src">TechTimes</span><a class="go" href="https://www.techtimes.com/articles/318163/20260610/claude-managed-agents-add-cron-schedules-credential-vaultsanthropic-beta-puts-agents-autopilot.htm">読む →</a></div>
+      <div class="h">Microsoft、自社AIモデル群を発表しOpenAI依存を低減</div>
+      <p class="sum">Microsoftが開発者向けに低コストの自社AIモデルを投入。生成AIの調達をOpenAI一社に頼る構図から、コストと供給の両面で分散を図る動き。大手による「内製化」が本格化している。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">CNBC</span><a class="go" href="https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html">読む →</a></div>
     </article>
     <article class="card">
-      <div class="h">2026年末、企業アプリの4割にAIエージェントが搭載──Gartner予測</div>
-      <p class="sum">AIエージェント市場は年内118億ドル規模へ、前年比47%成長。「チャットで聞く」から「自分で動いて完結する」への移行が本格化しており、顧客対応・コーディング・財務処理などで実用展開が広がっている。</p>
-      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">CloudKeeper / Gartner</span><a class="go" href="https://www.cloudkeeper.com/insights/blog/top-agentic-ai-trends-watch-2026-how-ai-agents-are-redefining-enterprise-automation">読む →</a></div>
-    </article>
-  </section>
-
-  <section class="sec s-secure reveal">
-    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">2 / 健診事業</span></div>
-    <article class="card">
-      <div class="h">Anthropic、AI脆弱性スキャンを200組織に拡大──2ヶ月で重大バグ1万件超を発見</div>
-      <p class="sum">Project GlasswingがClaude Mythosで主要ソフトのコードをスキャン。MozillaはFirefox 150で271件、Cloudflareは重要システムで2,000件超のバグを修正。発見の90%以上が実際のバグと確認されている。</p>
-      <div class="meta"><span class="chip">健診トーク</span><span class="src">Anthropic</span><a class="go" href="https://www.anthropic.com/news/expanding-project-glasswing">読む →</a></div>
-    </article>
-    <article class="card">
-      <div class="h">プロンプトインジェクション攻撃が前年比340%増──AIエージェント時代の最大脅威に</div>
-      <p class="sum">AIに悪意ある指示を埋め込む攻撃が急増。メールや文書経由の「間接インジェクション」が主流で、RAGシステムやAIエージェントが新たな標的になっており、OWASP 2026年版でも最優先リスクに挙げられた。</p>
-      <div class="meta"><span class="chip">健診トーク</span><span class="src">Radware / OWASP</span><a class="go" href="https://www.radware.com/cyberpedia/prompt-injection/">読む →</a></div>
+      <div class="h">「エージェント競争」が主戦場に──各社がコーディングAIで激突</div>
+      <p class="sum">MicrosoftとGoogleが、AnthropicやOpenAIの先行するコーディングAIに本格参入。OpenAIはCodexを自律稼働するエンタープライズ基盤へ拡張し、長時間ひとりで作業を続けるAIエージェントが実用段階に入った。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">CNBC</span><a class="go" href="https://www.cnbc.com/2026/06/01/microsoft-and-google-take-on-anthropic-and-openai-in-ai-coding-models.html">読む →</a></div>
     </article>
   </section>
 
   <section class="sec s-buzz reveal">
-    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発 / 要注目</span></div>
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
     <article class="card">
-      <div class="h">Meta、143億ドルのAI投資が「訓練データの壁」に──Zuckerbergが失敗を異例認定</div>
-      <p class="sum">MetaのAI投資が訓練データ不足で停滞。自社モデルMuse SparkはGPT-5.4に大差をつけられており、「AI競争で大手が脱落した実例」としてXで広く拡散されている。</p>
-      <div class="meta"><span class="chip">経営判断</span><span class="src">TechTimes</span><a class="go" href="https://www.techtimes.com/articles/318464/20260616/metas-143b-ai-bet-hits-training-data-wall-zuckerberg-admits-mistakes.htm">読む →</a></div>
+      <div class="h">「エージェント戦争」──OpenAI対Anthropicの値下げ・囲い込み合戦</div>
+      <p class="sum">コーディングAIの覇権をめぐり、OpenAIが大幅値下げを検討との観測。AnthropicのClaude Opus 4.8がエージェント用途で高評価を得るなか、両社の主導権争いがXで連日の話題になっている。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Superculture</span><a class="go" href="https://getsuperculture.com/thebrief/friday-june-12-2026">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">6月は新モデルの一斉投入──「どれを使うか」議論が沸騰</div>
+      <p class="sum">Gemini 3.5 Pro、AnthropicのClaude Mythos、xAIのGrok 5などが相次いで登場。性能だけでなく「モデル＋使い方＋業務フロー」で選ぶ時代だ、との論調がXで広がっている。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">WaveSpeed</span><a class="go" href="https://wavespeed.ai/blog/posts/june-2026-ai-launch-wave/">読む →</a></div>
     </article>
   </section>
-  <!-- CONTENT:END -->
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">半導体株が一時1.3兆ドル超蒸発──Broadcom決算が引き金</div>
+      <p class="sum">Broadcomの6月3日決算でAI向け売上見通しが市場予想にわずかに届かず、6月5日に半導体株から1.3兆ドル超が消失。Nvidiaは6%安、AMDは約11%安。「最高益でも物足りない」というAI投資家の過熱した期待を映した。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Yahoo Finance</span><a class="go" href="https://finance.yahoo.com/markets/stocks/articles/broadcom-selloff-shows-rule-ai-185456979.html">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">足元は反発、実需は健在──NVIDIA売上は前年比65%増</div>
+      <p class="sum">急落後、半導体株は6月後半にかけ反発局面に。NVIDIAの2026年度売上は2,159億ドル（前年比+65%）でAI加速器市場の約8割を握り、予想PERは25.4倍と高成長の割に控えめ。下げを買い場と見る声も出ている。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Intellectia</span><a class="go" href="https://intellectia.ai/blog/chip-stocks-rebound-investment-strategy-june-2026">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">AIエージェント開発者の単価が急騰──月90〜120万円超</div>
+      <p class="sum">LangGraph・CrewAI・AutoGenなどを扱うAIエージェント開発案件のSES月単価が90〜120万円超に。AI・機械学習スキルを持つPythonエンジニアは月100万円超も珍しくなく、スキル次第で単価交渉の余地が広がっている。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">Heyday</span><a class="go" href="https://lp.hydy.jp/blog/ai-agent-engineer-ses-tanka">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">「人月商売の終わり」──書く力より"読んで評価する力"へ</div>
+      <p class="sum">AI開発ツールの普及で、コードを書く作業の価値が下がり、品質を読み解き評価する力が問われる時代に。SIerの生き残り戦略として、多重下請け・人月モデルからの転換が議論されている。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">note</span><a class="go" href="https://note.com/awesome_engineer/n/n16ea962e702b">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">大企業の生成AI活用率87%、でも「期待超え」は9%で最下位（PwC）</div>
+      <p class="sum">PwC調査で大企業の生成AI活用率は87%へ急増する一方、「期待を大きく上回る効果」が出たのは9%にとどまり6カ国中最下位。導入率の高さに満足し効果測定を後回しにする「見せかけのAI活用」が課題に。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">DXマガジン</span><a class="go" href="https://dxmagazine.jp/news/2623ytoda/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">国内大手の削減実績が積み上がる──年18万時間規模も</div>
+      <p class="sum">パナソニック コネクトは社内AIで年約18.6万時間、三菱UFJ銀行は月約22万時間を削減。セブン-イレブンはAI発注で業務時間を約4割減と、効果を数字で示せる事例が増えている。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">AI経営総研</span><a class="go" href="https://ai-keiei.shift-ai.co.jp/ai-dx-case-study/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">プロンプトインジェクションがOWASPの脅威No.1──前年比340%増</div>
+      <p class="sum">AIに悪意ある指示を紛れ込ませる攻撃が、OWASP 2026年版でLLMの最優先リスクに。前年比340%増と最速で伸びる攻撃カテゴリで、LLMが「指示」と「データ」を構造的に区別できない弱点を突く。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Securance</span><a class="go" href="https://www.securance.com/blog/prompt-injection-the-owasp-1-ai-threat-in-2026/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">実害も顕在化──Copilot経由のRCE、実環境での間接攻撃を初観測</div>
+      <p class="sum">GitHub Copilotでは、プルリクの説明文に隠したプロンプトでリモートコード実行が可能な脆弱性（CVE-2025-53773、CVSS 9.6）が判明。Unit 42は実際の商用サービスで広告審査の回避やシステムプロンプト漏洩といった間接インジェクションを大規模に初観測した。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Radware</span><a class="go" href="https://www.radware.com/cyberpedia/prompt-injection/">読む →</a></div>
+    </article>
+  </section>
 
   <footer class="foot reveal">
-    <span>巡回ソース <b>8</b></span>
-    <span><a href="./index.html" style="color:inherit;text-decoration:none">← バックナンバー</a> ／ generated by April Knights AI Brief</span>
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
   </footer>
 
 </div>
+<script src="./app.js"></script>
 </body>
 </html>
