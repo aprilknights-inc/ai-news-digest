@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- お気に入り（後で見返す用）。保存はこの端末のブラウザ内(localStorage)。app.jsが #favlist を描画する。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ お気に入り</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="mast reveal">
+    <div class="kicker"><span>SAVED ★ お気に入り</span><b><a href="./index.html">最新へ →</a></b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">保存したニュース。後で見返す・LINEやChatに共有する用。（この端末のブラウザ内に保存）</p>
+  </header>
+
+  <section class="reveal">
+    <div id="favlist" class="idx"></div>
+    <div class="favbar"><button id="copyall" type="button">全部コピー</button></div>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./index.html">← バックナンバー</a></span>
+    <span>今朝のAI</span>
+  </footer>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
