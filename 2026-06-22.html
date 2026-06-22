@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-06-22</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.06.22 MON</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">AnthropicもIPO申請、NVIDIAが本日S&P500入り、オープン重みのGLM-5.2が話題、攻守両面のAIセキュリティ──週明けのAIを6つの切り口で。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>週明けのAIは「資本市場」が前面に。AnthropicがOpenAIに続いて機密でIPOを申請し、NVIDIAは本日S&P500に採用される。一方で開発の現場ではオープンソースAIの存在感が増し、攻撃だけでなく守りにAIを使うセキュリティ製品も広がってきた。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">Anthropic、OpenAIに続き機密でIPO申請──評価額9,650億ドル</div>
+      <p class="sum">Anthropicは6月1日、SECに機密でS-1を提出。直前のシリーズH（650億ドル調達）で評価額は約9,650億ドルとOpenAIを上回った。10月のNasdaq上場をにらみ調達額は600億ドル超の見込みで、売上の年間換算は470億ドルへ急拡大している。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">CNBC</span><a class="go" href="https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">オープンモデルが主要モデルを市場シェアで逆転</div>
+      <p class="sum">OpenRouterの利用データで、オープンソースAIモデルの割合が3月の約4割から6月中旬には約6割へ。クローズドな主要モデルとシェアが逆転した。コストを重視する現場で、オープンモデルを実業務に採用する動きが広がっている。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">AINews</span><a class="go" href="https://news.smol.ai/issues/26-06-19-not-much">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">GLM-5.2が話題──「初めて実戦投入できるオープン重みのコーディングAI」</div>
+      <p class="sum">オープン重みモデルGLM-5.2が、コーディング用途で実務者から高評価。ツール操作や長い手順の自律実行が強く、ローカル運用でも上位の有料モデルに迫る品質だと、Xで「初めて本気で使えるオープンモデル」として連日話題になっている。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">AINews</span><a class="go" href="https://news.smol.ai/issues/26-06-19-not-much">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">エージェント型AIの実力比較ベンチが公開──Claude Fable 5が首位</div>
+      <p class="sum">知的労働をこなすエージェント型AIの新ベンチマークが公開。Claude Fable 5が1587点で首位、Claude Opus 4.8（1356点）やGLM-5.2（1266点）を上回った。「モデルは名前でなく用途別の実力で選ぶ」という議論が広がっている。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">AINews</span><a class="go" href="https://news.smol.ai/issues/26-06-19-not-much">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">NVIDIA、本日S&P500入り──通期売上は過去最高の2,159億ドル</div>
+      <p class="sum">NVIDIAは6月22日にS&P500へ採用。2026年度売上は過去最高の2,159億ドル（前年比+65%）で、AI半導体シェアは8割超。予想PERは25.4倍と高成長の割に控えめで、指数採用に伴う新たな資金流入も見込まれる。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">I/O Fund</span><a class="go" href="https://io-fund.com/ai-stocks/nvidia-stock-buy-semiconductor-strength-market-top">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">半導体株が再び急落──6/17にAMD7%超安、選別的な利益確定</div>
+      <p class="sum">6月17日、半導体株が売られAMDは7.3%安、Intel8.5%安、Micron6.2%安。同日S&P500は小幅高で、過熱したAIラリーからの選別的な利益確定とみられる。急騰の反動が続き、値動きの荒さが目立つ局面だ。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Findex</span><a class="go" href="https://www.myfindex.com/finance-trends/semiconductor-selloff-nvidia-amd-june-2026/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">「人月ビジネスに陰り」──SES・SIerの存在意義が問われる</div>
+      <p class="sum">生成AIで開発工数そのものが圧縮され、頭数×時間で稼ぐ人月モデルと相性が悪いと指摘。SES・SIerは「人を出す」から「成果と業務改善を出す」への転換を迫られ、エンジニア個人も設計・評価の力が問われ始めている。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">エンジニアtype</span><a class="go" href="https://type.jp/et/feature/28078/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">SIerでもAI駆動開発──半年で全社実装に踏み切った事例</div>
+      <p class="sum">テックファームは生成AIを使う開発（AI駆動開発）を半年で全社に展開。受託の現場でも設計・コード・テストにAIを組み込み生産性を底上げする動きが本格化している。「AIをどう業務に組み込むか」が受託の競争力を分ける段階に来た。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">TECH PLAY</span><a class="go" href="https://techplay.jp/column/2068">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">NEC、議事録AIで資料作成50%減・議事録は30分→5分</div>
+      <p class="sum">NECは社内会議の議事録作成に生成AIを導入し、資料作成時間を50%削減。議事録は平均30分から約5分に短縮した。定例的な事務作業ほどAIの効果が数字で出やすいことを示す、分かりやすい事例だ。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">電通総研</span><a class="go" href="https://crm.dentsusoken.com/blog/ai-casestudy-vol134/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">中小企業が月120時間削減──現場の生成AI活用30例</div>
+      <p class="sum">中小企業が生成AIで月120時間を削減した事例集が公開。問い合わせ対応・文書作成・検査などの定型業務から着手し、小さく始めて効果を積み上げる進め方が共通点。中小・士業でも手の届くDXとして参考になる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">LiftBase</span><a class="go" href="https://liftbaseinc.com/column/generative-ai-use-cases">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">OpenAI「Daybreak」始動──大手が"守りのAI"に採用</div>
+      <p class="sum">OpenAIは防御用のセキュリティ基盤Daybreakを投入。GPT-5.5系で脆弱性の発見・パッチ生成・修正検証までを自動化し、Cisco・Cloudflare・CrowdStrike・Palo Altoなど大手が採用。攻撃側だけでなく「守りにAIを使う」流れが鮮明になってきた。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">The Hacker News</span><a class="go" href="https://thehackernews.com/2026/05/openai-launches-daybreak-for-ai-powered.html">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">生成AIの利用、6割が不安──社内ルール整備は2割未満（IPA）</div>
+      <p class="sum">IPAの調査では、生成AIのセキュリティ課題を認識する企業は6割超な一方、社内ルールを明文化しているのは2割未満。AIが書いたコードに古い依存関係や危険なパターンが紛れ込むリスクもあり、「使う前のルール作り」が急務になっている。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">IPA</span><a class="go" href="https://www.ipa.go.jp/security/10threats/omgdg50000008fi8-att/kaisetsu_2026_soshiki.pdf">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
