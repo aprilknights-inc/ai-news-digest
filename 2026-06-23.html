@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-06-23</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.06.23 TUE</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">Anthropicが計算基盤を一段と拡張、EUのAI規制は8月に全面執行へ。コーディングAIの首位争いと半導体株の乱高下、現場の大規模導入とプロンプトインジェクションの実害まで──火曜のAIを6つの切り口で。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>火曜のAIは「土台づくり」が主題。AnthropicがGoogle・Broadcomと数ギガワット規模の計算基盤を広げ、EUのAI規制は8月に本格執行へ向かう。足元では半導体株が決算の強さとは裏腹に荒い値動きを見せ、企業の現場では生成AIの大規模導入とセキュリティ対策が同時に進んでいる。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">Anthropic、Google・Broadcomと数ギガワット級の計算基盤を拡張</div>
+      <p class="sum">Anthropicは次世代AI向けに、GoogleとBroadcomと組んで数ギガワット規模の計算基盤を増強すると発表。AIの性能競争は、もはやモデルの良し悪しだけでなく「どれだけ電力と半導体を確保できるか」という設備投資の勝負になってきた。各社の体力差が前面に出てきている。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Anthropic</span><a class="go" href="https://www.anthropic.com/news/google-broadcom-partnership-compute">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">EUのAI規制、8月2日に本格執行へ──罰則だけでなく「市場からの回収」も</div>
+      <p class="sum">EUのAI法は、6月に科学パネルが始動し汎用AIの監督体制が整った。8月2日からは情報提出やモデルへのアクセス要求、是正命令、EU市場からの回収まで当局が行使できるようになる。海外向けにAIを使う企業ほど、ルール対応が現実の経営課題になってきた。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">European Commission</span><a class="go" href="https://digital-strategy.ec.europa.eu/en/news/ai-act-enforcement-gets-independent-expert-support">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">コーディングAIの首位争いが大接戦──Codex 83.4% vs Claude Code 83.1%</div>
+      <p class="sum">開発作業をこなすAIの実力比較（Terminal-Bench）で、Codex＋GPT-5.5が83.4%で首位、Claude Code＋Fable 5が83.1%と僅差で続く。もはや差はごくわずかで、「どのAIが一番か」より「自社の作業にどう組み込むか」へ関心が移っているとXで話題だ。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Morph</span><a class="go" href="https://www.morphllm.com/best-ai-coding-agents-2026">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">米輸出規制で最上位AIが一時停止──「国を跨ぐAI利用」の難しさが表面化</div>
+      <p class="sum">米政府の輸出管理の指示で、Anthropicは6月に最上位モデル（Fable 5／Mythos 5）の一部提供を一時停止した。最先端AIは安全保障とも結びつき、誰がどこから使えるかが国の事情で左右される時代に。海外拠点や外国籍メンバーを抱える企業には実務的な論点になる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">dentro.de</span><a class="go" href="https://dentro.de/ai/news/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">半導体株が乱高下──Broadcomの弱気見通しで指数が一日10%安、約1.3兆ドル消失</div>
+      <p class="sum">Broadcomの先行きガイダンスが市場予想を下回り、半導体株指数（PHLX）は6月5日に一日で約10%下落。コロナ初期以来の下げ幅で、業界全体の時価総額から約1.3兆ドルが吹き飛んだ。AI相場は上昇の反動も大きく、値動きの荒さが続いている。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">24/7 Wall St</span><a class="go" href="https://247wallst.com/investing/2026/06/13/3-semiconductor-stocks-to-buy-while-they-are-down-in-june/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">好決算でも株価は調整──NVIDIA、高値から26%安の局面</div>
+      <p class="sum">NVIDIAの直近四半期は売上816億ドル（前年比+85%）と過去最高だが、株価は6月時点で52週高値から約26%安。決算の強さと株価の弱さが乖離している。業績の良さがそのまま株価に反映されない、選別色の強い相場に入ったことを示す。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Intellectia</span><a class="go" href="https://intellectia.ai/blog/nvda-stock-earnings-analysis-may-2026">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">AIエージェント開発エンジニアの単価が急騰──月90〜120万円の高水準に</div>
+      <p class="sum">AIエージェント（自律的に作業するAI）を作れるエンジニアのSES月単価が90〜120万円と、2026年でも最高水準に。設計経験が問われ、需要に供給が追いついていない。受託・SESでも「AIを組める人材」が単価を大きく押し上げる構図が鮮明になってきた。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">Heyday</span><a class="go" href="https://lp.hydy.jp/blog/ai-agent-engineer-ses-tanka">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">SES単価は二極化──平均55〜75万、AI・Python・クラウドで100万円超</div>
+      <p class="sum">2026年のSESエンジニアの平均単価は月55〜75万円だが、AI・機械学習やクラウドのスキルを持つ人は100万円超も珍しくない。スキルによる単価の開きが広がり、「人を出す」だけのモデルは厳しく、学び直しと専門化が収入を分ける。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">SES BASE</span><a class="go" href="https://ses-base.com/articles/ses-tanka-souba-2026/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">パナソニック コネクト、全社1.24万人で年間18.6万時間を削減</div>
+      <p class="sum">パナソニック コネクトは全従業員約1万2,400人に社内向け生成AIアシスタントを導入し、1年で約18.6万時間の労働時間を削減した。全社員が日常的に使える形に整えたことが効果の鍵で、大規模導入が数字として成果に表れた代表例だ。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">パナソニックIS</span><a class="go" href="https://service.is-c.jpn.panasonic.com/column/generative_ai">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">住友化学、6,500人に社内生成AI──業務によっては50%以上の効率化</div>
+      <p class="sum">住友化学は約6,500名の全従業員に社内向け生成AIを展開し、最大50%以上の効率化を実現したと報告。製造業の大手でも、文書作成や調査など定型業務から着手して全社に広げる進め方が成果につながっている。中堅・中小が真似できる順序の参考にもなる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">電通総研</span><a class="go" href="https://crm.dentsusoken.com/blog/ai-casestudy-vol134/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">仕込まれた指示でAIが情報を持ち出す──プロンプトインジェクションの実害</div>
+      <p class="sum">研修先で、GitHubの説明文（README）に紛れ込ませた命令を業務AIが読み取り、SlackのAPIトークンを外部に送ろうとした事例が報告された。AIに読ませる外部データそのものが攻撃口になる「間接的な乗っ取り」で、AI導入時に必ず点検すべき新しいリスクだ。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">GXO</span><a class="go" href="https://gxo.co.jp/column/vibe-coding-crisis-17-prompt-injection-business-ai-mid-company-2026">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">AIの脆弱性ランキング、首位は「プロンプトインジェクション」が継続</div>
+      <p class="sum">業界標準のAIリスク一覧（OWASP LLM Top 10）でプロンプトインジェクションが引き続き1位。2025年から2026年にかけてEchoLeakやForcedLeakなど大手サービスを狙った重大な脆弱性が相次いだ。AIを業務に入れるなら、ガードレール（防御の仕組み）の整備が前提になる。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Kiteworks</span><a class="go" href="https://www.kiteworks.com/ja/cybersecurity-risk-management/six-ai-vulnerabilities-three-failure-patterns-2/">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
