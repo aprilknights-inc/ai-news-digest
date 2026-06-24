@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-06-24</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.06.24 WED</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">水曜のAIは「守り」と「開放」が主題。OpenAIがサイバー防御を立ち上げ、オープンモデルが性能とシェアの両面で存在感を増す。半導体株はV字で揺れ、医療現場の大規模導入とプロンプトインジェクションの実害まで──水曜のAIを6つの切り口で。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>水曜のAIは「攻めと守りの両輪」が前面に。OpenAIがサイバー防御プログラムを立ち上げる一方、オープンウェイトのモデルが性能・シェアの両面で存在感を増し、クローズドAI一強の構図が揺らいでいる。企業ではサムスンや医療機関の大規模導入が進むが、足元の半導体株は荒い値動きが続き、プロンプトインジェクションの実害も現実味を帯びてきた。活用と安全対策を同時に問われる局面だ。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">OpenAI、サイバー防御プログラム「Daybreak」を発表──AIが「守り」にも本格参入</div>
+      <p class="sum">OpenAIは6月22日、最新AIと自社のコード診断（Codex Security）を組み合わせ、攻撃者に先回りして脆弱性を見つけ・検証し・修正する防御プログラム「Daybreak」を発表した。AIは攻撃の道具にもなるが、守る側の戦力にもなる時代に。セキュリティ点検をAIで底上げする流れが鮮明になってきた。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">OpenAI</span><a class="go" href="https://openai.com/daybreak/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">オープンモデルがシェアを逆転──3か月で40%→60%へ（OpenRouter集計）</div>
+      <p class="sum">利用状況を集計するOpenRouterによれば、誰でも重みを使える「オープン系」モデルの利用シェアが、3月の約40%から6月中旬に約60%へ逆転した。中国発のGLM-5.2など実力派の登場が背景。特定ベンダーに縛られない選択肢が増え、コストと囲い込みの見直しが現実的になっている。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">AINews</span><a class="go" href="https://news.smol.ai/issues/26-06-19-not-much">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">GLM-5.2、「初の本格フロンティア・コーディングモデル」と絶賛が相次ぐ</div>
+      <p class="sum">誰でも使えるオープンモデルGLM-5.2について、「閉じた最上位モデルの代わりに本気で使える初の開発用モデル」との評価がXで広がっている。自律的に手順を分けて作業を進める力や、長い手順の計画力が高いと実務者が報告。無料で手元に置ける高性能モデルが、業務の選択肢を変えつつある。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">AINews</span><a class="go" href="https://news.smol.ai/issues/26-06-19-not-much">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">エージェント型の実務ベンチでClaude系が首位──GLM-5.2も肉薄</div>
+      <p class="sum">調査会社Artificial Analysisの「自律的に知的作業をこなす力」を測る指標で、Claude Fable 5が1587点で首位、Opus 4.8が1356点、オープンのGLM-5.2が1266点と続いた。閉じた最上位と開いたモデルの差が縮まりつつあり、「どれを使うか」の選択肢が一気に広がっている。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">AINews</span><a class="go" href="https://news.smol.ai/issues/26-06-19-not-much">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">半導体株、暴落から即V字反発──6/6に約10%安、翌営業日に主導反発</div>
+      <p class="sum">半導体株指数（SOXX）はBroadcomの弱気見通しで6月6日に約10%急落したが、6月8日には半導体が相場の反発を主導し、ナスダックは1.7%高で切り返した。市場は急落を「行き過ぎた反応」と見て買い戻した形。AI相場は上昇も下落も振れが大きく、荒い値動きが当面続きそうだ。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Intellectia</span><a class="go" href="https://intellectia.ai/blog/semiconductor-stocks-rebound-june-2026">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">ブームの土台は健在──ハイパースケーラーのAI投資7,500億ドル、AMDは年初来+130%</div>
+      <p class="sum">大手クラウド各社は2026年に計約7,500億ドルのAI設備投資を計画。Broadcomは直近四半期でAI向け半導体売上が前年比143%増と伸び、AMDも年初来で約130%高。株価の急落・反発が続く一方で、投資マネーがAIインフラに向かう大きな流れ自体は崩れていない。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Yahoo Finance</span><a class="go" href="https://finance.yahoo.com/markets/stocks/articles/3-semiconductor-stocks-buy-while-143037327.html">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">AIエージェント開発者は供給不足──主要ツール二刀流は需要の5%以下</div>
+      <p class="sum">自律的に作業するAI（エージェント）を組める人材のSES月単価は90〜120万円超と高水準が続く。代表的な開発ツール（LangGraph・CrewAI）を両方使える人は「需要に対し供給5%以下」と希少で、需給が単価を押し上げている。受託・SESでも、AIを設計できる人材が単価の決め手になってきた。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">Heyday</span><a class="go" href="https://lp.hydy.jp/blog/ai-agent-engineer-ses-tanka">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">高単価はAI・LLM実装に集中──生成AI実装スキルで月100〜150万円超も</div>
+      <p class="sum">2026年のSESで特に単価が高騰しているのは生成AI・LLMの実装スキルで、月100〜150万円超の案件も増えている。一方で平均的な開発はジュニア30〜45万円、ミドル50〜80万円と差が開く。「人を出す」だけでは伸びにくく、学び直しと専門化が収入を分ける構図がはっきりしてきた。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">HLT</span><a class="go" href="https://hlt-inc.jp/news/ses-engineer-monthly-rate-guide">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">JCHO大阪病院、退院サマリ年1.6万件を生成AIで作成支援──6月に運用開始</div>
+      <p class="sum">JCHO大阪病院は富士通Japan・日本マイクロソフトらと組み、年約1.6万件の退院サマリ作成や看護申し送りの要点整理に生成AIを使う体制を整え、2026年6月に運用を始める。院内ガイドラインや運用ルールを先に固めてから導入する進め方で、医療現場の働き方改革に踏み込んだ事例だ。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">富士通Japan</span><a class="go" href="https://global.fujitsu/ja-jp/subsidiaries/fjj/news/press-releases/2026/0219-01">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">サムスン、全社員にChatGPT・Codexを展開──2023年の「全面禁止」から一転</div>
+      <p class="sum">サムスン電子は韓国の全社員とDX部門の世界の社員にChatGPT EnterpriseとCodexを配布した。OpenAI最大級の企業導入で、Codexは週500万人が利用、韓国では2月から約800%増。情報漏えいを理由に2023年に生成AIを禁じた同社の方針転換で、安全対策を整えれば全社展開できる好例だ。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">OpenAI</span><a class="go" href="https://openai.com/index/samsung-electronics-chatgpt-codex-deployment/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">実環境での大規模「間接プロンプトインジェクション」を初確認（Unit 42）</div>
+      <p class="sum">Palo Alto Networksの調査チームが2026年3月、稼働中の商用サービスで、外部データに仕込んだ命令でAIを誤作動させる「間接プロンプトインジェクション」の大規模な実例を初めて確認したと報告。広告審査のすり抜けや内部設定の漏えいが起きた。AIに読ませる外部データそのものが攻撃口になる、実害段階のリスクだ。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Securance</span><a class="go" href="https://www.securance.com/blog/prompt-injection-the-owasp-1-ai-threat-in-2026/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">プロンプトインジェクションが前年比340%増、本番AIの73%に存在（OWASP）</div>
+      <p class="sum">OWASPの2026年版報告で、プロンプトインジェクションは引き続きAIリスクの1位。攻撃は前年比約340%増と最速で伸び、本番運用のAIの約73%に同種の弱点が見つかったとされる。AIを業務に入れるなら、防御の仕組み（ガードレール）の整備が「あれば良い」から「前提」へと変わってきている。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">OWASP</span><a class="go" href="https://www.kunalganglani.com/blog/prompt-injection-2026-owasp-llm-vulnerability">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
