@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-06-26</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.06.26 FRI</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">金曜のAIは「自前化」がキーワード。OpenAIがBroadcomと組んで初の自社AIチップを発表し、計算基盤までも内製でそろえにいく一方、現場では「導入は進むのに成果が出ない」「守りはどう固めるか」という地に足のついた論点が前に出てきた。派手な発表と着実な実装、その両方を6つの切り口で。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>OpenAIがBroadcomと共同開発した初の自社推論チップ「Jalapeño」を発表し、電力あたり性能でGPUを上回り運用コストを約半分にできるとした。これを受けBroadcom株は小幅高、Nvidia株はほぼ横ばいで、自社チップ化の波がAI半導体の構図を少しずつ動かしている。AnthropicはClaude利用者への本人確認（顔・ID）を7月8日から導入すると発表。企業の現場では生成AIの導入が広がる一方、ROIに結びつけにくい課題や、プロンプトインジェクションを中心とするセキュリティ対策が共通の論点になっている。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">OpenAI、Broadcomと初の自社AIチップ「Jalapeño」発表──電力性能でGPU超え、コスト半減狙う</div>
+      <p class="sum">OpenAIは6月24日、Broadcomと共同開発した初の自社推論チップ「Jalapeño」を発表した。設計から製造手前まで約9か月という異例の速さで、開発にはOpenAI自身のAIも使われた。電力あたりの性能が現行のGPUを大きく上回り、Broadcomのトップは「典型的なAI向けGPUに比べ約5割のコスト削減」と説明。年内の導入開始を目指す。AI大手が計算基盤まで自前でそろえにいく動きが鮮明だ。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">OpenAI</span><a class="go" href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">Anthropic、Claude利用者に「本人確認」を7月8日導入──顔・身分証の提出を求める場合も</div>
+      <p class="sum">Anthropicは、消費者向けClaude（無料・Pro・Max）の一部利用者に対し、7月8日から政府発行の身分証や顔の照合を求められるようにすると発表した。法人向け（Team・Enterprise・API）は対象外。何が確認の引き金になるかは明示されておらず、提出しないとアカウントが止まる可能性もある。AIサービスでも、年齢・本人確認といったガバナンスの整備が進み始めている。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">TechTimes</span><a class="go" href="https://www.techtimes.com/articles/318778/20260621/claude-identity-verification-starts-july-8-what-facial-data-anthropic-collects.htm">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">「導入は進むのに成果が出ない」──AIエージェントのROIギャップが最大の論点に</div>
+      <p class="sum">AIの導入はほぼ全社に広がり、個人の生産性向上は実感されている。一方で「会社全体の成果（ROI）につながっているのは2〜3割どまり」という調査が相次ぎ、ガバナンスや業務の組み替えが追いつかない“ROIギャップ”が話題になっている。ツールを配るだけでは儲けに直結しない、どこにどう効かせるかの設計が要る、という現実的な議論が前に出てきた。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">WRITER</span><a class="go" href="https://writer.com/blog/enterprise-ai-adoption-2026/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">「プロンプトインジェクションは直せない構造的欠陥か」論争が再燃</div>
+      <p class="sum">AIに不正な指示を紛れ込ませる「プロンプトインジェクション」について、「これは将来の更新で直るバグではなく、仕組み上の根本問題ではないか」という見方が広がっている。AIは“信頼できる命令”と“ただのデータ”を同じ文字列として受け取るため、原理的に切り分けにくい、という指摘だ。完全には防げない前提で、権限やログで被害を抑える設計が現実解、という温度感になりつつある。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">TechTimes</span><a class="go" href="https://www.techtimes.com/articles/318361/20260614/ai-agent-security-hits-its-reckoning-prompt-injection-may-permanent-flaw-not-patchable-bug.htm">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">自社チップ発表でBroadcom小幅高・Nvidiaほぼ横ばい──「GPUより5割安」の衝撃</div>
+      <p class="sum">OpenAIの自社チップ「Jalapeño」発表を受け、共同開発したBroadcomの株価は約2%上昇、対するNvidiaは0.26%安とほぼ横ばいだった。Broadcomは各社の自社チップ作りを支える立場で生成AIブームの恩恵を受けてきた銘柄。今回の「GPUより約5割安」という主張は、推論用半導体の価格競争を促す材料となり得る一方、Nvidiaの優位がすぐ崩れるとは市場は見ていない。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">CNBC</span><a class="go" href="https://www.cnbc.com/2026/06/24/openai-and-broadcom-reveal-jalapeno-first-ai-chip-in-partnership.html">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">野村、日経平均見通しを2026年末「6万8,000円」に上方修正──AI・半導体の好業績を反映</div>
+      <p class="sum">野村證券は、日経平均株価の2026年末予想を6万8,000円へ引き上げた。AI・半導体関連企業の業績が急速に上方修正されていることが背景で、関連企業（ソフトバンクGを除く）の経常利益は2026年度に倍増する見通しという。AI相場は短期では荒い値動きが続くものの、企業業績という実需の裏づけが効いている、という見立てだ。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">野村證券</span><a class="go" href="https://www.nomura.co.jp/wealthstyle/article/0744/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">強気一辺倒に注意も──「26年下期は設備投資の伸び鈍化」の警戒シナリオ</div>
+      <p class="sum">好業績期待が続く一方で、2026年10〜12月期をピークに米クラウド大手の設備投資の伸びが鈍化し、半導体指数がその影響を受け始める可能性が指摘されている。AI半導体株に過度な割高感は乏しいとしつつ、下期に意識すべきリスクと狙い目セクターを整理する論調。上げ相場の中でも、いつ・何が変調のサインになるかを押さえておく材料になる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">ダイヤモンド</span><a class="go" href="https://diamond.jp/articles/-/391063">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">SES経営者が語る「AIエージェント時代の単価のリアル」──人を出すだけでは続かない</div>
+      <p class="sum">現役のSES経営者が、AIエージェントの普及でエンジニア単価に何が起きているかを率直に書いた論考が読まれている。AIで作業が速く片づくほど「人月（工数）で稼ぐ」モデルは苦しくなり、単に人を出す商売から、設計力や成果で対価を得る形へ移行が迫られる、という現場目線の整理。受託・SESの会社が次にどう動くかを考える叩き台になる。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">note／福井</span><a class="go" href="https://note.com/tfukui0719/n/n35742f19e5bb">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">SES単価相場2026──AI・LLM領域は月100〜160万円、ただし商流が深いと目減り</div>
+      <p class="sum">2026年のSESエンジニアの平均単価は月55〜75万円だが、生成AI・LLMやクラウドなど希少スキルがあれば月100〜160万円の高単価案件も増えているという。一方、エンド企業が高く払っても、間に2〜3社入る商流ではエンジニア手取りが目減りする構造も指摘される。AIスキルは単価を押し上げるが、誰と直接つながるかで実入りが変わる、という実務感のある相場観だ。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">SES BASE</span><a class="go" href="https://ses-base.com/articles/ses-tanka-souba-2026/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">JCHO大阪病院、退院サマリ作成と看護申し送りに生成AI──2026年6月に運用開始</div>
+      <p class="sum">JCHO大阪病院は富士通Japan・Microsoftらと組み、退院サマリの作成や看護の申し送り要点整理に生成AIを使うサービスを導入、6月の運用開始を目指す。先に院内ガイドラインや運用ルール、情報基盤を固めてから現場に広げる進め方が特徴だ。医療という機微な現場でも「安全に使う体制を先に作る」ことで、働き方改革と両立できる実例として参考になる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">IT Leaders</span><a class="go" href="https://it.impress.co.jp/articles/-/29012">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">生成AIの活用、大企業59%に対し中小は30%──「導入格差」が鮮明に</div>
+      <p class="sum">東京商工リサーチの調査では、生成AIを組織的に活用しているのは大企業で約59%に対し、中小企業は約30%と、約30ポイントの差がついた。使える会社と使えない会社の差が広がりつつあり、まず小さく始めて社内に定着させる一歩目が重要、という論調だ。中小・士業の現場で「何から手をつけるか」を促す材料になる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">AI-Native</span><a class="go" href="https://www.ai-native.jp/blog/japan-ai-adoption-gap-2026-tsr-survey">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">OWASP、エージェントAIセキュリティ指針v2.01を公開──本番障害の主因はやはりプロンプトインジェクション</div>
+      <p class="sum">業界標準のOWASPが6月、自律的に動くAIエージェントの安全指針の改訂版（v2.01）を公開した。本番環境で起きる障害の最大要因は依然としてプロンプトインジェクションで、入口・権限・ログの設計が肝になると整理している。AIを「動かす」だけでなく「安全に動かす」ための公式の手引きで、点検や提案の根拠として使いやすい。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Help Net Security</span><a class="go" href="https://www.helpnetsecurity.com/2026/06/11/owasp-prompt-injection-ai-security-failures/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">OpenAI「Daybreak」を拡張、GPT-5.5-Cyberで防御側の脆弱性パッチを自動化</div>
+      <p class="sum">OpenAIはサイバー防御の取り組み「Daybreak」を拡張し、防御目的に特化した「GPT-5.5-Cyber」を投入。3,000万件超のコミットを精査し、cURLやPythonなど主要なオープンソースの脆弱性を見つけて修正する“守り側”の自動化を進める。攻撃にAIが使われる時代に、守りもAIで底上げする流れ。健診・点検サービスを語るうえで押さえておきたい最新動向だ。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">The Hacker News</span><a class="go" href="https://thehackernews.com/2026/06/openai-expands-daybreak-with-gpt-55.html">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
