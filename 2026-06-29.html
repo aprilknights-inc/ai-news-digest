@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-06-29</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.06.29 MON</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">週明けのAIは「最先端ほど、すぐには使えない」週末を引きずってのスタート。OpenAIは新モデルGPT-5.6を発表したが、米政府の新しい審査枠組みのもとで当面はごく一部の組織にしか開放されない。市場はAIの設備コスト懸念で揺れ、現場では「AIで仕事はどう変わるか」「どう安全に使うか」という地に足のついた論点が前に。派手な発表と着実な実装の両方を、6つの切り口で。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>OpenAIは6月26日、新モデル群「GPT-5.6（Sol／Terra／Luna）」を発表したが、米政府が新設した「強力なAIは広く公開する前に評価する」枠組みの初適用として、当面は約20組織への限定提供にとどめ、一般公開は数週間後とした。同じ週、株式市場ではAIの設備投資コストがいずれ利益を圧迫するとの懸念から半導体株が売られ、NvidiaやAlphabetは反発の流れに乗れなかった。一方で企業の調査からは、AIエージェントへの支出が急拡大する見通しと、中小企業では本格活用がなお1割未満という導入格差が浮かぶ。セキュリティではプロンプトインジェクションが「2026年で最大のAIの脅威」と位置づけられ、根本解決の難しさが改めて指摘された。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">OpenAI、新モデル「GPT-5.6」発表──Sol／Terra／Lunaの3種、ただし当面は約20組織だけ</div>
+      <p class="sum">OpenAIは6月26日、新しいモデル群「GPT-5.6」を発表した。最上位の「Sol」は高度な推論と長時間の自律作業向け、「Terra」は前世代と同等の性能を約半額で使える日常用、「Luna」は最速・最安の軽量版という3本立て。ただし米政府の要請で、当面は約20の組織にだけ提供し、ChatGPTやAPIでの一般公開は「数週間後」とした。最先端モデルほど、すぐ誰でも使えるわけではない時代に入りつつある。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">VentureBeat</span><a class="go" href="https://venturebeat.com/technology/openai-unveils-gpt-5-6-sol-terra-and-luna-models-but-only-accessible-to-limited-preview-partners-for-now-per-us-gov">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">「広く公開する前に政府が評価」──米国の新枠組み、GPT-5.6が初の適用例に</div>
+      <p class="sum">今回GPT-5.6が限定公開にとどまった背景には、6月2日に米国が出した大統領令がある。強力な新AIは、広く公開する前に連邦機関が安全性を評価する手順を設ける、という内容で、GPT-5.6はその初の適用例となった。AIの能力が上がるほど、各国が「出す前のチェック」を制度化する流れが鮮明だ。日本でも今後、業務でどのモデルがいつ使えるかが規制側の都合に左右される場面が増えうる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Axios</span><a class="go" href="https://www.axios.com/2026/06/26/openai-gpt-sol-terra-luna-trump">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">AIエージェントへの支出、2026年は約20.6兆円規模へ──前年比139%増の見通し</div>
+      <p class="sum">調査会社ガートナーは、自律的に動く「AIエージェント」向けソフトへの世界の支出が2026年に約2,065億ドル（約20兆円超）と、前年から139%増える見通しを示した。企業ソフトの中で最も伸びる分野で、試験導入から「予算項目」へと格上げが進んでいる。単発のツール導入ではなく、業務にエージェントを組み込む流れが本格化しており、伴走支援やDXの提案でも前提として押さえておきたい数字だ。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">Crescendo AI</span><a class="go" href="https://www.crescendo.ai/news/latest-ai-news-and-updates">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">Anthropic、アリババを「2,880万回の不正利用」と告発──証拠を米政府に持ち込む</div>
+      <p class="sum">Anthropicは、アリババが約2万5,000の偽アカウントを使い、自社AI「Claude」から約2,880万回もの会話を不正に引き出していたとして告発し、その証拠をホワイトハウスに持ち込んだ。AI各社が人材の引き抜きや競合の不正利用をめぐって激しく対立している様子が話題に。便利なAIサービスほど、なりすましや大量の自動アクセスに狙われやすいという、利用者側にも他人事でない論点を含んでいる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Build Fast with AI</span><a class="go" href="https://www.buildfastwithai.com/blogs/ai-news-today-june-26-2026">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">「最新AIが一部企業だけ」に賛否──GPT-5.6の限定公開をめぐる議論</div>
+      <p class="sum">GPT-5.6が当面ごく一部の組織にしか開放されないことを受け、「安全のため当然」と「最先端を一部の大手が囲い込むことにならないか」という賛否がネット上で交わされている。性能が上がるほど公開のハードルが上がり、誰が・いつ使えるかの差が広がる――。AIの恩恵が行き渡るスピードに、規制や政治が影響し始めたことを実感させる論点で、セミナーの導入トークにも使いやすい。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">Axios</span><a class="go" href="https://www.axios.com/2026/06/26/openai-gpt-sol-terra-luna-trump">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">半導体株が金曜に売られる──「AIの設備コストがいずれ利益を圧迫」との懸念</div>
+      <p class="sum">6月26日（金）、AIインフラ（データセンターや半導体）への投資コストが膨らみ続け、いずれ各社の利益を圧迫するのではという懸念から、半導体株がまとまって売られた。主要ハイテク株の多くが反発する中でも、NvidiaとAlphabetは下落基調に取り残された。チップ価格の高騰が利幅を削る、という新しい不安が市場に芽生えており、AI相場の「強気一辺倒」に変化の兆しが出ている。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">CNBC</span><a class="go" href="https://www.cnbc.com/2026/06/26/global-tech-stocks-ai-infrastructure-costs-selloff-softbank-apple.html">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">メモリ大手マイクロンが過去最高益、時価総額でメタを上回る──AIメモリ需要が追い風</div>
+      <p class="sum">半導体メモリ大手のマイクロンが四半期で過去最高の業績を出し、強気の見通しも示したことで時価総額がメタ（旧フェイスブック）を上回り、世界の半導体株を押し上げた。AIには計算用のGPUだけでなく、大量のデータを高速にやり取りするメモリも不可欠で、その需要の強さが業績に表れた形。AIブームの恩恵がGPU以外にも広がっていることを示す、地に足のついた材料だ。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Distill Intelligence</span><a class="go" href="https://www.distillintelligence.com/briefings/semiconductors-ai-chips-2026-06-26">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">クアルコム、AI半導体新興テンストレントの買収を協議か──8,000〜1兆円規模</div>
+      <p class="sum">スマホ向け半導体大手クアルコムが、AI向けチップの新興企業テンストレントを80〜100億ドル（約1.2〜1.5兆円）で買収する初期協議に入ったと報じられた。実現すれば、NvidiaやAMDが握るAI半導体市場にクアルコムが本格参入する足がかりになる。各社がAI計算の土台を「自前でそろえる／買って手に入れる」動きを強めており、半導体の勢力図が動き続けている。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Build Fast with AI</span><a class="go" href="https://www.buildfastwithai.com/blogs/ai-news-today-june-26-2026">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">生成AIで「人月ビジネス」に陰り──問われるSES・SIerの存在意義とエンジニアの生存戦略</div>
+      <p class="sum">作業をAIが速く片づけるほど、「人を何人月出すか」で稼ぐ従来のSES・SIerモデルは苦しくなる、という論考が読まれている。下流の実装・テスト工程ほどAIに置き換わりやすく、SES各社は「人を出す」商売から、要件定義・設計・AI活用の組み込みといった上流や成果で対価を得る形への転換を迫られる、という整理だ。受託・SESの会社が次の一手を考えるうえでの叩き台になる。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">エンジニアtype</span><a class="go" href="https://type.jp/et/feature/28078/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">AIエージェント開発エンジニアの単価が急騰──月90〜120万円、できる人は供給5%未満</div>
+      <p class="sum">SES単価の実案件データによると、AIエージェント開発ができるエンジニアの月単価は90〜120万円超と2026年でも最高水準。中でもLangGraphとCrewAI（エージェントを作るための代表的な道具）の両方を扱える人は、需要に対し供給が5%以下という品薄ぶりだという。AIで全体の作業は減っても、「AIを作る・組み込む」側の人材はむしろ希少価値が上がる、という二極化が単価にはっきり表れている。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">Heyday</span><a class="go" href="https://lp.hydy.jp/blog/ai-agent-engineer-ses-tanka">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">中小企業の生成AI「本格導入」はわずか7.3%──7割が“検証段階”で足踏み</div>
+      <p class="sum">中堅・中小企業で生成AIを本格的に業務へ組み込めているのは7.3%にとどまり、約7割が「試しに使ってみた」段階から先に進めていないという。IT専任者がいないため検証に時間を割けず、「何に使えるか」が曖昧なまま入れて効果を説明できない、という共通の壁が背景にある。月次報告の下書きや議事録要約など、失敗しても困らない定型業務1つに絞って始めるのが定石、と整理されている。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Gel-banana</span><a class="go" href="https://gel-banana.jp/blog/dx-news-2026-05-13-v4">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">中小の6割がまだ業務でAIを使えていない──「補助金×小さな実証」が現実的な一歩目</div>
+      <p class="sum">人材不足を埋める切り札としてAIへの期待は高い一方、中小企業の約6割はまだ業務でAIを使えていない。最初の一歩としては、2026年に受付が始まった国の「デジタル化・AI導入補助金」などを使い、いきなり全社ではなく小さな実証から始めるのが現実的、という論調だ。費用面の不安を補助金で和らげ、効果を数字で見せて横展開する――中小・士業のDX支援でそのまま使える進め方だ。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">note／DataCrew</span><a class="go" href="https://note.com/datacrew/n/nb06686eb6e9e">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">プロンプトインジェクションが「2026年で最大のAIの脅威」に──攻撃は前年比340%増</div>
+      <p class="sum">AIに不正な指示を紛れ込ませる「プロンプトインジェクション」が、業界標準OWASPのAIリスク番付で2026年の第1位に位置づけられた。攻撃は前年比340%増と急増し、保険大手ミューニック・リも年次リポートで「主要な攻撃経路」と警告。低コストで仕掛けやすく、被害が大きいのが特徴だ。AIを業務に入れる企業が増えるほど点検ニーズも高まる、健診・点検サービスの追い風となる動向だ。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Securance</span><a class="go" href="https://www.securance.com/blog/prompt-injection-the-owasp-1-ai-threat-in-2026/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">OWASP専門家「プロンプトインジェクションは未解決」──根本的に直せない構造問題</div>
+      <p class="sum">OWASPの専門家が「プロンプトインジェクションは依然として未解決で、AIの発展を妨げかねない」と警告した。AIは“信頼できる命令”と“ただのデータ”を同じ文字列として受け取るため、原理的に切り分けが難しいのが理由だ。完全には防げない前提に立ち、AIに渡す権限を絞る・操作の記録を残す・重要処理は人が確認する、といった「被害を抑える設計」が現実解になりつつある。点検時のチェック観点としても押さえておきたい。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Infosecurity Magazine</span><a class="go" href="https://www.infosecurity-magazine.com/news/infosec-europe-prompt-injection/">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
