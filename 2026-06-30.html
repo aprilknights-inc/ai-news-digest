@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-06-30</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.06.30 TUE</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">月末の火曜は、派手な新モデルより「AIをどう賢く・安く使うか」に重心が移った一日。Anthropicは本日「AI for Science」を生配信し、医薬・研究でのClaude活用を披露する。市場ではブロードコムの決算が引き金になった半導体の大幅安が尾を引き、企業のAI支出も「使い放題」から効率重視へと潮目が変わりつつある。地に足のついた論点を、6つの切り口で。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>本日6月30日、Anthropicは医薬・バイオ・研究機関でのClaude活用を披露する生配信イベント「AI for Science」を開く。一方で市場とビジネスの話題は「効率」に集まっている。企業のAI支出が「とにかく大量に使う（トークンマックス）」から費用対効果重視へと転換し、OpenAIやAnthropicの成長鈍化懸念が指摘されるなか、スタートアップLindyはClaudeを完全に離れて中国製の安価なDeepSeekへ全面移行し、コスト圧力の象徴として話題になった。株式市場ではブロードコムの決算が市場予想を下回ったことを機に半導体株が大きく売られ、Nvidiaも高値から2割超下げた状態が続く。AIの「実力」だけでなく「コスト」が導入判断を左右する局面に入りつつある。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">Anthropic、本日「AI for Science」を生配信──医薬・バイオ・研究でのClaude実例を披露</div>
+      <p class="sum">Anthropicは日本時間の本日深夜（米時間6月30日午前）、「AI for Science（科学のためのAI）」と題したオンラインイベントを生配信する。製薬・バイオ企業や研究機関の責任者が登壇し、自社AI「Claude」を研究現場でどう使い、どんな成果が出たかを実例で見せる構成だ。AIが「文章を書く道具」から「専門領域の研究を前に進める相棒」へと用途を広げつつあることを示す動きで、業種特化のAI活用を語るときの最新事例になる。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">Anthropic</span><a class="go" href="https://www.anthropic.com/events/the-briefing-ai-for-science-virtual-event">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">AI支出、「使い放題」から「効率重視」へ転換──OpenAI・Anthropicに成長鈍化の影</div>
+      <p class="sum">これまで企業は「とにかくAIを大量に使わせる（トークンマックス）」流れにあったが、コスト膨張を受けて費用対効果を厳しく見る方向へ一斉に舵を切り始めた、とCNBCが報じた。この転換はOpenAIやAnthropicの売上成長を鈍らせかねないという。AIは「使えば使うほど良い」段階を過ぎ、「どの業務に、どれだけ使えば元が取れるか」を問う実務フェーズに入った。導入支援でも“費用対効果の設計”が主役になる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">CNBC</span><a class="go" href="https://www.cnbc.com/2026/06/26/openai-anthropic-new-ai-spending-reality-as-users-shift-to-efficiency.html">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">Googleから一流AI研究者の流出続く──ノーベル賞のJumper氏らがAnthropic・OpenAIへ</div>
+      <p class="sum">Geminiの中核を担った研究者やDeepMindのディレクター（2024年ノーベル化学賞のジョン・ジャンパー氏ら）が相次いでGoogleを離れ、AnthropicやOpenAIへ移籍している。AIの競争力が「計算資源」と並んで「人材の奪い合い」で決まる時代になったことを象徴する動きだ。最先端を担う人ほど数が限られ、待遇が高騰している――この構図は、後段のエンジニア単価の二極化（AIを作れる人ほど希少）とも地続きだ。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">TechCrunch</span><a class="go" href="https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">スタートアップLindy、ClaudeをやめDeepSeekへ全面移行──「数百万ドル節約、生き残りの問題」</div>
+      <p class="sum">AIスタートアップLindyのCEOが、自社AIをAnthropicのClaudeから中国製の安価なDeepSeekへ100%切り替え、数か月で数百万ドルを節約できると明かして話題に。社員約25人の会社でAI費用が人件費を上回り「持続不可能」だったという。「好き嫌いでなく経済合理性、これは生き残りの問題」とのコメントが広く引用された。性能だけでなくコストがベンダー選びを根こそぎ変えうる、という生々しい一例だ。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">The Decoder</span><a class="go" href="https://the-decoder.com/ai-startup-lindy-ditched-claude-entirely-for-deepseek-saving-millions-as-cost-pressure-mounts-on-anthropic/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">Google「Gemini 3.5 Pro」、6月の期限を逃し7月GAへ後ろ倒し──大型モデルでも遅延</div>
+      <p class="sum">Googleの次期主力モデル「Gemini 3.5 Pro」が、開発者会議で示した6月の一般提供期限を過ぎ、7月の正式提供を目指す形になったと伝えられた。200万トークンという長い文脈を扱える点や高度な推論モードが期待される一方、「最先端モデルほどスケジュール通りに出ない」状況が改めて話題に。前段のGPT-5.6の限定公開と同じく、“使いたいときに最新が使えるとは限らない”前提で計画を立てる必要がある。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">LLM-Stats</span><a class="go" href="https://llm-stats.com/llm-updates">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">ブロードコムの決算が予想割れ──きっかけに半導体・AI株から約1.3兆ドルが消失</div>
+      <p class="sum">ブロードコムの四半期決算で、AI向けネットワーク部門の売上が市場予想を約14%下回ったことが引き金となり、半導体・AI関連株から1日で約1.3兆ドル（約190兆円）もの時価総額が吹き飛んだ。NvidiaやAMDも巻き込まれて下落。AI相場の「上がって当然」という空気が、決算の小さな未達ひとつで急反転しうる神経質な地合いに入っている。AI銘柄の値動きを経営の前提に置く際は、振れ幅の大きさに注意したい。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Intellectia</span><a class="go" href="https://intellectia.ai/blog/semiconductor-stocks-selloff-june-2026">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">Nvidia、最高値から約26%安の水準で推移──AIラリーの利益確定売り続く</div>
+      <p class="sum">AI相場の主役Nvidiaの株価は、直近で52週高値より約26%低い水準にとどまっている。1年では約4割高だが、ここ1か月は反落基調で、買い手の利益確定が続く。アナリストは依然「強い買い」で目標株価に約45%の上値余地を見るが、足元は一本調子の上昇から踊り場に。AI=右肩上がり、という単純な見立てが通用しにくくなっている局面を映している。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">I/O Fund</span><a class="go" href="https://io-fund.com/ai-stocks/nvidia-stock-buy-semiconductor-strength-market-top">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">それでもAI需要の地力は健在──Nvidia、年間売上2,159億ドル・前年比65%増</div>
+      <p class="sum">短期の値動きは荒いものの、Nvidiaの2026会計年度の売上は2,159億ドル（約32兆円）と前年から65%伸び、AIチップの需要そのものは強いままだ。データセンター用のGPUを中心に、AIを動かす計算基盤への投資は続いている。株価の上下に一喜一憂せず、「AIインフラへの投資は底堅い」という大きな流れは押さえておきたい。企業のAI活用が広がる前提として使える数字だ。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Intellectia</span><a class="go" href="https://intellectia.ai/blog/ai-semiconductor-boom-2026">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">SIer提示「月100万円」でも手取りは60〜70万円──3〜4割が営業・管理の間接費</div>
+      <p class="sum">SIerが顧客に提示する月額単価のうち、エンジニア本人に渡るのは6〜7割程度で、残り3〜4割は営業費や管理部門の間接費が占めるのが一般的、という単価構造の解説が読まれている。AIで実装工程が速くなるほど、この“中抜き”分の説明責任は重くなる。受託・SESの会社にとっては、「人を出す」だけでなく上流設計やAI活用の組み込みで付加価値を示せるかが、単価維持の分かれ目になる。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">クロスネットワーク</span><a class="go" href="https://www.xnetwork.jp/contents/system-integrator-fee">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">SES平均単価は月55〜75万円、AI・クラウド対応なら100万円超え──スキルで二極化進む</div>
+      <p class="sum">2026年のSESエンジニア平均単価は月55〜75万円が目安だが、AIやクラウド関連スキルがあれば100万円超も十分狙える、との市場データが出ている。Python（AI/ML）やKubernetesなどが高単価帯を牽引。AIで全体の作業量が減っても、「AIを作る・使いこなす」側に回れる人ほど単価が上がる二極化が鮮明だ。人材育成やリスキリングの方向性を示すうえで、説得力のある相場感になる。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">SES BASE</span><a class="go" href="https://ses-base.com/articles/ses-tanka-souba-2026/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">生成AI活用、大企業59%・中小30%で約30ポイントの格差──東京商工リサーチ調査</div>
+      <p class="sum">東京商工リサーチの調査によると、生成AIを組織的に活用している企業は大企業で59.1%に対し、中小企業は30%前後にとどまり、約30ポイントの開きがあるという。規模による「使える／使えていない」の差が固定化しつつある。逆に言えば、中小こそ最初の一歩で差を縮める余地が大きい。経営層に現状を数字で示し、「まず一業務から」を促す導入トークの土台になる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">AI-Native</span><a class="go" href="https://www.ai-native.jp/blog/japan-ai-adoption-gap-2026-tsr-survey">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">試した中小の85%が効果を実感、でも本格活用は24%止まり──補助金で後押しが現実解</div>
+      <p class="sum">生成AIを試した中小企業の85%が業務効率化の効果を実感している一方、実際に活用まで進んでいるのは24%にとどまる。「効きそう」と分かっても本格運用に踏み出せない壁がある。2026年度から拡充された国の「デジタル化・AI導入補助金」（最大450万円・補助率1/2〜4/5）などを使い、小さな実証から始めて効果を数字で示すのが現実的な進め方だ。中小・士業のDX伴走でそのまま使える流れになる。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">AI-Native</span><a class="go" href="https://www.ai-native.jp/blog/japan-ai-adoption-gap-2026-tsr-survey">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">生成AIのセキュリティリスク「上位9項目・2026年版」──プロンプトインジェクションや“シャドウAI”</div>
+      <p class="sum">2026年に企業が警戒すべき生成AIのリスクとして、プロンプトインジェクション（AIに不正な指示を紛れ込ませる攻撃）、データ漏洩、悪意あるAI生成コード、サプライチェーンの弱点、社内が把握しない“シャドウAI”利用などが挙げられている。AIを業務に入れるほど点検すべき抜け穴が増える構図だ。これらをチェック項目化すれば、AI健診・点検サービスの「見るべき観点リスト」としてそのまま使える。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">A10ネットワークス</span><a class="go" href="https://www.a10networks.co.jp/news/blog/202603-generative-ai-security-risks.html">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">生成AIのセキュリティ体制は「半年〜年1回」の棚卸しを──定期点検が定石に</div>
+      <p class="sum">生成AIの安全な運用には、導入して終わりではなく、半年〜年1回を目安に脆弱性の棚卸しやポリシーの見直しを続けることが望ましい、と専門事業者が整理している。AIの使われ方も攻撃手口も変わり続けるため、一度の設定では守りきれないからだ。「健康診断のように定期的に点検する」という発想は、健診事業の価値をそのまま言語化したもの。継続契約・定期点検の提案根拠として分かりやすい。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">NRIセキュア</span><a class="go" href="https://www.nri-secure.co.jp/blog/generative-ai-system">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
