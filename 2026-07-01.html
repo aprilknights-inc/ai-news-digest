@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-07-01</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.07.01 WED</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">7月最初の水曜。前日、米政府が安全保障を理由に止めていたAnthropicの最新AIへの輸出規制を解除し、世界で再び使えるようになった。一方で株式市場ではAIの割高感から2日続けての下落。「国がAIを止められる」時代と「AIは本当に儲かるのか」という問いが、同じ朝に並んで突きつけられた。地に足のついた論点を、6つの切り口で。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>本日7月1日、話題の中心は「規制」と「お金」。米商務省は6月30日、安全保障を理由に止めていたAnthropicの最新モデル（Fable 5・Mythos 5）への輸出規制を解除し、いったん世界で停止していた最新AIが復帰した。一方でハイテク株は「AIは投資に見合う利益を生むのか」という懐疑から2日続けて下落し、ナスダックは2.2%安。加えてAnthropicは7月8日から利用者の本人確認（顔認証を含む）を始めるなど、AIは「誰が・どう使えるか」を厳しく問われる局面に入っている。性能の話から、規制・コスト・信頼の話へと重心が移りつつある一日だ。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">米政府、Anthropicの最新AI「Fable 5・Mythos 5」の輸出規制を解除──いったん世界停止した最新モデルが復帰</div>
+      <p class="sum">米商務省は6月30日、6月中旬に安全保障を理由として停止させていたAnthropicの最新モデル（Fable 5・Mythos 5）への輸出規制を解除した。これらは6月に公開直後、「悪用でサイバー攻撃の道具になりうる」「中国からのアクセス懸念」を理由に外国籍ユーザー向けが一斉停止されていた経緯がある。政府の一声で最先端AIが世界規模で止まったり戻ったりする――AIの調達計画を立てるうえで、「使いたい最新モデルが政治判断で急に使えなくなる」リスクを織り込む必要が出てきた。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">CNBC</span><a class="go" href="https://www.cnbc.com/2026/06/30/anthropic-says-trump-admin-has-lifted-export-controls-on-claude-fable-5-and-mythos-5.html">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">EU AI規制法、7月に改正案の正式採択へ──高リスク用途の本格規制は8月2日発効の見込み</div>
+      <p class="sum">EUのAI規制法（AI Act）は、7月に改正案（オムニバス）の正式採択が見込まれ、高リスクなAI用途への本格的な義務は8月2日から発効する方向だと伝えられている。重要なのは、EUに拠点が無くてもEU市場やEU居住者に触れるサービスなら日本企業も対象になりうる点だ。AI導入を検討する顧客にとって「どこの国の誰に使わせるか」で守るべきルールが変わる。海外展開を視野に入れる企業ほど、早めのルール確認が安全策になる。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Holland &amp; Knight</span><a class="go" href="https://www.hklaw.com/en/insights/publications/2026/04/us-companies-face-eu-ai-acts-possible-august-2026-compliance-deadline">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">Anthropic、7月8日から「本人確認」を導入──公的ID＋自撮り＋顔スキャンにプライバシー反発</div>
+      <p class="sum">Anthropicは7月8日から、個人向けClaude（無料・Pro・Max）の利用者に、政府発行の写真付き身分証・その場での自撮り・顔の形状データ（顔認証）の提出を求められるようにする、と発表し議論が沸騰している。データは外部のKYC事業者Personaが処理・保管する。法人向け（Team/Enterprise/API）は対象外だ。AIを「誰が使っているか」を本人確認する流れは、なりすましや悪用を防ぐ狙いだが、「AIを使うのに顔まで登録するのか」という抵抗も強い。個人データの取り扱いが導入の論点に加わってきた。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Cybernews</span><a class="go" href="https://cybernews.com/ai-news/anthropic-privacy-policy-id-verification/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">「AIでAIを採点する」評価に落とし穴──大規模検証で"一致率の過大評価"が判明</div>
+      <p class="sum">AIの出力の良し悪しを別のAIに判定させる「LLM-as-a-Judge」という手法について、21種類の判定AI・約54万件の判定を調べた大規模検証（"Reliability without Validity"）が話題に。単純な一致率だと偶然の一致を差し引けず、判定の実力を過大評価しがちだと指摘された。要は「AIに評価させれば客観的」とは限らないということ。社内でAIの回答品質をAIにチェックさせる仕組みを入れる際は、人の目による最終確認を残す設計が安全だ。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">arXiv</span><a class="go" href="https://arxiv.org/html/2606.19544v1">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">ハイテク株が2日続落、ナスダック2.2%安──「AIは投資に見合う利益を生むのか」懐疑が再燃</div>
+      <p class="sum">AI関連を中心にハイテク株の下落が2日目に入り、ナスダック総合指数は約580ポイント(2.2%)下げて25,587で引けた。巨額のAI投資が本当に利益に結びつくのかという疑問に加え、原油高からの物価上昇でFRBが年内利上げに含みを持たせたことも重しになっている。AIブームの「上がって当然」という空気が薄れ、投資家がコストと採算を厳しく見始めた局面だ。AI銘柄を経営判断の前提に置くなら、値動きの荒さを踏まえた慎重さがいる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">CBS News</span><a class="go" href="https://www.cbsnews.com/news/tech-stock-selloff-ai-profits-nasdaq-nvidia-alphabet-spacex/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">Nvidiaは年初来+15%どまり、"勝ち組"は分散へ──DigitalOcean+240%、Datadog+51%</div>
+      <p class="sum">AI相場の主役Nvidiaの株価は2026年の上昇率が+15%にとどまる一方、クラウドのDigitalOceanは+240%、AI監視・セキュリティのDatadogは+51%と、別の顔ぶれが大きく伸びている。「AI関連＝Nvidia一択」という見立ては通用しにくくなり、投資マネーはAIを"使って稼ぐ"周辺企業へも広がっている。AIの恩恵は半導体だけでなく、クラウドや業務ソフトなど裾野に広がっている――という大きな流れを押さえておきたい。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">CBS News</span><a class="go" href="https://www.cbsnews.com/news/tech-stock-selloff-ai-profits-nasdaq-nvidia-alphabet-spacex/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">「生成AIで開発生産性50%向上」──大手SIerの実績が、逆に人月ビジネス瓦解の警鐘に</div>
+      <p class="sum">大手SIerが生成AIで開発生産性を50%高めたと報じられる一方、専門家は「それは自らの人月ビジネスを崩す」と警鐘を鳴らす。生産性が上がるほど顧客は値下げを求め、AIで内製のハードルが下がった企業は受託そのものを減らす。「工数×単価」で稼ぐモデルが揺らぐ構図だ。受託・SESの会社は、人手を出すだけでなく上流設計やAI活用の組み込みで価値を示せるかが、単価と案件を守る分かれ目になる。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">日経クロステック</span><a class="go" href="https://xtech.nikkei.com/atcl/nxt/column/18/00849/00178/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">AIがコードを書く時代、エンジニアの価値は「読み解き・品質判断」へ──AI人材は2030年に12万人不足</div>
+      <p class="sum">AIが実装を肩代わりする時代に求められるのは「速く書く力」より「AIの出したコードを読み解き、品質を見極める力」だ、との整理が広がっている。経済産業省の推計ではAI人材は2030年までに12万人以上不足する見込みで、AIを使いこなす側に回れる人ほど市場価値が上がる。人を出す会社にとっては、既存メンバーをどう"AIを設計・検収できる人材"へ育てるかが、これからの単価維持の鍵になる。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">エンジニアtype</span><a class="go" href="https://type.jp/et/feature/28078/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">自治体・大企業で時間削減の実績続々──都城市で年1,800時間、パナソニックコネクトで年18.6万時間</div>
+      <p class="sum">生成AIの業務導入で、宮崎県都城市が文書作成で年1,800時間、パナソニック コネクトが全社導入から1年で約18.6万時間、セブン-イレブンが企画時間を90%短縮するなど、具体的な時間削減の実例が各所で出ている。「なんとなく便利」ではなく「何時間浮いたか」という数字で語れる段階に入った。導入を勧めるときは、こうした同規模・同業種の実績を示すと、経営層に効果が伝わりやすい。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">パナソニック</span><a class="go" href="https://service.is-c.jpn.panasonic.com/column/generative_ai">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">中小の本格導入は7.3%どまり──約7割が"試して終わり"、「業務1つに絞って始める」が成功パターン</div>
+      <p class="sum">2026年春の調査では、中小企業で生成AIを本格活用しているのは7.3%にとどまり、約7割は試用や一部部署での検証から先へ進めていない。効果は分かっても本格運用に踏み出せない「検証止まり」の壁がある。成功している会社は最初から全社導入を狙わず、月次報告書の下書きなど定型業務を1つに絞ってAIを組み込んでいる。中小・士業のDX伴走では、この「小さく始めて数字で示す」進め方がそのまま使える。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">Gel-banana</span><a class="go" href="https://gel-banana.jp/blog/dx-news-2026-05-13-v4">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">AI製フィッシング・ディープフェイクが2026年最大級の脅威に──85%の組織が被害、経営者のなりすまし音声も</div>
+      <p class="sum">AIで作られた精巧な偽メール（フィッシング）や、経営者の声・顔を偽装するディープフェイクが、2026年の企業にとって最大級のサイバー脅威になっている。ある調査では85%の組織が過去1年にディープフェイム関連の被害を経験。AIが攻撃の「速さ・本物らしさ・規模」を一気に押し上げている。「うちは大丈夫」と思っている中小ほど狙われやすい。AIを入れる前に、こうした新しい手口への備えを点検する――健診の入り口として分かりやすい話題だ。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">ZeroThreat</span><a class="go" href="https://zerothreat.ai/blog/deepfake-and-ai-phishing-statistics">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">顔認証も万能ではない──Anthropicが顔スキャン導入の一方、企業の3割が「本人確認だけでは当てにならない」</div>
+      <p class="sum">Anthropicが7月8日から顔認証つきの本人確認を始める一方、ディープフェイクの精巧化を受けて「顔での本人確認は単体では信用できない」と考える企業が約3割に上る、との調査もある。AIは"守り"（本人確認）も"破り"（なりすまし）も同時に強くしており、片方の対策だけでは追いつかない。多要素の確認や、いつ・何を検知すべきかの運用設計まで含めて見直す――継続点検の価値をそのまま示せる論点だ。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">StingrAI</span><a class="go" href="https://www.stingrai.io/blog/deepfake-statistics-2026">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
