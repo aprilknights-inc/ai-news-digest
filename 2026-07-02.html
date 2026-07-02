@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-07-02</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.07.02 THU</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">7月最初の木曜。話題の中心は「AIの値下げ」だ。Anthropicは最上位モデルに迫る性能の新モデル「Claude Sonnet 5」を大幅に安く投入し、Googleも低コストな「Gemini 3.1 Flash-Lite」を公開。指示を出せば自分で作業を進める“AIエージェント”を、以前より安く業務に乗せられる時代に入った。一方で株式市場はAI投資の採算を疑い、半導体株が下げ続けている。安くなる技術と、儲けを問う市場——同じ朝に並ぶ二つの現実を、6つの切り口で。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>本日7月2日、AI業界の中心テーマは「高性能モデルの低価格化」。Anthropicは最上位モデルに迫る性能の新モデル「Claude Sonnet 5」を、従来より安い料金（当面は100万トークン当たり入力2ドル・出力10ドル、8/31まで）で公開し、Googleも低コストの「Gemini 3.1 Flash-Lite」をプレビュー提供した。指示を受けて自律的に作業を進めるAIエージェントを安く動かせるようになり、実務導入の裾野が広がる見込み。半面、株式市場ではAI投資が利益に見合うかへの懐疑からメモリ半導体などが大きく下落し、資金はNvidia一極からAMDや光ファイバーのCorningなど周辺へ分散している。技術は安く・速くなる一方、投資回収への視線は厳しさを増す一日となった。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">Anthropic、新モデル「Claude Sonnet 5」を投入──最上位に迫る性能を大幅に安く、AIエージェントの実行コストが一段低下</div>
+      <p class="sum">Anthropicは中位モデルの新版「Claude Sonnet 5」を公開した。計画を立て、ブラウザやターミナルなどの道具を使って自律的に作業を進める“エージェント”能力が大きく向上し、最上位のOpus 4.8に迫る性能を、より安い料金で使えるという。当面は割引価格（100万トークン当たり入力2ドル・出力10ドル、8/31まで）で提供する。数か月前なら大型で高価なモデルが必要だった仕事が、中位モデルでこなせる水準に来た。AIに任せる業務範囲とコストの見積もりを、改めて引き直せる節目だ。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Anthropic</span><a class="go" href="https://www.anthropic.com/news/claude-sonnet-5">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">Google、低コスト版「Gemini 3.1 Flash-Lite」を公開──大量処理・低遅延向けで“安さ競争”が加速</div>
+      <p class="sum">Googleは、応答が速く最も低コストなGeminiとして「Gemini 3.1 Flash-Lite」をプレビュー提供した。大量のやり取りをさばく、コストに敏感な用途に向くという。AnthropicのSonnet 5と合わせ、主要各社が「高い性能を、いかに安く」を競う局面に入った。AIの利用料が下がるほど、これまで費用対効果が合わなかった社内業務にもAIを回しやすくなる。導入コストは今後さらに下がる前提で、投資計画を考えてよい。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Google Cloud</span><a class="go" href="https://docs.cloud.google.com/vertex-ai/docs/release-notes">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">「高性能AIが一気に激安化」──エージェント運用の“主役交代”が話題に</div>
+      <p class="sum">Sonnet 5が最上位級の性能を数分の一の価格で出したことで、「これまで高価な最上位モデルでしか回せなかった自律作業（エージェント）が、中位モデルで安く動かせるようになった」との受け止めがAI技術者の間で広がっている。性能そのものより「同じ仕事をいくらで回せるか」に関心が移った象徴的な出来事だ。AI活用の相談では「まず一番安いモデルで試し、必要な所だけ上位に上げる」という現実的な進め方が、これまで以上に効く。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">AINews (smol.ai)</span><a class="go" href="https://news.smol.ai/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">AIコーディングの“使いこなし術”が議論の的──エージェントを実務に乗せる工夫が共有される</div>
+      <p class="sum">AI技術者コミュニティでは、AIにコードを書かせる際の進め方や、AIエージェントの動きを見える化する仕組み・作業手順の整え方といった「使いこなし術」の共有が活発だ。モデルが賢く安くなるほど、成果を左右するのは“どう任せ、どう確認するか”という運用側の工夫になってきた。ツールを入れるだけでは成果は出ない――現場に定着させる伴走の余地が、むしろ広がっていることを示す論点だ。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">AINews (smol.ai)</span><a class="go" href="https://news.smol.ai/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">メモリ半導体が急落──SanDisk・Micron・Armが1割超安、AI採算への懐疑で続落</div>
+      <p class="sum">AI投資が本当に利益を生むのかという懐疑から、ハイテク株の下落が続き、半導体では記憶装置のSanDisk、メモリのMicron（マイクロン）、設計のArmがそろって10%超も下げた。AI相場を支えてきた「上がって当然」の空気が薄れ、投資家が採算とコストを厳しく見始めている。AI銘柄を経営判断の前提に置くなら、値動きの荒さを織り込んだ慎重さがいる局面だ。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">CBS News</span><a class="go" href="https://www.cbsnews.com/news/tech-stock-selloff-ai-profits-nasdaq-nvidia-alphabet-spacex/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">資金は“Nvidia一極”から分散──AMD年初来+156%、光ファイバーのCorning+120%</div>
+      <p class="sum">AI相場の主役だったNvidiaの伸びが一服する一方、競合のAMDは年初来+156%、データセンター向け光ファイバーのCorning（コーニング）は+120%と、別の顔ぶれが大きく伸びている。AMDはMeta向けの大型供給やMI400シリーズで攻勢を強めており、「AI関連＝Nvidia一択」という見立ては通用しにくくなった。AIの恩恵は半導体の一社に留まらず、周辺の装置・部材へ広がる――という大きな流れを押さえておきたい。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Yahoo Finance</span><a class="go" href="https://finance.yahoo.com/markets/stocks/articles/meet-super-semiconductor-stock-crushing-140500132.html">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">AIエージェント開発者のSES単価が高騰──月90〜120万円、LangGraph経験者は供給5%以下</div>
+      <p class="sum">指示を受けて複数の作業を自律実行する「AIエージェント」の開発ができる技術者のSES月単価が、90〜120万円と2026年で最高水準に達しているという。LangGraphやCrewAIといったエージェント開発の道具を扱える人材は需要に対し供給が5%以下とされ、生成AI・LLM実装の経験者は月100〜150万円超の案件も増えている。人を出す会社にとっては、既存メンバーをこの領域に育てられるかが、そのまま単価と受注力を左右する。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">Heyday</span><a class="go" href="https://lp.hydy.jp/blog/ai-agent-engineer-ses-tanka">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">「人月商売の終わり」論が再燃──AIで生産性が上がるほど受託モデルに矛盾</div>
+      <p class="sum">生成AI開発ツールの普及で開発生産性が上がるほど、「工数×単価」で稼ぐSIer・受託のビジネスモデルとは矛盾が生じる、との議論が改めて広がっている。生産性が上がれば顧客は値下げを求め、内製化のハードルも下がるためだ。人手を出すだけの受託は縮み、上流の設計やAI活用の組み込みで価値を示せるかが分かれ目になる。SES・受託の会社ほど、提供価値を“工数”から“成果と設計”へ移す備えが要る。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">note（現役エンジニア解説）</span><a class="go" href="https://note.com/awesome_engineer/n/n16ea962e702b">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">イオンリテール、予測AIを約380店に導入──発注作業の時間を平均50%削減、在庫は30%減</div>
+      <p class="sum">イオンリテールは日本IBMと共同開発した需要予測AI「AIオーダー」「AIカカク」を約380店に導入し、発注作業の時間を平均50%削減、在庫も平均30%減らしたという。ベテランの勘に頼っていた発注を、AIの予測で標準化した形だ。「なんとなく便利」ではなく「何割減った」という数字で語れる段階に来ている。同規模・同業の実績を示すと、導入をためらう経営層にも効果が伝わりやすい。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">パナソニックIS</span><a class="go" href="https://service.is-c.jpn.panasonic.com/column/generative_ai">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">営業3.6万人にAIアシスタント、全社1万人で年44.8万時間削減──“全社展開”の実例が積み上がる</div>
+      <p class="sum">明治安田生命はAIエージェント「MYパレット」を営業職3万6,000人に配り訪問準備や報告作業を短縮、パナソニック コネクトは自社AI「ConnectAI」を全社員約1万1,600人に展開し年44.8万時間を削減したと発表している。一部門の試験導入から「全社で使う」段階へ進む企業が増えてきた。中小・士業のDX伴走でも、まず定型業務を一つに絞って数字を出し、そこから横展開する進め方がそのまま使える。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">パナソニックIS</span><a class="go" href="https://service.is-c.jpn.panasonic.com/column/generative_ai">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">プロンプトインジェクションが「AIエージェント最大の弱点」に──攻撃は前年比340%増</div>
+      <p class="sum">巧妙な指示文でAIに本来の命令を無視させる「プロンプトインジェクション」が、2026年のAIにとって最大級の脅威とされ、攻撃は前年比340%増との報告がある。AIは「システムの指示」と「利用者の入力」を同じ文章として読むため、両者を見分けにくいのが根本原因だ。社外の文章やメールを読ませて自動処理させるAIほど危ない。AIを業務に入れる前に「何を読ませ、何を実行させるか」の線引きを点検する――健診の入り口として分かりやすい論点だ。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Help Net Security</span><a class="go" href="https://www.helpnetsecurity.com/2026/06/11/owasp-prompt-injection-ai-security-failures/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">開発補助AIに深刻な穴──PR説明文に隠した指示で遠隔実行、GitHub Copilotの脆弱性はCVSS 9.6</div>
+      <p class="sum">プログラム開発を助けるAI「GitHub Copilot」で、変更依頼（プルリクエスト）の説明文に隠した指示を読ませて任意のコードを遠隔実行できる脆弱性（CVE-2025-53773）が明らかになり、危険度はCVSS 9.6と極めて高い評価がついた。AIが読み込む“外部の文章”そのものが攻撃口になりうることを示す。開発や業務でAIに外部データを読ませる場合は、権限を絞り、実行の前に人が挟まる設計にしておく――継続点検の価値をそのまま示せる事例だ。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Cycode</span><a class="go" href="https://cycode.com/blog/ai-security-vulnerabilities/">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
