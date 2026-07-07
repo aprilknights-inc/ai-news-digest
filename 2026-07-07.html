@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-07-07</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.07.07 TUE</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">火曜の朝の主題は「速さ・安さ」と「勢力図」。Googleは画像を約4秒で作れる格安モデルと、テキストから動画を作るモデルを開発者に開放し、生成メディアが一段と手軽になった。今月はGeminiの正式版やOpenAIの新モデルの一般開放も控え、主要モデルが出そろう。一方で、世界の開発者が実際に使うモデルの勢力図は静かに塗り替わり、米国製の利用シェアが1年で7割から3割へ、中国勢がそれを逆転した。株は半導体の実需が続くなか物色の的が移り、現場ではAIを踏み台にした新しい攻撃への警戒が強まる。動いた朝を6つの切り口で。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>本日7月7日の焦点は「生成AIの低価格化」と「利用シェアの地殻変動」。Googleは画像生成の高速・低価格モデル「Nano Banana 2 Lite」（1枚あたり約4秒・1,000枚で約0.034ドル）と、テキストや画像から動画を作る「Gemini Omni Flash」を開発者向けに公開し、画像・動画の生成コストが一段と下がった。今月中にはGemini 3.5 Proの正式版やOpenAIのGPT-5.6の一般開放も見込まれ、主要モデルが出そろう見通し。利用実態の面では、開発者が実際にAPIで使うモデルの集計サービスOpenRouterで、米国製モデルの利用シェアが1年前の約70%から約30%へ低下し、DeepSeekやQwenなど中国製が合計45%超と逆転した。市場では、半導体への実需が続くなかで資金が上流のメモリ・製造銘柄へ移り、キオクシアが上場来高値をつける一方、好決算のNvidiaは年初来で伸び悩んだ。セキュリティ面では、開発支援AIに指示を紛れ込ませてコードを実行させる脆弱性の報告が相次ぎ、AIエージェントを狙う攻撃への備えが実務課題になっている。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">Google、画像を約4秒で作る格安モデルと動画生成モデルを投入──生成メディアが一段と安く速く</div>
+      <p class="sum">Googleが、画像生成の高速・低価格モデル「Nano Banana 2 Lite」と、テキスト・画像・動画を入力に短い動画を作る「Gemini Omni Flash」を開発者向けに公開した。画像は1枚あたり約4秒、1,000枚で約0.034ドルと安く、動画は1秒あたり0.10ドル。まず高速モデルで画像を作り、それを動画モデルに渡して動かす、といった組み合わせも想定されている。AIで画像や短い動画を作る費用が、資料作成やSNS運用でも気軽に使える水準まで下がってきた、という動き。凝ったツールを入れずとも、身近な販促物づくりから試せる段階になっている。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">Google (blog.google)</span><a class="go" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-flash-nano-banana-2-lite/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">今月は主要モデルが出そろう見通し──GeminiとGPTの新型が7月中に一般開放へ</div>
+      <p class="sum">各社の公開予定をまとめた集計では、Googleの「Gemini 3.5 Pro」の正式版と、OpenAIの新モデル群「GPT-5.6」の幅広い一般開放が、いずれも7月中に見込まれている。あわせて、米ホワイトハウスと主要ラボが詰めている「最新モデルの公開ルール」の発表も近いとされる。数週間のうちに主要な最新モデルが一通り出そろい、選択肢が増える局面に入る。今すぐ全部を追う必要はないが、「どのモデルを標準に据えるか」を決めるのは、出そろってからでも遅くない。導入を検討中なら、今は情報を集めておく時期という整理でよい。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">LLM-Stats</span><a class="go" href="https://llm-stats.com/llm-updates">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">「米国製AIのシェアが70%→30%に急落、中国勢が逆転」──OpenRouterの利用データがAI界隈で話題</div>
+      <p class="sum">開発者が実際にAPIで使うモデルを集計するサービスOpenRouterで、米国製モデルの利用シェアが1年前の約70%から約30%へ下がり、DeepSeekやQwen（アリババ）など中国製が合計45%超と逆転した、というデータがAI技術者や投資家の間で大きな話題になっている。安く高性能な公開モデルが増え、コスト重視でそちらに流れた形だ。ただし、業務データを中国製モデルに送ることへの懸念も同時に指摘されている。「どのモデルが安いか」だけでなく「どこにデータを預けるか」まで含めて選ぶ目線が要る、という論点。安さに飛びつく前に、預けてよい情報かを確かめる一手間が効く。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">OfficeChai</span><a class="go" href="https://officechai.com/ai/share-of-us-models-being-used-on-openrouter-has-collapsed-from-70-to-30-over-the-past-year/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">Anthropicの「月100万ドル超」法人顧客が2か月で倍増し1,000社超え──企業への定着が話題に</div>
+      <p class="sum">Anthropicで、年換算にして100万ドル（約1.5億円）以上を支払う大口の法人顧客が、2月時点の約500社から7月初旬には1,000社超へと、2か月足らずで倍増したと報じられ、AIコミュニティで注目されている。同社の年換算売上も300億ドル規模に達した。派手な話題より「企業が業務でどれだけ本気で使い込むか」が伸びの中身だ、という受け止めが広がっている。裏を返せば、AIは一度使い始めると業務に深く根を張り、支出が増えていくということ。だからこそ最初の入れ方――どの業務から、どう根付かせるか――の設計が効いてくる。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">Anthropic</span><a class="go" href="https://www.anthropic.com/news">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">Nvidia、好決算でも2026年は株価さえず──半導体指数は年初来+79%、資金は他銘柄へ分散</div>
+      <p class="sum">Nvidiaは直近四半期に売上高816億ドル（前年同期比約85%増）と過去最高を更新したが、2026年に入ってからの株価はほぼ横ばいにとどまる。一方で半導体株の指数（SOX）は年初来で約79%上昇しており、AIの主役だったNvidia一極から、他の半導体銘柄へと資金が広がっている構図だ。次世代の「Vera Rubin」世代の量産が下期の株価を押し上げる材料と見られている。「AI株＝Nvidia」という単純な図式が崩れ、物色の的が移りつつある、という市況。個別銘柄の値動きと、AI向けの土台の実需は分けて見たい局面だ。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">The Motley Fool</span><a class="go" href="https://www.fool.com/investing/2026/06/29/nvidia-stock-has-underperformed-the-semiconductor/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">AIマネー、上流の半導体・メモリへ──キオクシアが上場来高値、時価総額30兆円超</div>
+      <p class="sum">AI向けの資金が、クラウド事業者から一段上流の半導体・メモリ銘柄へと移っているとの見方が広がっている。日本ではメモリ大手のキオクシアが上場来高値を更新し、時価総額が30兆円を超えた。AIの学習・推論には大量の高速メモリが要るため、その需要が業績と株価を押し上げている。データセンター投資が続く限り、部品側の需要は当面底堅い、という読みだ。AI相場を語る際は、目立つ完成品メーカーだけでなく、その裏で不可欠な部品を作る会社まで視野に入れると、話に厚みが出る。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">TradingKey</span><a class="go" href="https://www.tradingkey.com/jp/analysis/stocks/us-stocks/262007983-largest-company-us-stock-nvidia-google-apple-microsoft-amazon-2026-tradingkey">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">「人並みの実装力だけ」のSI人材は淘汰へ──生成AIの進化で残る人・消える人が分かれる</div>
+      <p class="sum">生成AIがコードを書けるようになったことで、「決められた仕様どおりに実装するだけ」の人材は最も早く影響を受ける、との指摘が広がっている。逆に、業務の中身に詳しい・複雑なシステムを設計できる・AIをうまく使いこなせる人材の価値はむしろ上がる、という二極化だ。人を工数として提供するだけの受託は縮み、AI活用の設計や成果で価値を示せる会社・個人が残る。人を出す側にとっては、既存メンバーを「実装役」から「設計・段取り役」へ育て直せるかが、そのまま単価と受注力を左右する。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">エンジニアtype</span><a class="go" href="https://type.jp/et/feature/28245/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">「AIがコードを書く時代」にSIerは何者になるべきか──人月モデルの終わりと、その先の道</div>
+      <p class="sum">AIがコード生成やテストを肩代わりするほど、「作業量（人月）に応じて請求する」従来の受託モデルは成り立ちにくくなる、との分析が出ている。下請けが担ってきた実装工程が直撃を受け、発注量の減少や単価の引き下げ圧力は一部で現実になりつつある。求められる役割は、実装そのものより「何を作るべきかを決め、AIに的確に指示し、成果を保証する」側へ移る。提供価値を“工数”から“成果”へ移せるかが、SES・SIerの生き残りを分ける。備えは早いほど選択肢が多い、という段階だ。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">ネットコマース</span><a class="go" href="https://www.netcommerce.co.jp/blog/2026/04/25/27191">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">中小企業のAI導入率は20.4%、前向きは約4割──使うなら「生成AI」が8割超</div>
+      <p class="sum">中小企業基盤整備機構の2026年調査で、中小企業のAI導入率は20.4%、「検討中」を合わせると約39%が前向きだった。導入済み企業が使うサービスは「生成AI」が82.6%と最多。導入目的は「業務効率化・時間短縮」が87%で、実際に付加価値創出につながったとの回答は従来型ITの約3倍に上る。「関心はあるが、何から手をつけるか決めきれない」中小の姿が数字で見える、ということ。まず一つの業務でどれだけ手間が減ったかを数字で出し、そこから横に広げる――という進め方が、様子見の相手を動かす入り口になる。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">DataCrew</span><a class="go" href="https://note.com/datacrew/n/n0aedeb23c959">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">「月120時間を削った」中小の生成AI活用30事例──小さな定型業務から始める型</div>
+      <p class="sum">中小企業が生成AIで月120時間分の作業を削減した、という現場事例をまとめた記事が公開された。メール文面や議事録の下書き、問い合わせ対応、資料の要約といった、失敗しても痛くない定型業務から一つずつ切り出しているのが共通点だ。いきなり難しい業務を任せず、身近な繰り返し作業から入るのが定着のコツ、という実践知が並ぶ。大手の派手な事例より、こうした「自分の会社でもできそう」な粒度の話の方が、士業や中小の現場には響きやすい。伴走の最初の一歩を具体化する材料になる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">LiftBase</span><a class="go" href="https://liftbaseinc.com/column/generative-ai-use-cases">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">開発支援AIに“仕込んだ指示”でコードを実行──GitHub Copilot等で深刻な脆弱性が相次ぐ</div>
+      <p class="sum">GitHub Copilotなどの開発支援AIで、リポジトリの説明文やIssueに悪意ある指示をこっそり紛れ込ませると、AIがそれを命令と受け取り、開発者のPC上で勝手にコードを実行してしまう脆弱性（CVE-2025-53773ほか）の報告が相次いでいる。バックドア設置や機密トークンの流出につながる実証も示された。AIが「読み込んだ文章」と「実行してよい命令」を区別できないことが根っこにある。社外由来の文章を読ませて自動処理させるAIほど危ない、という典型例だ。AIを組み込んだ仕組みほど、公開前に第三者が安全性を点検する意味が大きい――健診の必要性をそのまま示せる論点になる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Embrace The Red</span><a class="go" href="https://embracethered.com/blog/posts/2025/github-copilot-remote-code-execution-via-prompt-injection/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">プロンプトインジェクションが前年比340%増──法人の88%が「AIエージェント関連のインシデント」を経験</div>
+      <p class="sum">AIに紛れ込ませた指示で意図しない動作をさせる「プロンプトインジェクション」が、OWASPで最重要のAI脅威（LLM01）に位置づけられ、攻撃は前年比340%増と報告されている。ある法人調査では、88%の組織が過去1年でAIエージェント絡みのセキュリティ被害（疑い含む）を経験したという。AIを業務に組み込む企業が増えるほど、狙われる入り口も増えている、ということ。「何を読ませ、何を実行させるか」の線引きと、実行前に人が確認を挟む設計を、継続的に点検する意味が増している。AIを入れた後の“定期健診”の価値を、そのまま平易に話せる切り口だ。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Securance</span><a class="go" href="https://www.securance.com/blog/prompt-injection-the-owasp-1-ai-threat-in-2026/">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
