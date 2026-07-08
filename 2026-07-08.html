@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-07-08</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.07.08 WED</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">水曜の朝は「土台のつまずき」と「勢力図の続き」。AIの計算を担う最上位の機械で、Nvidiaの次世代ラックが基板の製造難で2028年へ遅れると報じられ、半導体株が揺れた（Nvidiaは否定）。一方、実際に開発者が使うモデルは中国製が着実に浸透し、コスト高が米国勢からの流出を後押しする。今月中にはGeminiやGPTの新型が広く開放される見通しで、選べる手札は増える。現場のDXは中小の導入が数字で見え始め、AIを入れた後の“安全点検”の必要も一段と具体的に。動いた朝を6つの切り口で。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>本日7月8日の焦点は「AI基盤のつまずき」と「モデル勢力図の継続」。調査会社SemiAnalysisは、Nvidiaの次世代AIラック「Kyber（NVL144）」が特殊な多層基板の製造難から2027年→2028年へ遅れると報じ、関連チップ株が一時売られた（Nvidiaは「ロードマップは無傷」と否定）。モデル面では、OpenAIやAnthropicの利用コスト上昇を背景に、中国製モデルが米企業でも採用を伸ばし、Z.aiの「GLM 5.2」は集計サービスVercelで2026年最速の普及（週次でトークン量が約27倍）を記録した。主要モデルの整備も進み、Googleの「Gemini 3.5 Pro」（文脈200万トークン）は7月中の一般公開へ最終調整、OpenAIの新モデル群「GPT-5.6」も7月中盤以降に幅広い開放が見込まれる。国内ではSES現場でAIエージェント開発者の単価が月90〜120万円超と最高水準に上がる一方、中小企業のAI導入は2割強と歩みは着実。セキュリティでは、AIに紛れ込ませた指示で誤作動させる「プロンプトインジェクション」への備えが、AI導入企業の実務課題として重みを増している。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">Google「Gemini 3.5 Pro」7月中の一般公開へ最終調整──文脈200万トークン、当面は企業向け限定</div>
+      <p class="sum">Googleの最新モデル「Gemini 3.5 Pro」が、当初の6月から遅れて7月中の一般公開に向け最終調整に入っている。一度に扱える文書量（文脈）は競合の倍にあたる約200万トークンで、長い資料や大量の社内文書をまとめて読ませる使い方に強いとされる。7月7日時点では一部の企業向けに限定提供の段階で、正式な公開日は未定。数週間のうちにGeminiとGPTの新型が出そろい、「どれを社内標準にするか」を選べる局面に入る、という流れだ。今すぐ全部を追う必要はないが、導入検討中なら情報を集めておく好機。決めるのは出そろってからでも遅くない。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Zoombangla / TechTimes</span><a class="go" href="https://inews.zoombangla.com/google-gemini-35-pro-launch-july-2026-context-window/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">OpenAI「GPT-5.6」、7月中盤以降に幅広い開放へ──高性能のSol・中庸のTerra・高速廉価のLunaの3階層</div>
+      <p class="sum">OpenAIの新モデル群「GPT-5.6」は、最上位「Sol」・バランス型「Terra」・高速で安い「Luna」の3階層構成で、現在は政府審査を経た約20の組織に限定提供されている。幅広い一般開放は7月中盤から後半に見込まれる。用途に応じて「賢さ」と「安さ・速さ」を選び分けられる形で、業務ごとに使うモデルを分ける設計が一般的になりつつある。全部を最上位でそろえる必要はなく、単純作業は安いモデル、難しい判断だけ賢いモデル、と役割分担する発想が費用対効果を左右する。導入時の“モデル選び”が、そのまま運用コストに効いてくる段階だ。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">LLM-Stats</span><a class="go" href="https://llm-stats.com/llm-updates">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">「中国製AIが米企業に浸透」──Z.aiのGLM 5.2が2026年最速の普及、コスト高が流出を後押し</div>
+      <p class="sum">OpenAIやAnthropicの利用コスト上昇を背景に、中国製の高性能モデルが米国企業でも採用を伸ばしている、との報道がAI界隈で話題になっている。Z.aiの「GLM 5.2」は集計サービスVercelで2026年最速の普及を記録し、公開後1週間で日次のトークン量が約27倍、利用企業数が約80倍に増えた。ある指標ではAnthropicの最上位に肉薄する性能を、約5分の1のコストで出したとされる。「安くて十分使える」公開モデルが選ばれ始めた、という潮流だ。ただし業務データをどのモデル（どの国のサービス）に預けるかは別問題。安さの裏で「預けてよい情報か」を確かめる目線が要る。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">CNBC</span><a class="go" href="https://www.cnbc.com/2026/07/07/chinese-ai-models-costs-us-openai-anthropic.html">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">Claude最上位「Fable 5」復帰直後に不具合報告──「簡単な作業で旧型に切り替わる」との声が相次ぐ</div>
+      <p class="sum">米政府の輸出規制解除を受け7月1日に復帰したAnthropicの最上位モデル「Fable 5」について、復帰直後からRedditやXの開発者コミュニティで「日常的なコーディングやデバッグで、旧型のOpus 4.8に自動的に切り替わってしまう」との報告が相次いだ。復帰にあたっては安全機構の追加や利用枠の段階的開放といった条件が付いており、その影響ではとの見方も出ている。最新・最上位を指定しても、実際には別のモデルが応答している場合がある、という実務上の落とし穴だ。「一番いいモデルを使っているつもり」でも、出力の品質や挙動は都度確かめる一手間が要る、という教訓になる。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">AI Weekly（Anthropic tracker）</span><a class="go" href="https://aiweekly.co/ai-news-today/anthropic-news">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">Nvidia次世代AIラック「Kyber」、基板の製造難で2028年へ遅延と報道──チップ株に動揺、当社は否定</div>
+      <p class="sum">調査会社SemiAnalysisは、Nvidiaの次世代AIラック「Kyber（NVL144）」が、内部の接続を担う特殊な78層基板の量産が難しく、2027年の予定から2028年へ遅れる見通しだと報じた。144個の最新GPUを1台に高密度で詰め込む設計がつまずいた形で、つなぎ役だった別方式のラックも取りやめになったという。報道を受け関連する半導体株が一時売られた。Nvidiaは「ロードマップは無傷」と反論し、遅延を認めていない。AIの土台となる最上位の機械づくりは限界に近い難しさに入っている、という象徴的な話題だ。個別の遅延報道と、データセンター全体の底堅い実需は分けて眺めたい局面。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">24/7 Wall St. / CNBC</span><a class="go" href="https://247wallst.com/investing/2026/07/07/a-circuit-board-problem-just-delayed-nvidias-next-ai-system-to-2028-and-chip-stocks-are-already-feeling-the-fallout/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">Nvidia、好決算でも2026年の株価は横ばい──半導体指数は年初来+79%、資金は他銘柄へ分散</div>
+      <p class="sum">Nvidiaは直近四半期も過去最高の売上を更新したが、2026年に入ってからの株価はほぼ横ばいにとどまる。一方で半導体株の指数（SOX）は年初来で約79%上昇しており、AIの主役だったNvidia一極から、他の半導体銘柄へと資金が広がっている構図だ。次世代「Rubin」世代の量産が前倒しになるとの観測が、下期の株価を押し上げる材料と見られている。「AI株＝Nvidia」という単純な図式が崩れ、物色の的が移りつつある、という市況。個別銘柄の値動きと、AI向けの土台の実需は分けて見たい局面だ。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">The Motley Fool</span><a class="go" href="https://www.fool.com/investing/2026/06/29/nvidia-stock-has-underperformed-the-semiconductor/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">世界の半導体市場、2026年は1.3兆ドルへ上方修正──BofAが強気、2030年に2兆ドル規模も</div>
+      <p class="sum">バンク・オブ・アメリカは、世界の半導体市場が2026年に1.3兆ドル（前回予想1.0兆ドルから3割上振れ）に達するとの見通しを示した。2030年には2兆ドル規模へ倍増する可能性も指摘する。AIの学習・推論に必要な高速な半導体やメモリの需要が、市場全体を押し上げている。足元では次世代ラックの遅延報道もあるが、投資の大きな流れとしてはデータセンター需要が当面の下支えになる、という強気の読みだ。AI相場を語る際は、目立つ完成品メーカーだけでなく、その裏で不可欠な部品を作る会社まで視野に入れると、話に厚みが出る。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Intellectia AI</span><a class="go" href="https://intellectia.ai/blog/ai-semiconductor-stocks-july-2026">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">AIエージェント開発者のSES単価が最高水準に──月90〜120万円超、使える人材は需要の5%以下</div>
+      <p class="sum">実案件データをまとめた記事によると、AIエージェント（自律的にタスクをこなすAI）を開発できるエンジニアのSES月単価は90〜120万円超と2026年で最高水準に達している。LangGraphやCrewAIといった開発ツールを両方使いこなせる人材は、需要に対して供給が5%以下と極端に不足しているという。AIを「使う側」の実装ではなく「AIに仕事をさせる仕組み」を作れる人材に、単価が大きく振れている構図だ。人を出す側にとっては、既存メンバーをこの新しい領域へ育て直せるかが、そのまま単価と受注力を左右する。学び直しの投資対象がはっきりしてきた、という段階といえる。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">Heyday</span><a class="go" href="https://lp.hydy.jp/blog/ai-agent-engineer-ses-tanka">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">生成AIで「人月ビジネス」に陰り──細切れ・スポット案件が増え、SES/SIerに問われる存在意義</div>
+      <p class="sum">生成AIがコードを書けるようになったことで、数名を数か月常駐させ工数（人月）で売上を積む従来型の案件が取りにくくなっている、との分析が出ている。代わりに、短期・スポット、AIが作ったものの手直し、試作の検証といった細切れの案件が増加。企業が最も採りたいのは「現場リーダー」（採用意向で最多）で、要件の曖昧さを整理し人とAIをまとめられる人材に需要が集まる。求められる役割が「実装」から「段取り・設計」へ移る、という流れだ。人を出す側は、メンバーを実装役から設計・調整役へ引き上げられるかが生き残りを分ける。備えは早いほど選択肢が多い。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">エンジニアtype</span><a class="go" href="https://type.jp/et/feature/28078/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">中小企業のAI導入率は20.4%、前向きは約4割──使うなら「生成AI」が8割超、目的は業務効率化</div>
+      <p class="sum">2026年の調査で、中小企業のAI導入率は20.4%、「検討中」を合わせると約39%が前向きだった。導入済み企業が使うサービスは「生成AI」が最多で、導入目的は「業務効率化・作業時間の短縮」が87%を占める。一方で本格活用は一部にとどまり、多くはまだ試験段階という現状も見える。「関心はあるが、何から手をつけるか決めきれない」中小の姿が数字で見える、ということ。まず一つの業務で手間がどれだけ減ったかを数字で出し、そこから横に広げる――という進め方が、様子見の相手を動かす入り口になる。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">DataCrew</span><a class="go" href="https://note.com/datacrew/n/n0aedeb23c959">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">「月38時間を削減」中小の生成AI活用事例──小さな定型業務から段階的に、投資対効果を最大化</div>
+      <p class="sum">生成AIツールで月平均38時間（年間約456時間、約57日分）の業務時間を削減した中小企業の事例が紹介された。共通点は、メール文面や議事録の下書き、問い合わせ対応、資料の要約といった、失敗しても痛くない定型業務から一つずつ切り出していること。いきなり難しい業務を任せず、身近な繰り返し作業から段階的に広げるのが定着のコツ、という実践知が並ぶ。大手の派手な事例より、こうした「自分の会社でもできそう」な粒度の話の方が、士業や中小の現場には響きやすい。伴走の最初の一歩を具体化する材料になる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Cyvate</span><a class="go" href="https://cyvate.co.jp/ai/438/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">「情報セキュリティ10大脅威 2026」──AIを悪用した攻撃・生成AI由来のリスクが上位に</div>
+      <p class="sum">IPAが毎年まとめる「情報セキュリティ10大脅威」の2026年版を解説した記事によると、ランサムウェアや標的型攻撃といった定番の脅威に加え、生成AIを悪用した攻撃や、AIを業務に組み込むことで生じる新たなリスクが存在感を増している。AIが攻撃側の道具にも、守るべき対象にもなっている、という構図だ。企業がAIを導入するほど、その入り口を狙われる可能性も広がる。「何を守るか」の一覧に“自社が入れたAIそのもの”を加える必要が出てきた、ということ。導入して終わりではなく、定期的に安全性を点検する意味が増している――健診事業の必要性をそのまま説明できる論点になる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">LAC WATCH</span><a class="go" href="https://www.lac.co.jp/lacwatch/service/20260324_004680.html">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">プロンプトインジェクションとは──AIに“仕込んだ指示”で誤作動、情報漏えいや不正実行のリスク</div>
+      <p class="sum">「プロンプトインジェクション」は、AIへの入力に悪意ある指示をこっそり紛れ込ませ、意図しない動作をさせる攻撃手法。大規模言語モデルは「読ませた文章」と「従うべき命令」を厳密に区別できない、という根本的な弱点があるためだ。生成AIをサービスに組み込む企業では、機密情報の漏えい、不正なコマンド実行、評判を損なう不適切な出力などにつながりうる。対策として、ガバナンス整備・技術的な防護柵・第三者による検証（レッドチーム）の三段構えが標準になりつつある。社外の文章を読ませて自動処理させるAIほど危ない、という典型例。AIを入れた後の“定期健診”の価値を平易に語れる切り口だ。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">AIセキュリティ</span><a class="go" href="https://aisecurity.co.jp/article/2984">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
