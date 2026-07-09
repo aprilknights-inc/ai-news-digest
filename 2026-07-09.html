@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-07-09</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.07.09 THU</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">木曜の朝は「開放」がテーマ。政府の要請で一部に絞られていたOpenAIの最新モデル「GPT-5.6」が本日ついに一般公開へ。用途で選べる3つの階層と、聞きながら話せる新しい音声AI「GPT-Live」がそろって世に出る。株の世界ではサムスンの決算がAIメモリ需要で桁違いに跳ね、資金も半導体へ流れ続ける。現場では大企業の生成AI活用が「年間何十万時間削減」という具体的な数字で語られ始めた。一方で、AIを組み込むほど狙われる――大手の情報流出やエージェントの事故も現実になっている。開いていく朝を6つの切り口で。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>本日7月9日の焦点は、OpenAIの最新モデル「GPT-5.6」の一般公開。米政府の要請で約2週間、一部の提携先だけに絞られていた提供が解かれ、最上位「Sol」・中庸「Terra」・高速廉価「Luna」の3階層がChatGPT・Codex・APIで広く使えるようになる（API価格は100万トークンあたりSolが入力5ドル/出力30ドル、Lunaが1ドル/6ドル）。あわせて、聞きながら話せる新しい音声モデル群「GPT-Live」も登場し、無料枠はmini、有料枠は上位版が動く。GoogleのGemini 3.5 Proはトークン効率やコード性能の課題で一般公開の日程が定まらず、足踏みが続く。マーケットではサムスン電子の4〜6月期営業利益がAI向けメモリ高騰で前年同期比約19倍に急伸し、世界の半導体市場は2026年に前年比約26%増の9,755億ドルへ拡大する見通し。DXの現場では、パナソニック コネクトが自社AIで年間44.8万時間の削減を報告するなど大企業の活用が数字で見え始めた。セキュリティ面では、アクセンチュアで約35GBの情報流出が起き、AIエージェントを導入した企業の約88%が関連インシデントを経験したとの調査も出て、「AIを入れた後の点検」の重みが増している。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">OpenAI「GPT-5.6」本日一般公開──Sol・Terra・Lunaの3階層、政府の限定提供が解除に</div>
+      <p class="sum">米政府の要請で約2週間、一部の提携先だけに絞られていたOpenAIの最新モデル「GPT-5.6」が、本日7月9日に一般公開される。最上位「Sol」・バランス型「Terra」・高速で安い「Luna」の3階層構成で、ChatGPT・開発ツールCodex・APIから順次使えるようになる。API価格は100万トークンあたりSolが入力5ドル/出力30ドル、Terraが2.5ドル/15ドル、Lunaが1ドル/6ドルと、用途と予算で選び分けられる形だ。単純作業は安いLuna、難しい判断だけ賢いSol――と役割分担する使い方が、そのまま運用コストに効いてくる段階。導入検討中なら「どの階層をどの業務に」を設計するのが最初の勘所になる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">CNBC / OpenAI</span><a class="go" href="https://www.cnbc.com/2026/07/08/openai-expanding-gpt-5point6-ai-model-release-ending-government-limits.html">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">Google「Gemini 3.5 Pro」は一般公開の日程なお定まらず──トークン効率とコード性能の課題で足踏み</div>
+      <p class="sum">対するGoogleの最新モデル「Gemini 3.5 Pro」は、当初の6月から遅れたうえ、7月に入っても正式な一般公開日が定まっていない。現在も一部の企業向け（Vertex AI）に限定提供の段階で、Google側はトークンの使い方の効率やコード生成の性能面での詰めを理由に挙げているという。数週間のうちにGPTとGeminiの新型が出そろう見通しではあるが、公開のペースには差が出ている。あわてて一つに決めず、両者が正式にそろってから業務ごとに比べる、という進め方でも遅くない局面だ。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">LLM-Stats</span><a class="go" href="https://llm-stats.com/llm-updates">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">OpenAI、音声AI「GPT-Live」を投入──聞きながら話せて「本物の会話みたい」と話題、車載も対応</div>
+      <p class="sum">OpenAIはGPT-5.6の一般公開にあわせ、新しい音声モデル群「GPT-Live」を発表した。相手の声を聞きながら同時に話せる設計で、間の取り方が自然になり「まるで本物の会話のよう」と開発者コミュニティで話題になっている。上位版「GPT-Live-1」は有料プラン、軽量版の「mini」は無料枠で動き、iOS・Android・Web、さらに車載のCarPlayにも対応する。テキストのやり取りが中心だった業務AIが、電話や窓口のような「話して使う」場面へ広がる兆し。問い合わせ対応や社内ヘルプデスクなど、声で使う用途を試す好機になりそうだ。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">SiliconANGLE / 9to5Mac</span><a class="go" href="https://siliconangle.com/2026/07/08/openai-launches-gpt-live-voice-model-series-ahead-broad-gpt-5-6-release/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">Anthropic、カナダ・アルバータ州政府の事例を公開──Claudeで政府システムの脆弱性を発見・修正</div>
+      <p class="sum">Anthropicは7月6日、カナダ・アルバータ州政府がAI「Claude」を使い、行政システム全体のセキュリティ上の弱点を洗い出して修正した事例を公開した。AIが攻撃の道具として語られがちな一方で、「守る側の点検役」としても実際に成果を出し始めている、という構図だ。専門人材が足りない組織でも、AIに一次的な安全点検を任せて弱点を早く見つける、という使い方が現実味を帯びてきた。人がゼロから全部を見るのではなく、AIで当たりをつけて人が確認する――この分業は、中小や自治体の「守り」の入り口として分かりやすい題材になる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Anthropic</span><a class="go" href="https://www.anthropic.com/news">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">サムスン電子、4〜6月期の営業利益が前年同期比約19倍──AI向けメモリの高騰が業績を押し上げ</div>
+      <p class="sum">韓国の半導体大手サムスン電子が発表した2026年4〜6月期の営業利益は、前年同期比で約19倍に急伸した（報道ベースで約9兆円規模）。AIの学習・推論に不可欠な高速メモリの価格が高騰し、業績を大きく押し上げた形だ。AI相場というと目立つGPUメーカーに目が向きがちだが、その裏で不可欠な「記憶役」の部品も需給が締まり、稼ぎ頭になっている。AIブームの恩恵は完成品メーカーだけでなく部品の川上まで広がっている――と押さえておくと、市況の話に厚みが出る。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">日本経済新聞</span><a class="go" href="https://www.nikkei.com/article/DGXZQOGM061OI0W6A700C2000000/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">世界の半導体市場、2026年は前年比約26%増の9,755億ドルへ──AI需要が全体を牽引</div>
+      <p class="sum">2026年の世界半導体市場は前年比26.3%増の9,755億ドルに達する見通しで、AI向け半導体の需要が市場全体を押し上げている。米ビッグテックやソフトバンク・OpenAIによる巨大データセンターの建設計画が、AI用チップの需要を継続的にけん引する構図だ。個別の遅延報道はあっても、データセンター投資という大きな流れは当面の底堅い下支えになる、との読み。AIの話を「どこにお金が流れているか」で語ると、経営層にも伝わりやすい。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">coevo（Stockmark）</span><a class="go" href="https://aconnect.stockmark.co.jp/coevo/semiconductor-2026/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">2026年上半期の国内スタートアップ資金調達、AI関連が全体の23%で最大の集金力に</div>
+      <p class="sum">2026年上半期、日本のスタートアップは132件で計1,377億円を調達し、うちAI関連が31件・全体の23%を占めて最大の資金の受け皿になった。AIが「一つの独立した業種」として投資家の資金を吸い込む段階に入った、という分析だ。海外の巨額投資だけでなく、国内でもAIにお金が集まっている――足元の実感として使える数字。伴走やDX支援を語るとき、「今この分野に資本が向かっている」という背景づけになる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">UnicornFarm</span><a class="go" href="https://portal.unicornfarm.jp/insights/58a7ed4c-c5e5-4928-addb-2efa7dbc496d">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">生成AI・LLM実装スキルに高単価が集中──GPT/Claude/Gemini API連携の経験者で月100〜150万円超</div>
+      <p class="sum">2026年のSES市場で最も単価上昇が目立つのが、生成AI・LLMを業務システムに組み込む実装スキルだ。GPT・Claude・GeminiのAPIを使ったシステム構築の経験者は、月単価100〜150万円超の案件も珍しくないという。単に「AIを使える」だけでなく、既存の業務システムに安全につなぎ込める人材に価値が寄っている。人を出す側にとっては、既存メンバーをこのAPI連携・実装の領域へ育て直せるかが、そのまま単価と受注力を左右する。学び直しの投資先がはっきりしてきた段階だ。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">KOTORA JOURNAL / セラク</span><a class="go" href="https://www.kotora.jp/c/57482/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">SES経営者が語る「AIエージェント時代の単価のリアル」──現場で何が起きているか</div>
+      <p class="sum">現役のSES経営者が、AIエージェント（自律的に作業をこなすAI）が広がる中でエンジニア単価に何が起きているかを実感ベースで綴った記事が読まれている。AIが定型的な実装を肩代わりし始めたことで、単純なコーディング要員の価値は下がり、要件を整理し人とAIをまとめる役割に単価が振れている、という現場感だ。数字の相場表だけでなく、こうした経営者の生の声は「これからどんな人材を育て、どう売るか」を考える材料になる。備えは早いほど選択肢が多い、という点は共通している。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">note（福井挙）</span><a class="go" href="https://note.com/tfukui0719/n/n35742f19e5bb">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">パナソニック コネクト、自社AIアシスタントで年間44.8万時間を削減──全社員約1万1,600人に展開</div>
+      <p class="sum">パナソニック コネクトは、自社開発の生成AIアシスタント「ConnectAI」を全社員約1万1,600人に展開し、年間で44.8万時間分の業務削減を達成したと報告している。資料作成の下書き、社内検索、問い合わせ対応といった日常業務の積み重ねが、全社で見ると大きな時間になって表れた形だ。派手な新規事業ではなく「みんなが毎日使う道具にする」ことで効果を出した点がポイント。中小や士業の現場でも、まず一つの定型業務で削減時間を数字にし、そこから横へ広げる――という進め方の手本になる。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">パナソニック IS</span><a class="go" href="https://service.is-c.jpn.panasonic.com/column/generative_ai">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">ベネッセ、自社AI「Benesse GPT」を社員1万5,000人に提供──業務の改善点をAIが洗い出す</div>
+      <p class="sum">ベネッセホールディングスは、グループ社員1万5,000人に向けて自社開発のAIチャット「Benesse GPT」を提供している。日々の問い合わせや文書作成を任せるだけでなく、AIが業務の中の改善点を挙げることで、人手が足りない中でも業務の見直しを効率的に進められたという。「AIに仕事を任せる」から一歩進んで「AIに業務のムダを見つけさせる」使い方だ。まず身近な繰り返し作業から任せ、効果を測って横に広げる、という定着の型は、規模を問わず参考にできる。伴走支援の最初の一歩を具体化する材料になる。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">パナソニック IS（事例集）</span><a class="go" href="https://service.is-c.jpn.panasonic.com/column/generative_ai">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">アクセンチュアで約35GBの情報流出──ソースコードやクラウドのアクセス鍵・暗号鍵まで持ち出し</div>
+      <p class="sum">大手コンサルのアクセンチュアが、7月初旬の不正侵入で約35GBのデータを盗まれたと報じられた。持ち出された中には、システムの設計図にあたるソースコードや、クラウド（Microsoft Azure）のアクセストークン、暗号化やサーバー接続に使う鍵まで含まれていたという。これらが漏れると、取引先のシステムにまで被害が波及しかねない。規模の大きい企業でも守り切れない、という現実を示す事例だ。委託先やAI導入先が増えるほど「入り口」も増える――誰がどの鍵を持っているかを定期的に点検する必要性を、平易に語れる題材になる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Cybersecurity Dive</span><a class="go" href="https://www.cybersecuritydive.com/news/accenture-data-breach-access-keys-source-code/824694/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">AIエージェント導入企業の約88%が「関連インシデントを経験」──平均被害は約4.7百万ドル規模</div>
+      <p class="sum">調査によると、自律的に作業するAIエージェントを業務に入れた企業のうち約88%が、そのエージェントに絡んだセキュリティ上の事故を少なくとも一度は経験しているという。1件あたりの平均被害は約470万ドル（数億円規模）に上り、報告されたAI関連の情報流出の8件に1件はエージェントが原因とされる。広い権限を持たせたAIが乗っ取られると被害が一気に広がる、という新しいリスクだ。「AIを入れて終わり」ではなく、どんな権限をどこまで与えたかを定期的に見直す――AIを入れた後の“定期健診”の価値を、そのまま説明できる論点になる。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Beam.ai / Shattered.io</span><a class="go" href="https://beam.ai/agentic-insights/ai-agent-security-breaches-2026-lessons">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
