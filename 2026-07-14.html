@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-07-14</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.07.14 TUE</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">火曜の朝の主役は、AIを会社の業務ソフトにつなぐ「共通の規格」を誰が握るか、という土台の綱引き。グーグルやマイクロソフトなどの大手連合が、この1年半でいつの間にか事実上の標準になっていたAnthropic発の接続方式「MCP」に対抗する動きを見せ、AIを実務に組み込む“配管”づくりが競争の焦点に浮上した。規制はEUのAI法が8月に本格適用、マーケットは半導体決算待ち——大局・株・現場・守りを、いつもの6つの切り口で。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>本日7月14日は、AIを業務ソフトへつなぐ「共通規格」を巡る主導権争いが表面化した。グーグルやマイクロソフト、セールスフォースなど大手が、この1年半で事実上の標準になったAnthropic発の接続規格「MCP」に対抗する共通仕様を推す構えを見せ、AIエージェントを企業システムに組み込む土台づくりが競争の焦点になってきた。規制面ではEUのAI法が8月2日に主要部分の全面適用を迎え、違反時は最大で年間売上高の7％という制裁金が視野に入る。マーケットでは半導体株が重く、13日の東京市場は1,315円安と大きく下げ、キオクシアは一時1割近く下落した。ただ受託生産大手TSMCの4〜6月売上は前年同期比36％増と好調で、16日の同社決算とASMLの15日決算がAI相場の方向を占う。現場ではベネッセや江崎グリコなど生成AIの業務活用の成果報告が続き、セキュリティ面ではメール等に仕込んだ命令でAIを操る「プロンプトインジェクション」の実被害が引き続き警戒されている。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">AIを業務ソフトにつなぐ「共通規格」争いが表面化──大手連合がAnthropic発の事実上の標準「MCP」に対抗</div>
+      <p class="sum">グーグル、マイクロソフト、セールスフォース、Snowflake、ServiceNowが、AIエージェントを業務ソフトにつなぐための共通仕様を共同で推す方針で合意した。狙いは、この1年半で“事実上の標準”になったAnthropic発の接続規格「MCP」への対抗だ。MCPは、AIを社内システムやデータ、外部ツールに安全につなぐ“共通コンセント”のような仕組みで、多くの製品が採用してきた。ここに大手連合が別の旗を立てた形で、勝負どころが「どのAIが賢いか」から「AIを既存の業務システムにどうつなぐか」という土台に移りつつある。導入相談では、規格が固まりきる前だからこそ「特定の1社に縛られない組み方」を設計しておくことが効いてくる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">BuildFast AI / ThursdAI</span><a class="go" href="https://www.buildfastwithai.com/blogs/ai-news-today-july-13-2026">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">EUのAI法、8月2日に主要部分が全面適用へ──違反は最大「年間売上高の7％」の制裁金が視野に</div>
+      <p class="sum">EU（欧州連合）のAI規制法が、8月2日にリスクの高いAIなどを含む主要部分の全面適用を迎える。違反すると最大3,500万ユーロ（約60億円）または年間売上高の7％という重い制裁金が科されうる。EU域内で製品・サービスを出す企業には日本からも影響が及び、AIをどう使っているかを説明できる社内の管理体制（AIガバナンス）が求められる。一方、日本のAI法は罰則を伴わない“ゆるやかな”枠組みで、対応の温度差が国ごとに出ている。中小や士業にとっては「難しい規制対応」というより、まず自社が“どのAIに何をさせているか”を一覧にして把握しておくことが第一歩。守りの話をやわらかく切り出す好材料になる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">PwC Japan</span><a class="go" href="https://www.pwc.com/jp/ja/knowledge/column/awareness-cyber-security/generative-ai-regulation10.html">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">マスク氏とアルトマン氏がXで“公開バトル”──AppleのOpenAI提訴の余波、業界トップ同士の応酬が話題に</div>
+      <p class="sum">アップルがOpenAIを提訴した2日後、イーロン・マスク氏とサム・アルトマン氏がその余波をX上での公開的な言い合いに発展させ、大きな注目を集めている。技術の中身というより、AI業界の主導権と提携関係を巡る駆け引きが、トップ同士の応酬という形で表面化した格好だ。派手なやり取りそのものより、その裏で「誰と誰が組み、どのプラットフォームに乗るか」という業界地図の塗り替えが進んでいる点が本質。セミナーの“つかみ”として使いやすい話題であると同時に、特定の1社・1陣営に業務を預けきることの危うさを、平易に伝える材料にもなる。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">Unrot / X</span><a class="go" href="https://unrot.co/blogs/today-top-10-ai-news-july-13-2026">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">OpenAI、“聞きながら話す”全二重の音声AIを投入──人と重なって会話できる自然さが評判に</div>
+      <p class="sum">OpenAIが、相手の声を聞きながら同時に話せる「全二重（full-duplex）」の音声モデルを公開した。従来の音声AIは「話し終えるのを待ってから応答する」トランシーバー型だったが、新方式は人同士の会話のように相づちを打ったり、割り込んで確認したりできる。電話応対や受付、問い合わせ対応といった“声の現場”にAIが入りやすくなる一歩で、Xでも自然さを評価する声が広がった。中小・士業の実務では、電話一次受けや予約対応など「人手が張り付きがちな声の業務」を減らせる可能性がある。デモで体感してもらいやすく、導入イメージを描かせる題材になる。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">BuildFast AI / ThursdAI</span><a class="go" href="https://www.buildfastwithai.com/blogs/ai-news-today-july-13-2026">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">13日の東京市場は1,315円安──半導体株が重し、キオクシアは一時1割近く下落しAI相場の調整続く</div>
+      <p class="sum">7月13日の日経平均は前日比1,315円安（約1.9％安）と大きく下げ、半導体関連の下げが相場全体の重しになった。メモリー大手キオクシアは一時1割近く下落し、後場では下げ幅が一段と拡大する場面もあった。AI関連株はここ数週間、期待先行から「利益の実力を見極める」局面へと調整が続いており、決算や需給次第で振れやすい地合いだ。値動きの大きさに一喜一憂するより、「AIブームの土台（半導体の需要）が本物か」を数字で確かめる姿勢が要る。投資の雑談では、話題株の株価だけでなく“供給網のどこが強いか弱いか”に目を配ると、落ち着いた見方を示せる。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">楽天証券トウシル / Bloomberg</span><a class="go" href="https://media.rakuten-sec.net/articles/-/52922">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">TSMC、4〜6月は36％増収・6月売上は過去最高（前年比+67.9％）──16日決算とASML15日決算がAI相場の試金石</div>
+      <p class="sum">半導体の受託生産最大手TSMCの4〜6月売上高は前年同期比36％増、6月単月は前年比67.9％増で過去最高を記録し、AI向けハードウエア需要の堅調さを示した。市場は15日のオランダ・ASML、16日のTSMC本決算に注目しており、両社が予想を上回れば半導体株の“見直し買い”につながる一方、弱気な見通しならAIブームの変調を映して下げが広がる懸念もある。つまり今週は、AI相場が「再加速」か「一段の調整」かを占う節目だ。相場の話をするときは、目先の上下より「土台の需要が続いているか」を決算の数字で確かめる——その視点を添えると説得力が出る。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Bloomberg / The Motley Fool</span><a class="go" href="https://www.fool.com/investing/2026/07/13/taiwan-semiconductor-reports-earnings-july-16-here/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">生成AIで「人月ビジネス」に陰り──SES・SIerの存在意義とエンジニアの生存戦略が問われる</div>
+      <p class="sum">生成AIが実装や設計の生産性を押し上げるほど、「人数×期間」で稼ぐ人月ビジネスは売上が細りかねない——SES・SIerが抱える構造的なジレンマが、改めて論点になっている。作業を速く終えるほど請求が減る一方で、AIが書いたコードの良し悪しを見極め、要件を整理し、人とAIをまとめて段取りする役割にはこれまで以上に価値が寄る。「安く手を動かす」から「成果と品質で対価をもらう」へと、稼ぎ方の土台を組み替える必要が語られている。人を出す側にとっては、料金の建て方（人月から成果・定額へ）と、メンバーの学び直しの方向づけを、早めに議論する材料になる。備えが早いほど選べる手が多い。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">エンジニアtype</span><a class="go" href="https://type.jp/et/feature/28078/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">AI時代のSIer生き残り戦略──「人月商売の終わり」を見据え、価値は設計・要件定義・AI活用の腕へ移る</div>
+      <p class="sum">現役エンジニアの実務目線でも、AIで開発が速くなるほど「定型的な実装・テスト・保守」の需要は縮み、価値は要件定義・設計・AIを組み込んだ開発へ移る、という見立てが語られている。カギは、AIを“使えること”ではなく、AIを使って「何をどれだけ実現できるか」を数字で示せること。人月単価の競争から抜けるには、案件の入口を「言われたものを作る」から「困りごとをAIで解く」へずらす発想が要る。SESの提案でも、要員を送る話に留めず「その要員がAIでどんな成果を出せるか」をセットで見せられると、単価と受注力の両面で効いてくる。育成の投資先を絞る判断材料にもなる。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">note（現役エンジニア）</span><a class="go" href="https://note.com/awesome_engineer/n/n16ea962e702b">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">生成AIの業務活用、成果報告が続々──ベネッセは社員1.5万人に自社AI、江崎グリコは問い合わせを約31％削減</div>
+      <p class="sum">生成AIの現場導入が、具体的な数字を伴って広がっている。ベネッセホールディングスはグループ社員約1万5,000人に自社開発のAIチャット「Benesse GPT」を提供し、業務効率化や商品開発に活用。江崎グリコはAIチャットボットの導入で社外からの問い合わせ件数を約31％減らしたという。いずれも壮大な新規事業ではなく、社内の質問対応や問い合わせ窓口といった“日々の反復業務”にAIを足しただけ、という点が中小や士業にも真似しやすい。まず一つの定型業務で「減った時間・件数」を数字にし、そこから横へ広げる——伴走支援では、この“最初の一歩”をどこに置くかの見立てが価値になる。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">電通総研</span><a class="go" href="https://crm.dentsusoken.com/blog/ai-casestudy-vol134/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">活用は「対話AI」から「自分で動くAI」へ──業務効率3割改善の報告も、エージェント型が実用フェーズに</div>
+      <p class="sum">2025〜2026年のトレンドとして、複数のツールやAPIを自分で呼び出して一連の作業をこなす「エージェント型AI」が実用フェーズに入り、バックオフィス業務の自動化で成果を出し始めている。全社横断で活用を進めた企業では業務効率が約3割改善したとの報告もある。文面作成や議事録要約といった“下書き”から、集計・転記・申請といった“手順のある作業”までAIに任せる段階に移りつつある形だ。中小・士業では、まず社内の反復作業を一つ選び、対話AIで下書き→慣れたらエージェントで一連を自動化、という順で広げると失敗が少ない。導入の道筋を具体的に描かせる材料になる。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">ミライワークス / 電通総研</span><a class="go" href="https://mirai-works.co.jp/business-pro/business-column/generative-ai-case-study">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">Anthropic、AIによるサイバー防御プログラムを大幅拡大──“AIで守る”取り組みを従来の3倍規模に</div>
+      <p class="sum">Anthropicが、AIを使ったサイバー防御の取り組みを従来の約3倍の規模へ拡大したと報じられた。攻撃側もAIで手口を自動化・高速化する時代に、守る側もAIで異常検知や対応を底上げする——“AI対AI”の防御が本格化しつつある。裏を返せば、AIを業務に入れる企業ほど「AIを守りにも回す」前提での設計が要るということだ。中小・士業にとって、いきなり高度な仕組みは要らないが、「AIに何をさせ、どのデータに触れさせているか」を定期的に点検する習慣は欠かせない。“AIの定期健診”という考え方を、大手の動きを引き合いに平易に語れる好材料になる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">BuildFast AI / ThursdAI</span><a class="go" href="https://www.buildfastwithai.com/blogs/ai-news-today-july-13-2026">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">“ゼロクリック”でも情報流出──仕込みメールでM365 CopilotがだまされるEchoLeak（CVSS 9.3）が警鐘</div>
+      <p class="sum">プロンプトインジェクションはOWASPが2026年もAI最大の脅威に位置づけ、攻撃は前年比で約3.4倍に増えている。象徴的なのが「EchoLeak（CVE-2025-32711）」で、細工したメールを送るだけで——利用者が開かなくても——Microsoft 365 Copilotが隠された命令に従い、社内情報を外部に漏らしうるゼロクリックの脆弱性だ。危険度は10段階中9.3と高い。AIは「正しい指示」と「読み込んだデータに紛れた偽の指示」を確実には見分けられないため、メールや文書に仕込まれた文言でだまされてしまう。AIを業務に入れるほど、この“だまされやすさ”が新たな入り口になる。導入後に「何を信じさせ、どこまで触らせているか」を定期点検する必要性を、平易に語れる論点だ。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Securance / OWASP</span><a class="go" href="https://www.securance.com/blog/prompt-injection-the-owasp-1-ai-threat-in-2026/">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
