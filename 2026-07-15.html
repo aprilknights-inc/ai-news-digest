@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-07-15</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.07.15 WED</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">水曜の朝の主役は、半導体の決算ウィーク。露光装置のASMLが今日15日、受託生産のTSMCが明日16日に決算を出し、この2社の数字が「AIブームがまだ本物か」を測る体温計として世界の株価を左右する。モデル面ではグーグルの新AI「Gemini 3.5 Pro」が17日に設計を一から作り直して公開予定、水面下では“計算資源の奪い合い”が勝負を分ける段階に入った。大局・株・現場・守りを、いつもの6つの切り口で。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>本日7月15日は、半導体大手の決算がAI相場の最大の関心事。露光装置のASMLが15日、受託生産のTSMCが16日に決算を発表し、両社の数字が「AIブームがまだ本物か」を占う試金石になる。TSMCの6月売上は前年同月比67.9％増と好調だが、市場は「スーパーサイクルの頂点（ピークアウト）」を警戒し、6月の急落で半導体関連は世界で約1.7兆ドルの時価総額を失った。モデル面では、グーグルが「Gemini 3.5 Pro」を17日に従来設計を捨てて作り直して公開する予定。加えて、勝負どころが「モデルの賢さ」から「計算資源をどれだけ確保できるか」に移り、グーグルですら供給が追いつかずMeta向け提供を絞る一方、SpaceXから月920億円規模でGPUを借りる状況も伝えられた。現場では生成AIの業務活用が数字を伴って広がり、パナソニック コネクトは年44.8万時間を削減。SES・受託ではAIエージェント開発の単価が月90〜120万円へ急騰した。守りではプロンプトインジェクションがAI最大の脅威（OWASP LLM01）に据え置かれ、実際に悪用するサイトも観測され、CrowdStrikeはAIエージェントを狙う新手口を公表した。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">グーグル「Gemini 3.5 Pro」7月17日公開へ──前モデルの設計を捨て“土台から作り直し”、長文処理と熟考機能を強化と伝わる</div>
+      <p class="sum">グーグルの次世代AI「Gemini 3.5 Pro」が、当初予定を延期して7月17日に公開される見通しと報じられている。従来の2.5 Proの設計を流用せず一から作り直したとされ、一度に扱える文章量（コンテキスト）を大幅に広げ、複雑な問題をじっくり考える「熟考層（Deep Think）」や、指示から一連の作業を自分でこなす機能を備えるという。※性能値や公開日は、グーグルの正式発表があるまでは“噂含み”として見るのが安全だ。主要AIの世代交代は数か月おきに続いており、「どのAIを使うか」を一社に固定しすぎず、乗り換えられる前提で組んでおく姿勢が、導入相談でも効いてくる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">BigGo Finance</span><a class="go" href="https://finance.biggo.com/news/6f0c6bb2-795f-4c57-9d09-6db691d7638a">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">AIの勝負が「賢さ」から「計算資源の確保」へ──グーグルすら供給が追いつかず、Meta向けGeminiを制限しSpaceXからGPUを月920億円規模で調達</div>
+      <p class="sum">2026年のAI競争は、モデルの賢さ以上に「計算資源（GPU・データセンター）をどれだけ確保できるか」が勝負どころになりつつある。世界有数のインフラを持ち今年だけで設備投資に1,800億ドル超を投じるグーグルですら需要をさばききれず、Meta向けのGemini提供を絞り、さらにSpaceXから11万枚のNVIDIA製GPUを月9.2億ドル（約920億円）規模で“つなぎ”として借りる状況が伝えられた。裏を返せば、AIの実力は「頭の良さ」だけでなく「電気と計算機の量」で決まる時代だということ。中小・士業の実務でも、AIの利用料や応答速度がこの資源不足に左右される点は、コスト設計を語るうえで押さえておきたい前提になる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">CNBC / Bloomberg</span><a class="go" href="https://www.cnbc.com/2026/06/28/google-limits-metas-use-of-its-gemini-ai-models-ft-reports.html">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">「Claudeが自社コードの8割超を書いている」──Anthropicが暴走懸念を認め“非常停止ボタン”を提言、Xで議論沸騰</div>
+      <p class="sum">AI開発企業Anthropicが、自社のソフトウエア開発において「いまやClaudeが社内コードの80％超を書いている」と明かし、AIがAIの改良を加速させる“自己改善のループ”がもたらすリスクに触れて、最先端AIの開発を必要なら一時停止できる仕組みの必要性を提言した。これがXで大きな議論を呼んでいる。派手な数字だけでなく「作る側すら制御を意識し始めた」という点が本質で、AIの進歩の速さと、それに人が追いつくための“歯止め”をどう用意するか、という論点を突きつけている。セミナーの導入で、AIの実力と危うさを同時に伝える題材として使いやすい話題だ。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">The Next Web / Tom's Hardware</span><a class="go" href="https://thenextweb.com/news/anthropic-claude-recursive-self-improvement-code">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">開発現場は「コードを書く」から「AIを束ねる」へ──TELUSはClaude Codeで開発30％高速化・50万時間超を節約と報告</div>
+      <p class="sum">Anthropicの2026年の開発トレンド報告では、エンジニアの仕事が「自分でコードを書く」から「複数のAIエージェントを段取りして動かす」へ移りつつある、との実像が示された。通信大手TELUSでは社員が1万3,000件超の自作AIを生み出し、開発を約30％速め、累計50万時間以上（AIとの1回のやり取りで平均40分）を節約したという。AI開発ツール「Claude Code」自体も年換算で25億ドル規模へ急拡大している。作業の速さより「人がAIをどう束ねて成果を出すか」が価値の中心になる流れで、受託・SESの人材像を考えるうえでも見逃せない変化だ。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">Anthropic 2026レポート</span><a class="go" href="https://claude.com/customers/telus">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">半導体の決算ウィーク始まる──ASMLが本日15日、TSMCが16日。6月の急落で世界の半導体株は約1.7兆ドルが消え、「ピークアウト」論が試される</div>
+      <p class="sum">世界の株価を左右する半導体決算が今週相次ぐ。露光装置大手ASMLが本日15日、受託生産最大手TSMCが16日に4〜6月決算を発表し、市場は「AIブームの体温計」として通常以上に注目している。6月のAI株急落で半導体関連は世界で約1.7兆ドルの時価総額を失っており、「スーパーサイクル（好況の波）はもう頂点では」という“ピークアウト”懸念が投資家心理を重くしている。ASMLは1株利益7.94ドル・売上102.7億ドルが予想の目安。好決算とAIデータセンター投資の継続が確認できれば見直し買いの呼び水になり、逆に見通しが弱ければ売りが広がりやすい。相場の話をするなら、目先の上下より「土台の需要が続いているか」を数字で確かめる視点を添えたい。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Bloomberg</span><a class="go" href="https://www.bloomberg.com/news/articles/2026-07-14/trillion-dollar-chip-rout-trains-spotlight-on-tsmc-asml-results">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">TSMC、6月売上は前年比+67.9％で過去最高──AIチップ売上は2026年に400億ドル（全体の約25％）との試算、16日本決算が本命</div>
+      <p class="sum">TSMCの6月単月売上高は前年同月比67.9％増（新台湾ドル建てで4,426億台湾ドル）と過去最高を記録し、AI向けチップ需要の底堅さを示した。アナリストの試算では、同社のAIチップ売上は2026年に400億ドルを超え、全体の約25％を占める可能性があるという。16日の本決算では純利益が前年比で大きく伸びるとの予想もあり、数字が期待を上回ればAI相場の“再加速”につながる一方、慎重な見通しなら調整が続く懸念もある。要は今週が「AIブームの需要が本物か」を占う節目。話題株の株価だけでなく、供給網（半導体の受注・設備投資）の強弱に目を配ると、落ち着いた見方を示せる。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Briefs.co / TheStreet</span><a class="go" href="https://www.briefs.co/news/tsmc-june-revenue-jumps-68-on-ai-chip-demand/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">AIエージェント開発者の単価が急騰、月90〜120万円台へ──「LangGraph・CrewAI両方できる人」は需要に対し供給5％以下</div>
+      <p class="sum">生成AIの“自分で動くAI（エージェント）”を作れる人材の不足が、SESの単価に直接出始めている。実案件データによると、AIエージェント開発エンジニアの月単価は90〜120万円以上と2026年でも最高水準で、LangGraphとCrewAIといった主要な開発基盤を両方使える人材は需要に対し供給5％以下という。同じPythonエンジニアでも、こうしたAI開発経験の有無で案件レートが25〜40万円変わる例もある。人を出す側にとっては、「エンジニアを送る」話に留めず「そのエンジニアがAIエージェントで何を作れるか」をセットで示せると、単価と受注力の両面で効いてくる。育成の投資先をどこに絞るかの判断材料にもなる。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">Heyday（透明性メディア）</span><a class="go" href="https://lp.hydy.jp/blog/ai-agent-engineer-ses-tanka">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">SES単価は「AIで二極化」──全体平均は月55〜75万円だが、AI・クラウド・生成AIスキルがあれば100万円超も狙える</div>
+      <p class="sum">2026年版のSES単価まとめでは、エンジニアの平均月単価は55〜75万円ながら、AI・機械学習やクラウドのスキルを持つ人は100万円超も十分に狙える、と単価の“二極化”が指摘されている。特にPython（AI/ML）やLLM・生成AI関連は最も需要が高く、単価上昇が顕著だという。裏を返せば、定型的な実装だけをこなす層は価格競争に押されやすく、AIを使いこなせる層に対価が集まる構図だ。要員の学び直し（生成AI・エージェント開発への横展開）をどこまで早く進められるかが、これからのSES経営の分かれ目になる。単価交渉でも「AIで何を上乗せできるか」を語れるかどうかが物を言う。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">HLT（2026年最新版）</span><a class="go" href="https://hlt-inc.jp/news/ses-engineer-monthly-rate-guide">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">パナソニック コネクト、社内AI「ConnectAI」で年44.8万時間を削減──全社員1.2万人で活用、前年比2.4倍の成果</div>
+      <p class="sum">パナソニック コネクトは、全社員約1万2,000人にChatGPTをベースにした社内AI「ConnectAI」を提供し、年間で約44万8,000時間の業務時間を削減したと報告している。これは前年比2.4倍の成果で、文書作成や情報検索といった日々の反復業務にAIを足すことで、地道に効果を積み上げた形だ。壮大な新規事業ではなく「全社員が毎日使う道具」にした点が、中小・士業にも参考になる。まず一つの定型業務で「減った時間」を数字にし、そこから横へ広げる——伴走支援では、この“最初の一歩”をどこに置き、どう社内に定着させるかの見立てが価値になる。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">パナソニック インフォメーションシステムズ</span><a class="go" href="https://service.is-c.jpn.panasonic.com/column/generative_ai">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">成果は「時間とお金」で語られ始めた──住友商事は月1万時間・年12億円を削減、宮崎銀行は稟議書作成を95％短縮</div>
+      <p class="sum">生成AIの業務活用が、具体的な金額・時間を伴って広がっている。住友商事は月間約1万時間の業務削減と年間約12億円のコスト削減を実現。宮崎銀行では従来約2時間かかっていた稟議書の作成が数分で終わり、作成時間を約95％短縮したという。いずれも「文章を書く」「資料をまとめる」といった、どの会社にもある定型業務にAIを当てた結果だ。中小・士業でも、まず時間のかかる書類仕事を一つ選び、AIで下書き→確認、の順に置き換えると失敗が少ない。導入の道筋を「どの業務から・どんな数字を目標に」と具体的に描かせる材料になる。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">ミライワークス / NTTドコモビジネス</span><a class="go" href="https://mirai-works.co.jp/business-pro/business-column/generative-ai-case-study">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">“だますサイト”が現実に出現──AIエージェントを狙う「間接プロンプトインジェクション」の実被害を観測（Unit42 / Zscaler）</div>
+      <p class="sum">Webを自分で見に行って作業する「AIエージェント」を狙い、閲覧先のサイトや文書に“見えない命令”を仕込んでAIを操る「間接プロンプトインジェクション」が、実際の攻撃として観測され始めた。パロアルトのUnit42やZscalerは、正規サービスを装って決済詐欺に誘導したり、仮想通貨サイトになりすます手口を確認したと報告している。AIは「本物の指示」と「読み込んだデータに紛れた偽の指示」を確実には見分けられないため、AIに“ネットを見て作業させる”ほど、この入り口が広がる。AIを業務に入れる企業ほど、「AIに何を信じさせ、どこまで触らせているか」を定期点検する必要性を、平易に語れる好材料だ。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Unit42（Palo Alto）/ Zscaler</span><a class="go" href="https://unit42.paloaltonetworks.com/ai-agent-prompt-injection/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">プロンプトインジェクションはAI最大の脅威（OWASP LLM01）に据え置き──攻撃は前年比89％増、CrowdStrikeがエージェント狙いの新手口を公表</div>
+      <p class="sum">AIをだます「プロンプトインジェクション」は、OWASP（Webセキュリティの国際団体）が2026年もAIアプリ最大のリスク（LLM01）に位置づけている。AIを悪用する攻撃者の活動は前年比89％増とされ、2025年には90超の組織で正規の生成AIツールに悪意ある命令が注入され、認証情報や暗号資産の窃取に使われた例も報告された。セキュリティ大手CrowdStrikeは、AIエージェントを狙う新しい手口を公表し、警戒を呼びかけている。中小・士業にいきなり高度な対策は要らないが、「AIに何をさせ、どのデータに触れさせているか」を定期的に点検する“AIの健康診断”という考え方は欠かせない。大手の動きを引き合いに、守りをやわらかく切り出せる論点だ。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">CrowdStrike / OWASP</span><a class="go" href="https://www.crowdstrike.com/en-us/blog/crowdstrike-uncovers-new-prompt-injection-techniques/">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
