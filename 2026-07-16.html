@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-07-16</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.07.16 THU</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">木曜の朝は、半導体決算ウィークの本命。露光装置のASMLが昨日15日に好決算を出し通期見通しを今年2度目に引き上げたが、株価はむしろ売られた。今日16日は受託生産のTSMCが4〜6月決算を発表し、この数字が「AIブームはまだ本物か」を測る本命の体温計になる。モデル面ではグーグルの新AI「Gemini 3.5 Pro」が明日17日に公開予定。大局・株・現場・守りを、いつもの6つの切り口で。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>本日7月16日は、半導体大手TSMCの4〜6月決算がAI相場の最大の関心事。市場は売上約400億ドル（前年比約33％増）を見込み、この数字がAI向けチップ需要の持続性を占う試金石になる。前日15日には露光装置のASMLが好決算を発表し、通期売上見通しを今年2度目となる430〜450億ユーロへ引き上げ、生産能力も2年で30％拡大すると表明した。AI設備投資が本物であることを裏づける内容だったが、株価はむしろ反落し、6月の急落を引きずる「好決算でも売られる」神経質な相場が続いている。モデル面ではグーグルが「Gemini 3.5 Pro」を明日17日に公開する見通し（未確定）。現場では生成AIの業務活用が数字を伴って広がり、イオンリテールは予測AIで発注時間を50％削減。受託・SESでは「人月ビジネス」の陰りが論じられ、AIを使いこなせる層に単価が集まる二極化が鮮明になっている。守りではプロンプトインジェクションが本番導入の7割超で観測され、「完全な検知は不可能」を前提に被害を抑える設計思想への転換が進む。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">ASML、AI需要で通期見通しを今年2度目の上方修正──売上430〜450億ユーロへ、生産能力を2年で30％拡大と表明</div>
+      <p class="sum">半導体製造に欠かせない露光装置の世界最大手ASMLが15日、4〜6月決算で市場予想を上回る売上・利益を出し、今年の通期売上見通しを430〜450億ユーロ（従来上限を超える水準）へ引き上げた。上方修正は今年2度目で、AIチップ向けの投資が装置需要を押し上げていると説明。さらに今後2年で生産能力を約30％拡大する計画も示した。派手なモデル発表の裏で、AIの拡大が「装置→工場→チップ」という川上の実需に確かに波及していることを示す数字だ。AIブームが一時の熱狂か本物かを問われるいま、川上の設備投資が積み上がっている事実は、相場や導入の話をするときに落ち着いた土台として引ける材料になる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Bloomberg</span><a class="go" href="https://www.bloomberg.com/news/articles/2026-07-15/asml-raises-full-year-outlook-as-ai-boosts-demand-at-chipmakers">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">グーグル「Gemini 3.5 Pro」明日17日に公開の見通し──土台から作り直し、200万トークン級の長文処理と自律作業を強化と伝わる（未確定）</div>
+      <p class="sum">グーグルの次世代AI「Gemini 3.5 Pro」が、当初予定を延期して明日17日に公開されるとの見方が各メディアで広がっている。前モデルの設計を流用せず一から作り直したとされ、一度に扱える文章量（コンテキスト）を200万トークン級へ広げ、複雑な問題をじっくり考える「熟考層（Deep Think）」や、指示から一連の作業を自分でこなす機能を備えるという。ただし公開日・性能・価格はいずれもグーグルの正式発表がなく、現時点では“噂ベース”だ。主要AIの世代交代は数か月おきに続いており、「どのAIを使うか」を一社に固定しすぎず乗り換えられる前提で組む姿勢が、導入相談でも効いてくる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Tech Times</span><a class="go" href="https://www.techtimes.com/articles/320308/20260713/gemini-35-pro-targets-july-17-after-full-rebuild-every-spec-remains-unconfirmed.htm">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">「フロンティアAIは全員に開かれるべき」──中国Zhipu(Z.ai)創業者が社内メモで表明、最新モデルGLM-5.2をオープン公開しオープンソース論争が再燃</div>
+      <p class="sum">中国のAI企業Zhipu（Z.ai）創業者の唐傑（Tang Jie）氏が社内メモで、最先端AIは特定企業に囲い込むのではなく「誰にでも開かれ、利用できる状態」であるべきだと表明し、話題になっている。同社は最新モデルGLM-5.2を、無料でダウンロード・商用利用できるオープンソースとして公開。真の安全性は技術の壁ではなく「広い参加と監視」から生まれる、という主張だ。折しも中国政府は逆に高性能なオープンモデルの海外提供を制限する検討を報じられており、「AIを開くべきか閉じるべきか」の論争が改めて過熱している。AIを一社に依存せず選べる時代が進む一方、無償の高性能モデルが増える意味を、経営・現場の両面でどう捉えるかの論点になる。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">The Next Web / Bloomberg</span><a class="go" href="https://thenextweb.com/news/zhipu-tang-jie-frontier-ai-open-to-all">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">AI選びの基準が「一番賢いモデル」から「一番合うモデル」へ──価格・速度・使い勝手がベンチマークと同じくらい重視される段階に</div>
+      <p class="sum">この夏はGPT-5.6・Grok 4.5・Anthropicの新モデルなどが相次いで出そろい、開発者コミュニティの関心は「どれが最高スコアか」から「自分の用途にどれが一番合うか」へと明確に移っている。同じ作業でも、価格・応答速度・使える環境（API、アプリ、社内ルール）で最適解が変わり、性能の絶対値だけでは選べなくなってきた、という指摘だ。要は“横綱を一頭選ぶ”のではなく、“用途ごとに使い分ける”のが当たり前になりつつある。中小・士業のAI導入でも「最新・最強を追う」より「日々の業務にちょうど良いものを、コストと速度で選ぶ」という現実的な視点が、費用対効果の説明で効いてくる。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">AIapps（月次まとめ）</span><a class="go" href="https://www.aiapps.com/blog/top-ai-news-july-breakthroughs-launches-trends/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">半導体決算の本命TSMC、本日16日に4〜6月決算──売上約400億ドル（前年比＋33％）予想、AIチップ需要の持続性を占う試金石</div>
+      <p class="sum">世界の株価を左右する半導体の本命決算、受託生産最大手TSMCが本日16日（米東部時間14時＝日本時間17日未明）に4〜6月決算を発表する。市場予想は売上高約400億ドル（前年同期比約33％増）、粗利益率65〜67％台と高水準。焦点は、AI向けチップの需要が「まだ加速しているのか、頭打ちなのか」という一点で、AIチップの土台となる高度な封止技術（CoWoS）の増強状況や2026年の設備投資計画、地政学リスクへの言及が注目される。数字が期待を上回ればAI相場の再加速の呼び水に、慎重なら調整が続く懸念も。話題株の株価だけでなく、供給網（受注・設備投資）が積み上がっているかを数字で確かめる視点を添えたい。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">The Motley Fool</span><a class="go" href="https://www.fool.com/investing/2026/07/13/taiwan-semiconductor-reports-earnings-july-16-here/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">「好決算でも売られる」神経質な相場──ASMLは通期を今年2度目の上方修正でも株価は反落、6月急落の余韻でピークアウト警戒が続く</div>
+      <p class="sum">15日のASMLは、市場予想を上回る決算と通期見通しの再上方修正という強い内容にもかかわらず、株価は通常取引でむしろ売られた。良い数字が出ても「材料出尽くし」で利益確定売りに押される、いまの相場の神経質さを象徴している。背景には、6月のAI株急落で半導体関連が世界で約1.7兆ドルの時価総額を失い、「スーパーサイクル（好況の波）はもう頂点では」という“ピークアウト”懸念が根強く残っていることがある。つまり、決算の中身が良いか悪いか以上に、投資家心理が慎重に振れている局面だ。相場の話をするなら、目先の株価の上下に一喜一憂せず「土台の需要が続いているか」を数字で確かめる姿勢を勧めたい。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">CNBC</span><a class="go" href="https://www.cnbc.com/2026/07/15/asml-2q-earnings-ai-chips-orders.html">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">生成AIで「人月ビジネス」に陰り──SES・SIerの存在意義が問われ、エンジニアの“生存戦略”が論点に</div>
+      <p class="sum">生成AIが開発の生産性を押し上げるほど、「人を月いくらで貸す（人月）」というSES・SIerの伝統的な稼ぎ方と構造的に相容れなくなる、という議論が広がっている。AIが実装の一部を肩代わりすれば、同じ成果を出すのに必要な“人月”は減り、頭数と時間で稼ぐモデルは価格圧力を受ける。一方で、AIをうまく使って要件定義・設計・品質管理といった上流や、複数のAIを束ねて成果を出す役割は価値が上がる。つまり「エンジニアを送る」だけの提案は通りにくくなり、「そのエンジニアがAIで何を早く・確実に仕上げられるか」を示せるかが分かれ目になる。人を出す側にとって、この構造変化をどう自社の強みに翻訳するかは、経営として避けて通れない論点だ。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">エンジニアtype</span><a class="go" href="https://type.jp/et/feature/28078/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">SES業界は「生き残るエンジニア」と「淘汰される企業」に二極化──AIを前提に人材と案件をどう組み替えるかが分水嶺</div>
+      <p class="sum">2026年のSES業界を展望する分析では、生成AIの普及を追い風にできる企業・エンジニアと、そうでない層とで“はっきり差がつく”との見方が示されている。AI・クラウドなど希少領域は単価が2割以上上がる一方、定型的な実装だけに頼る層は価格競争にさらされやすい。生き残る側の共通点は、AIを道具として使いこなし、上流工程やAIエージェント開発へ役割を広げていること。裏返せば、要員の学び直し（生成AI・エージェント開発への横展開）をどれだけ早く進められるかが、SES経営の分水嶺になる。単価交渉でも「AIで何を上乗せできるか」を語れるかどうかが、これからは物を言う。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">Heyday（透明性メディア）</span><a class="go" href="https://lp.hydy.jp/blog/ses-industry-future-2030">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">イオンリテール、予測AI「AIオーダー／AIカカク」を約380店舗に展開──発注時間を50％短縮、在庫30％減・欠品15％減の成果</div>
+      <p class="sum">イオンリテールは日本IBMと共同開発した需要予測AI「AIオーダー」「AIカカク」を約380店舗に導入し、発注作業の時間を平均で50％（90分→45分）短縮したと報告している。あわせて予測精度を最大40％改善、在庫を平均30％削減、欠品も15％減らしたという。派手な新規事業ではなく、「毎日発生する発注・在庫管理」という定型業務にAIを当て、時間・在庫・欠品という現場の数字で成果を出した点が要だ。中小・小売・サービス業でも、まず時間のかかる反復業務を一つ選び、そこで“減った時間や在庫”を数字にして横へ広げる進め方が失敗しにくい。伴走支援では、この「最初の一歩」をどこに置くかの見立てが価値になる。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">CRYSTAL METHOD</span><a class="go" href="https://crystal-method.com/blog/generative-ai-examples/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">金融も「時間削減」で数字が出始めた──横浜銀行×日本IBMは融資担当1人あたり月最大8時間削減、ベネッセは社員1.5万人に自社AIを展開</div>
+      <p class="sum">生成AIの業務活用が、堅い金融・大企業でも具体的な時間で語られ始めている。横浜銀行と日本IBMの実証実験では、融資担当の行員1人あたり月最大約8時間分の業務を効率化できる見込みが示された。ベネッセホールディングスはグループ社員1万5,000人に自社開発のAIチャット「Benesse GPT」を提供し、業務分析や改善点の洗い出しに活用している。いずれも「文章を書く」「情報を調べる」「業務を棚卸しする」といった、どの組織にもある作業にAIを当てた結果だ。中小・士業でも、まず時間のかかる書類仕事や調べ物を一つ選び、AIで下書き→人が確認、の順に置き換えると導入の失敗が少ない。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">NTTドコモビジネス</span><a class="go" href="https://www.ntt.com/bizon/generation-ai-industry-case.html">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">プロンプトインジェクションは本番AIの7割超で観測──「完全な検知は不可能」を前提に“被害を限定する設計”へ考え方が転換</div>
+      <p class="sum">AIをだます「プロンプトインジェクション（読み込ませた文章に紛れた偽の命令でAIを操る攻撃）」について、OWASP（Webセキュリティの国際団体）は2026年、これをAIアプリ最大の脅威に据え、実際に本番導入の73％で発生しているとの報告を示している。注目すべきは対策の考え方の変化だ。「悪意ある入力を完全に見分けるのは不可能」という前提に立ち、攻撃が一部成功しても“被害を限定する”設計へと軸足が移りつつある。中小・士業にいきなり高度な仕組みは要らないが、「AIに何をさせ、どのデータに触れさせ、どこまで自動で実行させているか」を定期的に点検する“AIの健康診断”という発想は、規模を問わず欠かせない。守りをやわらかく切り出せる好材料だ。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Uravation（AIエージェント・セキュリティ）</span><a class="go" href="https://uravation.com/media/ai-agent-security-complete-guide-2026/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">AIをつなぐ共通規格MCPの新版でセキュリティ懸念──7/28公開版で“ステートレス化”、セッション層の保証が失われる恐れ。暗号資産を狙うインジェクション攻撃も観測</div>
+      <p class="sum">AIを社内システムや外部サービスにつなぐ事実上の共通規格「MCP」の新バージョン（2026-07-28公開予定）で、通信が“ステートレス（やり取りの状態を保持しない）”に変わることにより、これまでセッション単位で担保していたセキュリティの保証が弱まる懸念が指摘されている。並行して、AIエージェントをだまして暗号資産を送金させようとするプロンプトインジェクション攻撃が実際に観測されるなど、AIを外部とつなぐほど“入り口”が増える構図が鮮明だ。AIに業務を任せる企業ほど、便利さと引き換えに「何とつなぎ、どこまで自動で動かしているか」を把握しておく必要がある。つなぐ前に一度点検する、という当たり前を平易に勧められる論点だ。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Codebook（Security News）</span><a class="go" href="https://codebook.machinarecord.com/threatreport/silobreaker-cyber-alert/46460">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
