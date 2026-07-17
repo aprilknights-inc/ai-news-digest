@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-07-17</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.07.17 FRI</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">金曜の朝は、昨日の半導体決算の答え合わせから。受託生産最大手のTSMCが4〜6月に過去最高益（純利益は前年比＋77％）を出し、AI向けチップが売上の6割超に達したうえ、今年の設備投資と成長見通しをさらに引き上げた。それでも株価は約3％下げ、「良い数字でも売られる」神経質さは続く。モデル面ではグーグルの新AI「Gemini 3.5 Pro」が本日17日公開との見方（未確定）。大局・株・現場・守りを、いつもの6つの切り口で。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>本日7月17日は、前日のTSMC決算が「AIブームは本物か」への強い答えになった。同社の4〜6月期は売上高約402億ドル（前年比＋36％）、純利益は前年比＋77％で過去最高を更新。AI向けの高性能計算（HPC）が売上の6割超を占め、今年の設備投資計画を600〜640億ドルへ、通期の成長率見通しも「40％超」へ引き上げた。数字は市場予想を上回ったが、株価はむしろ約3％下落し、期待の高さが既に織り込まれていたことを映した。モデル面ではグーグルの「Gemini 3.5 Pro」が本日公開されるとの観測が強いが、公開日・性能・価格はいずれも正式発表がなく噂の段階だ。話題ではAnthropicの大型人材採用が続き、「モデルより導入支援こそ次の巨大ビジネス」という見方も広がる。現場では自治体・小売でのAI活用が時間削減の数字を伴い、受託・SESではAIエージェントを扱える人材の単価が急騰する一方で定型実装は価格圧力にさらされ、二極化が進む。守りではAIエージェント特有のリスクを整理したOWASPの新指針が公開され、プロンプトインジェクションが最大の脅威に据えられた。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">グーグル「Gemini 3.5 Pro」本日17日公開の見通し──土台から作り直し、200万トークン級の長文処理と「熟考」機能を搭載と伝わる（未確定）</div>
+      <p class="sum">グーグルの次世代AI「Gemini 3.5 Pro」が、延期を経て本日17日に一般公開されるとの見方が各メディアで広がっている。前モデルの設計を流用せず一から作り直したとされ、一度に扱える文章量（コンテキスト）を200万トークン級へ広げ、複雑な問題をじっくり考える「熟考層（Deep Think）」や、指示から一連の作業を自分でこなす機能を備えるという。ただし現時点でグーグルの公式ページには公開日・性能・価格・モデル情報のいずれも掲載がなく、あくまで“噂ベース”だ。主要AIの世代交代は数か月おきに続いており、「どのAIを使うか」を一社に固定しすぎず、用途とコストで乗り換えられる前提で組む姿勢が、導入相談でも効いてくる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Tech Times</span><a class="go" href="https://www.techtimes.com/articles/320308/20260713/gemini-35-pro-targets-july-17-after-full-rebuild-every-spec-remains-unconfirmed.htm">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">AI各社の安全対策、最高評価でも「C＋」止まり──独立機関の2026年版「AI安全性指標」で、首位のAnthropicですら及第点にとどまる</div>
+      <p class="sum">AIの安全性を独立の立場で採点する「AI安全性指標（AI Safety Index）2026」が公表され、主要AI開発各社の中で最も高い評価を受けたAnthropicでも成績は「C＋」にとどまった、と報じられている。性能競争が加速する一方で、リスク管理や透明性といった“守り”の体制はどの企業もまだ発展途上、という第三者評価だ。裏を返せば、最先端を走る企業でさえ安全対策は完成していない前提で、利用する側も「便利さ」と「危うさ」を両にらみする必要があるということ。企業がAIを業務に入れるときは、モデルの賢さだけでなく「提供元がどこまで安全に配慮しているか」も判断材料に加える──そんな冷静な目線を、経営やセミナーの場で添えやすい話題だ。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">BuildFastWithAI</span><a class="go" href="https://www.buildfastwithai.com/blogs/ai-news-today-july-15-2026">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">「コードを書く」から「英語で指示する」へ──開発という職業そのものが変わりつつある、とブルームバーグが特集</div>
+      <p class="sum">長年プログラミング言語を書いてきた開発者が、いまやテキスト欄に日常の英語で指示を打ち込み、ClaudeなどのAIアシスタントに実装させている──ソフトウェア開発という職業の土台が変わりつつある、とブルームバーグが特集を組み、開発者コミュニティで大きな話題になっている。閉じた（自社囲い込み型の）AIを持つAnthropicやOpenAIは、コーディング支援などの統合ツールで高い利幅を得る一方、公開モデルは低価格で市場全体を広げる、という住み分けも指摘される。要は「プログラムが書けること」より「AIに何を・どう任せ、成果を見極められるか」が価値の中心に移りつつある。受託・人材の話でも、この“作業から采配へ”の変化は避けて通れない論点になる。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">Bloomberg</span><a class="go" href="https://www.bloomberg.com/news/features/2026-07-16/anthropic-and-openai-tools-transform-the-profession-of-coding">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">Anthropicの人材獲得ラッシュ続く──Monzo共同創業者トム・ブロムフィールド氏がYC休職して合流、「計算資源の確保こそ最重要課題」</div>
+      <p class="sum">英ネット銀行Monzoの共同創業者で、著名スタートアップ支援組織Yコンビネータのパートナーでもあるトム・ブロムフィールド氏が、休職してAnthropicの計算基盤（コンピュート）チームに加わると13日に表明し、話題を呼んでいる。同氏は「AIが自らを改良し始める初期段階に入りつつあり、計算資源の確保が最も重要な課題の一つになる」と理由を語った。Anthropicは近年、著名研究者や経営人材を相次いで迎えており、AI競争の主戦場が「賢いモデル作り」だけでなく「それを動かす計算基盤の奪い合い」にも広がっていることを映す。派手なモデル発表の裏で、誰が人と計算資源を握るかという“地力”の勝負が進んでいる、と読める材料だ。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">Tech Funding News</span><a class="go" href="https://techfundingnews.com/monzo-co-founder-tom-blomfield-takes-leave-from-y-combinator-to-join-anthropic/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">TSMC、4〜6月は過去最高益──純利益＋77％、AI向けが売上6割超。設備投資を600〜640億ドルへ、通期成長率も「40％超」に引き上げ</div>
+      <p class="sum">半導体受託生産で世界最大手のTSMCが16日に発表した4〜6月決算は、売上高約402億ドル（前年比＋36％）、純利益は前年同期比＋77％で四半期として過去最高を更新した。AIやデータセンター向けの高性能計算（HPC）が売上の6割超（AIチップだけで約61％）を占め、粗利益率も67.7％と高水準。さらに今年の設備投資計画を600〜640億ドルへ、通期の成長率見通しも従来の「30％台」から「40％超」へ引き上げた。市場が「そろそろ頭打ちでは」と警戒していたAI向け投資が、むしろ2027年以降まで続くという経営陣の強気を数字で示した形だ。話題株の株価だけでなく、その土台である工場・設備投資が積み上がっているかを数字で確かめる好例として引ける材料。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Tech Times</span><a class="go" href="https://www.techtimes.com/articles/320696/20260716/tsmc-posts-record-quarter-ai-chip-demand-pushes-full-year-growth-outlook-past-40.htm">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">過去最高でも株価は約3％安──「良い数字でも売られる」相場。ただしTSMCの強気はNvidiaら川下には追い風との読み</div>
+      <p class="sum">TSMCが記録的な決算と強気の見通しを示したにもかかわらず、株価は時間外で約3％下落した。今年すでに約4割上昇し「良い数字は織り込み済み」だったためで、好決算でも利益確定売りに押される、いまの神経質な相場を象徴している。一方で、AIチップの土台を作るTSMCが設備投資と成長見通しを引き上げたことは、その先でチップを設計・販売するNvidiaなどにとっては需要の持続を裏づける追い風、との見方も広がる。つまり「目先の株価の上下」と「土台の需要の強さ」は必ずしも一致しない。相場の話をするなら、株価に一喜一憂せず、受注・設備投資という“実需”が続いているかを数字で確かめる姿勢を勧めたい。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Bloomberg</span><a class="go" href="https://www.bloomberg.com/news/articles/2026-07-16/tsmc-beats-lofty-estimates-in-latest-sign-of-sustained-ai-demand">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">AIエージェント開発者のSES単価が急騰──LangGraph・CrewAI等の案件で月100万円超が常態化、定型実装との“二極化”が数字で表面化</div>
+      <p class="sum">SES業界の単価データを追う分析で、AIエージェント開発を担えるエンジニアの月額単価が、2026年のピーク水準で月90〜120万円以上に達していると報じられている。RAG構築やプロンプト設計、LangChain／LangGraph・CrewAIといった“AIを束ねて動かす”スキルには月100万円超の案件が並ぶ一方、コーディング・単体テスト・ドキュメント整理といったAIで圧縮しやすい下流の定型作業は、短期・小口・スポット化して価格圧力を受けている。つまり同じ「エンジニアを出す」でも、AIを前提に上流や采配を担える人材と、定型実装だけの人材とで単価が大きく開き始めた、という具体的な数字だ。要員のリスキリング（エージェント開発への横展開）をどれだけ早く進められるかが、SES経営の分水嶺になる。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">Heyday（透明性メディア）</span><a class="go" href="https://lp.hydy.jp/blog/ai-agent-engineer-ses-tanka">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">Anthropic×Blackstone、「次の1兆ドルはモデルより“導入支援”」に賭ける──AI実装専門の合弁「Ode」を軸に伴走市場が動く</div>
+      <p class="sum">AI大手Anthropicが、投資会社ブラックストーンらと組み、企業へのAI導入・定着を専門に手掛ける実装会社「Ode」を立ち上げた、と報じられている。狙いは明快で、「賢いモデルを作る」こと以上に「それを各社の業務に正しく組み込み、成果を出させる」ところにこそ次の巨大市場がある、という賭けだ。実際、生成AIを入れても“部分的な改善”で止まる企業が多く、成果を出せるかは技術より「現場に合わせた導入設計と伴走」で決まる、というのが共通認識になりつつある。世界の最先端企業が「実装・伴走こそ本命」と動いていること自体が、AIの導入支援を生業にする側にとっては強い追い風であり、提案の裏づけになる。「モデルより使いこなし」を経営に説くときの格好の事例だ。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">TechCrunch</span><a class="go" href="https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">自治体でも成果が数字に──別府市は生成AI×RPAで「2週間→2日」、都城市は文書・企画AIで年間約1,800時間の削減を試算</div>
+      <p class="sum">生成AIの業務活用は、民間だけでなく自治体でも“時間削減”という具体的な数字で語られ始めている。別府市は生成AIとRPA（作業自動化）を組み合わせ、従来2週間かかっていた作業を2日程度へ短縮。都城市は文書生成・企画立案にAIを使い、年間約1,800時間分の業務削減を見込むと試算している。いずれも派手な新規事業ではなく、「文章を書く」「調べる」「定型作業を回す」といった、どの組織にもある地味な仕事にAIを当てた結果だ。中小・士業でも進め方は同じで、まず時間のかかる反復作業を一つ選び、そこで“減った時間”を数字にして横へ広げるのが失敗しにくい。伴走支援では、この「最初の一歩」をどこに置くかの見立てが価値になる。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">USEN×DXGO</span><a class="go" href="https://usknet.com/dxgo/contents/dx-technology/the-latest-trends-in-generative-ai-and-practical-guide-for-business/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">2026年は生成AIが「実験」から「投資対効果（ROI）」の段階へ──楽天はEC出店者向けAIアシスタントで返信時間を大幅短縮</div>
+      <p class="sum">2026年の生成AI活用は、「とりあえず試す」段階から「いくら効果が出たか（ROI）」を問う段階へと明確に移った、との見立てが広がっている。楽天は「Rakuten Ichiba」の出店者向けに「RMS AI Assistant」を提供し、問い合わせへの返信時間を大幅に短縮できたと報告。商品説明文の自動生成なども広く普及している。ただしマッキンゼーの調査では、導入企業の約7割は“部分的な業務改善”で止まり、全社的な変革まで進んで15〜30％のコスト削減を実現できたのは3割弱にとどまる。つまり「入れたかどうか」より「成果を数字にできたか」で差がつく段階だ。中小・士業には、小さく始めて効果を測り、それを根拠に横展開する進め方を、平易に勧められる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">GENIAC（生成AIトレンド）</span><a class="go" href="https://genai-ai.co.jp/ai-kanri/blog/cc-generative-ai-trends/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">OWASP「AIエージェント版トップ10（2026）」公開──最大の脅威はプロンプトインジェクション、本番導入されたエージェントの多くで実際に観測</div>
+      <p class="sum">Webセキュリティの国際団体OWASPが、AIエージェント特有のリスクを整理した「Top 10 for Agentic Applications 2026」を公表した。従来のLLM向けリスク集に加え、AIが自律的に外部システムを操作する“エージェント”ならではの危険を新たに定義したもので、その筆頭に据えられたのがプロンプトインジェクション（読み込ませた文章に紛れた偽の命令でAIを操る攻撃）だ。本番環境に置かれたエージェントの多くで実際に発生していると報告され、AIに権限を持たせるほど“入り口”が増える構図が改めて浮き彫りになった。中小・士業にいきなり高度な仕組みは要らないが、「AIに何をさせ、どのデータに触れさせ、どこまで自動で実行させているか」を棚卸しして点検する“AIの健康診断”という発想は、規模を問わず欠かせない。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Labmemo（AIセキュリティ解説）</span><a class="go" href="https://labmemo.com/llm-secops-cybersecurity-security-complete-guide-ai-2026/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">「見えないプロンプトインジェクション」に注意──人には見えない仕込みでLLMの出力を裏から操られる手口、対策の起点は“全AIツールの棚卸し”</div>
+      <p class="sum">画面上は普通の文章に見えても、人の目に映らない形で不正な命令を仕込み、AIの出力をこっそり操る「見えないプロンプトインジェクション」という手口がセキュリティ各社から解説されている。メールや資料、Webページに紛れ込んだ“見えない指示”をAIが真に受けて、機密の要約を外部へ出したり、意図しない操作を実行したりする恐れがある、というものだ。完全に見分けるのは難しいという前提に立ち、専門家は「まず社内で使っている全AIツール・サービスの棚卸し（インベントリ）」「AI利用のルール作り」「担当者への周知」といった、地味だが効く基本対策を勧めている。派手な防御より“使っているものを把握し、任せる範囲を決める”ことが第一歩──守りをやわらかく切り出せる好材料だ。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">トレンドマイクロ</span><a class="go" href="https://www.trendmicro.com/ja_jp/research/25/b/invisible-prompt-injection-secure-ai.html">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
