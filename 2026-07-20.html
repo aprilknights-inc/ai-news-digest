@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-07-20</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.07.20 MON</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">週明けの朝は、先週の“答え合わせ”から。あれほど「17日公開」と噂されたグーグルの新AI「Gemini 3.5 Pro」は、その日を過ぎても姿を見せず、一般公開は8月へずれ込むとの見方に。ぽっかり空いた主役の座に滑り込んだのは、中国発の“無料で使える”高性能AI「Kimi K3」だった。規制ではEUがグーグルに包囲網。大局・株・現場・守りを、いつもの6つの切り口で。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>本日7月20日は、先週さかんに「17日公開」と報じられたグーグルの「Gemini 3.5 Pro」が結局その日には登場せず、法人向けの限定プレビューにとどまったまま一般公開は8月へずれ込むとの観測が強まった。代わりに話題をさらったのが中国Moonshot AIのオープンモデル「Kimi K3」で、2.8兆パラメータでフロントエンド開発のベンチマーク首位に立ち、Claude Fable 5やGPT-5.6をも上回ったと報じられ、「最先端に迫るAIが安く・オープンに使える」流れが一段と加速した。規制ではEUがグーグルに対し、Androidと検索データを競合のAIサービスへ開放するよう命令。市場ではTSMCの記録的決算のあとも半導体株は「良い数字でも売られる」まだら模様が続き、メモリ株は急落した。守りではCrowdStrikeがAIエージェントを狙う新手のプロンプトインジェクション5手法を公表し、現場では自治体・大企業でのAI活用が“削減時間”という数字で語られ始めている。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">グーグル「Gemini 3.5 Pro」、17日公開はならず──法人向けの限定プレビューにとどまり、一般公開は8月へ後ろ倒しとの観測</div>
+      <p class="sum">先週まで各メディアが「17日公開」と伝えていたグーグルの次世代AI「Gemini 3.5 Pro」は、その日を過ぎても一般公開されなかった。現状は法人向けクラウド（Vertex AI）での限定プレビューにとどまり、広く使えるようになるのは8月にずれ込むとの見方が強まっている。設計を一から作り直したぶん、コーディングや長い文脈での“じっくり考える”処理が期待水準に届かず、社内テストで手戻りが出たとも報じられる。ここ数か月、公開日や性能の“噂”が先走っては後ろ倒しになる展開が続いており、導入相談の場でも「発表前の噂で予定を組まない」「実際に使える版が出てから評価する」という冷静な構えを勧めやすい。特定の1社・1モデルに固定しすぎず、用途とコストで乗り換えられる前提で組むのが結局は堅い。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Tech-Insider</span><a class="go" href="https://tech-insider.org/au/gemini-3-5-pro-delayed-july-2026/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">EU、グーグルにAndroidと検索データの“開放”を命令──競合のAIサービスへ道を開けと。違反には最大で世界売上の1割の制裁金</div>
+      <p class="sum">欧州委員会は、巨大IT企業を規制する法律（デジタル市場法）に基づき、グーグルにAndroidと検索の一部を競合に開放するよう命じる決定を出した。スマホの音声起動やアプリ横断の機能を、認証と利用者の同意を前提に他社のAIアシスタントにも使わせること、検索で集めた匿名データを条件付きで競合の検索・AI開発に提供することが柱だ。実施は2026年後半から段階的に進み、従わなければ世界売上の最大10％（再犯なら20％）という重い制裁金が科されうる。グーグルは「利用者の安全やプライバシーを損なう」と反発している。要は、一社が握ってきたスマホと検索の“入り口”が、AI時代に向けてこじ開けられ始めたということ。特定プラットフォームへの過度な依存はリスクだという、当たり前だが見落とされがちな論点を語れる好材料だ。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">CNBC</span><a class="go" href="https://www.cnbc.com/2026/07/16/google-required-to-open-up-to-ai-search-engine-rivals-under-eu-mandated-changes.html">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">中国発の“無料で使える”AI「Kimi K3」が話題独占──2.8兆パラメータのオープンモデルが、フロントエンド開発ベンチで首位。Claude Fable 5・GPT-5.6を上回る</div>
+      <p class="sum">中国のスタートアップMoonshot AIが公開したオープンモデル（重みが無償配布され、誰でも自前で動かせるAI）「Kimi K3」が、AI界隈で最大の話題になっている。2.8兆パラメータと過去最大級の規模で、Web画面のコードを競わせる「Frontend Code Arena」で1位に立ち、Anthropicの「Claude Fable 5」やOpenAIの「GPT-5.6」といった最先端モデルを上回るスコアを記録したと報じられた。大規模なコードベースを丸ごと読み込み、長い開発作業を持続できる点も評価されている。完全な重みは7月27日までに配布予定だ。米国勢がしのぎを削る一方で、中国発の“ほぼ無料で最先端に迫る”AIが実力で割って入り、「高性能AIは高くて閉じたもの」という前提が崩れつつある。どのAIを使うかは価格と実力で選ぶ時代、という話の格好の生きた事例になる。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">Axios</span><a class="go" href="https://www.axios.com/2026/07/16/moonshot-kimi-ai-china-model-openai-anthropic">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">OpenAIの新ハード、正体は「230ドルの13キー・キーボード」──コーディングAI「Codex」専用の物理デバイスに、驚きと戸惑いの声</div>
+      <p class="sum">OpenAIが発表した新しいハードウェアが、AIとの“会話用スマート端末”ではなく、コーディング支援AI「Codex」を操作するための13キーの専用キーボード（約230ドル）だった、と報じられ話題になっている。よく使う指示をワンタッチで送るための物理デバイスで、開発者からは「AIに任せる作業が増え、キーボードすら専用化する時代か」という驚きと、「そこにお金をかける意味があるのか」という戸惑いが入り混じる。派手な新モデルの陰で、AIを“どう手元で操るか”という周辺の使い勝手にも各社が投資し始めた、という小さな象徴だ。中身の本質より、こうした身近な変化のほうが「AIが仕事の道具として日常に入ってきた」実感を伝えやすい。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">InfoWorld</span><a class="go" href="https://www.infoworld.com/article/4198470/openais-new-hardware-is-a-230-13-switch-keyboard-for-codex.html">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">半導体株はまだら模様──TSMCの記録的決算のあとも「良い数字でも売られる」地合いが続き、メモリ株は急落。押し目買いを説く声も</div>
+      <p class="sum">先週TSMCが過去最高益と強気の見通しを示したにもかかわらず、半導体株はそろって上がるどころか、まだら模様の値動きが続いている。指標株は「良い数字は織り込み済み」と利益確定売りに押され、メモリ関連の株は急落する場面もあった。一方で「この売られ過ぎこそ買い場」と、TSMCのようにAI向け需要の土台がしっかりした銘柄を推す強気の声も出ている。つまり、決算が良くても株価は素直に上がらず、期待と現実のズレで神経質に振れる相場が続いているということ。マーケットの話をするなら「株価の上下に一喜一憂せず、受注や設備投資という“実需”が本当に続いているかを数字で確かめる」姿勢を、繰り返し勧めたい局面だ。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">The Motley Fool</span><a class="go" href="https://www.fool.com/investing/2026/07/18/the-1-ai-chip-stock-id-buy-hand-over-fist-in-this/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">AnthropicがMuskのxAIから計算資源を“賃借”──SpaceXのIPO資料で、月12.5億ドル・総額450億ドル規模の契約が明るみに</div>
+      <p class="sum">宇宙企業SpaceXが上場に向けて提出した資料（S-1）で、AI大手Anthropicが、イーロン・マスク氏のAI企業xAIから計算資源（データセンター）を借りる巨額契約を結んでいたことが明らかになった。金額は月12.5億ドル、2029年5月までで総額約450億ドルにのぼる。ライバル同士に見える両社が、実は「計算資源の貸し借り」でつながっているわけで、いまのAI競争の主戦場が「賢いモデル作り」だけでなく「それを動かす膨大な計算能力の奪い合い」にあることを、生々しい数字で映している。派手なモデル発表の裏で、電力とデータセンターという“地力”に天文学的な資金が流れ込んでいる──AI投資の実態を経営目線で語るときの分かりやすい素材だ。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Data Center Dynamics</span><a class="go" href="https://www.datacenterdynamics.com/en/news/spacex-ipo-filing-reveals-anthropic-set-to-pay-musks-firm-125bn-a-month-to-rent-xai-data-center-space/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">AI関連案件が1年で約2倍──「AIエージェントを束ねて動かせる」人材は需要に供給が追いつかず、単価が二極化</div>
+      <p class="sum">SES業界の案件データを追う調査で、AI関連の案件数が1年で約2倍（Q1で88件→184件）に増えた一方、LangGraphやCrewAIといった“AIエージェントを組んで動かす”スキルを持つ人材は、需要に対し供給が5％以下という逼迫が続いていると報じられている。結果として、RAG構築やエージェント設計まで担える人材は月100万円超が並ぶ一方、AIで圧縮しやすいコーディング・単体テスト・ドキュメント整理といった下流の定型作業は、短期・小口・スポット化して価格圧力を受ける。同じ「エンジニアを出す」でも、AIを前提に上流や采配を担える人と、定型実装だけの人とで単価が大きく開き始めた、という具体的な数字だ。要員をどれだけ早くエージェント開発側へ横展開できるかが、SES経営の分水嶺になる。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">Heyday（透明性メディア）</span><a class="go" href="https://lp.hydy.jp/blog/ai-agent-engineer-ses-tanka">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">“AIが使える”だけでは単価は上がらない──効果を「数字で示せる」人材だけが値上がりする、という現実</div>
+      <p class="sum">AI案件の高単価が話題になる一方で、現場を追う分析は「単にAIツールを触れるだけでは単価は上がらない」と釘を刺す。評価されるのは、AIを使ってどれだけ生産性が上がったかを“定量的に示せる”人材で、削減した時間や工数を数字で語れることが単価交渉の決め手になる、という指摘だ。裏を返せば、AIの導入は「入れて終わり」ではなく「どれだけ効いたかを測って見せる」ところまでやって初めて価値になる、ということ。これは受託・SESの人材評価にも、企業のAI導入支援にも共通する話で、「効果を数字で可視化する伴走」こそが差別化になると、経営にも現場にも同じ言葉で説ける。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">エンジニアファクトリー</span><a class="go" href="https://www.engineer-factory.com/media/skill/6571/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">パナソニック コネクト、社内AIで年間44.8万時間を削減──「聞く」から「頼む」へ。使い方を一段深めて削減時間が前年の2.4倍に</div>
+      <p class="sum">パナソニック コネクトが、自社開発の社内AI「ConnectAI」による業務時間の削減が年間44.8万時間に達したと発表した。約1万2400人の全社員に展開し、当初は「調べる・要約する」といった“聞く”使い方が中心だったが、資料作成や一連の作業をまとめて任せる“頼む”使い方へと踏み込んだ結果、削減時間が前年（18.6万時間）の約2.4倍に伸びたという。ポイントは、新しい特別な仕組みではなく、既にある地味な仕事の任せ方を一段深めただけで効果が跳ね上がった点だ。中小・士業でも進め方は同じで、まず「調べる・書く」でAIに慣れ、次に「一連の作業をまとめて頼む」へ広げると効果が伸びやすい。伴走支援では、この“次の一段”をどこに置くかの見立てが価値になる。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">Panasonic（プレスリリース）</span><a class="go" href="https://news.panasonic.com/jp/press/jn250707-2">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">大企業のAI活用が“成果の数字”で語られ始めた──セブン-イレブンは商品企画を最大10分の1に短縮、住友化学は全社導入で最大5割超の効率化</div>
+      <p class="sum">生成AIの業務活用が、「導入した」という段階から「どれだけ効果が出たか」という数字で語られる段階に移りつつある。セブン-イレブン・ジャパンは商品企画の工程にAIを取り入れ、企画にかかる期間を最大10分の1に短縮すると発表。住友化学は約6,500人の全従業員に社内AIを展開し、業務によっては最大50％超の効率化を実現したという。いずれも「文章を書く」「調べる」「企画をまとめる」という、どの組織にもある仕事にAIを当てた結果だ。規模は違っても勘所は共通で、時間のかかる反復作業を一つ選び、そこで“減った時間”を数字にして横へ広げるのが失敗しにくい。士業や中小の現場でも、この「まず一つ、数字で」という進め方は素直に効く。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">BIZ ROAD（導入事例まとめ）</span><a class="go" href="https://bizroad-svc.com/blog/seisei-ai-kigyou/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">CrowdStrike、AIエージェントを狙う“新手”のプロンプトインジェクション5手法を公表──仕込んだ命令が後から発動する巧妙な攻撃も</div>
+      <p class="sum">セキュリティ大手CrowdStrikeが、AIエージェント（自分で外部システムを操作するAI）を狙う新しいプロンプトインジェクション（読み込ませた文章に紛れた偽の命令でAIを操る攻撃）5手法を公表した。特定の合図で“仕込んでおいた命令”が後から発動するもの、安全に関わる言葉をAIに言わせないよう封じるもの、命令を細切れにしてフィルタをすり抜けるものなど、単純な「だまし文句」ではなく、隠す・遅らせる・分割するといった巧妙な手口へと進化している。同社の脅威報告では、2025年に90を超える組織で正規のAIツールに悪意ある命令が仕込まれ、認証情報などが盗まれたという。AIに権限を持たせるほど“入り口”が増える構図は変わらない。中小・士業に高度な仕組みは要らないが、「どのAIツールを、どのデータに触れさせ、どこまで自動で実行させているか」を棚卸しして点検する“AIの健康診断”は、規模を問わず欠かせない。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">CrowdStrike</span><a class="go" href="https://www.crowdstrike.com/en-us/blog/crowdstrike-uncovers-new-prompt-injection-techniques/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">日本語でも整理進む──プロンプトインジェクションの仕組みと防御を「実務目線」で解説する記事が広がる</div>
+      <p class="sum">AIエージェント狙いの攻撃が高度化するのに合わせ、日本語でも「プロンプトインジェクションとは何か・どう防ぐか」を実務目線で整理する解説が増えている。要点はシンプルで、（1）AIに読み込ませる外部の文章（メール・資料・Webページ）には“見えない命令”が混じりうると前提すること、（2）AIに与える権限やアクセスできるデータを必要最小限に絞ること、（3）まず社内で使っている全AIツールを棚卸しし、利用ルールを決めて担当者に周知すること──この地味な基本の徹底が最も効く、という点だ。派手な防御ツールを入れる前に、「何を使い、どこまで任せているか」を把握する。これは士業の先生にもそのまま伝わる話で、守りをやわらかく切り出す入り口になる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Qiita（実務解説）</span><a class="go" href="https://qiita.com/n-okutomi/items/0ed6598d93466b7fd781">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
