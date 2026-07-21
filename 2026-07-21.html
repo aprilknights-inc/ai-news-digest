@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-07-21</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.07.21 TUE</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">火曜の朝は“答え合わせ”の予告編から。あす22日のアルファベットを皮切りに巨大IT各社の決算が始まり、市場の視線は「AIにこれだけ使って、ちゃんと回収できているのか」の一点へ。前週に急落した半導体株は20日に反発した。話題の中心は相変わらず中国発の“無料級”AI「Kimi K3」で、人材の綱引きも激しい。大局・株・現場・守りを、いつもの6つの切り口で。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>本日7月21日は、巨大IT各社の決算ウィークを翌日に控え、市場の関心が「AIにこれだけ投じて、いくら回収できているのか」へ一気に集約した。皮切りは7月22日のアルファベットで、以降マイクロソフト・メタ・アマゾンと続く。上位ハイパースケーラー5社のデータセンター投資は2026年に前年比約8割増の6,440億ドルへ膨らむ見通しで、投資家は好決算そのものより設備投資の“回収の証拠”を求めている。前週に約1か月ぶりの下げを演じた半導体株は20日に反発した。技術面では中国Moonshotの2.8兆パラメータのオープンモデル「Kimi K3」が引き続き話題の中心で、開発の第一人者による評価や独自ベンチの検証が飛び交う。人材ではグーグルからトランスフォーマー論文の共著者らが相次いで移籍し、AI人材の争奪も一段と激しくなっている。守りでは、Webページに仕込んだ指示でAIエージェントを操る「間接プロンプトインジェクション」の実例が国内外で報告され、AIに権限を与えるほど点検が欠かせないことが改めて浮き彫りになった。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">AIの主役が「最強の1モデル」から「用途に合う1本」へ──中国発の“無料級”AIやオープンモデルが割って入り、選ぶ基準は価格・速さ・使い勝手へ広がる</div>
+      <p class="sum">この1か月、OpenAI・グーグル・Anthropicといった最先端の各社が新モデルを次々に出す一方で、業界の見方は「一番賢いモデルが勝つ」から「用途に一番合うものが勝つ」へと明確に移った。中国Moonshotの「Kimi K3」のように、重みが無償配布され誰でも自前で動かせる“オープンモデル”が最先端に迫る性能で割って入り、価格・速さ・手元で使える手軽さが、ベンチマークの点数と同じくらい重視されるようになっている。裏を返せば、企業がAIを選ぶときは「どれが一番すごいか」ではなく「うちのこの業務に、どれが安く・速く・安全に効くか」で決める時代になったということ。特定の1社に固定せず、用途とコストで乗り換えられる前提で組む——導入相談ではこの“身軽さ”を勧めやすい。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">ThursdAI</span><a class="go" href="https://thursdai.news/releases/2026-07">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">AI人材の綱引きが激化──グーグルからトランスフォーマー論文の共著者らが相次ぎ移籍、ノーベル賞研究者も他社へ。“看板頭脳”の奪い合いが表面化</div>
+      <p class="sum">AIの土台となった論文「Attention Is All You Need」の共著者でGemini開発を主導したノーム・シャジール氏がOpenAIへ移るなど、グーグルから中核研究者の流出が続いていると報じられている。AlphaFoldで2024年のノーベル化学賞を受けたジョン・ジャンパー氏がAnthropicへ移る動きも伝えられ、看板級の頭脳をめぐる各社の綱引きが一段と激しくなっている。モデルの性能差が縮まるなかで、勝敗を分けるのは結局「誰が作るか」という人の力だという構図が鮮明だ。これはAIに限らず、優秀な人材ほど流動する時代の縮図でもある。採用・定着の難しさは士業や中小の経営にも通じる話で、「人が動く前提で、仕組みと引き継ぎをどう残すか」を語る枕にしやすい。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Bind AI</span><a class="go" href="https://blog.getbind.co/gemini-3-5-pro-slips-to-july-and-four-senior-google-researchers-just-left-for-anthropic/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">「Kimi K3」の話題が続騰──2.8兆パラメータの過去最大級オープンモデルが、Web画面のコード生成ベンチで首位。“無料で最先端に迫る”衝撃が波紋</div>
+      <p class="sum">中国Moonshot AIが公開したオープンモデル「Kimi K3」が、AI界隈で最大の話題であり続けている。2.8兆パラメータと過去最大級の規模で、Web画面のコードを競う「Frontend Code Arena」で首位に立ち、Anthropicの「Claude Fable 5」など最先端モデルを上回ったと報じられた。100万トークンの長い文脈を扱え、完全な重みは7月27日までに無償配布される予定だ。総合力ではなお米国トップ勢が上との評価もあるが、「高性能AIは高くて閉じたもの」という前提が崩れつつある点で衝撃が大きい。米国勢がしのぎを削る横で、中国発の“ほぼ無料で最先端に迫る”AIが実力で割り込んだ——「どのAIを使うかは価格と実力で選ぶ時代」という話の、格好の生きた事例になる。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">Tom's Hardware</span><a class="go" href="https://www.tomshardware.com/tech-industry/artificial-intelligence/moonshot-releases-2-8-trillion-parameter-kimi-k3">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">実務家サイモン・ウィリソン氏の“ペリカン”テストが再び話題──定番ベンチが飽和するなか「身近な手作業で確かめる」評価法に共感が集まる</div>
+      <p class="sum">LLM実務の第一人者サイモン・ウィリソン氏が、新モデル「Kimi K3」を自作の“ペリカンを自転車に乗せた絵を描かせる”ゆるいテストで試し、そこから「公式ベンチの点数はもう当てにしづらい」という論点を投げかけて話題になっている。有名なベンチマークは各社が対策済みで満点近くに張り付き、モデルの実力差が見えにくい——だからこそ、自分の仕事に近い“手触りのある試し方”で確かめるのが結局いちばん確か、という指摘だ。これはそのまま企業のAI選びにも効く教訓で、他人のベンチ点数を鵜呑みにせず「自社の実際の業務データで一度試す」ことの大切さを、平易に伝える枕になる。導入前の小さなPoC（お試し検証）をなぜやるのか、の説明にも使いやすい。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">@simonw（Simon Willison）</span><a class="go" href="https://simonwillison.net/2026/Jul/16/kimi-k3/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">巨大IT決算ウィーク開幕へ──あす22日のアルファベットを皮切りに、市場は「AI投資7,000億ドルの“回収”」の証拠を要求。設備投資の見通しが最大の焦点</div>
+      <p class="sum">巨大IT各社の四半期決算が、7月22日のアルファベットを皮切りに始まる。以降マイクロソフト・メタ・アマゾンと続き、市場の関心は一点に集約している——「AIにこれだけ巨額を投じて、本当に稼ぎに結びついているのか」だ。上位ハイパースケーラー5社のデータセンター投資は2026年に前年比約79％増の6,440億ドルへ膨らむ見通しで、投資家は好決算そのものより「その投資が回収できる証拠」と今後の設備投資の方針を見極めようとしている。特にアルファベットの投資計画は、AI投資が続くのか一服するのかを占う最重要の手がかりとされる。要は「使った金額」より「戻ってくる算段」を市場が問い始めたということ。AIの話をするなら「導入は投資、大事なのは回収を数字で示すこと」という基本を、繰り返し確認したい局面だ。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">NBC News</span><a class="go" href="https://www.nbcnews.com/business/markets/big-tech-ai-earnings-alphabet-meta-amazon-microsoft-rcna342796">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">半導体株、20日に反発──先週は約1か月ぶりの下げ幅、中国「Kimi K3」ショックと割高感で調整。決算ラッシュ前に買い戻し</div>
+      <p class="sum">前週に約1か月ぶりの大きな下げを演じた半導体株が、7月20日に反発した。先週は、中国Moonshotの高性能オープンモデル「Kimi K3」登場で「米国勢の優位が揺らぐのでは」との不安が広がり、あわせてAI株の割高感への警戒からアプライドマテリアルズやラムリサーチなどが軒並み約4％下落、フィラデルフィア半導体指数は一時“弱気相場”入りしていた。20日はこの後に控える決算ラッシュを前に押し目買いが入り、値を戻す展開となった。良い数字が出ても素直に上がらず、期待と現実のズレで神経質に振れる相場が続いている。マーケットの話をするなら「株価の上下に一喜一憂せず、受注や設備投資という“実需”が続いているかを数字で確かめる」姿勢を、改めて勧めたい。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Bloomberg</span><a class="go" href="https://www.bloomberg.com/news/articles/2026-07-20/us-stocks-rebound-from-selloff-as-nvidia-other-chipmakers-rise">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">「人月ビジネス」に陰り──生成AIでコード量が減り、SES・SIerの“頭数を売る”モデルの存在意義が問われ始める</div>
+      <p class="sum">エンジニア向けメディアが、生成AIの普及で「人月（人数×月数）で見積もる受託・SESのビジネスに陰りが見え始めた」と論じている。AIがコードの下書きやテスト、ドキュメント整理といった定型作業を肩代わりするほど、「頭数を並べて工数を売る」やり方の価値は目減りする。一方で、AIをどう業務に組み込むかを設計し、成果を出せる上流の人材の価値はむしろ上がる。つまり同じ「エンジニアを出す」でも、AIを前提に段取りや采配まで担える人と、定型実装だけの人とで評価が大きく開き始めた、ということ。SES・SIerにとっては「人を出す」から「AIを使って成果を出す」への転換が迫られており、これは受託・人材ビジネスの構造そのものを問う話だ。自社の要員をどれだけ早く“AIを使いこなす側”へ引き上げられるかが分水嶺になる。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">エンジニアtype</span><a class="go" href="https://type.jp/et/feature/28078/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">現場フリーランスが検証した「AIエージェント案件は本当に高単価か」──スキル要件・単価・入り方を2026年夏版で実地レポート</div>
+      <p class="sum">現役のSESフリーランスが、話題の「AIエージェント案件」の実態を自ら調べてまとめた。結論はおおむね「たしかに高単価だが、入口はそこまで高くない」。RAG（社内文書などを参照して答えを作る仕組み）やチャットボットを一つ自作してGitHubで公開し、PoC・検証フェーズの案件から入るのが近道で、Java・PHP・C#などの既存のシステム開発経験があればAI組み込み案件には十分入れる、という実務的な指針が示されている。要は、いきなり最先端の専門家を目指さなくても、既存スキル＋小さな自作物で“AIを使える側”へ移れる、ということ。これはSESの要員育成にそのまま応用でき、「今いるエンジニアを、身近な題材でAI案件へ横展開する」現実的な道筋として提案しやすい。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">note（現役SESフリーランス）</span><a class="go" href="https://note.com/0kara_freelance/n/n91d31c01c41c">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">日本企業の生成AI活用、“数字で語れる”事例が定番化──ベネッセは社員1.5万人に社内AI、ヤマトはAIで数か月先の荷物量を予測し人員配置に活用</div>
+      <p class="sum">日本企業の生成AI活用が、「導入した」段階から「どこにどう効いたか」を具体例で語れる段階に入っている。ベネッセは自社開発のAIチャット「Benesse GPT」をグループ社員約1.5万人に展開し、調べ物や業務分析を効率化。ヤマト運輸は数か月先の荷物量を予測するAIを開発し、拠点ごとの人員・車両の配置最適化に役立てている。いずれも派手な新技術ではなく、「調べる・まとめる・見通す」という、どの組織にもある仕事にAIを当てた結果だ。規模は違っても勘所は共通で、時間のかかる反復作業を一つ選び、そこで“減った時間”や“外れにくくなった予測”を数字にして横へ広げるのが失敗しにくい。士業や中小の現場でも、この「まず一つ、数字で」という進め方は素直に効く。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">ミライワークス（導入事例まとめ）</span><a class="go" href="https://mirai-works.co.jp/business-pro/business-column/generative-ai-case-study">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">「業務効率30％アップ」を掲げる中堅・中小の成功事例が続々──特別な仕組みより、身近な定型業務にまず当てるのが共通の勝ち筋</div>
+      <p class="sum">生成AIで「業務効率が3割上がった」といった成果を掲げる企業事例のまとめが、実務目線で整理され広がっている。共通しているのは、いきなり全社の大改革を狙うのではなく、問い合わせ対応・資料作成・議事録・下調べといった“毎日ある地味な作業”にまずAIを当て、効果を測ってから横に広げているという点だ。裏を返せば、成果が出ている企業ほど「導入して終わり」にせず、どれだけ時間が減ったかを数字で確かめてから次へ進んでいる。中小・士業でも進め方は同じで、まず「調べる・書く」でAIに慣れ、次に「一連の作業をまとめて頼む」へ広げると効果が伸びやすい。伴走支援では、この“最初の一つ”をどこに置くかの見立てと、効果の数値化こそが価値になる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">パナソニック IS（活用事例）</span><a class="go" href="https://service.is-c.jpn.panasonic.com/column/generative_ai">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">Webページに仕込んだ“見えない命令”でAIエージェントを操る攻撃、実例2件を確認──26種のAIのうち4種が「勝手に支払い操作」を実行</div>
+      <p class="sum">セキュリティ調査チーム（Zscaler ThreatLabz）が、Webページの中に悪意ある指示を紛れ込ませてAIエージェント（自分でWebやシステムを操作するAI）を乗っ取る「間接プロンプトインジェクション」の実際の攻撃を2件確認したと公表した。検索上位に紛れ込ませたり、CSSやHTMLで人には見えないよう命令を隠したりする手口で、内部検証では26種のAIのうち4種が、攻撃者の指示どおりに“支払い操作”まで実行してしまったという。つまり、AIに「Webを見て自動で作業して」と任せるほど、閲覧先に仕込まれた罠に引っかかる余地が増える、ということ。中小・士業に高度な仕組みは要らないが、「どのAIツールに、どのデータを触らせ、どこまで自動で実行させているか」を棚卸しして点検する“AIの健康診断”は、規模を問わず欠かせない。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">YJK Security（Zscaler ThreatLabz紹介）</span><a class="go" href="https://yjk365security.jp/news/indirect-prompt-injection-ai-agents-zscaler-threatlabz-2026/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">「AIエージェントはすでに侵害されている」──13モデル2,600テストの検証で、権限を持つAIには構造的な弱さがあると指摘</div>
+      <p class="sum">セキュリティ研究（TrendAIとPwCによる検証）が、13種類のAIモデルに2,600通りのテストを行った結果、「自分でツールを操作する権限を持つAIエージェントは、すでに構造的に侵害されやすい状態にある」と警鐘を鳴らした。ポイントは、個々のAIが賢いかどうかではなく、外部の文章を読み込み・外部ツールを動かし・強い権限を持つという“エージェントの作り”そのものに、命令を乗っ取られる余地が残っている点だ。派手な新しい攻撃ツールが要るわけではなく、権限を広く与えるほど入口が増える、という当たり前の構図が数字で裏づけられた形になる。難しい対策より先に、「AIに与える権限とアクセスできるデータを必要最小限に絞る」「社内で使うAIツールを棚卸しして利用ルールを決める」——この地味な基本の徹底が最も効く。士業の先生にもそのまま伝わる、守りの入口の話だ。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Innovatopia（TrendAI×PwC検証）</span><a class="go" href="https://innovatopia.jp/cyber-security/cyber-security-news/113673/">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
