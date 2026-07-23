@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-07-23</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.07.23 THU</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">昨夜の答え合わせが出た。アルファベットの決算は売上・利益とも市場予想を上回り、クラウドは前年比8割増と絶好調。それでも株価は時間外で下落した。理由は、今年のAI設備投資を2,050億ドルへ再び引き上げたこと。「稼げているのは分かった、では使いすぎではないか」と市場の視線が移った。一方AMDは本日まで自社イベントで新型チップを披露し、半導体株は先週の急落から反発。大局・株・現場・守りを、いつもの6つの切り口で。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>本日7月23日は、前夜に出たアルファベットの4〜6月期決算が話題の中心。売上は前年比24％増の1,198億ドル、主力のグーグル・クラウドは82％増の248億ドルと大きく伸び、純利益もほぼ3倍に膨らんだが、株価は時間外で下落した。決め手は同社が2026年の設備投資見通しを最大2,050億ドル（前回は1,800億〜1,900億ドル）へさらに引き上げたことで、市場の関心が「ちゃんと稼げているか」から「使いすぎではないか」へ移ったことを示す。半導体側では、AMDが22〜23日の自社イベントで次世代サーバー用CPU「Zen 6 Venice」（TSMCの2nm製造）とAI向けGPUの新ロードマップを公開し、先週約9％下げた半導体指数は反発した。技術の潮流は「一番賢いモデルが勝つ」から「価格・速度・使い勝手まで含めて“自社に一番合う”モデルが勝つ」へと軸足が移りつつあり、各社は自律的に作業をこなす「エージェント型AI」の実用化を競っている。守りの面では、AIエージェントへの命令すり替え（プロンプトインジェクション）が2026年で最大の脅威とされ、前年比で攻撃が大きく増えている点に注意が要る。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">AI選びの基準が「一番賢いモデル」から「自社に一番合うモデル」へ──価格・速度・使い勝手が性能スコアと同じくらい効く時代に</div>
+      <p class="sum">ここ数日の新モデル報道を通して見えてきたのは、AIの評価軸が変わりつつあるという大きな流れだ。少し前までは「ベンチマークで一番強いモデル」を選ぶのが当たり前だったが、実務で毎日大量に使う場面では「1件あたりいくらか」「どれだけ速く返るか」「どこで動かせるか」が性能の高さと同じくらい重視されるようになった。グーグルが最上位機の公開を後回しにしてまで安価な「Flash」系を3本先に出したのも、価格勝負の激しいこの中位帯こそ実際の仕事が回る場所だからだ。要は「最強の1台を探す」より「用途ごとに一番割に合うAIを選び分ける」発想への転換で、企業のAI活用でもモデル選定が“性能表を見る”から“見積もりと相性を見る”作業に変わってきている。導入相談ではこの見極めが助言のしどころになる。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">llm-stats / BuildFast</span><a class="go" href="https://www.buildfastwithai.com/blogs/ai-news-today-july-22-2026">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">主要各社、こぞって「自分で操作するAI」へ──メタはパソコン・ブラウザ・スマホを操るAIを投入、OpenAIは全機能を束ねる“スーパーアプリ”化を進める</div>
+      <p class="sum">この夏の各社の動きに共通するのは、「質問に答えるAI」から「実際に手を動かして作業するAI」への転換だ。メタは画面上のパソコン・ブラウザ・スマホを自分で操作してタスクをこなすAIを展開し、OpenAIは複数の機能を一つに束ねた“何でもこなすアプリ”への集約を進めている。アンスロピックは「お手本を見せて覚えさせる」路線で、社員の頭の中にしかない社内手順をAIに引き継がせる法人向けの強みを押し出す。つまり業界全体が「賢く答える」段階を超え、「任せたら最後までやる」実務レベルの自動化にかじを切っている。人に代わって一連の作業を回す“エージェント型AI”が実験から現場へ移る局面で、どの業務をどこまで任せるかを見立てる伴走支援の出番が増える。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">llm-stats</span><a class="go" href="https://llm-stats.com/ai-news">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">「プロンプトの小技より“作業の設計”」がAI開発者の合言葉に──サイモン・ウィリソン氏らが説く、AIに自分の作業ログを見せて自力で立て直させる作り方</div>
+      <p class="sum">AI実務者の間で、「魔法の呪文（プロンプト術）を探すより、仕事の段取りをきちんと設計する方が効く」という論調が改めて広がっている。LLM実務の第一人者サイモン・ウィリソン氏は、AIエージェントに自分の作業記録（ログ）を一元的に見せておき、間違えたら自分で気づいて立て直せるように作るやり方を勧める。経営×AIの論客エイサン・モリック氏も「AIは呪文で願いを叶える魔法ではなく、目的・成果物・合格ラインを明示して任せる有能な部下」と繰り返しており、両者の主張は「テクニック集めより、依頼と検証の型を整える」で一致する。派手な新モデルの裏で、“うまく使う側の作法”が地に足のついた話題として定着してきた。社内でAIを広げる時の教育方針そのもので、セミナーや伴走支援で伝えたい核心になる。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">@simonw（Simon Willison）</span><a class="go" href="https://simonwillison.net/tags/ethan-mollick/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">中国発の巨大オープンAI「Kimi K3」、今週日曜27日に“中身一式”を無償公開へ──「最先端が誰でも自前で動かせる」現実味が近づく</div>
+      <p class="sum">先週から話題を独占する中国Moonshot AIのオープンモデル「Kimi K3」が、7月27日（日）に完全な重み（モデルの中身一式）を無償公開する予定で、界隈の注目が続いている。2.8兆パラメータと過去最大級ながら、Web画面のコード生成では最先端の一角に食い込む実力とされ、100万トークンの長文脈・画像対応も備える。米国トップ勢（アンスロピック、OpenAI）に総合力ではなお一歩及ばないとの評価もあるが、「高性能AIは高くて閉じたもの」という前提が崩れつつある象徴だ。重みが手元に落ちれば、機密データを外に出さず自社内で動かす選択肢も現実的になる。「どのAIを、いくらで、どこで動かすか」を選ぶ時代の生きた教材で、あと数日で実際に配られる点が注目される。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">pricepertoken</span><a class="go" href="https://pricepertoken.com/news/model-releases">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">アルファベット決算は“好決算なのに株安”──売上＋24％・クラウド＋82％で純利益ほぼ3倍でも、AI設備投資を2,050億ドルへ再引き上げで市場は警戒</div>
+      <p class="sum">グーグルの親会社アルファベットが前夜（米時間7月22日引け後）に4〜6月期決算を発表した。売上は前年比24％増の1,198億ドル、成長の柱グーグル・クラウドは82％増の248億ドルと大きく伸び、純利益もほぼ3倍という文句なしの内容だった。それでも株価は時間外で下落。理由は、2026年の設備投資（AI用データセンター等）の見通しを前回の1,800億〜1,900億ドルから最大2,050億ドルへさらに引き上げたことだ。決算前は「AIにこれだけ投じて稼げているのか」が焦点だったが、稼ぎが示された途端に市場の関心は「使いすぎではないか、回収は続くのか」へ移った。要は、AIは“使った金額”より“戻ってくる算段”を市場が問う段階に入ったということ。導入の話をするなら「AIは投資、大事なのは回収を数字で示すこと」を繰り返し確認したい局面だ。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Seeking Alpha / CNBC</span><a class="go" href="https://seekingalpha.com/news/4616900-alphabet-delivers-q2-beat-with-cloud-revenue-surging-82-capex-disappoints">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">AMD、本日まで自社イベントで新型チップ披露──2nm製造の次世代サーバーCPU「Zen 6 Venice」とAI向けGPU新計画で、先週急落の半導体株が反発</div>
+      <p class="sum">AMDが7月22〜23日に年次イベント「Advancing AI 2026」を開き、次世代サーバー用CPU「Zen 6 Venice」（TSMCの最先端2nmで製造）とAI向けGPU「MI455X」の新ロードマップを公開した。先週は半導体指数（SOX）が約9％下げていたが、この材料を前に主要チップ株は反発。証券各社もAMDの目標株価を相次いで引き上げ（ある社は「一番の推奨銘柄」に指定）、直近の下げは「需要の崩れではなく、値上がりしすぎた分の調整」との見方が優勢だ。相場の主役は引き続き半導体で、エヌビディア一強に対しAMDが具体的な次世代製品で追う構図がはっきりした。派手な値動きに見えるが、根っこはAIインフラ需要そのものが続いていること。経営目線では「相場の上下」より「AI投資の需要が本物かどうか」を見る材料として押さえたい。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Blockonomi / TradingKey</span><a class="go" href="https://blockonomi.com/chip-stocks-rally-as-amd-nvidia-nvda-and-micron-mu-surge-despite-recent-selloff/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">エンジニア単価、AIスキルの有無で明確に二極化──生成AI・RAG・エージェント開発の案件は月100〜180万円、IPA調べでAI人材は一般より平均35％高</div>
+      <p class="sum">2026年のSES・受託の単価相場をまとめた複数の分析によると、AI関連スキルの有無で単価差がはっきり広がっている。生成AIのAPI連携、RAG（社内文書を参照して答えを作る仕組み）の構築、エージェント開発を担える人材の案件は月100〜180万円が増加中で、IPAの人材白書でもAIスキル保有者の市場単価は一般的なエンジニアより平均35％高いという。従来のSESエンジニア平均が月55〜75万円であることを踏まえると、既存の開発経験に“AIを使える一点”を足すだけで市場価値が変わる、という構図だ。これはSESの要員育成にそのまま効く指針で、今いるエンジニアに小さなAI題材を持たせて単価帯を引き上げる——現実的な提案として使いやすい。「AIを前提に段取りまで担える人材」を前面に出すのがSES提案の勝ち筋になる。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">HLT / SES BASE（単価相場2026）</span><a class="go" href="https://hlt-inc.jp/news/ses-engineer-monthly-rate-guide">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">「多重下請けで単価が削られる構造」も改めて表面化──エンド単価100万円が2〜3社経由で現場は60万円に。AIで上流化・直取引に動く好機</div>
+      <p class="sum">単価分析では、AIスキルによる上振れと同時に、SES特有の“商流の深さ”による目減りも改めて指摘されている。エンドのクライアントが100万円を払っていても、間に2〜3社が入ると最終的に現場エンジニアの単価が60万円まで下がるケースがあるという。AIで一人あたりの生産性が上がるほど、「工数を右から左に流すだけ」の中間マージンの正当性は問われやすくなる。逆に言えば、AIを使って成果まで責任を持てる会社は、上流に食い込み直取引に近づく好機でもある。要は、AIは単価を上げる材料であると同時に、商流のどこに立つかを見直す契機でもある、ということ。SES事業としては「人を出す」から「AI前提で成果まで担う」へ立ち位置を上げ、少しでもエンド近くの取引を増やす提案につなげたい。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">HLT（SES単価ガイド2026）</span><a class="go" href="https://hlt-inc.jp/news/ses-unit-price-market-rate">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">企業のAI活用が「検証」から「成果創出」へ──問い合わせ月3,000件の定型応答を自動化、年530件超の社内ヘルプデスクをAIで属人化解消</div>
+      <p class="sum">2026年の企業の生成AI活用は、「試してみる」段階から「実際にどこがどれだけ楽になったか」を語れる段階へ移っている。人の判断や作業を部分的に肩代わりする“AIエージェント”が実用フェーズに入り、たとえば月約3,000件の問い合わせのうち定型的な質問への応答を自動化して有人対応の工数を減らした事例や、年間530件超の対応が要る社内ヘルプデスクをAIで構築し、特定の担当者しか答えられない“属人化”を解消してノウハウを共有できた事例が出ている。共通するのは、全社改革ではなく「手間と件数の多い一つの業務」にAIを当てて効果を数字で測る進め方だ。士業や中小の現場でも勘所は同じで、まず身近な反復業務を一つ選んで効果を測り、そこから横へ広げるのが失敗しにくい。伴走支援では、この“最初の一つ”の見立てが価値になる。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">AIsmiley（活用事例2026）</span><a class="go" href="https://aismiley.co.jp/ai_news/ai-agent-example-business/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">「コードを書くだけ」を超えたAIが現場へ──Claude Code・OpenAI Codex・GitHub Copilot Agentが、ファイル操作からコマンド実行・デプロイまで自律実行</div>
+      <p class="sum">開発現場では、AIの役割が「コードの下書きを手伝う」段階から一段進み、ファイルの編集・コマンドの実行・公開作業（デプロイ）まで一連の流れを自分でこなす“エージェント型”が現実になってきた。Claude Code、OpenAI Codex、GitHub Copilot Agentといった道具が相次いで実用化され、人は「何を作るか」を指示し、細かい手順はAIが回す形が広がっている。狙いは、開発の面倒な手戻りや定型作業を減らし、人はより上流の判断に集中すること。ただし自動でコマンドやデプロイまで走る以上、「どこまで自動で許すか」の線引きと確認は欠かせない。中小・士業のシステム開発やDXでも、この流れは受託の作り方そのものを変えていく。導入時は「便利さ」と「自動実行の範囲を絞る安全設計」をセットで説明したい。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">TeamDay（Agentic Coding 2026）</span><a class="go" href="https://www.teamday.ai/blog/complete-guide-agentic-coding-2026">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">「AIエージェントへの命令すり替え」が2026年“最大の脅威”に──攻撃は前年比で急増、OWASPのAI脆弱性リストで筆頭。実際に企業でデータ漏洩も</div>
+      <p class="sum">AIに悪意ある命令を紛れ込ませる「プロンプトインジェクション」が、2026年のAIセキュリティで最大の脅威とされ、攻撃件数は前年から大きく増えている。OWASP（脆弱性の国際的な指針）が更新したLLM向けの危険度ランキングでも、この手口が筆頭に挙がった。実際、ある金融サービス企業では、巧妙に言葉を組み立てた質問でAIの本来の指示（社内ルール）を無視させ、内部の価格データが約3週間にわたって漏れていたことが後から発覚したという。AIは「本来の指示」も「外部から読み込んだ文章」もひと続きの文字列として扱うため、線引きが原理的に難しいのが根っこにある。中小・士業でも他人事ではなく、「どのAIツールに、どのデータを触らせ、どこまで自動実行させているか」を棚卸しする“AIの健康診断”は規模を問わず欠かせない。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">ECCU / Help Net Security</span><a class="go" href="https://www.eccu.edu/blog/prompt-injection-ai-cybersecurity-threat/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">AI開発の“土台”を突く攻撃も──マイクロソフトが命令すり替えを遠隔操作に変える欠陥を発見、AI連携基盤LiteLLMには改ざん版が約4.7万回ダウンロードされる事件</div>
+      <p class="sum">脅威はAIの使い方だけでなく、AIを支える裏側の部品にも及んでいる。マイクロソフトは、自社のAI開発基盤で「プロンプトインジェクション」が、単なる命令すり替えを超えて“端末上で任意のプログラムを実行させる（遠隔操作）”ところまで悪用できる欠陥を発見・報告した。さらに、複数のAIエージェント開発ツール（CrewAI、DSPyなど）が共通で使う言語モデル連携基盤「LiteLLM」では、裏口（バックドア）を仕込んだ改ざん版が約4.7万回ダウンロードされる供給網（サプライチェーン）汚染も起きた。要は、AIを組み込むほど「どの部品を、誰が、どこから入れたか」まで管理が要る、ということ。中小・士業には高度な技術論より、「自社が使うAIツールと、その裏で動く部品の出どころ・更新を把握しておく」という土台づくりの話として伝えたい。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Microsoft Security</span><a class="go" href="https://www.microsoft.com/en-us/security/blog/2026/05/07/prompts-become-shells-rce-vulnerabilities-ai-agent-frameworks/">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
