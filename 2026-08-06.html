@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-08-06</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.08.06 THU</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">今日の主役は、AIを動かす“土台”を巡るお金の動きだ。アンソロピックが新興のクラウド企業と6年・約100億ドル規模の計算資源契約を結び、これを号砲に半導体株が急伸、パランティアの好決算も重なって米国株は最高値を更新した。モデルの世界では、中国発の巨大な“中身公開型”AI「Kimi K3」を実際に動かして検証する動きが広がり、性能競争は「一番賢いか」から「安く手元で動くか」へと軸を移しつつある。足元のセキュリティでは、AIの定番リスク集『OWASP LLM Top 10』が改訂され、相変わらず“プロンプトインジェクション”を最大の脅威に据えた。受託・DXの現場も、AIを「入れる」段階から「使いこなす・守る」段階へ。いつもの6つの切り口で。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>アンソロピックは8月4日、エヌビディア出資の新興インフラ企業ヴォルタと6年・約100億ドルの計算資源契約を結んだ（ノルウェーの133MWデータセンターにエヌビディアの新型チップを搭載、水力電源）。これを引き金にフィラデルフィア半導体指数は約6.7%高、パランティアは四半期好決算で約29%高と“2年ぶりの大幅高”を演じ、S&P500・ナスダックは最高値を更新した。モデルでは中国ムーンショットの2.8兆パラメータの“重み公開型（オープンウェイト）”AI「Kimi K3」を実際に再現・検証する動きが広がり、米中とも「最高性能」より「安く手元で動く」実用重視へ軸足を移している。セキュリティでは8月4日に『OWASP LLM Top 10』の改訂版が公開され、AIに読ませる文章へ命令を忍ばせる「プロンプトインジェクション」が3年連続で最大リスクに据えられた（攻撃件数は前年比+340%）。国内では生成AIの企業導入が57.7%（2025年）まで伸びる一方、SES・受託ではAIエージェント開発人材の月単価が90〜120万円超と高騰し、実装作業は“小物化”して要件定義・設計・セキュリティなど上流に価値が移りつつある。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">アンソロピックがエヌビディア出資の新興ヴォルタと6年・約100億ドルの計算資源契約（8/4）──ノルウェーの133MWデータセンターにエヌビディア新型チップ「Vera Rubin」を搭載し水力電源で稼働。AIの“土台”争奪が一段と過熱</div>
+      <p class="sum">AI大手アンソロピック（Claudeの開発元）が、AIを動かすための計算資源をさらに囲い込んだ。8月4日の報道によると、同社は今年1月に設立されたばかりの新興クラウド企業ヴォルタと、6年・約100億ドル（約1.5兆円）の計算資源契約を結んだ。舞台はノルウェーの133メガワット級データセンターで、エヌビディアの新型チップ「Vera Rubin」を積み、電力はすべて再生可能な水力でまかなうという。ヴォルタはエヌビディアやアンドリーセン・ホロウィッツらが出資する“できたて”の会社で、アンソロピックはこれまでもグーグル・アマゾン・AMD・SpaceX等と手を広げ、計算資源を特定の大手一社に依存しない体制づくりを急いでいる。要点は、AIの主役が“賢いモデル”そのものから、“それを動かす電力とチップとデータセンター”へと移りつつあること。中小・士業に伝えるなら、「AIはもはや巨額のインフラ投資が支える装置産業になりつつある」と押さえておけば十分だ。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Bloomberg / TechCrunch</span><a class="go" href="https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">AIの次の主戦場は“世界モデル”へ──グーグルDeepMindの「Genie 3」が、文章から遊べる3D空間をその場で生成。文章・画像を作るAIの先に「触って動かせる仮想世界」を作るAIが立ち上がりつつある</div>
+      <p class="sum">これまでのAIは「文章を書く」「画像を作る」が中心だったが、その先として注目を集めているのが“世界モデル”と呼ばれる技術だ。代表格がグーグルDeepMindの「Genie 3」で、短い文章や絵を入れると、その場で歩き回れる3D空間（720p・毎秒24コマ）を作り出し、数分間その世界の状態を保ちながら文章で書き換えることまでできる。現時点では米国の上位有料会員向けに段階的に開放され、2026年内に対象を広げる見込みとされる。ポイントは、動画のように“見るだけ”のものではなく、“中に入って操作できる”環境をAIが生成する点で、ゲーム開発やロボットの訓練、シミュレーションへの応用が期待されている。中小・士業にとって直接の実務ネタではまだないが、「AIの用途は文章・画像から“空間・体験”へ広がりつつある」という大きな方向感として知っておくと、先々の話題の見取り図になる。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">Google DeepMind / 9to5Google</span><a class="go" href="https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">中国ムーンショットの巨大“中身公開”AI「Kimi K3」を皆で検証中──2.8兆パラメータで米トップ級に迫り、動かす手間は2〜3倍軽く運用コストは安いとの評価。ただし“完全なオープンソースではない”ライセンスに注意の声</div>
+      <p class="sum">開発者界隈で今いちばん語られているのが、中国ムーンショットAIが公開した超大型モデル「Kimi K3」だ。パラメータ数2.8兆という過去最大級の“重みを配布する（オープンウェイト）”モデルで、複数のベンチマークでアンソロピックやOpenAIの最上位級に肉薄しつつ、「同等の性能を2〜3倍動かしやすく、運用費も安い」との評価が並ぶ。とりわけ画面表示（フロントエンド）のコード生成では上位につけたと報じられ、実際に各社・各人が自前の環境で動かして“本当にこの数字が出るのか”を検証する流れが広がっている。一方で、配布条件が完全な自由利用の「オープンソース」ではなく制約付きだとして、企業利用では中身をよく確認すべき、という慎重な声も出ている。中小・士業への示唆はシンプルで、「最上位の高いAIを一社から買う」以外に、「安くて手元で動く高性能AI」という選択肢が現実味を増しているということだ。<br><span style="opacity:.7">※本日はAINews（smol.ai）本体の直接取得ができず、二次ソースからの整理。</span></p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">VentureBeat / Tom's Hardware</span><a class="go" href="https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">“安く手元で動くAI”の米中競争が本格化──先にOpenAIが無償の「gpt-oss」、中国はディープシークの激安モデルやKimi K3で応戦。話題の軸は「一番賢いAI」から「実用に足る性能をいかに安く配るか」へ</div>
+      <p class="sum">Kimi K3の盛り上がりは単発ではなく、「安く・軽く・手元で動くAI」を巡る米中の綱引きの一場面として読まれている。少し前にはOpenAIが久々に“中身（重み）ごと配布する”無償モデル「gpt-oss」を公開し、中国側はディープシークの激安モデルやこのKimi K3で応じた。話題の中心は、かつての「どこが一番賢いか」という性能自慢から、「そこそこ賢い性能を、いかに安く・広く配れるか」という実用コストの勝負へと移っている。背景には、AIを日々の業務で大量に使うほど「一回いくら」の費用がじわじわ効いてくるという現場の実利がある。派手なベンチマーク争いの裏で、企業が実際に選びやすいのは「十分賢くて、圧倒的に安い」モデルだ、という感覚が定着してきた。中小・士業への示唆も明快で、「最上位の高いAIを一つ」より「用途ごとに安いAIを賢く使い分ける」ほうが、コストも導入ハードルも下げやすい局面が続いている。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">VentureBeat / Northflank</span><a class="go" href="https://venturebeat.com/technology/kimi-k3s-full-weights-are-here-but-theyre-open-with-a-caveat-what-enterprises-should-know">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">パランティアが好決算で約29%高、“2年超ぶり”の大幅高──「AI主権」需要でCEОは業績を「桁外れ」と表現。ナスダックは2.59%高で最高値、S&P500・ダウもそろって最高値更新</div>
+      <p class="sum">AI関連株では、企業・政府向けデータ解析のパランティアが再び主役になった。四半期決算が市場予想を上回り、株価は約29%急伸と2年以上ぶりの大幅高。同社CEOアレックス・カープ氏は、各国が自国でAIを抱え込もうとする「AI主権」の需要を背景に、業績を「桁外れ（otherworldly）」と表現した。この勢いは相場全体にも波及し、ナスダック総合は2.59%高で史上最高値、S&P500とダウもそろって最高値を更新。6月以来となる新高値を、AI関連が牽引した格好だ。ただし前回（8月上旬）はパランティア1社に上げが偏った“選別相場”だったのに対し、今回は半導体を含め幅広く買われた点が違いで、投資家心理の改善がうかがえる。取引先との相場談義では、「AIだから一括で上がる」ではなく、決算という“中身”を伴って買われ始めた、という温度感を落ち着いて共有したい。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">CNBC / Finimize</span><a class="go" href="https://finimize.com/content/ai-and-chip-stocks-led-a-tech-rally-tuesday">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">半導体株が全面高で7月の下げから急反発──フィラデルフィア半導体指数は約6.7%高、マーベル+13%・マイクロン+7%・エヌビディア+2.3%。号砲はアンソロピックの100億ドル計算資源契約と半導体各社の好決算</div>
+      <p class="sum">7月に大きく崩れていた半導体株が、まとめて息を吹き返した。フィラデルフィア半導体指数（SOX）は約6.7%高、個別ではマーベルが約13%高、マイクロンが7%超高、指数の中心エヌビディアも2.3%高となった。きっかけは二つで、一つはアンソロピックがエヌビディア出資の新興ヴォルタと結んだ100億ドルの計算資源契約（＝AI向けチップ需要が続く証拠と受け止められた）、もう一つはオン・セミコンダクターなど半導体各社の好決算だ。オン・セミは四半期実績と先行き見通しが予想を上回り、「AIデータセンター向け売上は2026年に倍増以上」と表明して時間外で7%超高となった。読み筋は従来どおりで、AIの土台への投資という大きな流れは本物である一方、一つの契約や決算で相場全体が大きく振れやすい“集中相場”の性格は続いている。次の大きな試金石は8月26日のエヌビディア決算で、それまでは強気・弱気が綱引きする展開になりそうだ。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Finimize / 24-7 Wall St.</span><a class="go" href="https://247wallst.com/investing/2026/08/01/3-semiconductor-stocks-to-buy-before-ai-demand-explodes-in-august/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">“AIエージェント開発”人材のSES単価が高騰、月90〜120万円超が2026年最高水準──LangGraph・CrewAI等を扱える人は需要に対し供給が5%以下との調査も。作れる人が圧倒的に足りていない</div>
+      <p class="sum">受託・SESの人材相場で、AI関連スキルの“値上がり”がさらにはっきりしてきた。調査によると、AIエージェント（人の代わりに一連の作業を自動でこなすAI）を組める開発者のSES月単価は90〜120万円超と2026年の最高水準にあり、LangGraphやCrewAIといったエージェント構築ツールを両方使いこなせる人材は、需要に対して供給が5%以下しかない、という逼迫ぶりだ。平均的なSESエンジニアの月単価（テスターの35万円〜PM・AI/MLの150万円というレンジ）と比べても、AIエージェント領域の値付けは頭一つ抜けている。要は「AIを使う」だけでなく「AIに仕事を任せる仕組みを設計・実装できる」人に価値が集中している。受託・SES事業にとっては、こうした高単価スキルへ人材をどう育て、束ねるかが受注と利益の差に直結する。AI活用とWebセキュリティ（健診）を一体で語れることは、この“掛け合わせ”需要にそのまま重なる強みになる。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">Heyday（AIエージェントSES単価調査）</span><a class="go" href="https://lp.hydy.jp/blog/ai-agent-engineer-ses-tanka">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">AIで受託の“実装部分”が小物化──「案件が消える」のではなく、数名〜十数名を数か月投入していた実装工数が縮む。価値は要件定義・設計・セキュリティ・運用設計といった上流へ明確に移動</div>
+      <p class="sum">「AIで受託開発はどうなるか」を巡る2026年の実務的な見立てが出そろってきた。結論は「案件そのものが消える」わけではなく、これまでSESが取りやすかった“実装（コーディング）部分”が小物化する、というものだ。従来は数名から十数名のエンジニアを数か月投入していた実装作業が、AIの支援で圧縮される一方、プロジェクト全体の工数の大半はコーディング以外——要件定義、設計、セキュリティ、テスト、運用設計など——に残る。つまり、コードを速く書けること自体の価値は下がり、「何を作るべきかを決める」「安全に動かす設計をする」といった上流と、特定業界のドメイン知識を持つ人材の価値が相対的に上がる。受託・SES事業者にとっては、「AIに何を任せ、人がどこで価値を出すか」を自社の型として先に固めることが、単価と受注の両面で急務になっている。人月で頭数を売るモデルから、上流と業務知識で売るモデルへ——移行を先んじた側が有利になる。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">Zenn（AI以後の受託開発）</span><a class="go" href="https://zenn.dev/terurou/articles/eb9e7a4ca7b364">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">日本の生成AI導入は57.7%まで拡大、市場は年84%成長ペース──段階は「入れるか否か」から「どう使い分けるか」へ。潮流は指示待ちのチャットから、作業を任せる“エージェント型”の活用に移りつつある</div>
+      <p class="sum">日本企業の生成AI導入は着実に進み、2023年度33.8%→2024年度44.8%→2025年度57.7%と、年20ポイントを超えるペースで半数を突破した。市場規模も2024年の1,016億円から2028年には8,000億円超へ、年平均84%という急拡大が見込まれている。もはや論点は「導入するかどうか」ではなく「どう使い分けるか」で、2026年は用途ごとに得意なツールを組み合わせる運用が定番化し、さらに“指示に答えるチャット”から“作業そのものを任せるエージェント型”へと関心が移りつつある。裏を返せば、大企業と中小の間には導入格差も広がりやすい。中小・士業への示唆は明快で、規模が小さくても入り口は同じ——「よく聞かれること」「調べる手間が大きいこと」を一つのAIにまとめ、まず一業務から全員で使い始めればいい。完璧な全社計画を待つより、身近な作業でAIを“日常の道具”にすることが、格差に飲まれない一番の近道だ。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">note / freeconsultant.jp（導入率・市場調査）</span><a class="go" href="https://note.com/kinshi_keiun/n/nbc006a8c9c1b">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">導入事例は“地味な業務”が本命──ヤマト運輸は6,500拠点の荷物量をAIで予測して人員・車両を最適配置、サントリーは顧客の声をAIで自動分類。派手さより「日々の面倒」を減らす使い方が成果に</div>
+      <p class="sum">生成AI・AIの企業導入で成果が出ているのは、意外なほど“地味な業務”だ。ヤマト運輸は全国約6,500の宅急便拠点で数か月先の荷物量を予測するAIを開発し、従業員や車両を過不足なく配置することに成功した。サントリーは消費者の声（VOC）を自動で分類・分析する生成AIを導入し、顧客ニーズの把握と分析作業の効率化を進めている。金融では三井住友（SMBC）グループが自社専用AIアシスタント「SMBC-GAI」をわずか4か月で構築し、社員がふだんの業務ツール上で使える形で全社展開した。共通点は、汎用のAIをそのまま渡すのではなく、「予測」「仕分け」「問い合わせ対応」といった自社の一業務に絞って組み込み、人が最後に確認する形で回すこと。中小・士業でも考え方は同じで、規模は小さくても「請求書の読み取り」「よくある質問への一次対応」など一点を選んで始めれば、日々の手間とベテラン依存を確実に軽くできる。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">BIZ ROAD / DXGO（企業導入事例まとめ）</span><a class="go" href="https://bizroad-svc.com/blog/seiseiai-kigyou-katuyou/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">『OWASP LLM Top 10』が改訂（8/4）──AIの定番リスク集で「プロンプトインジェクション」が3年連続の“1位”。攻撃件数は前年比+340%と最速で増える脅威に。答えは特効薬ではなく多層防御</div>
+      <p class="sum">AIを安全に使うための“定番チェックリスト”である『OWASP LLM Top 10（大規模言語モデル向けの重大リスク10選）』が、8月4日に改訂された。今回もトップに据えられたのが「プロンプトインジェクション」で、これで3年連続の1位となる。これは、AIに読ませる文章（メール・Webページ・添付資料など）の中に命令をこっそり仕込み、本来の指示のように実行させてしまう攻撃で、報告される件数は前年比で約340%増と、最も速く拡大している脅威とされる。根っこは、AIが「正規の指示」と「外から読んだ文章」を区別する仕組みを本質的に持っていないことにあり、最先端モデルでも完全には防げないのが現状だ。実務の答えは多層防御——①AIに与える権限を最初から狭くする、②外へ出ていく通信を監視する、③重要な操作は人が最終承認する。中小・士業に伝えるべきは、「AIにどこまで自動で任せるか」を線引きし、定期的に棚卸しする姿勢の大切さだ。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">EC-Council / Infosecurity Magazine</span><a class="go" href="https://www.eccu.edu/blog/prompt-injection-ai-cybersecurity-threat/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">“開発を助けるAI”の被害が現実に──マイクロソフト・グーグル・GitHub・OpenAIの本番AIがプロンプトインジェクションで実際に突破された例が報告。自律型AIでは攻撃成功率84%、深刻度はCVSS9級も</div>
+      <p class="sum">プロンプトインジェクションは“理論上の心配”ではなく、すでに実害が出ている。2025〜2026年にかけて、マイクロソフト、グーグル、GitHub、OpenAIといった大手の本番AIが、この手口で実際に突破された事例が報告されている。とりわけ危険なのが、一連の作業を自動でこなす“自律型（エージェント）AI”で、外部から読み込ませた文章に命令を仕込む攻撃の成功率は84%に達し、実際に悪用可能な脆弱性の深刻度は最高レベルに近いCVSS9級というものも確認された。つまり「チャットで変な答えを返す」程度ではなく、AIが勝手にファイルを送る・権限を悪用する、といった実被害につながりうる。特別な高度技術というより、AIに広い権限を与えたまま、外部の情報を無防備に読ませてしまう“設計の甘さ”が突かれているのが実情だ。中小・士業に伝えるべきは、「AIを入れて終わり」ではなく、「どこまで自動で任せているか」「与えた権限が広すぎないか」を定期的に点検する——という“健康診断”の発想がそのまま効く、ということだ。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Vectra AI / Atlan（脅威解説）</span><a class="go" href="https://www.vectra.ai/topics/prompt-injection">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
