@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-08-07</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.08.07 FRI</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">今日の主役は「AIにコードを書かせる道具（コーディングエージェント）」の競争だ。メタが8月5日、自社の新モデル「Muse Spark 1.2」を積んだコーディングエージェント「Muse Code」を投入し、アンソロピックの「Claude Code」・OpenAIの「Codex」に真っ向から並んだ。性能はトップには一歩届かないが、途中で落ちても作業を続けられる堅牢さや、複数のAIに手分けさせる設計で実務性を打ち出す。制度面では、EUのAI法が8月2日に“取り締まりフェーズ”入り。市場ではエヌビディアが5日続伸で一時+12%と26日の決算に向け過熱ぎみ。コーディングエージェントが普及するほど、その足元の「安全設計」も新しい論点になってきた。いつもの6つの切り口で。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>メタは8月5日、AIにソフト開発を任せる「コーディングエージェント」Muse Code（ミューズ・コード、ベータ）を公開し、新モデルMuse Spark 1.2を搭載。アンソロピックのClaude Code、OpenAIのCodexに続く“3社目の本格参入”で、AIによる実装作業はいよいよ標準装備になりつつある。性能ベンチはトップ級に僅差で及ばないものの、途中で落ちても復帰できる堅牢さや、複数のサブAIに作業を分担させる仕組み、そして自分のコードを学習提供する代わりに極安（100万トークン0.30ドル）になる料金プランが話題になった。制度面ではEUのAI法が8月2日に節目を迎え、AIと対話していることの明示や生成物への“印”付けといった透明性義務が本格適用、欧州委員会が汎用AIへの調査・是正・制裁（最大で世界売上の3%）を行使できる取り締まりフェーズに入った。市場ではエヌビディアが5営業日で約10〜12%上昇し8月5日終値219.22ドル、翌日は一服。26日の決算が次の大きな試金石となる。コーディングエージェントの普及に伴い、広い権限で端末上を動くAIを狙う攻撃（プロンプトインジェクション）への備えも新たな実務課題として浮上している。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">メタが“コーディングエージェント”戦争に参戦──新モデル「Muse Spark 1.2」搭載の「Muse Code」を8/5公開（ベータ）。アンソロピックのClaude Code、OpenAIのCodexに続く3社目。トップには僅差で及ばずも、落ちても復帰できる堅牢さと複数AIの分担で実務性を訴求</div>
+      <p class="sum">メタが8月5日、AIにソフト開発を任せる「コーディングエージェント」Muse Code（ミューズ・コード）をベータ公開した。中核には新モデルMuse Spark 1.2を据え、計画立案・コード記述・検証まで一連の開発作業をAIがこなす。位置づけはアンソロピックのClaude Code、OpenAIのCodexに続く“3社目の本格参入”で、AIによる実装支援がいよいよ各社そろい踏みの標準装備になった格好だ。性能を測るテスト（Terminal-Bench 2.1）ではMuse Spark 1.2が82.9%と、首位のClaude Code（Opus 5搭載）86.7%に一歩届かないもののCodexを上回る水準。強みはベンチ首位ではなく、途中でエラーが起きても作業を立て直せる堅牢さや、複数の“サブAI”に手分けさせて長い開発工程を回す設計にあるとされる。現状は端末（ターミナル）上で動く形で、専用アプリはまだない。中小・士業に伝えるなら、「AIがコードを書く」ことがもはや一社の特別技術ではなく、複数社が競う日用品になりつつある、という大きな流れを押さえれば十分だ。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">VentureBeat / Decrypt</span><a class="go" href="https://venturebeat.com/orchestration/meta-enters-the-ai-coding-wars-with-muse-spark-1-2-and-muse-code-with-persistent-async-background-agents">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">EUのAI法が8/2で“取り締まりフェーズ”入り──「AIと話していること」の明示や生成物への“印”付けなど透明性義務が本格適用。欧州委員会は汎用AIへの調査・是正・制裁（最大で世界売上の3%）を行使可能に</div>
+      <p class="sum">EUのAI規制「AI法」が8月2日、大きな節目を迎えた。この日から、利用者がAIとやり取りしていることを明示する義務や、AIが作った・加工した文章や画像に“出所の印（電子透かしやメタ情報）”を付ける透明性義務が本格的に適用される。あわせて、欧州委員会（内部のAIオフィス）が、汎用的な大型AI（GPAI）を提供する企業に対し、情報提出の要求・モデルの検査・是正措置の命令、そして最大で「1,500万ユーロか世界売上の3%の高い方」という制裁金まで科せる“取り締まりの権限”を実際に行使できるようになった。義務そのものは1年前から発効していたが、企業に猶予を与えたうえで、いよいよ監督・執行の段階に入ったということだ。日本の中小・士業に直接の網がかかるわけではないが、「AI利用を明示する」「生成物とわかるようにする」という考え方は、国内でも近い将来の実務常識になりうる。海外向けサービスや外国製AIを使う場合は、表示ルールの動きに一度目を通しておきたい。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Cooley / Wilson Sonsini（法律事務所解説）</span><a class="go" href="https://www.cooley.com/news/insight/2026/2026-08-03-eu-ai-act-transparency-obligations-take-effect-2-august-2026">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">Muse Codeのベンチ数値に「まだ広告段階」の冷静論──“Opusにあと僅差”はメタ自身の測定で、方法の公開がない画像スコアは第三者検証待ち。本当の売りは「堅牢さと分担設計」であって順位ではない、との整理が広がる</div>
+      <p class="sum">Muse Code公開を受け、開発者界隈ではさっそく「発表された性能数値をどこまで信じるか」が論点になっている。メタは「Muse Spark 1.2はトップのOpus 5にあと僅差」と示したが、これはあくまでメタ自身の測定環境での数字で、方法（どう測ったか）の詳細な説明がないまま画像で出されたスコアは「第三者が実際に走らせて確かめるまでは広告に近い」と釘を刺す声が目立つ。実際、別のテスト（DeepSWE 1.1）ではOpus 5やCodexにやや水をあけられており、“全部で一番”ではない。むしろ評価が集まっているのは、途中でエラーが起きても作業を立て直せる堅牢さや、複数のサブAIに手分けさせる設計といった「実務での回しやすさ」の部分だ。中小・士業への示唆はシンプルで、AIツール選びは「ベンチマーク何位か」より「自分たちの作業で安定して使えるか」で見るのが現実的、ということ。派手な順位表に一喜一憂しない姿勢が、結局いちばん損をしない。<br><span style="opacity:.7">※本日はAINews（smol.ai）本体の直接取得ができず、二次ソースからの整理。</span></p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">The Register / kingy.ai（ベンチ検証）</span><a class="go" href="https://www.theregister.com/ai-and-ml/2026/08/06/meta-wants-to-get-inside-your-terminal-with-its-new-coding-agent/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">Muse Codeの“激安プラン”に賛否──自分のコードを学習提供する代わりに100万トークン0.30ドルという破格の料金帯。使う側には安さ、企業には「自社コードが外に出る」懸念。「安さの対価は何か」を巡る議論に</div>
+      <p class="sum">Muse Codeでもう一つ話題を呼んだのが料金設計だ。通常は100万トークンあたり入力1.25ドル・出力4.25ドルだが、これとは別に「自分の使い方やコードをメタの改善に提供する」ことに同意すると100万トークン0.30ドルという破格まで下がるプランが用意された。個人開発者には「これだけ安ければ試す価値がある」と歓迎される一方、企業からは「業務のコードや社内情報が学習データとして外に出るのは受け入れがたい」という慎重論も強い。つまり“安さの対価はデータ提供”という構図が、はっきり値段の形で示されたわけだ。中小・士業への示唆は実務的で、AIツールを選ぶときは料金の安さだけでなく「入力した情報が学習に使われるか」を必ず確認すること。無料・激安プランほど、この一文（利用規約のデータ利用条項）を読むかどうかが、機密を守れるかどうかの分かれ目になる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">BigGo Finance / VentureBeat</span><a class="go" href="https://finance.biggo.com/news/202608052250_Meta_launches_Muse_Code_AI_coding_agent">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">エヌビディアが5営業日で約10〜12%高、8/5終値219.22ドルで2カ月ぶり高値圏──クラウド各社のAI投資拡大とSpaceXの自社チップ全面採用が追い風。ただし6日は上げ一服、なお5月の最高値237.95ドルは下回ったまま</div>
+      <p class="sum">AI相場の中心、エヌビディア株が5営業日で約10〜12%上昇し、8月5日は219.22ドルと2カ月ぶりの高値圏を回復した。背景は、クラウド大手（マイクロソフト・アマゾン等）がAI向け設備投資を積み増していることと、SpaceXがAI用にエヌビディア製チップを全面採用したと伝わったこと。ただし翌6日は、5日続伸の反動で早い時間の上げを吐き出して一服する場面もあった。年初来では+5〜11%程度と、実は同期間のS&P500（約+10%）に見劣りする水準で、5月に付けた最高値237.95ドルにはなお届いていない。つまり「AIだから青天井」ではなく、決算という“中身”を確かめながら買われている相場だ。取引先との相場談義では、勢いの数字だけでなく「まだ最高値は超えていない」という冷静な事実もあわせて共有したい。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">IBTimes / TradingKey</span><a class="go" href="https://www.tradingkey.com/analysis/stocks/us-stocks/262082021-us-stock-nvidia-nvda-price-ai-chip-spacex-tradingkey">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">次の最大の関門は8/26のエヌビディア決算──アナリストは今期売上ほぼ倍増を見込み「強気」継続。2026年の在庫は“完売”状態との声も。ここまでの半導体高が正当化されるかの試金石に</div>
+      <p class="sum">目先の相場を左右する最大のイベントは、8月26日に予定されるエヌビディアの四半期決算だ。市場アナリストは、今期（2027会計年度第2四半期）の売上が前年同期比でほぼ倍増（約96%増）するとの強気予想を維持し、「2026年の生産能力はすでに売り切れ（sold out）」との見方も出ている。つまり、ここまで積み上がった半導体株の期待値が、実際の決算という“答え合わせ”で正当化されるかどうかが問われる局面だ。良ければAI投資の勢いは本物という安心感が広がり、期待に届かなければ集中相場の反動で大きく振れやすい。読み筋は従来どおりで、AIの土台への投資という大きな流れ自体は堅い一方、一社の決算で市場全体が上下しやすい“集中相場”の性格は続いている。決算前は強気・弱気が綱引きする展開を想定しておきたい。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Yahoo Finance / Intellectia</span><a class="go" href="https://finance.yahoo.com/markets/stocks/articles/prediction-nvidia-stock-skyrocket-aug-075000386.html">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">コーディングエージェント3社時代（Claude Code・Codex・Muse Code）で、実装作業の“道具化”が一段と加速──「コードを速く書く」価値は下がり、SESの稼ぎ頭は要件定義・設計・セキュリティ・レビューといった上流へ明確に移動</div>
+      <p class="sum">メタのMuse Code参入で、AIにコードを書かせる道具が主要3社出そろった。現場への意味はシンプルで、これまでSESが取りやすかった“実装（コーディング）そのもの”が、ますます誰でも安く回せる日用品になっていく、ということだ。裏を返せば、「速くコードを書ける」こと自体の希少価値は下がり、価値は上流——何を作るかを決める要件定義、安全に動かす設計、AIが書いたコードを検証・レビューする工程、運用・セキュリティ設計——へと明確に移っていく。実際、AIエージェントを“設計・実装できる”人材のSES月単価は90〜120万円超と2026年でも最高水準で、単に「AIを使える」層とは値付けがはっきり分かれている。受託・SES事業者にとっては、「AIに実装を任せ、人は上流とレビューで価値を出す」という自社の型を先に固めることが、単価と受注の両面で急務だ。AI活用とWebセキュリティ（健診）を一体で語れる強みは、この“上流回帰”の需要にそのまま重なる。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">note（AIエージェント案件の実態）/ Heyday</span><a class="go" href="https://note.com/0kara_freelance/n/n91d31c01c41c">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">AIエージェント案件はSES平均より“10〜50%高単価”、リモート・直請けも多い好条件──一方で供給は逼迫。LangGraphやCrewAIといった構築ツールを両方扱える人は今なお希少で、育成・確保が受注の差に直結</div>
+      <p class="sum">SES市場では、AIエージェント（人の代わりに一連の作業を自動でこなすAI）の開発案件が、一般的なSES案件より10〜50%高い単価で、しかもリモート可・直請けが多いという好条件で出ているとの調査が続く。RAG（社内資料を根拠に答えさせる仕組み）やチャットボット、業務自動化パイプラインの設計・実装が主な中身で、PythonとLLMのAPI経験が基本装備。ただし、LangGraphやCrewAIといったエージェント構築ツールを両方使いこなせる人材は依然として供給が薄く、需要に追いついていない。要は「AIに仕事を任せる仕組みを設計・実装できる人」に価値と報酬が集中している構図で、ここは短期の採用より、既存エンジニアの学び直し（リスキリング）で束ねられるかが勝負になる。受託・SES事業にとっては、こうした高単価スキルへ人をどう育て、案件にどう当てるかが、そのまま利益率の差になって表れる。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">Heyday（AIエージェントSES単価調査）</span><a class="go" href="https://lp.hydy.jp/blog/ai-agent-engineer-ses-tanka">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">法人向け生成AI導入市場は330億円→720億円へ倍増ペース（2024→2026年度見込み）──潮流は“汎用AIをそのまま渡す”から、自社の一業務に組み込む「仕分け・予測・一次対応」へ。地味な業務ほど成果が出やすい</div>
+      <p class="sum">企業向けに生成AIの導入を支援する市場は、2024年度の330億円から2026年度には720億円へと、2年で倍増する見込みだ。導入が進むなかで成果を出しているのは、意外なほど“地味な業務”に絞った使い方である。ヤマト運輸は全国約6,500の宅急便拠点で数か月先の荷物量を予測するAIを運用し、人員や車両を過不足なく配置。SMBCグループは社員専用AIアシスタント「SMBC-GAI」をわずか4か月で構築し、ふだんの業務ツール上で全社展開した。セブン-イレブンも社内AI基盤を整え、在庫確認や災害時対応、広告効果の検証に活用している。共通点は、汎用のAIをそのまま配るのではなく、「予測」「仕分け」「問い合わせの一次対応」といった自社の一業務に絞って組み込み、最後は人が確認する形で回すこと。中小・士業でも考え方は同じで、規模が小さくても「請求書の読み取り」「よくある質問への一次対応」など一点を選んで始めれば、日々の手間とベテラン依存を確実に軽くできる。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">BIZ ROAD / DXGO（企業導入事例まとめ）</span><a class="go" href="https://bizroad-svc.com/blog/seiseiai-kigyou-katuyou/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">“端末で動くAI開発ツール”が現場に降りてくる──Muse Code等のコーディングエージェントは、非エンジニアでも自然言語で小さな社内ツールを作れる裾野拡大の兆し。ただし「作れる」と「安全に運用できる」は別問題</div>
+      <p class="sum">Muse CodeやClaude Code、Codexといったコーディングエージェントの普及は、開発者だけの話にとどまらない。自然言語で指示するだけで、簡単な社内ツールや業務の自動化スクリプトを“作ってもらえる”裾野が広がりつつあり、DX現場では「専門のエンジニアがいなくても、まず小さく試作する」動きが出始めている。とはいえ、「作れる」ことと「安全に業務で回せる」ことは別問題だ。AIが生成したコードには思わぬ不具合や、権限の与えすぎといった穴が潜みうるため、動かす前に人がレビューし、扱うデータの範囲を絞る運用が欠かせない。中小・士業への示唆は前向きかつ現実的で、「専門家がいないから無理」と諦める必要はもうない一方、試作したものをいきなり本番・顧客データに使わず、まずは社内の小さな範囲で、確認役を置いて回すのが安全な入り口になる。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">MarkTechPost / The Register</span><a class="go" href="https://www.marktechpost.com/2026/08/05/meta-superintelligence-labs-releases-muse-code/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">コーディングエージェント普及の裏で“端末を乗っ取る”攻撃が現実に──マイクロソフトの検証では、AI開発ツールへのプロンプトインジェクションがPC上での不正プログラム実行（RCE）に発展。1つの指示文で計算機アプリを勝手に起動できた例も</div>
+      <p class="sum">AIにコードを書かせる道具（コーディングエージェント）が広がるほど、その足元の安全性が新しい論点になる。マイクロソフトのセキュリティ検証によると、AI開発の土台になっている部品（Semantic Kernel）には、外部から読み込ませた文章に命令を忍ばせる「プロンプトインジェクション」が、PC上で任意のプログラムを勝手に動かす“遠隔コード実行（RCE）”にまで発展しうる穴があった。実際に、たった一つの細工した指示文で、AIエージェントを動かしている端末上で計算機アプリ（calc.exe）を起動させられたという。怖いのは、これが「変な答えを返す」レベルではなく、AIに広い権限を与えたまま外部情報を無防備に読ませると、ファイル操作や不正実行といった実害に直結しうる点だ。中小・士業に伝えるべきは明快で、AIツールに“何でもできる権限”を渡したまま外部の文章やファイルを読ませない——与える権限を最初から狭くし、重要操作は人が承認する、という「線引きの点検（＝健康診断）」がそのまま効く、ということだ。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Microsoft Security Blog</span><a class="go" href="https://www.microsoft.com/en-us/security/blog/2026/05/07/prompts-become-shells-rce-vulnerabilities-ai-agent-frameworks/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">大手の“開発を助けるAI”に軒並み重大な穴──Microsoft 365 Copilotはクリック不要（ゼロクリック）で情報流出、GitHub CopilotはCVSS9.6、Cursorは9.8。共通点は「AIが読んだ文章を、そのまま命令として実行してしまう」こと</div>
+      <p class="sum">プロンプトインジェクションは“理論上の心配”ではなく、大手の本番AIで次々と重大な穴が見つかっている。Microsoft 365 Copilotでは、白背景に白文字やHTMLコメントで命令を隠したメールを送るだけで——利用者が何もクリックしなくても（ゼロクリック）——Copilotがその隠し命令を読んで社内情報を外部に送ってしまう脆弱性が報告された（深刻度CVSS9.3）。同様に、GitHub CopilotではCVSS9.6、開発者向けエディタCursorではCVSS9.8という、いずれも“最高レベルに近い”深刻度の穴が確認されている。根っこは共通で、AIが「正規の指示」と「外から読んだ文章」を区別できず、読んだ内容をそのまま命令として実行してしまうことにある。最先端モデルでも完全には防げていないのが現状だ。中小・士業に伝えるべきは、「AIを入れて終わり」ではなく、与えた権限が広すぎないか、外へ出ていく通信を監視できているか、重要操作に人の承認を挟んでいるか——を定期点検する“健康診断”の発想がそのまま効く、ということだ。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Vectra AI / Help Net Security</span><a class="go" href="https://www.vectra.ai/topics/prompt-injection">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
