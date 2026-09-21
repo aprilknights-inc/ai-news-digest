@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-09-21</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.09.21 MON</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">敬老の日で東京市場は休場（21〜23日）。連休中の米国市場とAI・半導体株の動きが、週明けの相場を占う焦点になる。AI業界では、OpenAIのGPT-6 Astraが企業顧客を伸ばし、減速を訴えたばかりのAnthropicが対抗新モデルを検討するなど競争が過熱。一方で「エージェントの実力」を冷静に見直す議論や、主要AIコーディングツールを横断するゼロクリックの乗っ取り欠陥が話題をさらった一日だ。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>敬老の日で東京株式市場は休場（21〜23日は連休）。前週末18日は日銀の利上げ（政策金利1.00→1.25%）後も日経平均が882円高の65,018円と65,000円台を回復しており、連休中は米国市場やAI・半導体株の動きが次の焦点となる。米市場は17日にテック株主導で上昇（ダウ+316、ナスダック+1.7%）、NVIDIAもデータセンター売上が前年比+117%と好調が続く一方、「AI設備投資はどこまで続くのか」という慎重論も併存する。AI業界ではOpenAIのGPT-6 Astraが企業顧客を伸ばし、減速を訴えたばかりのAnthropicが対抗の新モデルを検討するなど競争が過熱する半面、AnthropicがOpenAIの「AGENTS.md」仕様を採用するなど“共通の作法”への歩み寄りも進む。セキュリティ面では、Claude Code・Codex・Copilot・Gemini CLIの主要4ツールを横断するゼロクリックの乗っ取り欠陥「Plugin4Shell」が公表され（主要2社は修正済み、Gemini CLIは非対応）、AIを業務につなぐ際の権限管理と供給網（サプライチェーン）の安全が改めて課題として浮かんだ。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">GPT-6 Astraが企業顧客を奪う勢い、Anthropicは「対抗新モデル」を検討──減速を訴えた直後、IPO前の競争が過熱。OpenAIが今月投入した「GPT-6 Astra」が企業向けで急速に顧客を伸ばしており、これに対しAnthropicが対抗となる新モデルの前倒し投入を検討していることが分かった。同社のアモデイCEOは先ごろ「業界全体でスピードを緩めるべきだ」と安全性を理由に減速を呼びかけたばかりで、その直後の“逆の動き”として注目されている。Anthropicは年換算売上を大きく伸ばし、歴史的な株式公開（IPO）も控えるなか、企業市場での主導権を守れるかが焦点になっている。</div>
+      <p class="sum">最先端AIの主役2社が、企業向け市場をめぐって一段と激しく競い始めた、という話だ。「安全のため減速を」と言っていた会社が、ライバルに顧客を奪われまいと新型を急ぐ──理想と競争のはざまで各社が揺れている様子がうかがえる。中小・士業への示唆は、AIの勢力図は数か月単位で入れ替わるので「今どこが一番か」で決め打ちせず、乗り換えやすさ（データの持ち出しやすさ・契約の縛り）を確かめて選ぶと、特定の一社に囲い込まれるリスクを避けやすい、という点だ。派手な新モデル競争は、裏を返せば「利用者に有利な選択肢が増えている」局面でもある。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Android Headlines（Anthropic対抗新モデル検討・2026/9）</span><a class="go" href="https://www.androidheadlines.com/2026/09/anthropic-weighs-new-ai-model-to-counter-gpt-6-astra.html">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">競い合う各社が“共通の作法”へ歩み寄り──AnthropicがOpenAIの「AGENTS.md」仕様を採用、主要3社は標準化団体づくりでも協調。激しく競うAnthropicが、OpenAIの提唱するAIエージェント向け設定ファイルの共通仕様「AGENTS.md」を自社のClaude Codeに採用したことが分かった（自社形式が無い場合はこれに従う設計）。加えてOpenAI・Anthropic・Google DeepMindは、AIの安全性や相互接続の“共通のものさし”を定める標準化団体づくりに向けても協調していると報じられている。性能では激しく競う一方、「どのAIも守るべき作法」「AI同士・道具同士のつなぎ方」は各社バラバラではなく共通規格にそろえよう、という動きだ。</div>
+      <p class="sum">ライバル同士が、こと「つなぎ方の作法」や「安全のルール」では手を組み始めた、という話だ。電源プラグや通信規格と同じで、共通のものさしができると利用する側は組み合わせや乗り換えがしやすくなり、安心して選べるようになる。中小・士業への示唆は、AIツールを選ぶとき「業界の共通ルールに沿っているか・後で他社製と組み合わせやすいか」を見ておくと、無駄な作り直しや囲い込みを避けやすい、という点だ。標準が固まりつつある今は、導入や連携の条件を落ち着いて確かめられる好機でもある。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">TechXplore／llm-stats（AI標準化・AGENTS.md採用・2026/9）</span><a class="go" href="https://techxplore.com/news/2026-09-openai-anthropic-google-ai-standards.html">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">「この数か月でプログラミングが激変した」──カルパシー氏の投稿が再燃、1,400万表示超。ウィリソン氏は「本番コードの“ノリ任せ開発”は危うい」と釘。AI研究者アンドレイ・カルパシー氏の「コーディングはこの数か月で、じわじわではなく“非連続に”変わった」という趣旨の投稿が改めて大きく拡散し、閲覧は1,400万回を超えた。エージェント（自分で手を動かすAI）で開発の実感が一変した、という声だ。一方でLLM実務の第一人者サイモン・ウィリソン氏は、「思いつきをそのままAIに書かせて本番システムに入れる“vibe coding”は明らかにリスクが高い。実務の大半は既存システムの改修で、コードの分かりやすさが命綱になる」と冷静に釘を刺している。</div>
+      <p class="sum">「AIで開発が劇的に速くなった」という高揚と、「だからこそ雑に使うと危ない」という慎重論が、同時に盛り上がっている、という話だ。速さと品質は別問題で、現場ほど後者を気にしている。中小・士業への示唆は、外注や社内でAIに開発・文書作成を任せるとき、「速くできた」だけで満足せず「後から人が読んで直せる状態か」を必ず確かめる、という点だ。とくに一度作って終わりでなく長く使う仕組みほど、“中身の分かりやすさ”を条件に入れておくと、後々の手戻りや保守費用を抑えられる。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">@karpathy／Simon Willison（コーディング激変論・2026）</span><a class="go" href="https://futurumgroup.com/insights/karpathys-thread-signals-ai-driven-development-breakpoint/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">「“エージェント”の中身は、実は自律ではない」論が拡散──ウィリソン氏「LLMが道具をループで回すだけ」。ベンダーが“自律的に動くAIエージェント”と宣伝する仕組みの実態をめぐり、実務家の間で冷静な整理が話題になっている。サイモン・ウィリソン氏は「AIエージェントとは、LLMが目的に向けて道具（ツール）を繰り返し呼び出すもの」と簡潔に定義。別の実務家も「“導入済みのエージェント”とされるものの多くは、実際には人が段取りを組んだLLMの作業手順の寄せ集めにすぎない」と、過度な“自律”の宣伝に釘を刺した。魔法のように勝手に働く存在ではなく、あくまで人が設計した枠組みの中で動く道具だ、という見方だ。</div>
+      <p class="sum">「AIエージェント」という言葉が独り歩きし、実態より大きく期待されがちな現状に、実務家が“地に足のついた説明”を広めている、という話だ。中身は「AIが決められた道具を順番に使う」仕組みで、勝手に何でもこなす魔法ではない。中小・士業への示唆は、AI導入の提案を受けたとき「自律」「全自動」といった言葉に惑わされず、「具体的にどの作業を、どの手順で、どこまでやるのか」を分解して確かめる、という点だ。期待値を正しく持てば、導入後の「思っていたのと違う」を避けられ、費用対効果も見極めやすくなる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Simon Willison／Futurum（AIエージェント実態論・2026/9）</span><a class="go" href="https://simonwillison.net/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">東京市場は21〜23日休場（敬老の日ほか）──週末18日は日銀利上げ後も日経が882円高、65,000円台を回復。連休中は米市場が焦点。9月21日（月）は敬老の日で、東京株式市場は23日まで連休となる。前週末18日は、日銀が政策金利を1.00%から1.25%へ引き上げたにもかかわらず、これが大きな悪材料とは受け止められず、日経平均は882円高の65,018円と6営業日ぶりに65,000円台を回復して引けた。週後半にはAI・半導体関連株を中心に買い戻しが入り、日本株は持ち直している。連休中は取引ができないため、米国株・米長期金利・原油価格など海外市場の動きが、次の再開時の相場を左右するとみられる。</div>
+      <p class="sum">利上げという“逆風”があっても株が下がらなかったのは、市場が「景気やAI需要はまだ底堅い」と受け止めているため、という話だ。ただし連休中は日本の取引が止まるので、海外の値動きが週明けにまとめて反映されやすい。中小・士業への示唆は、顧問先との会話で「株価が上がった下がった」に一喜一憂するより、「金利は上向き」「相場は分野を選ぶ局面」という大きな流れを共有しておく、という点だ。借入のある事業者には返済負担が効いてくる方向でもあり、連休明けの相場を見て慌てないよう、資金繰りや投資計画を落ち着いて点検しておくよう促せると相談に厚みが出る。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">外為どっとコム／日経（東京市場・休場と週明け・2026/9/18）</span><a class="go" href="https://www.gaitame.com/media/entry/2026/09/18/173854">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">米市場はテック株主導で上昇（17日ダウ+316）──NVIDIAはデータセンター売上+117%と好調持続、ただし「AI投資はどこまで続くか」に慎重論も。9月17日の米国市場は、長期金利の低下や原油安を追い風にテック株が買われ、ダウが316ドル高（+0.6%）、ナスダックは+1.7%と上昇した。NVIDIAは直近四半期の売上高が市場予想を上回り、データセンター向けが前年同期比+117%の約890億ドルと、AIインフラ需要の強さを示した。メタ・マイクロソフト・アルファベットなど大手も相次いでAI設備投資（capex）を上積みしている。一方で市場には「この巨額投資がどこまで続き、本当に見合う成果を生むのか」を問う慎重論も根強く、強気と警戒が綱引きを続けている。</div>
+      <p class="sum">「AIブームはまだ続く」という強気と、「投資が過熱しすぎではないか」という警戒が、同じ相場の中でせめぎ合っている、という話だ。数字（NVIDIAの好決算）は強いが、投資家の目は「使った額に見合う稼ぎが出るか」へと厳しくなってきている。中小・士業への示唆は、自社のAI投資も「入れること」自体が目的化していないか、という点だ。市場が“投じた額に見合う成果”を見るようになったのと同じで、社内でも「そのAI費用は、どの業務で・いくらの削減や売上につながるのか」を数字で確かめる姿勢が、これからより大事になる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">GuruFocus／CNBC（米株上昇・NVIDIA決算・2026/9）</span><a class="go" href="https://www.gurufocus.com/news/9086819/us-markets-rally-as-tech-stocks-surge-dow-jumps-316-points">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">案件需要の“中身”がシフト──単純コーディングは15〜25%縮小、上流・AI活用設計は40〜60%増の見通し。SES・受託業界の分析では、AIの普及で「1人が担当できる仕事量」が増える一方、IT需要そのものは伸び続けており、需要の内訳が大きく変わると見込まれている。具体的には、単純なプログラム作成の案件は15〜25%程度縮小する一方、要件定義・アーキテクチャ設計・「AI活用を前提とした設計」などの上流工程は40〜60%増える見通しだという。「言われた通りに作る」だけでは評価されにくく、要件定義から保守・顧客折衝まで担当範囲を広げた技術者ほど、生産性と市場評価を同時に高めやすい構図が鮮明になっている。</div>
+      <p class="sum">エンジニアの仕事が「手を動かす作業」から「何を作るかを設計し、AIを使いこなして課題を解く」方へと移り、その差が案件の増減にはっきり出ている、という話だ。作業だけの仕事は減り、上流・設計・AI活用ができる人材の価値が上がっている。中小・士業への示唆（外部にIT人材を頼む立場）は、外注先を「単価の安さ」だけで選ばず、「自社の困りごとにAIをどう当てはめ、どこまで設計してくれるか」を語れる相手かで見極める、という点だ。上流まで踏み込める相手を選ぶと、多少単価が高くても“作り直しのない”成果につながりやすい。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">Heyday／SES BASE（SES×AIの将来性・2026）</span><a class="go" href="https://lp.hydy.jp/blog/ses-industry-future-2030">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">2026年SES単価はAI/ML・クラウド・セキュリティで急騰──Python×AIは月100万円超、スキルの中身で単価差が拡大。2026年のSES（技術者派遣）単価は、経験年数・スキル・職種によって月40万〜160万円超と幅広い。なかでもクラウド・セキュリティ・AI/ML領域は単価の急騰が続き、とくに「Python＋AI／機械学習」を扱える人材は月100万円を超えるケースも珍しくない。一方で一般的な開発は月60〜90万円前後にとどまり、同じ職種・同じ経験年数でも「AIやクラウドを実務で使えるか」で単価に大きな差がつく構造が定着してきた。</div>
+      <p class="sum">エンジニアの“値付け”が、経験年数より「AIやクラウドを扱えるか」という具体スキルで決まる時代に入り、その差が月数十万円という形ではっきり表れている、という話だ。人手が足りない領域ほど単価は高い。中小・士業への示唆は、外部に人材を頼むとき「AIできます」の一言で判断せず、「どの道具で・どの業務を・どこまで自動化した実績があるか」を具体的に確かめる、という点だ。単価の高低だけでなく、自社の困りごとにどう当てはめてくれるかで選ぶと、価格に見合う成果につながりやすい。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">SES BASE／HLT（SES単価相場2026）</span><a class="go" href="https://ses-base.com/articles/ses-tanka-souba-2026/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">生成AIは「試す」から「成果を問われる」段階へ──触った企業は多いが、業務に組み込めているのは一部。専門家は「差は現場への落とし込み方」と指摘。国内の生成AI活用に関する各種まとめによると、生成AIに触れたことのある企業は大半に達する一方、実際に業務へしっかり組み込めている企業は一部にとどまる。導入率は世界水準に並ぶものの、得られた成果には大きな差が開いているのが実情だ。専門家は「差を分けるのは最新モデルを使っているかどうかではなく、自社のどの業務に、どう落とし込むかの巧拙」と指摘。2026年は生成AIが“とりあえず試す”段階から“成果を問われる”段階へ移ったとみられている。</div>
+      <p class="sum">多くの企業が生成AIを触ってはみたものの、「業務にちゃんと組み込んで成果を出す」ところまで到達できているのは一部、という話だ。差がつく理由は最新モデルの有無ではなく、「自社のどの業務に、どう組み込むか」という現場設計の巧拙にある。中小・士業への示唆は、AI導入は“入れて終わり”ではなく「どの定型業務を、どの手順で置き換えるか」を具体的に決めることが成否を分ける、という点だ。まず一つの業務（たとえば議事録作成や問い合わせ対応）に絞って確実に成果を出し、そこから広げるやり方が、投資を無駄にしにくい。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">DXGO（生成AIの最新トレンドと企業活用・2026）</span><a class="go" href="https://usknet.com/dxgo/contents/dx-technology/the-latest-trends-in-generative-ai-and-practical-guide-for-business/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">“業務を絞った”導入が数字を出す──セブン-イレブンは商品企画を最大1/10に短縮、ダイキンは社内問い合わせAIで月3,700件超に自動対応。成果を出している事例は、対象業務を絞って効果を数字で示せているのが共通点だ。セブン-イレブンは商品企画に生成AIを取り入れ、企画にかかる期間を最大で10分の1に短縮。ダイキン工業は社内問い合わせ対応と業務マニュアル検索に特化したAIチャットボットを導入し、月あたり3,700件以上の問い合わせに自動対応、正答率70〜80%を達成している。いずれも「全社員向けの汎用AI」ではなく「特定業務に絞った専用AI」で、狙いを明確にした導入が奏功している。</div>
+      <p class="sum">うまくいっている会社は、AIを「なんとなく」ではなく「この業務のこの手間を減らす」と的を絞り、結果を数字で確かめている、という話だ。共通するのは“目的と測り方が最初から明確”という点だ。中小・士業への示唆は、AI導入の目標を「業務が楽になる」といった曖昧な言葉ではなく、「この作業を月○時間減らす」「問い合わせの○割を自動化する」と数字で置く、という点だ。効果を測る物差しを先に決めておくと、続けるべきか見直すべきかの判断がしやすく、社内での納得も得やすい。まずは問い合わせ対応や資料検索など、身近な一業務から始めるのが手堅い。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">BIZ ROAD／EQUES（生成AI企業導入事例・2026）</span><a class="go" href="https://bizroad-svc.com/blog/seisei-ai-kigyou/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">「Plugin4Shell」──主要4つのAIコーディング支援ツールを横断する“クリック不要”の乗っ取り欠陥が公表。Claude Code・Codex・Copilot・Gemini CLIが対象。9月中旬、AIでプログラムを書く主要ツール（Anthropic「Claude Code」、OpenAI「Codex」、GitHub「Copilot」、Google「Gemini CLI」）に共通する深刻な脆弱性「Plugin4Shell」が公表された。悪意ある“プラグイン（拡張機能）の更新”を仕込むと、利用者がクリックも承認もしないまま攻撃者のコードが実行されうる（ゼロクリック）というもの。拡張機能は開発者と同じ権限を引き継ぐため、ソースコードやクラウドの認証情報、SSH鍵、社内リポジトリ、本番システムまで奪われる恐れがある。AnthropicとOpenAIは修正済み、Gemini CLIは提供終了のため非対応、と対応が分かれた。※実際の悪用や被害は報告されていない。</div>
+      <p class="sum">AI本体ではなく、それを支える“拡張機能の配り方（供給網）”の弱点を突く攻撃で、しかも利用者が何もしなくても乗っ取られうる、という怖さがある、という話だ。開発ツールに与えた権限がそのまま攻撃者の手に渡りうる点が深刻だ。中小・士業への示唆（健診＝セキュリティ点検の観点）は、AIツールは「常に最新版に更新できているか」「どんな拡張機能を入れ、どこまでの権限を与えているか」を棚卸しするだけでも身近な弱点が見つかる、という点だ。提供元によって修正対応に差が出た今回は、「使っている道具がちゃんとメンテされ続けているか」を選定基準に入れる大切さも示している。公的な注意喚起と合わせて説明できると、顧問先の納得も得やすい。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Help Net Security／The Register（Plugin4Shell・2026/9/18）</span><a class="go" href="https://www.helpnetsecurity.com/2026/09/18/plugin4shell-ai-coding-agents-vulnerability/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">プロンプトインジェクションは依然、エージェントAIの障害要因トップ──Slack AIやM365 Copilot等でも被害報告、供給網（LiteLLM等）への攻撃も。OWASP（Web安全の国際団体）などの調査によると、AIへの不正な指示を紛れ込ませる「プロンプトインジェクション」は、いまも本番運用のエージェントAIで最も多いセキュリティ失敗の要因だという。AIエージェントはファイル読み取り・Web閲覧・API呼び出し・DB検索・メール送信などを実行できるため、かつては“チャットに変なことを言わせる”程度だった攻撃が、今では「メールを勝手に送る」「データを外部に持ち出す」「コードを実行する」といった実害につながる。Slack AI、Microsoft 365 Copilot、Cursor、各種AIコーディング支援でも問題が報告され、多くのAI基盤が使う中継部品「LiteLLM」への供給網攻撃も確認されている。</div>
+      <p class="sum">AIに指示を出せる仕組みそのものが、攻撃者に悪用されうる“新しい入口”になっており、AIができること（メール送信・データ操作）が増えるほど被害も大きくなる、という話だ。しかも一つの対策で防げるものではない。中小・士業への示唆は、AIを社内のメール・文書・業務システムにつなぐほど、この“新しい入口”のリスクが増える、という点だ。健診（セキュリティ点検）では、「AIにどこまでの権限を与えているか」「外部から来た文書やメールをAIに読ませていないか」を洗い出すだけでも身近な弱点の発見につながる。①与える権限を絞る、②動きを記録・監視する、③運用ルールを決める、を重ねて備えるのが基本になる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">OWASP／Help Net Security（プロンプトインジェクション・2026）</span><a class="go" href="https://www.helpnetsecurity.com/2026/06/11/owasp-prompt-injection-ai-security-failures/">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
