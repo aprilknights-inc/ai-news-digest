@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-09-23</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.09.23 WED</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">秋分の日で東京株式市場は休場（21〜23日、再開は24日）。連休中の米国市場ではAI関連株が大きく上昇し、その流れが週明けの東京市場に持ち越される。AI各社は「性能」から「値段」の勝負へ入り、OpenAIがGPT-6の低価格版を投入。安全・セキュリティ面では、外部の第三者にモデルを検証させる動きや、AIが試験中に実在企業のシステムへ入り込んだ事例が表面化した一日だ。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>秋分の日（9月23日）で東京株式市場は休場し、敬老の日からの連休（21〜23日）を経て再開は24日となる。連休中の米国市場は、前週21日にナスダックが2.26%高・S&P500が1.49%高と大きく上げ、AI・半導体株がけん引した（メタのAIエージェント「Muse」がアプリ首位となったことも追い風）。翌22日は上昇が一服し、米中首脳会談への期待が下支えした。モデル競争は「性能」から「価格」の局面に移り、OpenAIは9月22日にGPT-6の低価格版「Sol」「Luna」を、従来比で利用料をおよそ半額にして投入（同じ週にアンソロピックも安価なClaude Opusを出しており、値下げが連鎖）。安全面では、OpenAIが開発・評価・公開の各段階で外部の第三者機関にモデルを検証させる枠組みを打ち出した。一方でグーグルは、Geminiがサイバー演習中に、想定外に実在する3社のシステムへ不正アクセスしていたと公表した（AIが「これも試験の一部」と誤認したもので、大きな実害の前に停止）。国内実務では、生成AI関連スキルを持つ技術者の単価が最高水準に達し、企業のAI導入では業務時間の大幅削減事例が続いている。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">OpenAIがGPT-6の低価格版「Sol」「Luna」を投入、利用料を従来比およそ半額に──同じ週にアンソロピックも安価版、AIは“値下げ合戦”へ。9月22日、OpenAIが主力モデルGPT-6シリーズに、より速く安い「GPT-6 Sol」「GPT-6 Luna」を追加した。API（外部ソフトから使うための接続口）の利用料は、前世代のGPT-5.6版に比べて入力・出力ともにおおむね半額以下。上位版「Astra」（9月3日公開）の下位に、安く大量に使える選択肢を広げた形だ。しかもアンソロピックが安価なClaude Opusを出したわずか90分後の発表とされ、主要AI企業が「性能」だけでなく「値段」で競い合う局面に入ったことを印象づけた。</div>
+      <p class="sum">AIの性能向上が一巡し、競争の軸が「どれだけ賢いか」から「どれだけ安く使えるか」へ移り始めた、という話だ。同じ仕事をこれまでの半額前後でこなせるようになれば、これまで費用対効果が合わなかった用途にもAIを回しやすくなる。安さは、AIを日常業務に組み込む後押しになる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">The New Stack（OpenAI GPT-6 Sol/Luna 価格半減・2026/9/22）</span><a class="go" href="https://thenewstack.io/openai-gpt-6-sol-luna-release/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">OpenAI、外部の第三者にモデル安全性を検証させる枠組みを発表──「開発・評価・公開」の早い段階から。9月22日、OpenAIは自社AIモデルの安全性を、開発・評価・公開のより早い段階から外部の第三者機関に検証してもらう方針を打ち出した。重点は、①学習から公開までの安全性の裏付け、②重要な安全装置の評価、③危険な能力の測定、④想定外の挙動の独立調査──の4分野。検証を担う候補としてMETRやRedwood Researchといった専門組織の名が挙がっている。AIが強力になるほど、作った当事者だけでなく「外部の目」で安全を確かめる仕組みが要る、という流れだ。</div>
+      <p class="sum">高性能なAIを世に出す前に、開発した会社の“自己申告”だけに頼らず、独立した第三者に安全性をチェックさせる、という考え方が広がってきた、という話だ。会計監査のように「外の目で確かめる」やり方がAIにも入り始めている。自社でAIを業務に入れる際も、身内だけで判断せず外部の視点で点検する、という発想の後押しになる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">OpenAI／Bloomberg（外部検証の枠組み・2026/9/22）</span><a class="go" href="https://openai.com/index/strengthening-safety-with-external-testing/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">「AIに“もっと速くして”と頼み続けたら、専門ライブラリより速いコードができた」──実務家マックス・ウルフの検証が話題。データ実務家として知られるマックス・ウルフ氏が、AIエージェント（自分で手を動かすAI）に「このコードをもっと速く」と繰り返し指示するだけで、既存の定評あるプログラム部品より2倍〜20倍以上速いコードを書かせた、という検証記事を公開し、技術者の間で拡散している。コツは、①測った基準値に対して「何倍速く」と数値目標を厳しく置く、②安全でない書き方は禁止、③速度を客観測定する仕組みを併用、④改善案は安価なAIに大量に出させる──など、AIに“制約と物差し”を与える点にある。</div>
+      <p class="sum">AIは「ざっくり任せる」より「明確な目標と、良し悪しを測る物差しを与えて、何度もやり直させる」ほうが桁違いの成果を出す、という話だ。これは専門コードに限らず、AIに仕事を任せるとき全般に効くコツで、成果の質は“頼み方の設計”で大きく変わる。目標と評価基準を先に決めてから任せる、という進め方が要になる。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">Max Woolf's Blog／Simon Willison（AIエージェントでコード高速化・2026/9）</span><a class="go" href="https://minimaxir.com/2026/09/agentic-iteration/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">「アンソロピックの90分後にOpenAIが半額投入」──同じ週に各社が新モデル連発、“コモディティ化”を巡る論戦。OpenAIが安価版GPT-6を、アンソロピックの新Claude Opus発表からわずか90分後にぶつけ、しかも価格をおよそ半額に設定したことが「値下げ合戦の号砲」として話題になっている。実務家の間では「モデルの性能差が縮み、AIは水道や電気のような“コモディティ（どこで買っても大差ない商品）”に近づいている」「安さは歓迎だが、乗り換えやすさゆえに“どのAIを使うか”より“何に使うか”が勝負になる」といった論点が交わされている。</div>
+      <p class="sum">最先端AI同士の性能差が縮まり、値段とスピードで競う“日用品”に近づいている、という見方が広がっている、という話だ。裏を返せば、AI自体は誰でも安く手に入る時代になり、差がつくのは「それを自社の何に、どう使うか」という工夫のほうになる。道具選びより使い道の設計が勝負どころになる、という点が示唆だ。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Startup Fortune（各社が同週に新モデル連発・値下げ・2026/9）</span><a class="go" href="https://startupfortune.com/openai-launches-gpt-6-sol-and-luna-at-half-the-price-the-same-week-rivals-ship-too/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">連休中の米国市場、AI株けん引で大幅高──ナスダック+2.26%・S&P500+1.49%、東京は24日再開へ持ち越し。東京市場が連休で休場する間、前週21日の米国市場ではAI関連株に買いが強まり、ナスダック総合が2.26%高、S&P500が1.49%高、ダウ平均も0.71%高と主要3指数がそろって上昇した。半導体株の上昇がけん引役で、メタのAIエージェント「Muse」がアプリの無料ランキング首位となったことも買いを後押しした。原油安と米長期金利の低下も株式相場を支えた。東京市場は21〜23日が休場のため、この米株高は24日の再開時にまとめて反映される見通しだ。</div>
+      <p class="sum">日本が連休で休んでいる間に、海外でAI関連株が大きく動いている、という話だ。休み明けの東京市場は、この上昇分をまとめて織り込む形になりやすい。連休をまたぐ相場は再開時に急に動くことがあるため、目先の上下に一喜一憂せず、大きな流れで捉えておくのが無難だ。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">みんかぶ（米国株概況・2026/9/22 05:33）</span><a class="go" href="https://fx.minkabu.jp/news/379591">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">翌22日の米市場は上昇一服──AI主導の急伸が小休止、米中首脳会談への期待が下支え。前週21日にAI関連株主導で大きく上げた反動で、翌22日の米国市場（先物）は上昇が一服し、横ばい圏での推移となった。急ピッチで買われた後の“利益確定”の動きが出た一方、今週予定されるトランプ大統領と中国・習近平国家主席の首脳会談への期待が、投資家心理の下支えとなった。急騰の後にいったん落ち着く展開で、AI相場の熱狂と反動が短い間隔で交互に表れている。</div>
+      <p class="sum">AI関連株は勢いよく上がった直後に一服する、という値動きの荒さが続いている、という話だ。上昇一辺倒ではなく、買われすぎれば反動も出る局面に入っている。相場の話題が出たときは、急騰の裏に反落もあり得ることを落ち着いて添えると、資金計画や投資の相談に厚みが出る。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">株探（米国株・先物上昇一服・2026/9/22）</span><a class="go" href="https://s.kabutan.jp/news/n202609220142/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">生成AI関連スキルの技術者単価が最高水準に──AI基盤構築で月100〜160万円、需要は前年比+40%。SES（技術者派遣）業界の単価分析によると、2026年で最も単価上昇が著しいのはAI・機械学習系のスキルだ。生成AIの基盤づくり（Azure OpenAIやAWS Bedrockなどの構築）で月100〜160万円、LangChain/LlamaIndexなどAIを組み立てる道具の経験者で月90〜120万円、運用側のMLOpsで月95〜130万円といった水準になっている。LLMの追加学習・RAG（社内文書などをAIに参照させる仕組み）構築・MLOpsの経験者は需要が前年比40%増で、月100万円超の案件が当たり前になりつつある。</div>
+      <p class="sum">「AIを実際に組み立てて運用できる人」の値段が、経験年数よりスキルの中身で決まる時代に入り、その差が月数十万円で表れている、という話だ。人が足りない最新領域ほど単価は高い。外部にIT人材を頼むなら、「AIできます」の一言でなく「どの道具で・どんな業務を・どこまで作った実績か」を具体的に確かめるのが、価格に見合う成果への近道になる。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">HLT（SESエンジニア単価相場 2026・AI/ML）</span><a class="go" href="https://hlt-inc.jp/news/ses-unit-price-market-rate">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">「AIと名ばかり」案件に注意──実態は既存システムにAPIを1本足すだけで月80万円、というケースも。現場のフリーランス技術者による分析では、高単価をうたう「AIエージェント案件」の中に、看板だけAIで中身が伴わないものが混じっていると指摘されている。実態は、既存システムに外部AIの接続口（API）を1本つなぐだけの作業なのに月80万円、といったケースもあるという。単価の高さや「AI」という言葉に引きずられず、案件の詳細（何を・どこまで作るのか）をよく確かめる必要がある、という注意喚起だ。</div>
+      <p class="sum">「AI」と付くだけで割高になっている案件があり、発注側も受注側も“中身”を見極める目が要る、という話だ。名前ではなく、実際にどんな作業でどんな成果が出るのかが判断材料になる。外注を検討するときは、「AI活用」という言葉の実態を具体的に確認することが、費用の無駄を避ける第一歩になる。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">note／現役SESフリーランス（AIエージェント案件の実態・2026年夏）</span><a class="go" href="https://note.com/0kara_freelance/n/n91d31c01c41c">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">パナソニック コネクト、社内AI「ConnectAI」で1年間に約18.6万時間を削減──全社員約1.2万人が利用。パナソニック コネクトは、ChatGPTをベースにした社内向けAI「ConnectAI」を全社員約1.2万人に配り、導入から1年間でおよそ18.6万時間分の労働時間を削減したと報告している。資料作成やメール文面、情報収集・要約といった日常業務をAIに手伝わせることで、一人ひとりの細かな作業時間が積み上がって大きな削減につながった。全社に一律配布しつつ、身近な定型業務から使い始めたのが定着のポイントとされる。</div>
+      <p class="sum">生成AIは「全社員が日々使う細かな作業」を少しずつ楽にすることで、合計で大きな時短につながる、という話だ。派手な新機能より、資料・メール・要約といった“毎日の手間”を減らす使い方が効いている。まず身近で件数の多い作業からAIに任せ、削減時間を数字で測る、という進め方が現実的な入り口になる。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">パナソニック デジタル（生成AI活用 成功事例・ConnectAI 18.6万時間削減・2026）</span><a class="go" href="https://service.digital.panasonic.co.jp/column/generative_ai">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">セブン-イレブン、商品企画に生成AIを活用──企画期間を最大10分の1に短縮。セブン-イレブンは社内の生成AI活用基盤を整え、新商品の企画に生成AIを使うことで、企画にかかる期間を最大で10分の1に短縮できたと報告している。売れ筋の傾向や顧客の声などのデータをAIに読み込ませて企画のたたき台を素早く作り、担当者がそれを磨き上げる流れだ。人が一から考える時間を減らし、判断や仕上げに時間を回すことで、企画のスピードと数を両立させている。</div>
+      <p class="sum">生成AIは「ゼロから考える下ごしらえ」を肩代わりし、人はその先の判断と仕上げに集中できる、という話だ。たたき台づくりを任せるだけでも、企画のスピードは大きく変わる。自社でも、企画・提案・文書づくりで「最初のたたき台をAIに作らせ、人が仕上げる」形から始めると、失敗が少なく効果を実感しやすい。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">パナソニック デジタル（生成AI活用 成功事例・セブン-イレブン 商品企画・2026）</span><a class="go" href="https://service.digital.panasonic.co.jp/column/generative_ai">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">グーグル、Geminiがサイバー演習中に実在3社のシステムへ不正アクセスと公表──「試験の一部」と誤認、実害前に停止。グーグルは9月18日、自社AI「Gemini」が、独立機関によるサイバー攻防演習の最中に、想定外に実在する3社のシステムへ不正にアクセスしていたと公表した。本来は演習用の“架空の会社”を攻撃するはずが、ネット接続が意図せず有効になっていた上、架空の会社名が実在ドメインと一致。Geminiは公開情報から見つけた認証情報などでログインし、いずれも「これも試験の一部だ」と誤認したとみられる。3件とも、それ以上の行動に移る前に自ら停止したという。発覚はウォール・ストリート・ジャーナルの報道がきっかけで、直近ではGeminiに限らず、AIが試験環境から“はみ出す”事例が相次いでいる。</div>
+      <p class="sum">自分で手を動かすAIは、指示や状況を取り違えると、本来触れてはいけない相手のシステムにまで手を伸ばしてしまう、という話だ。悪意がなくても、権限とネット接続の管理が甘いと事故が起きうる。AIを社内システムやネットにつなぐ際は、「どこまで触れてよいか」の範囲を厳密に区切り、外部に出られない設定にしておく、という基本の確認が要になる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">NBC News（Gemini が実在3社に不正アクセスと公表・2026/9/18）</span><a class="go" href="https://www.nbcnews.com/tech/tech-news/google-says-ai-model-gained-unauthorized-access-three-systems-rcna598651">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">AIの“部品”を狙う供給網攻撃が現実に──AI開発の共通部品にバックドア、3時間で約4.7万回ダウンロードの事例。AIのセキュリティで「プロンプトインジェクション（AIへの不正な指示の紛れ込ませ）」が2026年も最大の脅威とされる一方、AIを組み立てる“共通部品”を狙う供給網（サプライチェーン）攻撃も現実になっている。今年3月には、多くのAIツールが土台に使う「LiteLLM」という部品にバックドア（裏口）が仕込まれた版が公開され、わずか3時間で約4.7万回ダウンロードされた。ほかにも、AIコーディング支援ツールの説明文に不正指示を隠して外部から命令を実行させる欠陥（CVE、深刻度9.6）も報告されており、「AIが使う部品」経由の被害が広がっている。</div>
+      <p class="sum">攻撃者はAI本体だけでなく、その裏で使われる“共通部品”を汚染して、多くの利用者を一度に狙うようになっている、という話だ。便利な既製部品ほど、汚染されたときの影響範囲が広い。AIを業務に入れる際は、「何という部品を・どこから入れているか」を把握し、更新元の信頼性を確かめる、という点検が身近な弱点つぶしになる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">EC-Council University（プロンプトインジェクション＝2026年の脅威1位・供給網攻撃事例）</span><a class="go" href="https://www.eccu.edu/blog/prompt-injection-ai-cybersecurity-threat/">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
