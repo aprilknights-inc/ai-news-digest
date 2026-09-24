@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-09-24</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.09.24 THU</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">アンソロピックがClaude Opus 5.5を投入し、性能を上げながら費用を約4割下げた。AIは「同じ性能を安く」の局面へ進み、外部機関による安全検証も広がる。マーケットではOpenAIが1兆ドル超の評価額で資金調達を検討する一方、「AIバブル」を警戒する声も強まった。国内ではAIエージェント人材の単価が跳ね上がり、企業のAI導入事例も着々と積み上がる一日だ。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>アンソロピックは9月22日にClaude Opus 5.5を公開し、主要な作業での費用を従来比およそ4割減・速度3割増としつつ、METRなど外部機関による安全検証を実施した。AIで「一定の性能を出すためのコスト」は2023年以降おおむね四半期ごとに約47%（年約13倍）のペースで下がり続けており、競争軸は「性能一辺倒」から「性能・運用コスト・安全性」の三つ巴へ移りつつある。マーケットではOpenAIが評価額1.2兆ドル超での資金調達を検討し11月の大型上場観測も出る一方、AI企業同士が資金を融通し合う構造や巨額の設備投資をめぐって「AIバブル」を警戒する声も強まった。国内ではAIエージェント開発者の単価が月100万円超で常態化し、NECやダイキンなど業務へAIを組み込む事例も広がっている。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">アンソロピック、Claude Opus 5.5を公開──性能を上げつつ主要作業の費用を約4割減・速度3割増、外部機関が安全性を検証。9月22日、アンソロピックが新世代の最上位AI「Claude Opus 5.5」を公開した。よくある業務での実質的な利用コストは前世代のOpus 5に比べておよそ4割減、出力速度は3割以上向上し、料金は100万トークンあたり入力4ドル／出力20ドル（前世代比2割引き下げ）とした。社内の自動安全テスト（約2,000通りの想定場面でAIの振る舞いを点検するもの）では「これまでで最も成績が良い」とし、公開前にMETRやFrontier Designといった外部の専門機関に検証させたのも特徴だ。SonnetやHaikuの5.5版も数週間内に続くとされる。</div>
+      <p class="sum">最上位AIが「前より賢く、より速く、より安く、しかも外部の目で安全確認済み」という形で更新された、という話だ。性能だけでなく値段と安全性を同時に押し出す売り方が主流になってきた。同じ仕事がこれまでより安く速く回せるようになれば、これまで見送っていた用途にもAIを試しやすくなる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">explainX（Claude Opus 5.5 ベンチマーク・価格・2026/9/22）</span><a class="go" href="https://www.explainx.ai/blog/claude-opus-5-5-launch-benchmarks-pricing-2026">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">AIの「同じ性能を出すコスト」が四半期ごとに約47%低下──年およそ13倍の値下がり、競争軸は“性能・コスト・安全”の三つ巴へ。調査機関エポックAIの推計によると、ある一定水準のAI性能を得るためにかかる費用は、2023年以降おおむね四半期ごとに約47%ずつ下がり続けており、年に換算するとおよそ13倍のペースで安くなっている。アンソロピックのOpus 5.5、OpenAIのGPT-6低価格版など、各社が「性能を保ったまま値下げ」を連発しているのが背景だ。最先端AIの争いは、ベンチマーク（性能テスト）の首位争いから、「性能・運用コスト・安全性」の三つを同時に競う局面へと移りつつある。</div>
+      <p class="sum">AIは「毎年劇的に安くなる道具」であり、去年は高くて見送った使い方が、今年は現実的な値段になっている、という話だ。待てば待つほど安くなる一方、様子見だけでは差もつかない。費用を理由に諦めていた業務を、定期的に「今なら合うか」と見直す価値が出てきている。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">The Neuron／Epoch AI（AI性能あたりコストの低下・2026/9/23）</span><a class="go" href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-september-23-2026/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">「Opus 5.5が全項目で強いなら、Fableの意味は？」──Opus 5.5の反応が過熱、“慎重に進める”宣言との矛盾を突く声も。Claude Opus 5.5の公開直後、掲示板Redditで「Opus 5.5がすべての項目で（別系統の）Fableより強いなら、Fableを使う意味は何か」というスレッドが伸び、技術者コミュニティの一番大きな反応になった。技術者向け掲示板ハッカーニュースでは、アンソロピックが数日前に掲げた「We Must Pace the Frontier（フロンティアの進み方は抑えるべきだ）」という慎重路線の宣言と、実際には高性能・値下げモデルを次々出す動きとの“ちぐはぐさ”を指摘する声が最上位に付いた。</div>
+      <p class="sum">最先端を走る各社は「安全のためにペースを抑える」と語りつつ、実際には競争を止められていない、という緊張が透けて見える、という話だ。作り手の建前と実際の動きにはズレがある。AIの安全性は提供元の言葉をそのまま信じるのではなく、自分の使い方の範囲で確かめる姿勢が要る、という点が示唆になる。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">Reddit／Hacker News（Opus 5.5 への反応・2026/9）</span><a class="go" href="https://www.explainx.ai/blog/claude-opus-5-5-launch-benchmarks-pricing-2026">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">モリック「エージェント活用は“技術”でなく“業務プロセス”の問題」──出力が増えすぎると組織が詰まる、という論点が拡散。経営×AI実務の論者イーサン・モリック氏の「AIエージェント導入がうまくいかないのは技術の問題ではなく、仕事の進め方（プロセス）の問題だ」という指摘が話題を集めている。氏は、組織は「人間一人あたりの想定される生産量の幅」を前提に設計されており、AIで一人分の出力が増えすぎると、承認・人員配置・部署間の調整といった仕組みが処理しきれず、かえって流れが詰まる、と説く。「導入率は79%でもう差別化要因ではなく、勝負は“導入した後の使いこなし”だ」という調査結果も引かれている。</div>
+      <p class="sum">AIを入れても成果が出ないのは、多くの場合ツールのせいではなく、増えた仕事量を受け止められる業務の流れを作れていないから、という話だ。AIは「導入して終わり」ではなく、周りの進め方まで組み替えて初めて効く。まず一つの業務で「AIの後工程（確認・承認・引き継ぎ）」まで含めて設計し直すのが、実りある入り口になる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">@emollick（X／AIエージェント導入は“プロセス”の問題・2026/9）</span><a class="go" href="https://x.com/emollick/status/2082935598768091518">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">OpenAI、評価額1.2兆ドル超での資金調達を検討──11月に約2兆ドル規模の大型上場観測、AIマネーの膨張続く。ブルームバーグは9月15日、OpenAIが企業価値1.2兆ドル（約180兆円）超を前提とした新たな資金調達を検討していると報じた。あわせて、11月にも大型の新規株式公開（IPO）を予定し、目標評価額は約2兆ドル、調達額は最大1,000億ドルにのぼる可能性があるとの観測も出ている。実現すれば史上最大級の上場となる。AI開発には巨額の計算基盤への投資が要るため、各社がかつてない規模の資金を集めにいく構図が続いている。</div>
+      <p class="sum">AIの世界には、これまでの常識を超える規模のお金が流れ込み続けている、という話だ。金額の桁が大きすぎて実感しにくいが、それだけ「AIは今後も伸びる」と多くの投資家が見ているとも言える。ただし期待が過熱している面もあり、金額の大きさそのものに一喜一憂しないのが無難だ。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Bloomberg（OpenAI 評価額1.2兆ドル超で調達検討・2026/9/15）</span><a class="go" href="https://www.bloomberg.com/news/articles/2026-09-15/openai-weighing-funding-round-at-over-1-2-trillion-valuation">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">「AIバブル」への警戒強まる──4大テックの設備投資は2026年で4,500億ドル、企業同士が資金を融通し合う“循環”構造に注目。AI相場の過熱を懸念する声も強まっている。グーグル・マイクロソフト・メタ・アマゾンの4社だけで2026年の設備投資は約4,500億ドルに達する見込みで、AI企業同士が出資・発注し合って需要を作る“循環的”な構造が指摘されている（あるバブル指標は100点満点で73点）。9月16日の米利上げで長期金利が一時5.01%まで上昇し、その一因にAI基盤への巨額借り入れがあるとも言われる。どこか一社の投資が鈍れば連鎖的に全体が減速しかねない、という危うさが意識されている。</div>
+      <p class="sum">AIへの投資は「みんなが互いに買い支えて成り立っている」面があり、一角が崩れると全体に響きうる、という慎重論だ。景気が良いから金利が上がっているのではなく、AI投資の過熱が金利を押し上げている側面もある。相場の話題では、勢いの裏にある“反動のリスク”も落ち着いて添えると、資金計画の相談に厚みが出る。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Man Group／AI Circular Economy（AIバブルのリスク・2026/9）</span><a class="go" href="https://www.man.com/insights/the-ai-bubble">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">AIエージェント開発者の単価が急騰──CrewAI案件で月80〜95万円、LangGraph移行経験で100万円台、AI/ML系の需要は前年比+40%。技術者派遣（SES）の実案件データによると、AIエージェント（自分で手順を進めるAI）を組む開発者の単価が跳ね上がっている。代表的な開発道具「CrewAI」の実装経験で月80〜95万円、より高度な「LangGraph」への移行経験があると月100万円台の案件に入れる。生成AIの基盤づくり（Azure OpenAIやAWS Bedrockの構築）では月100〜160万円という水準だ。RAG（社内文書をAIに参照させる仕組み）やMLOps（AIの運用）を含むAI・機械学習系スキルの需要は前年比40%増で、月100万円超が当たり前になりつつある。</div>
+      <p class="sum">「AIを実際に組み立てて運用できる人」の値段が、経験年数よりスキルの中身で決まる時代に入っている、という話だ。人手が薄い最新領域ほど単価は高い。外部にIT人材を頼むなら、「AIできます」の一言でなく「どの道具で・どんな業務を・どこまで作った実績か」を具体的に確かめるのが、価格に見合う成果への近道になる。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">Heyday（AIエージェント開発者 SES単価 2026・CrewAI/LangGraph）</span><a class="go" href="https://lp.hydy.jp/blog/ai-agent-engineer-ses-tanka">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">SESの「人月モデル」に変化──数名を数か月常駐は取りにくく、細切れ・スポット案件へ。AIコーディング経験を求める求人は+340%、純実装のみは-17%。SES業界の分析では、「数名の技術者を数か月常駐させ、人月（人数×月数）で売上を積む」従来型の案件が取りにくくなっているという。AIが実装の一部を肩代わりするため、短期・スポット・AI生成物の手直し・試作の検証といった“細切れ”の案件が増えている。一方でITの仕事の総量自体は増え続けており、直近1年でAIコーディングツールの経験を求める求人は340%増、逆に「実装だけ」の求人は17%減った。求められる中身が「作る」から「AIを使いこなして仕上げる」へ移っている。</div>
+      <p class="sum">技術者の仕事が減るのではなく、「AIを使って速く仕上げられる人」への需要に置き換わっている、という話だ。頭数と常駐期間で稼ぐやり方は通じにくくなる。人材の評価も発注も、「何人月か」より「AIを使ってどれだけ早く成果を出せるか」で見る発想が要になる。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Heyday（SES×AIの将来性 2026・求人動向）</span><a class="go" href="https://lp.hydy.jp/blog/ses-industry-future-2030">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">NEC、部品の調達交渉を代行するAIエージェントを提供開始──約1,300品目を自動化、交渉時間を数日から約80秒に短縮。NECは、企業の購買・調達業務を代行するAIエージェントのサービスを2025年12月から提供している。約1,300品目にのぼる部品の調達交渉をAIが自動でこなし、これまで数日かかっていた交渉のやり取りをおよそ80秒にまで短縮した実績を示す。値段や納期の条件を相手先とすり合わせる定型的なやり取りをAIに任せることで、担当者はより難しい判断や関係づくりに時間を回せるようにする狙いだ。</div>
+      <p class="sum">生成AIは「文章を書く」だけでなく、条件のすり合わせのような“交渉のやり取り”まで肩代わりし始めている、という話だ。定型的な連絡・調整ほどAIに向く。自社でも、見積もり依頼や日程調整など「決まった型のやり取り」から任せると、削減効果を実感しやすい。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">AI革命／NEC（調達交渉AIエージェント・2025/12〜）</span><a class="go" href="https://ai-revolution.co.jp/media/generative-ai-business-cases/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">ダイキン工業、社内問い合わせAIチャットボットを導入──月3,700件以上に自動対応、正答率70〜80%。ダイキン工業は、社内からの問い合わせ対応と業務マニュアルの検索に特化したAIチャットボットを導入している。月あたり3,700件以上の問い合わせにAIが自動で答え、正答率は70〜80%に達しているという。「あの手続きはどうするのか」「この規定はどこを見ればよいか」といった、社内で繰り返し発生する“調べもの”をAIに任せることで、総務・情報システム部門などの負担を軽くしている。</div>
+      <p class="sum">生成AIは、社内で何度も聞かれる同じ質問への回答を肩代わりし、担当部署の手間を減らす使い方が効く、という話だ。派手さはないが、件数の多い定型問い合わせほど削減効果が積み上がる。まず「社内でよく聞かれる質問」を集め、そこからAIに答えさせるのが、失敗の少ない入り口になる。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">EQUES／ダイキン工業（社内問い合わせAI・月3,700件）</span><a class="go" href="https://eques.co.jp/column/ai-case-studies/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">プロンプトインジェクションが2026年も脅威1位──既知の防御をすり抜ける“適応型攻撃”、実運用エージェント障害の多くがこれ起因。AIへ不正な指示をこっそり紛れ込ませる「プロンプトインジェクション」が、2026年もAIセキュリティの最大の脅威とされる。実際に業務で動くAIエージェントの障害の多くがこの攻撃に起因し、攻撃者が手口を状況に合わせて変える“適応型攻撃”は、これまで公表されたほぼすべての防御策をすり抜けると報告されている。根本原因は、AIが「守るべき命令」と「単なるデータ（読み込んだ文章）」を確実に区別できないこと。だからこそ、AI任せの一枚岩の対策ではなく、権限やアクセス範囲を絞る多層の備えが要る。</div>
+      <p class="sum">AIは、読み込んだ文章の中に紛れた“命令のようなもの”をうっかり実行してしまう弱点があり、これは完全には防げない、という話だ。だから「AIに全部任せて安全」はあり得ない。AIを業務に入れる際は、触れられる情報や操作の範囲をあらかじめ狭く区切っておく、という前提が守りの基本になる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Help Net Security／OWASP（プロンプトインジェクションが最大脅威・2026）</span><a class="go" href="https://www.helpnetsecurity.com/2026/06/11/owasp-prompt-injection-ai-security-failures/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">エージェント時代の基本防御は「lethal trifecta（致命的な三点セット）」を避けること──“信頼できない入力・外部への通信・機密へのアクセス”を同時に持たせない。自分で動くAIエージェントの事故を防ぐ考え方として、「lethal trifecta（致命的な三点セット）」が改めて注目されている。①信頼できない外部の入力を読み込む、②外部と自由に通信できる、③機密データにアクセスできる──この三つを一つのAIに同時に与えると、不正な指示を読み込んだAIが機密を外部に持ち出す、といった事故が起こりうる。裏を返せば、三つのうちどれか一つでも断てば被害は大きく防げる。「何を読ませ、どこと通信させ、何に触れさせるか」を切り分ける設計が、エージェント運用の基本の守りになる。</div>
+      <p class="sum">危ないのは機能の一つひとつではなく、「外部の情報を読む・外に送れる・機密に触れる」が一つのAIに揃ったときだ、という話だ。三つが重なる箇所を作らないのが最も効く。AIを社内システムやネットにつなぐ前に、この三点が同時に成立していないかを確認する、という一手が身近な事故防止になる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Airia（lethal trifecta とエージェント防御・2026）</span><a class="go" href="https://airia.com/blog/ai-security-in-2026-prompt-injection-the-lethal-trifecta-and-how-to-defend/">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
