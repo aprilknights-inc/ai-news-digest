@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-09-25</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.09.25 FRI</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">アンソロピックが「ClaudeがCRISPRに似た新しい酵素システムを自力で見つけた」と発表し、AIが科学の発見そのものに踏み込んだ一日。生命科学の新設ラボが成果を示す一方、遺伝子治療の関連株は下落し、再現できなかった等の注意点も同時に語られた。主要3社は政府主導によらない安全基準づくりでも足並みをそろえる。国内はAI導入の「広がり」と「効果の乏しさ」の差が数字で表れ、セキュリティは日本語の脅威整理が最新版へ更新された。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>9月23日、アンソロピックは生命科学の研究チームと専用ラボの新設を公表し、AI「Claude」が約950体のエージェントで21時間・2億超のトークンを費やして膨大なDNA配列データを探索し、CRISPR（遺伝子を書き換える技術）に似た並びを持つ新しい酵素システム「ART」を自力で見つけた、と発表した。ただし働きはまだ不明で、同じ探索を10回以上やり直しても再現できなかったと同社自身が認めており、「AIが本当に発見したのか」を巡る議論も広がった。マーケットではこの発表を受けCRISPRセラピューティクスやビーム、プライムなど遺伝子治療の関連株が5〜11%下落。グーグル・OpenAI・アンソロピックの3社は、政府の認可を要しない民間主導の安全基準づくり「フロンティアAI標準機関」の設立でも歩み寄っている。国内は生成AIへの接触率が86%超に達する一方、業務に組み込めた企業は3割強、「期待を大きく上回る効果」は9%で主要6か国最下位という調査結果が出た。セキュリティは国内発の「AIエージェント攻撃手法と対策一覧（2026年9月版）」が121項目・252ページへ拡充された。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">アンソロピック、生命科学ラボを新設し「AIが新しい酵素システムを自力発見」と発表──Claudeが約950体のエージェントで21時間かけDNA配列の山を探索、CRISPRに似た並びの「ART」を見つける。9月23日、アンソロピックは生命科学の研究チームと専用ラボの立ち上げを公表し、あわせて初期成果を示した。AI「Claude」が約950体のエージェントに分かれて21時間・約2億トークンを費やし、20万件超の酵素候補を3,500件、さらに20件へと絞り込み、CRISPR（遺伝子を書き換える仕組み）のような等間隔のDNA反復配列を持つ新しい酵素システム「ART（アレイ関連逆転写酵素）」を特定した。人間の研究者は最初の指示と、その後の実験室での検証を担い、絞り込み自体はAIが進めたという。</div>
+      <p class="sum">これまで人間が長い時間をかけていた「膨大なデータの中から意味のある並びを見つける」作業を、AIが主役になってこなし始めた、という話だ。まだ研究段階だが、AIが文章づくりの道具から「発見の道具」へと役割を広げつつある象徴的な出来事といえる。専門分野でも「AIにまず探させて人が確かめる」進め方が現実味を帯びてきた。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">Anthropic 公式／Al Jazeera（Claudeが新酵素システムARTを発見・2026/9/23）</span><a class="go" href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">グーグル・OpenAI・アンソロピック、政府の認可を要しない民間主導の安全基準づくりへ──「フロンティアAI標準機関」を年内〜2027年初に立ち上げる構想、金融業界の自主規制団体を手本に。競合するAI大手3社が、最先端AIの安全性を共通のものさしで確かめる枠組みづくりで足並みをそろえつつある。7月にグーグル系ディープマインドのCEOが金融業界の自主規制団体（FINRA）を手本にした「米国主導の標準機関」を提唱し、3社が作業部会を組んで夏の間に検討を重ねてきた。目指すのは、公開前の安全確認や第三者による独立検証の共通ルール。議会や大統領の認可を必要としない“業界の自主規制”の形をとり、年内か2027年初の発足を見込むと報じられている。</div>
+      <p class="sum">AIを作る当事者どうしが、法律を待たずに「自分たちで安全の基準と検査のやり方を決める」動きだ、という話だ。国のルールづくりより速く進む利点はあるが、「作る側が自分で採点する」構図への懸念も残る。安全性の話題では、この“自主ルール”がどこまで実効性を持つかを、冷静に見ておくとよい。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">BankInfoSecurity（フロンティアAI標準機関の設立構想・2026/9）</span><a class="go" href="https://www.bankinfosecurity.com/google-openai-anthropic-plan-frontier-ai-standards-body-a-32926">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">「10回やり直しても再現できなかった」──Claudeの新酵素発見に“再現性”への疑問が続出、アンソロピック自身も認める。話題のClaudeによる酵素システム発見について、技術者コミュニティで最も大きな論点になったのが「再現性」だ。アンソロピックは、同じ探索を追加で10回以上やり直したところ、いずれも今回の“反復配列の並び”を見つけられなかったと自ら明かした。同社は「探索範囲が極めて広く、AIエージェントの進め方が毎回ばらつくため」と説明するが、科学の世界で重視される「誰がやっても同じ結果になる」という条件を満たしていない点に、慎重な受け止めが広がっている。</div>
+      <p class="sum">AIが一度すごい成果を出しても、それが「毎回きちんと再現できるか」は別問題だ、という冷静な指摘だ。派手な発表ほど、後追いで確かめられるかを見る姿勢が要る。AI活用を語る際も、成功事例を「一度うまくいった話」と「毎回再現できる仕組み」に分けて考えると、地に足のついた判断ができる。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">Gizmodo／Al Jazeera（ART発見の再現性を巡る議論・2026/9）</span><a class="go" href="https://gizmodo.com/claude-found-a-mysterious-crispr-like-system-but-anthropic-cant-say-what-its-capable-of-2000816906">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">「“新しいCRISPR”はまだ遠い」──AIの手柄をどこまで認めるかで論争、元になった酵素は既知・働きも未確認という指摘。発見の中身をよく見ると、土台となった逆転写酵素そのものは以前から知られており、Claudeの貢献は「バラバラだった要素を“ひとつのまとまった仕組み”として初めて認識した」点にある、との整理が広がっている。しかもART本体の働き（本当に遺伝子を書き換えられるか）はまだ確かめられていない。専門家からは「AIが科学の探索を加速する材料にはなるが、“新しいCRISPR”と呼ぶのは時期尚早」との声が上がり、AIの成果をどこまで“発見”と呼ぶかで意見が割れている。</div>
+      <p class="sum">AIの成果は「ゼロから生み出した」より「人間が見落としていた点をつないだ」ことが多く、その価値をどう評価するかで受け止めが変わる、という話だ。過大にも過小にも見ないバランスが大事。AIの成果を紹介するときは、「AIがやった部分」と「人が確かめた部分」を切り分けて伝えると、誤解を招かず信頼される。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">NAI500／Unite.AI（“新しいCRISPR”には時期尚早との論調・2026/9）</span><a class="go" href="https://nai500.com/blog/2026/09/ai-finds-new-clues-for-gene-editing-but-it-is-still-far-from-a-new-crispr/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">Claudeの酵素発見で遺伝子治療株が下落──CRISPRセラピューティクス −5.5%、ビーム −6.0%、プライム −11.6%、AIが既存バイオ企業の“優位”を揺さぶる。9月23日のアンソロピックの発表を受け、遺伝子編集・治療を手がける企業の株が売られた。CRISPRセラピューティクス（CRSP）が5.5%安、ビーム・セラピューティクス（BEAM）が6.0%安、プライム・メディシン（PRME）が11.6%安と大きく下げた。AIが新しい仕組みを次々に見つけ得るなら、特定技術の独自性で稼いできた企業の“堀（優位）”が崩れかねない、との連想が働いた形だ。ARTの働きはまだ未確認で、実用化のめどが立った話ではない点には注意が要る。</div>
+      <p class="sum">AIの進歩は関連ニュースを通じて、思わぬ業界の株価まで動かす時代になった、という話だ。「AIが強くなる＝AI企業が上がる」だけでなく、「これまで有利だった企業の立場が危うくなる」という逆の連想も相場を動かす。ニュースの波及先まで一歩引いて見ると、市況の読み違いを減らせる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Seeking Alpha（Anthropicの発見で遺伝子編集株が下落・2026/9/23）</span><a class="go" href="https://seekingalpha.com/news/4646229-gene-editing-stocks-fall-anthropic-crispr-like-discovery">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">AI基盤への設備投資はなお拡大──主要クラウド勢の投資は2026年に約8,000億ドル、2027年は1.3兆ドル規模の見込み、供給が追いつかない状況が続く。AIを動かすデータセンターや半導体への投資は、依然として過去最大級のペースで積み上がっている。主要なクラウド大手（ハイパースケーラー）の設備投資は2026年で約8,000億ドル、2027年には1.3兆ドル規模に達するとの見方が出ており、需要に供給が追いつかない状態が続く。半導体最大手エヌビディアは直近四半期の売上高が前年比約2倍と過去最大を記録し、「AI向けの計算資源はまだ足りない」という構図が相場の下支えになっている。一方で、投資が一角でも鈍れば連鎖的に減速しかねないとの警戒も根強い。</div>
+      <p class="sum">AIの土台づくり（計算基盤への投資）は当面止まらず、それが半導体やクラウド関連の業績を支えている、という話だ。ただし規模が大きすぎるだけに、どこかで投資が息切れすれば反動も大きい。相場の相談では「勢い」と「その裏の反動リスク」を両方そえると、落ち着いた助言になる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">24/7 Wall St.（AIハードウェア投資とエヌビディア・2026/9/24）</span><a class="go" href="https://247wallst.com/investing/2026/09/24/prediction-the-biggest-opportunity-in-ai-hardware-may-still-be-nvidia/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">AIエージェント開発者のSES単価が最高水準に──月90〜120万円超、通常のSES案件より1〜5割高、RAG・チャットボット・AI自動化の設計実装が中心。技術者派遣（SES）の実案件データによると、自分で手順を進めるAI（AIエージェント）を組む開発者の月単価は90〜120万円超と、2026年で最も高い水準に達している。通常のSES案件より1〜5割高い傾向で、主な仕事はRAG（社内文書をAIに参照させる仕組み）、チャットボット、AI自動化の一連の流れ（パイプライン）の設計・実装だ。基本スキルはPythonとLLMのAPI利用経験で、LangChainなどの開発道具の経験があるとさらに有利になる。AI・機械学習・クラウド・セキュリティの領域で単価の急騰が目立つ。</div>
+      <p class="sum">「AIを実際に組んで動かせる人」の値段が上がり続けており、経験年数よりスキルの中身で単価が決まる時代だ、という話だ。外部にIT人材を頼むなら「AIができます」の一言でなく、「どの道具で・どんな業務を・どこまで作った実績か」を具体的に確かめるのが、価格に見合う成果への近道になる。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">Heyday（AIエージェント開発者のSES月単価 2026・RAG/LLM）</span><a class="go" href="https://lp.hydy.jp/blog/ai-agent-engineer-ses-tanka">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">国内の生成AI、「広がり」と「効果」の差が鮮明に──接触率は86%超だが業務に組み込めた企業は3割強、「期待を大きく上回る効果」は9%で主要6か国最下位。国内企業の生成AI活用について、「触れてはいるが成果に結びついていない」実態が数字で表れている。生成AIに接した企業は86%超に達する一方、実際に業務へ組み込めているのは3割強にとどまる。さらに「期待を大きく上回る効果が出た」と答えた企業は9%で、調査対象の主要6か国の中で最下位だった。導入率は世界水準まで来たものの、「使ってみたが効果は限定的」という段階で足踏みしている企業が多い、という構図だ。</div>
+      <p class="sum">日本企業の課題は「AIを入れるかどうか」ではなく、「入れた後に成果へつなげられるか」に移っている、という話だ。多くの会社が“試したが効果薄”で止まっている。だからこそ、対象業務を一つに絞り、効果を数字で測りながら回す“伴走”の価値が高まっている。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">DXGO／usknet（国内生成AI活用の最新トレンドと実態・2026）</span><a class="go" href="https://usknet.com/dxgo/contents/dx-technology/the-latest-trends-in-generative-ai-and-practical-guide-for-business/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">パナソニック コネクト、社内AI「ConnectAI」で1年に約18.6万時間を削減──全社員約1.2万人が利用、生成AIを“全社の道具”に定着させた先行例。パナソニック コネクトは、ChatGPTをベースにした社内向けAI「ConnectAI」を全社員約1.2万人に配り、導入から1年間で約18.6万時間の労働時間削減を達成したと示している。一部の部署の実験にとどめず、資料の下書き・要約・調べものなど日常業務の“調べる・書く”をまるごとAIに任せられる環境を全社で整えた点が特徴だ。渋谷PARCOが50周年の広告制作にAIを全面活用した例など、業種を問わず「現場でまとまった時間を生み出す」使い方が積み上がっている。</div>
+      <p class="sum">生成AIは、一部の部署の“お試し”で終わらせず全社員が日常的に使える形にすると、削減効果がまとまった数字になる、という話だ。派手な用途より、日々の「調べる・書く・まとめる」の肩代わりが効く。まず全員が使える土台を整え、よく使う業務から広げるのが成功しやすい入り口になる。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">AI革命／パナソニック コネクト（ConnectAI・年18.6万時間削減）</span><a class="go" href="https://ai-revolution.co.jp/media/generative-ai-business-cases/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">国内発「AIエージェント攻撃手法と対策一覧（2026年9月版）」が公開──121項目・252ページへ拡充、半年で41項目増、権限設計上のリスクまで日本語で網羅。国内のセキュリティ企業が、自分で動くAIエージェントを狙う攻撃手口と対策を一覧にまとめた資料の最新版を公開した。3月版の80項目から41項目増え、攻撃手法・脆弱性・権限設計上のリスクなど121項目を252ページで整理している。AIエージェントは「外部の情報を読み、他システムを操作し、機密に触れる」ことができるぶん、悪用されたときの被害が大きい。攻撃手口が半年で1.5倍に増えている事実は、この分野の変化の速さと、対策を定期的に見直す必要性を示している。</div>
+      <p class="sum">AIエージェントへの攻撃手口は日本語でも体系的に整理が進むほど増え続けており、「一度対策したら安心」ではない、という話だ。半年で手口が1.5倍という速さが実感を伴う。AIを業務に入れる際は、こうした最新の脅威一覧を目安に、触れられる情報や操作の範囲を定期的に見直す前提が要る。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">コーレ／PR TIMES（AIエージェント攻撃手法と対策一覧 2026年9月版・121項目）</span><a class="go" href="https://prtimes.jp/main/html/rd/p/000000110.000037237.html">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">プロンプトインジェクション、脅威は“チャットボットのいたずら”から“企業リスク”へ──Slack AI・M365 Copilot・Cursor・GitHub MCPなど実務ツールで実証、ゼロクリック流出も。AIへ不正な指示をこっそり紛れ込ませる「プロンプトインジェクション」の位置づけが、2024年から2026年にかけて大きく変わった。もはや“チャットボットを言葉巧みにだます遊び”ではなく、Slack AI、Microsoft 365 Copilot、Cursor、GitHub MCPといった実務で使うツールで悪用が実証され、企業の機密が漏れうる本格的なリスクになっている。利用者が何もクリックしなくても情報が抜き取られる「ゼロクリック型」の流出も報告された。根本原因は、AIが「守るべき命令」と「読み込んだ単なる文章」を確実に区別できないことにある。</div>
+      <p class="sum">AIを社内の業務ツールにつなぐほど、「読み込んだ文章に紛れた不正な指示」を通じて機密が漏れる危険が現実になっている、という話だ。便利さと危うさは表裏一体。AIに社内データやツールを触らせる前に、「何を読ませ・どこと通信させ・何に触れさせるか」を絞って区切ることが、身近な事故防止になる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Sysdig（プロンプトインジェクション完全ガイド 2026年版）</span><a class="go" href="https://www.sysdig.com/learn-cloud-native/prompt-injection">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
