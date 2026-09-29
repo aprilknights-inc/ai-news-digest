@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-09-29</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.09.29 TUE</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">今日の主役は「安く・速く・自律で動く」AIだ。アンソロピックはより安価で高速な実務向けモデル『Claude Sonnet 5.5』を投入し、OpenAIは開発者会議DevDayで“常時働き続けるエージェント”の発表が観測されている。市場ではAIエージェントが業務ソフト（SaaS）の稼ぎ方を崩すとの懸念でソフト株が乱高下し、半導体が売られる一方でサイバー関連株が逆行高。セキュリティ面ではAIを狙う新たな攻撃手法の報告が相次いでいる。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>AI各社の競争軸が「性能の高さ」から「安さ・速さ・自律性」へと移りつつある。アンソロピックの新モデルSonnet 5.5と、本日開催のOpenAI DevDayがその象徴で、いずれも“少ないコストで長い作業をこなす”方向を打ち出している。市場はAIエージェントが従来の業務ソフトの収益を侵食するとの見方で神経質になり、半導体株が売られる一方でサイバーセキュリティ株が買われた。守りの側では、AIエージェントを標的にした攻撃手法の高度化が続いている。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">アンソロピックが「Claude Sonnet 5.5」を投入──出力速度が3割増、費用は最大3割減。価格は据え置きで、日常業務に強い“安くて速い相棒”を狙う。9月28日、アンソロピックは中位モデルの新版「Claude Sonnet 5.5」を公開した。同じ作業を前世代より3割ほど速く、最大3割安く処理できるとし、料金は従来のSonnet 5から据え置いた。上位のOpus 5.5を補完する“廉価・高速版”という位置づけで、バグ修正や、体裁の整った資料・スライド・表計算の作成、細かな要件が固まった定型作業を得意とする。上位モデル並みのサイバー安全策も初めてSonnetに搭載した。</div>
+      <p class="sum">AIの進化が「どこまで賢いか」から「同じ賢さをどれだけ安く速く出せるか」に移ってきた、という話だ。値段が下がれば、これまで採算に合わなかった地味な仕事にもAIを回しやすくなる。導入検討では最上位モデルに飛びつくより「その作業に必要十分な安いモデル」を選ぶ発想が、費用対効果を大きく左右する。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">TechCrunch（アンソロピックがSonnet 5.5を公開・2026/9/28）</span><a class="go" href="https://techcrunch.com/2026/09/28/anthropic-releases-sonnet-5-5-which-it-calls-a-significantly-cheaper-faster-work-partner/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">OpenAI、本日9月29日に開発者会議「DevDay 2026」を開催──サム・アルトマンCEOが基調講演。“常時働き続ける自律エージェント”の発表が有力視される。OpenAIは日本時間の本日、サンフランシスコで年次の開発者向けイベントDevDayを開き、アルトマンCEOが基調講演に立つ。事前のコード解析やリークからは、チャットのやり取りが終わっても裏で動き続ける“常時稼働型”の自律エージェント（コード名「o」とされる）の発表が有力視されている。上位者向けの高速版や、月500ドルの上位プラン「Pro Max」の噂も出ている。ただし現時点で正式発表はなく、あくまで観測段階だ。</div>
+      <p class="sum">AIの使い方が「質問して答えをもらう」から「頼んだ仕事を裏でずっと進めてもらう」へ向かおうとしている、という話だ。人が席を離れても働き続けるAIは、仕事の任せ方そのものを変える可能性がある。発表内容を鵜呑みにせず、「自分の業務のどの部分なら安心して任せられるか」を落ち着いて見極める姿勢が要る。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">OpenAI（DevDay 2026 開催告知・基調講演）</span><a class="go" href="https://openai.com/index/devday-2026/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">サイモン・ウィリソン「2026年のLLMまとめ（ここまで）」が拡散──この1年のAI進化を時系列で総括した講演・記事が「変化の速さの整理に効く」と共感を集める。LLM実務の第一人者として知られるサイモン・ウィリソンが、開発者会議の基調講演と記事で「2026年のAIに何が起きたか」を月ごとに時系列でたどり、話題になっている。モデルが次々に安く・速く・賢くなり、半年前の常識がすぐ古くなる様子を、具体例を並べて淡々と整理した内容だ。「個別ニュースを追うより、大きな流れを一度に俯瞰できる」として、Xで広く共有されている。</div>
+      <p class="sum">AIの動きが速すぎて追いきれない、という人ほど「1年分を一度に整理した振り返り」が役に立つ、という話だ。断片的なニュースの暗記より、流れをつかむほうが判断を誤りにくい。情報収集は「毎日の細かい更新を全部追う」より「節目で全体像を整理し直す」ほうが、忙しい人には現実的で効く。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">TidBITS（サイモン・ウィリソン「2026年のLLM」講演の紹介・2026/9/28）</span><a class="go" href="https://tidbits.com/2026/09/28/simon-willison-charts-2026s-rapid-ai-progress/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">DevDay直前、Xでは“常時稼働エージェント「o」”のリークが話題──チャットの外でも動き続け、自分専用のメールIDまで持つ、との観測に賛否。OpenAIのDevDayを前に、コードから見つかった“常時稼働型エージェント”の断片がXで盛り上がっている。話の中心は、指示のたびに立ち上がる今の使い方と違い、裏で継続的にタスクを進め続けるAIで、当初から自分専用のメールアドレス（ID）を持つ設計ではないか、という点だ。「便利さ」への期待と、「勝手に動き続けるALをどう管理・監視するのか」という不安が同時に語られ、賛否が割れている。</div>
+      <p class="sum">“ずっと働き続けるAI”は便利さと危うさが表裏一体で、期待と警戒が同時に高まっている、という話だ。人の目が届かない所で動き続けるほど、暴走や情報漏れのリスクも上がる。新しい自律AIを試すときは「何を任せるか」と同じくらい「どう止め、どう見張るか」を先に決めておくと安心して使える。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">TestingCatalog（DevDayで“常時稼働エージェントo”発表観測・2026/9）</span><a class="go" href="https://www.testingcatalog.com/openai-to-announce-o-always-on-agent-during-devday/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">エヌビディア、9月28日は市場全体が軟調ななか+2.7%と逆行高──時価総額は約5.58兆ドル、データセンター需要は減速どころか加速。一部指標は「まだ割安」との見方も。AI計算基盤の中核であるエヌビディアは、9月28日に全体相場が下げるなかで株価が約2.7%上昇した。時価総額は約5.58兆ドルに達し、売上は前年から倍増、データセンター向けの需要は頭打ちになるどころか伸びが続いている。ある独自の企業価値指標では、現在の株価は理論値より4割ほど低く「まだ割安」との評価も示された。一方、同業のアーム（Arm）株は同じ日に8.8%下落しており、AI半導体の中でも銘柄ごとの明暗が分かれている。</div>
+      <p class="sum">AI相場は「半導体なら何でも上がる」段階を過ぎ、銘柄ごとに選別が進んでいる、という話だ。同じAI関連でも、需要を確実につかむ企業とそうでない企業で株価の動きが割れる。相場の相談を受けたときは「AI＝一括りで買い」ではなく、個別企業の実需と価格の割高・割安を分けて見る姿勢が、堅実な判断につながる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">GuruFocus（米市場軟調でもエヌビディア上昇・2026/9/28）</span><a class="go" href="https://www.gurufocus.com/news/9100038/us-markets-dip-as-nvidia-nvda-climbs-amid-mixed-sentiment-on-september-28-2026">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">業務ソフト（SaaS）株が乱高下──「AIエージェントが人の代わりに働けば“席数課金”が崩れる」との懸念で、9月にナスダックは一時−1.8%。半導体が売られる一方、サイバー株は逆行高。AIエージェントが従来の業務ソフトの稼ぎ方（利用者一人ごとに課金する“席数モデル”）を侵食するのでは、との不安が市場に広がり、ソフト関連株が激しく揺れている。AI大手CEOの「開発ペースを緩めるべき」発言も重なり、9月にはナスダックが一時1.8%下落。半導体・サーバー関連（マイクロン、インテル、SKハイニックス等）が4〜7%下げた一方で、パロアルトネットワークスやクラウドストライクなどサイバーセキュリティ株は逆に13%超上昇した。アンソロピックの大型上場やDevDayを控え、神経質な地合いが続く。</div>
+      <p class="sum">AIが「人の仕事」を肩代わりし始めたことで、ソフト会社の“人数で稼ぐ”ビジネスが揺らぎ、市場が勝ち負けを選び直している、という話だ。同じIT関連でも、AIに侵食される側と恩恵を受ける側で株価が逆に動いた。自社が使う業務ツールも「AI時代に価値が残るか」という目線で、契約や乗り換えを一度見直しておくとよい。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">NBC News（AI減速論を受けた相場・ソフト/サイバー株の明暗・2026/9）</span><a class="go" href="https://www.nbcnews.com/business/markets/stocks-tumble-ai-leaders-warning-slowdown-ipos-amodei-altman-rcna597643">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">AIエージェント開発者のSES単価が2026年最高水準に──LangGraph・CrewAI・AutoGen等の経験で月90〜120万円、生成AI基盤構築は100〜160万円、MLOpsは95〜130万円。AIエージェントを実際に作れる人材の需給がひっ迫し、SESの調達・請求単価が跳ね上がっている。実案件データでは、LangGraph・CrewAI・AutoGenといったエージェント開発フレームワークの経験者で月90〜120万円、社内システムと生成AIをつなぐ基盤構築で100〜160万円、AIの本番運用（MLOps）で95〜130万円といった水準が示された。単に「AIを触れる」ではなく、複数のAIを段取りよく動かす仕組みを作れる人が高値をつけている。</div>
+      <p class="sum">AI人材の中でも「エージェントを組み上げて実際に動かせる人」が、いま最も高く取り引きされている、という話だ。流行りの言葉を知っているだけでは、この単価帯には届かない。人材を頼むときは「どのフレームワークで・どんな仕組みを・本番まで作った経験があるか」を具体的に確かめると、高い単価に見合う人選ができる。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">Heyday（AIエージェント開発エンジニアのSES月単価データ・2026）</span><a class="go" href="https://lp.hydy.jp/blog/ai-agent-engineer-ses-tanka">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">SES単価は「AI・クラウド・セキュリティ」で二極化──平均は月55〜75万円だが、これらの経験者は人数が限られ調達単価が上昇、顧客への請求単価も100万円超が狙える水準に。2026年のSESエンジニア単価をまとめた調査では、全体平均は月55〜75万円ながら、AI・クラウド（AWS/Azure/GCP）・データ・セキュリティ領域の経験者は供給が細く、調達価格が上がっているぶん顧客への請求単価も高止まりしている。逆に汎用的なスキルだけでは伸び悩みが目立ち、「どの領域の経験を積むか」で単価がはっきり分かれる構図になっている。</div>
+      <p class="sum">エンジニアの単価が「担当領域」で大きく分かれ、AI・クラウド・セキュリティに寄せた人ほど高くなる、という話だ。人が足りない領域ほど、当然ながら価格は上がる。外部人材を使う側も、単価の高さだけを見て敬遠せず「なぜその領域が高いのか（＝希少で成果に直結するか）」まで踏まえて費用を判断すると納得感が増す。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">HLT（SESエンジニア単価相場・スキル別の二極化・2026）</span><a class="go" href="https://hlt-inc.jp/news/ses-unit-price-market-rate">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">キユーピー、試験導入から約5か月で工場に「外観検査AI」を本格投入──環境光のばらつきなど現場ならではの課題を、日々の改良で精度・速度に落とし込む。食品大手キユーピーは、小さく試す検証（PoC）を経て約5か月後に実際の工場ラインへAIによる外観検査を導入し、本格運用の実証を始めた。導入後は、照明や自然光の当たり方といった現場特有の要因で精度がぶれる課題が出たものの、その都度データを足して調整し、検査の精度と速度を上げている。いきなり完璧を狙わず「入れてから現場で育てる」進め方が特徴だ。</div>
+      <p class="sum">AI導入は「入れて終わり」ではなく、現場で起きる細かなズレを地道に直し続けてこそ効いてくる、という話だ。実験室ではうまくいっても、現場の環境差でつまずくのはよくあること。導入を伴走するなら「完成品を渡す」より「一緒に使いながら育てる」体制を最初から組んでおくと、失敗しにくい。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">パナソニック デジタル（生成AI・AI業務活用の企業事例集・2026）</span><a class="go" href="https://service.digital.panasonic.co.jp/column/generative_ai">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">製造業DXの焦点は「複数拠点への横展開」と「機密データを守った生成AI活用」──1拠点で成功したAIを全社に広げる段で、情報漏れ対策と運用の標準化が壁になる。製造業向けのDX解説では、外観検査などのAIを「一つの工場で成功させる」段階から「複数拠点へ同じ品質で広げる」段階に課題が移っている、と指摘されている。横展開では、拠点ごとの環境差に加え、図面や製造データといった機密情報をどう守りながら生成AIを使うかが重要になる。属人的な運用のままでは全社展開でつまずきやすく、ルールと仕組みの標準化が鍵だとされる。</div>
+      <p class="sum">AI活用は「一か所で成功させる」より「全社に同じ品質で広げる」ほうがずっと難しい、という話だ。横展開では、機密データの守り方と運用の統一が必ず問われる。導入支援では、最初の成功事例を作る段階から「他拠点に広げるときの情報管理とルール化」まで見据えておくと、後の展開がスムーズになる。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">AIsmiley（製造業の全社DX・外観検査の複数拠点展開と機密データ保護・2026/9/29）</span><a class="go" href="https://aismiley.co.jp/ai_news/20260929webinar/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">クラウドストライク、AIエージェントを狙う「プロンプト注入」の新手法5種を公表──攻撃手口の分類は200種類超に拡大。あからさまな“脱獄”より、隠して・分割して・後から起動する巧妙な手口が主流に。セキュリティ大手クラウドストライクは、AIエージェントに不正な指示を紛れ込ませる「プロンプトインジェクション」の新しい手法を5つ公表し、同社の攻撃手口の分類は200種類を超えた。例として、①一見無害なルールを仕込み後から発動させる、②AIの“断り文句”を出にくくして安全策をすり抜ける、③命令を複数の無害なかけらに分けて後で結合する、④システム命令に見せかける特殊記号の悪用、⑤正規の利用者に気づかせず有害な文章を貼らせる、などがある。単純な力押しでなく、隠蔽・分割・遅延起動を組み合わせる方向に進化している。</div>
+      <p class="sum">AIへの攻撃は「乱暴に破る」から「気づかせずに忍び込ませる」へと洗練され、防ぎにくくなっている、という話だ。利用者自身が知らずに“運び役”にされる手口まで出てきた。業務でAIを使うなら、外から来る文章（メール・PDF・Webの貼り付け）をAIにそのまま渡さない、という基本の警戒が、身近で効く防御になる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">CrowdStrike（プロンプト注入の新手法5種・分類200超へ拡大・2026）</span><a class="go" href="https://www.crowdstrike.com/en-us/blog/crowdstrike-uncovers-new-prompt-injection-techniques/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">AIを狙う攻撃はすでに“実害”フェーズへ──GitHub Copilotでは説明文に隠した指示から遠隔操作が成立（CVE-2025-53773／深刻度9.6）、AI部品の供給網ではPyPI上のLiteLLMに仕込まれた不正コードが3時間で約4.7万回ダウンロードされた。プロンプト注入は理論上の話から、現実の被害へと移っている。開発補助AI「GitHub Copilot」では、プルリクエストの説明文に隠した指示によって遠隔でコードを実行できる脆弱性（CVE-2025-53773、深刻度は10点満点中9.6）が明らかになった。さらに、多くのAIエージェント基盤が使う共通部品「LiteLLM」の配布パッケージに不正コードが混入し、公開されていた約3時間の間に約4万7千回ダウンロードされる供給網（サプライチェーン）攻撃も起きている。</div>
+      <p class="sum">AIを狙う攻撃は「起こるかも」ではなく「すでに起きている」段階に入った、という話だ。AIが使う共通部品が汚染されると、それを使う多数のサービスへ一気に被害が広がる。AIツールやその部品を業務に取り入れる際は、提供元の信頼性や更新の履歴を確かめる“健康診断”の発想が、いま特に重要になっている。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">EC-Council University（2026年最大の脅威プロンプト注入・実被害事例）</span><a class="go" href="https://www.eccu.edu/blog/prompt-injection-ai-cybersecurity-threat/">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
