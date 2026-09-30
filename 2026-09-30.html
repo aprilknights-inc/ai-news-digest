@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-09-30</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.09.30 WED</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">昨日のOpenAI開発者会議「DevDay 2026」が今朝の主役だ。“頼む前に動く”常時稼働エージェント「Dots」や新モデルGPT-6.1 Sol、ChatGPTを丸ごとアプリ基盤に変えるプラグイン拡張など20超を一気に発表。一方で月500ドルの高額プラン新設と200ドルプランの制限引き下げには賛否が渦巻く。アンソロピックは2,000超の連携をまとめた「Claude Marketplace」で対抗。市場ではエヌビディアが高値圏を維持し、国内はSES単価の二極化とDX導入の“効率化どまり”、セキュリティは「AI利用リスク」が国内10大脅威で初の3位に浮上した。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>AIの主戦場が「賢いモデル単体」から「頼まなくても裏で働き続けるエージェント」と「それを載せるプラットフォーム」へ移ってきた。OpenAIはDevDayで常時稼働エージェントとアプリ化を打ち出し、アンソロピックは大規模なツール連携市場で応じる。国内では、生成AIの導入率は伸びる一方で成果は業務効率化にとどまり、人材単価はスキル領域で二極化。セキュリティ面ではAI利用そのものが主要脅威として公的に位置づけられ始めた。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">OpenAIがDevDayで“頼む前に動く”常時稼働エージェント「Dots」を発表──新モデルGPT-6.1 Sol、ChatGPTを丸ごとアプリ基盤にするプラグイン拡張など20超を一挙公開。9月29日(米サンフランシスコ)の年次開発者会議で、アルトマンCEOは指示を待たずに先回りして動く“常時稼働型”のAIアシスタント「Dots」を目玉に据えた。当面は有料利用者に1人1つ配り、将来は複数のDotsをチームのように束ねて働かせる構想だ。あわせて上位モデル「GPT-6.1 Sol」、開発者がChatGPTやCodexの中に“アプリそのもの”を組み込めるプラグイン拡張、データ管理を強化する「OpenAI Private Intelligence」、高速処理の上位ティアなど、合計20超の新機能を発表した。</div>
+      <p class="sum">AIの使い方が「質問して答えをもらう」から「頼んだ仕事を先回りで進めてもらう」へ、そしてChatGPTが“アプリが集まる場所”へと変わろうとしている、という話だ。人が席を離れても動き続けるAIは、仕事の任せ方そのものを変える。発表を鵜呑みにせず「自分の業務のどこなら安心して任せられるか」を落ち着いて見極める姿勢が要る。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">KQED / AP（DevDay 2026でDots発表・2026/9/29）</span><a class="go" href="https://www.kqed.org/news/12101819/sam-altman-announces-new-openai-agents-that-act-before-you-ask">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">アンソロピックは「Claude Marketplace」で応戦──2,000超の連携(コネクタ・プラグイン)や他社のClaude製アプリ、導入支援コンサルまでを1つのカタログに集約。同社は、これまで別々の場所に散らばっていたツール連携やパートナー製品、導入を助けるコンサル会社(アクセンチュア、デロイト等)を、一つの入り口にまとめた「Claude Marketplace」を公開した。Atlassian・Google・Microsoft・Notion・Salesforceなど2,000を超える連携が並び、企業はあらかじめ契約しているClaudeの利用枠の中から必要な機能やサービスを選んで導入できる。「賢いAI」を売るだけでなく、それを業務に組み込むまでを丸ごと支える“場”づくりで、OpenAIのアプリ化路線と正面からぶつかる。</div>
+      <p class="sum">AI大手の競争が、モデルの賢さ比べから「どれだけ使いやすく業務に組み込めるか」という土俵に移ってきた、という話だ。連携先やパートナーの多さが、そのまま使い勝手を左右する。AI導入を支援する立場なら、こうした“市場”の広がりは追い風で、既存ツールとの連携を前提に提案を組み立てると現実的で通りやすい。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">AICodex（Anthropicが Claude Marketplace を公開・2026/9）</span><a class="go" href="https://www.aicodex.to/articles/claude-marketplace">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">「月500ドルの新プランは高すぎ」「200ドルプランは逆に制限が下がった」──DevDayの料金改定にXで賛否。OpenAIは処理が速く上限も高い最上位プラン(月500ドル)を新設する一方、月200ドルプランの一部利用上限を引き下げた。高機能化への期待と、「値上げ・実質改悪では」という不満が同時に噴き出し、Xで議論が沸いた。派手な新機能の陰で、既存利用者にとっては“できることの範囲と値段”が静かに変わった格好で、「結局いくら払えば何ができるのか」を巡る戸惑いが広がっている。</div>
+      <p class="sum">最新AIの機能競争の裏で、料金と使える範囲がじわじわ変わっている、という話だ。派手な発表につられて上位プランに飛びつく前に、自分の使い方に本当に必要な機能と上限かを確かめるのが得策。ツール契約は「一番高いもの」ではなく「業務に必要十分なもの」を選ぶ発想が、費用対効果を大きく左右する。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Yahoo Tech（DevDay 2026・料金改定と反応・2026/9/29）</span><a class="go" href="https://tech.yahoo.com/ai/chatgpt/articles/openai-devday-2026-sam-altman-132804849.html">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">「安全性の話はどこへ？」──DevDayでアルトマンCEOが“常時稼働エージェント”を華々しく披露する一方、セキュリティ懸念にほぼ触れず、と指摘の声。先回りして自律的に動くDotsの発表に沸いた裏で、報道各社は「勝手に動き続けるAIのリスクや安全対策への言及が乏しかった」と一斉に指摘した。直前には別プロジェクトが安全上の理由で見送られたとも報じられ、「便利さの宣伝が先で、安全の説明は後回しでは」という批判がXでも拡散。“自律で動くAL”をどう止め、どう監視するかという論点が、改めて浮き彫りになった。</div>
+      <p class="sum">“ずっと働き続けるAI”は便利さと危うさが表裏一体で、作り手が安全の説明を尽くしているとは限らない、という話だ。人の目が届かない所で動くほど、暴走や情報漏れのリスクは上がる。新しい自律AIを試すときは「何を任せるか」と同じくらい「どう止め、どう見張るか」を先に決めておくと安心して使える。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">ClickOrlando / AP（DevDayで安全懸念に触れず、との指摘・2026/9/29）</span><a class="go" href="https://www.clickorlando.com/business/2026/09/29/openai-ceo-announces-new-ai-agent-and-avoids-mention-of-security-concerns-at-developer-conference/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">エヌビディアは9月末も高値圏を維持──株価は1株約231ドル、直近四半期(5〜7月)売上は962億ドルと前年比2.1倍で市場予想を上回る。データセンター需要は依然強い。AI計算基盤の中核であるエヌビディアは、9月30日時点で株価が1株約231ドル前後と高値圏で推移している。直近の四半期決算では売上が962億ドル(約15兆円)と前年同期の2.1倍に達し、市場予想(約922億ドル)を上回った。クラウド大手向けの需要が引き続き伸び、証券各社は今期・来期も大幅増収を見込む。一方でメモリー価格の上昇や、AI投資が一巡する“循環”への警戒感もくすぶり、強気と慎重が交錯している。</div>
+      <p class="sum">AI相場の中心にあるエヌビディアは、実際の売上と需要に裏打ちされて高値を保っている、という話だ。ただ「AIならどこまでも上がる」わけではなく、投資の一巡や部材価格への警戒も同居している。相場の相談を受けたときは、AIブームを一括りにせず「実需に裏打ちされているか」を分けて見る姿勢が堅実な判断につながる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">moneiro（エヌビディア株価・決算と見通し・2026/9）</span><a class="go" href="https://moneiro.jp/media/article/stock-investment-nvidia-forecast">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">OpenAI、年換算の売上ペースが約700億ドルに──Q3開始から7割超伸び、法人向けは倍増。DevDayと大型上場観測を前に“稼ぐ力”を誇示。OpenAIは、年換算の売上ペース(ラン・レート)が第3四半期の初めから70%以上伸び、約700億ドル(約10兆円)に近づいたと明らかにした。特に法人向け(B2B)の売上がこの期間で2倍以上に増えたという。発表はDevDay当日、そして噂される新規株式公開(IPO)を前にしたタイミングで、猛烈な成長ぶりを投資家に印象づける狙いがにじむ。競合のアンソロピックも大型上場の準備を進めており、AI大手の資金獲得競争が過熱している。</div>
+      <p class="sum">AI大手は「話題」だけでなく実際の売上を急拡大させ、上場を見据えて資金を集めにいっている、という話だ。特に企業向けの伸びが大きく、AIが本業の道具として定着し始めた裏返しでもある。自社でAIを使う側も「一過性の流行」ではなく「業務の標準装備」になる前提で、腰を据えた活用計画を立てておくとよい。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">OpenAI Newsroom（売上ラン・レート約700億ドルへ・2026/9/29）</span><a class="go" href="https://openai.com/news/company-announcements/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">「AIをよく使うエンジニアほど単価が高い」は本当だが落とし穴も──コードの5割超をAIで書く層の月単価は84万円前後(低活用層より約10万円高)。ただし“実際に単価が上がった”のは約4割どまり。国内の調査データでは、生成AIを積極的に使う(コードの50%以上をAIで生成する)エンジニアの平均月単価は84万円前後で、あまり使わない層より約10万円高い。一方で、生産性が上がったと感じる層のうち、直近1年で実際に月単価が「上がった」と答えたのは約4割にとどまった。AI活用が単価に反映されるかは、本人のスキルだけでなく、案件や契約の見直しがついてくるかに左右される。</div>
+      <p class="sum">AIを使いこなすと市場価値は上がる傾向にあるが、それが自動的に単価アップへつながるわけではない、という話だ。成果を出しても、契約の交渉や案件の見直しが伴わなければ報酬は据え置かれがち。人材提案でも「AIで生産性が上がった分をどう単価・条件に反映するか」まで言語化できると、発注側・受注側の双方が納得しやすい。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">SOKUDAN Magazine（AI活用度とエンジニア単価の関係・2026）</span><a class="go" href="https://magazine.sokudan.work/post/us1w9Lfh">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">SES単価は「領域」で二極化──全体はSE中級で月80〜120万円、上級で100〜160万円。AI・クラウド・セキュリティの経験者は供給が細く、高値が付きやすい。2026年のSES(客先常駐型)エンジニア単価をまとめた資料では、SEの月単価は初級60〜100万・中級80〜120万・上級100〜160万円が目安とされる。そのうえで、AI・クラウド(AWS/Azure/GCP)・セキュリティといった領域は経験者の数が限られ、調達価格が上がっているぶん、顧客への請求単価も高く設定しやすい。汎用スキルだけでは伸び悩みが目立ち、「どの領域の経験を積むか」で単価がはっきり分かれる構図が続いている。</div>
+      <p class="sum">エンジニアの単価が担当領域で大きく分かれ、AI・クラウド・セキュリティに寄せた人ほど高くなる、という話だ。人が足りない領域ほど、当然ながら価格は上がる。外部人材を使う側も、単価の高さだけで敬遠せず「なぜその領域が高いのか(希少で成果に直結するか)」まで踏まえて費用を判断すると納得感が増す。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">imitsu（SESエンジニアの単価相場・スキル別・2026）</span><a class="go" href="https://imitsu.jp/cost/web-system/ses-unit-price">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">IPA「DX動向2026」──生成AIの導入率は44%へ倍増。ただし活用は“業務効率化どまり”で、新規事業や企業価値の創出にはまだ届いていない。情報処理推進機構(IPA)の最新調査では、企業の生成AI導入率が前年から倍増して44%に達した。導入は大企業を中心に広がる一方、使い道は「作業の効率化」が中心で、新しい事業づくりや企業価値の向上といった攻めの活用は限定的にとどまる。「入れてはみたが、コスト削減の域を出ない」という段階の企業が多く、次の一手として“業務をどう作り変えるか”が問われている。</div>
+      <p class="sum">生成AIは「入れる」段階から「成果を出す」段階へ移りつつあるが、多くの企業はまだ効率化どまり、という話だ。ツール導入そのものより、業務の流れを見直すほうが効果を左右する。導入支援では「AIを入れること」をゴールにせず、「どの業務をどう作り変えるか」までセットで描くと、投資が成果に結びつきやすい。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">IT Leaders / インプレス（IPA DX動向2026・生成AI導入率44%・2026）</span><a class="go" href="https://it.impress.co.jp/articles/-/29600">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">日本はAIエージェントの“業務への組み込み”で世界に遅れ──業務フローに統合済みは日本7%、世界平均13%。経営層の8割は効率化に期待も、実装はこれから。国内外の調査では、AIエージェント(自律的に業務をこなすAI)を実際の業務フローに組み込めている割合は、日本が7%で世界平均13%を大きく下回る。一方、生成AIを「社内で活用中」または「サービス提供中」とする日本企業は56%に達し、関心と実装のあいだに開きがある。日本IBMの調査でも経営層の約8割が業務効率の向上に期待を寄せており、“やる気はあるが現場実装が追いつかない”状況が浮かぶ。</div>
+      <p class="sum">日本企業は生成AIへの関心は高いのに、実際に業務へ組み込む段階では世界から遅れている、という話だ。「試した」で止まり、日々の仕事に定着させられていない企業が多い。伴走支援では、鳴り物入りの導入より「一つの業務に確実に根づかせる」ことを先に狙うと、遅れを取り戻す現実的な突破口になる。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Salesforce Ventures（日本のAI導入の現状・BCG/各社調査・2026）</span><a class="go" href="https://salesforceventures.com/perspectives/accelerating-ai-adoption-in-japan/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">IPA「情報セキュリティ10大脅威 2026」で“AIの利用をめぐるリスク”が初めて第3位に──AIを悪用した攻撃者の活動は前年比89%増との報告も。国内のセキュリティ指標であるIPAの「10大脅威」で、AIの利用に伴うサイバーリスクが初めて第3位に選ばれた。AIを使った攻撃の巧妙化・大量化が現実の脅威として公的に位置づけられた形だ。海外のセキュリティ企業の年次レポートでも、AIを活用した攻撃者の活動が前年比89%増えたと報告されている。AIは守りにも攻めにも使える“両刃の剣”であり、企業は導入と同時に、AIを狙う・AIを悪用する攻撃への備えが避けて通れなくなっている。</div>
+      <p class="sum">AIを狙う・AIを使った攻撃が「いつか起こる話」から「主要な脅威」へと公的に格上げされた、という話だ。攻撃側もAIで効率化しており、被害の規模とスピードが上がっている。AIを業務に取り入れる際は、便利さと同じ重さで「入り口(外部からの入力)をどう守るか」を最初に点検する“健康診断”の発想が効いてくる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">JAPAN AI（IPA 10大脅威2026でAI利用が3位・AI悪用攻撃+89%・2026）</span><a class="go" href="https://japan-ai.co.jp/media/5994/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">見えにくい“間接型プロンプトインジェクション”が実被害に直結──外部のメール・PDF・Webページに攻撃指示を仕込み、AIに気づかせず不正動作させる手口が要注意。生成AI特有の弱点として、指示とデータを同じ言葉として処理してしまう構造がある。中でも、外部データ(受信メール、PDF、Webページなど)にこっそり命令を埋め込む「間接型」は、利用者本人が気づかないまま情報を盗まれたり、AIに不正な操作をさせられたりするため、検知が難しく実害に直結しやすい。攻撃者はすでにこの手口を試しており、機密情報の窃取やシステムへの不正アクセスに悪用され始めている。</div>
+      <p class="sum">AIへの攻撃は「乱暴に破る」より「気づかせず忍び込ませる」方向に洗練され、利用者自身が“運び役”にされる、という話だ。外から来た文章をAIにそのまま渡すのが一番危ない。業務でAIを使うなら「外部のメール・PDF・Web貼り付けをAIに丸ごと食わせない」という基本の警戒が、身近で効く防御になる。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">ビジネス+IT（間接型プロンプトインジェクションの脅威と対策・2026）</span><a class="go" href="https://www.sbbit.jp/article/cont1/181414">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
