@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-10-01</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.10.01 THU</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">今朝の主役は、昨日グーグルが公開した新フロンティアモデル「Gemini 4 Argon」だ。一度に書き出せる文章量が従来の約16倍となる100万トークンに拡張され、ソフト開発・法務・サイバー防御といった“長丁場”の実務で最高性能をうたう。公開直後のベンチマークでは一時首位に立ったが、総合指標ではアンソロピックのClaude Opus 5.5が依然トップで「差は詰めたが明確な首位ではない」との見方も出ている。市場ではエヌビディアが時価総額約5.4兆ドルの高値圏を保ち、本日はマイクロンの決算が半導体相場の試金石となる。国内はSES単価の二極化、大企業によるAIエージェントの実務投入、そしてAI絡みのセキュリティ脅威の体系化が同時に進んでいる。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>AI大手の競争は「誰が一番賢いか」だけでなく「同じ賢さをどれだけ安く・長く働かせられるか」へと軸足を移している。グーグルの新モデルはコスト効率と長時間作業を前面に出し、国内では大企業がAIエージェントを実際の業務に組み込み、効果を数字で示し始めた。一方で、自律的に動くAIを狙う攻撃手法も体系化が進み、便利さと安全をどう両立させるかが改めて問われている。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">グーグルが新フロンティアモデル「Gemini 4 Argon」を発表──一度に書き出せる量を従来の約16倍(100万トークン)に広げ、ソフト開発・法務・サイバー防御で最高性能。9月30日、グーグルDeepMindが新しい最上位モデル「Gemini 4 Argon」を公開した。長時間にわたる複雑な作業(長丁場のプログラミングや、法務・金融の調べもの)を一気にこなす点を売りにし、公開した18種のベンチマークのうち12種で単独首位を主張。社内のデータセンターではArgonのエージェント群が自動で省メモリ化を進め、合計で数百テラバイト規模の無駄を削ったという。当面は防御目的の信頼できる利用者に限って配り、政府の安全評価を経てから有料APIや上位プランへ広げる。</div>
+      <p class="sum">AI大手3社(グーグル・OpenAI・アンソロピック)の性能競争がさらに一段上がった、という話だ。注目は「一度に長く・大量に処理できる」方向への進化で、資料づくりや調査のような“まとめて任せたい仕事”がより現実的になる。ただし一般開放は段階的なので、今すぐ使える道具というより「次に来る標準」を先取りする材料として押さえておきたい。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">Google Blog / Axios(Gemini 4 Argon発表・2026/9/30)</span><a class="go" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">OpenAIは安全上の懸念から次期モデルの公開を見送り──「速すぎる開発」への自制が業界に広がる。9月28日の報道によると、OpenAIは開発中だった新モデルについて、安全面の懸念が高まったとして予定していた公開を取りやめた。今月はアンソロピックが「開発ペースを緩めるべきだ」と業界に呼びかけ、OpenAIのアルトマンCEOもこれに賛同していた。派手な新機能の発表が続く裏で、「出す前に安全を確かめる」動きが大手の間でも強まっている。</div>
+      <p class="sum">AIは「とにかく早く出す」段階から「出していいか立ち止まって確かめる」段階へと、作り手自身の姿勢が変わり始めた、という話だ。これは導入する企業にとっても追い風で、「最新だから」と飛びつくより「自社で安全に使えるか」を見極める姿勢が、むしろ業界の主流になりつつある。慎重な検討は遅れではなく、正しい作法だと捉えてよい。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">CNBC(OpenAIが新モデル公開を見送り・2026/9/28)</span><a class="go" href="https://www.cnbc.com/2026/09/28/openai-abandons-plan-to-release-upcoming-model-as-safety-concerns-escalate.html">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">「同じ結果を6割のコストで」──Gemini 4 Argonの“コスパ”にXが沸く。AIの性能を客観評価するArtificial Analysisは、Gemini 4 Argonが「OpenAIのGPT-6 Astraと同等の知能を、1タスクあたり約6割のコストで出せる」とX上で指摘。これにより「グーグルが再び上位3ラボの一角に戻った」との評価が広がった。モデル選びの基準が「どれが一番賢いか」から「同じ仕事をいくらで片づけられるか」へと移っていることを、象徴する反応だ。</div>
+      <p class="sum">AIの話題が「賢さ自慢」から「コスパ勝負」へと移っている、という話だ。これは利用する側に有利な流れで、同じ作業ならより安いモデルを選べる余地が広がる。ツール契約を見直すとき、「一番高い=一番いい」ではなく「自社の用途に必要十分で、一番安く済むのはどれか」で選ぶ発想が、今後ますます効いてくる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">@ArtificialAnlys / X(Gemini 4 Argonのコスト評価・2026/9/30)</span><a class="go" href="https://x.com/ArtificialAnlys/status/2105392625788637299">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">「首位奪還」か「差を詰めただけ」か──Gemini 4 Argonの評価でXが二分。グーグルは「ベンチマークで首位を取り戻した」と強調したが、専門メディアは「総合的な知能指標ではアンソロピックのClaude Opus 5.5(58点)が依然トップで、Argonは53点とGPT-6 Astra等と並んだにすぎず、明確な首位ではない」と冷静に分析。どの指標を見るかで“勝者”が変わるため、X上では評価が割れている。</div>
+      <p class="sum">「新モデルが一番になった」という宣伝文句は、測り方しだいで変わるという話だ。各社が自社に有利なベンチマークを前面に出すため、発表をそのまま鵜呑みにするのは危うい。導入を検討するときは「どんな基準で一番なのか」を一歩引いて確かめ、できれば自社の実際の業務で小さく試してから判断するのが堅実だ。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">The Decoder(Argonは差を詰めたが明確な首位ではない・2026/9/30)</span><a class="go" href="https://the-decoder.com/google-gemini-4-argon-closes-the-gap-with-openai-and-anthropic-but-doesnt-take-a-clear-lead">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">エヌビディアは時価総額約5.4兆ドルの高値圏を維持──直近四半期の売上は962億ドルで前年比2.1倍、次期は1,080億ドルを見込む。AI計算基盤の中核であるエヌビディアは、依然として世界最大級の時価総額(約5.4兆ドル)を保つ。直近四半期の売上は962億ドル(前年比+106%)で、うちデータセンター向けが890億ドル。次の四半期は1,080億ドル前後を見込み、経営陣は「需要ではなく供給が制約」と説明する。一方、株価収益率(PER)は29倍前後まで低下しており、「この利益水準がいつまで続くか」を巡る投資家の慎重な見方も残る。</div>
+      <p class="sum">AI投資の“本丸”であるエヌビディアは、売上も株価も高水準を保っているが、市場には「ここからさらに伸びるのか」という警戒も同居している、という話だ。半導体株の動きはAI相場全体の体温計になる。顧客や経営の会話で相場観を問われたとき、「数字は好調だが過熱警戒も出ている」という両面を押さえておくと、落ち着いた受け答えができる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">stockanalysis.com / The Motley Fool(エヌビディア株・2026/9)</span><a class="go" href="https://stockanalysis.com/stocks/nvda/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">本日はマイクロンの決算が注目──売上は約500億ドル見通し、AI向け高速メモリ(HBM)が半導体相場の試金石に。半導体メモリ大手マイクロンが、9月30日(米国時間)に四半期決算を発表。会社側は売上を約500億ドル(±10億ドル)、粗利率は約86%と見込む。AIの計算を速くする「HBM(広帯域メモリ)」の需要が旺盛で、最新のHBM4は前世代の約2倍の速さで量産が立ち上がり、戦略顧客との契約で将来の最低売上として約1,000億ドルを確保済みという。年初来で株価が大きく上昇しており、結果はAI・半導体株全体の方向感を左右する。</div>
+      <p class="sum">AIブームの“持続力”を測る指標として、計算用メモリの需要が注目されている、という話だ。GPU(エヌビディア)だけでなく、その周辺部品まで引き合いが強いことは、AI投資が一過性でない傍証になる。相場の話題として「GPUの次はメモリも品薄」という文脈を押さえておくと、投資・景気の雑談でも一歩深い話ができる。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">247 Wall St. / InsiderFinance(マイクロン決算プレビュー・2026/9/30)</span><a class="go" href="https://247wallst.com/investing/2026/09/23/up-275-this-year-micron-mu-is-still-a-no-brainer-buy-before-september-30/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">AIスキル持ちの単価は一般比+35%、AIエージェント開発は月90〜120万円超──ただし供給は需要の5%以下。2026年のSES市場では、生成AI・LLM(大規模言語モデル)を扱えるエンジニアの単価が、一般的なエンジニアより平均35%高いという調査が出ている。特にAIエージェント開発(LangGraph・CrewAI等)は月90〜120万円超と最高水準で、両方扱える人材は需要に対し供給が5%以下と逼迫。GPT・Claude・Gemini のAPIを使ったシステム構築経験が、高単価の“条件”として定着しつつある。</div>
+      <p class="sum">AIを「使う」だけでなく「組み込んで動かせる」エンジニアが、はっきり高く評価される時代になった、という話だ。受託・SESの提案では、単に人数を揃えるのではなく「AIエージェントまで作れる希少人材」を軸にすると単価が通りやすい。自社や協力会社の技術者に、どの領域のAIスキルを伸ばさせるかが、そのまま営業力に直結する。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">Heyday / HLT(AIエージェント開発のSES単価・2026)</span><a class="go" href="https://lp.hydy.jp/blog/ai-agent-engineer-ses-tanka">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">「AIを使えば単価は上がる」とは限らない──コード5割超をAIで書く層でも、実際に単価が上がったのは約4割にとどまる。Findyの調査(回答265人)では、AIでコードの50%以上を生成する“活用層”の月単価は平均84万円で、活用の少ない層(74万円)より10万円高い。ただし「AI活用で実際に単価が上がった」と答えたのは約4割にとどまり、残りは“使っていても単価は変わらない”のが実情。AIは単価アップの必要条件ではあっても、十分条件ではない。</div>
+      <p class="sum">「AIを使えば自動的に稼げる」という単純な話ではない、という現実のデータだ。単価を上げるには、AIで生産性を上げたうえで、それを“上流の設計”や“顧客への価値”にどう結びつけるかが問われる。SESの人材戦略を語るときは、「AIスキル＋提案力・ドメイン知識」の掛け算で初めて単価が動く、という冷静な整理が信頼される。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Findy / Heyday(AI活用と単価の実データ n=265・2026)</span><a class="go" href="https://lp.hydy.jp/blog/ai-katsuyou-tanka-premium-data">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">国内大企業がAIエージェントを“実務”に投入──味の素は経理業務の工数を約76%削減、SOMPOは全社導入で年数百億円の削減見込み。2026年に入り、味の素・ホンダ・みずほ銀行・SMBC・野村證券・三井物産など日本の大企業が、AIエージェント(人の指示を受けて自分で複数の手順をこなすAI)を実際の業務に組み込み始めた。味の素は経理部門で関連業務の工数を約76%削減、SOMPOホールディングスは全社規模の導入で年間数百億円のコスト削減を見込む。「試す」段階から「成果を数字で出す」段階へと移っている。</div>
+      <p class="sum">AI活用が「実験」から「経営効果」へと進み、しかも“特定の業務に絞って大きく削る”やり方が成功の型になっている、という話だ。中小・士業の現場でも、全部を一度に変えようとせず「経理」「問い合わせ対応」など一つの業務から始めるのが現実的。伴走支援を提案するなら、まず“効果が数字で見える一業務”を選ぶところから入ると通りやすい。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">ラボメモ 他(国内大企業のAIエージェント導入事例・2026)</span><a class="go" href="https://labmemo.com/?p=36788">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">アンソロピック調査「2026年、企業はこうAIエージェントを作っている」──半数超(57%)が複数手順の業務にエージェントを導入、16%は部門をまたぐ業務にまで拡大。アンソロピックが公開した企業向け調査によると、組織の57%がすでに「複数の手順を自動でこなすワークフロー」にAIエージェントを導入し、16%は複数チームにまたがる部門横断の業務にまで広げている。単発の質問応答ではなく、「一連の仕事を任せる」使い方が主流になりつつあることを示す。</div>
+      <p class="sum">AI導入の“次の段階”として、業務の一連の流れをまるごと任せる使い方が広がっている、という話だ。これは「どの業務を、どこまでAIに任せるか」を設計できる人の価値が上がることを意味する。DX支援では、ツール導入そのものより「業務の手順を整理し、任せる範囲を決める」設計支援に需要がある、と押さえておくとよい。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">Anthropic(企業のAIエージェント構築の現状・2026)</span><a class="go" href="https://claude.com/ja/blog/how-enterprises-are-building-ai-agents-in-2026">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">「AIエージェント攻撃手法と対策一覧(2026年9月版)」が公開──121項目・252ページに拡充(3月版は80項目)。国内の有志がまとめる、AIエージェントを狙う攻撃手法・脆弱性・リスクの体系的な一覧が更新された。半年前の80項目から41項目を追加し、計121項目・252ページに拡大。直接・間接のプロンプトインジェクション(AIへの不正な命令の仕込み)から、画像・文書・音声を介した注入、ブラウザで動くAIへの攻撃まで、手口が急速に多様化していることを示す。</div>
+      <p class="sum">AIを狙う攻撃は、思いつきレベルではなく“カタログ化”されるほど整理が進んでいる、という話だ。裏を返せば、守る側も「何を点検すべきか」の全体像を持ちやすくなった。健診(セキュリティ診断)の文脈では、「AIを業務に入れると、これだけ新しい攻撃経路が増える」という具体例として、この一覧の存在そのものが説得材料になる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">PR TIMES(AIエージェント攻撃手法と対策一覧 2026年9月版・252ページ)</span><a class="go" href="https://prtimes.jp/main/html/rd/p/000000110.000037237.html">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">プロンプトインジェクションは依然“最大級の脅威”──EchoLeak(CVE-2025-32711)やGitHub CopilotのRCE(CVE-2025-53773)など実被害が続く。AIに不正な命令を紛れ込ませる「プロンプトインジェクション」は、プログラムの穴ではなくAIの“言葉の読み取り方”を突くため、完全な防止策がない。2025〜2026年には、メール1通で機密を抜く「EchoLeak」、開発支援AIを乗っ取る「GitHub CopilotのRCE(遠隔実行)」など、危険度の高い実被害(CVE)が相次いで報告されている。</div>
+      <p class="sum">AI特有の攻撃は「もし起きたら」ではなく「すでに実害が出ている」段階だ、という話だ。しかも従来のウイルス対策とは質が違い、“AIが読む情報すべて”が入口になりうる。顧客にAI導入を勧める際は、便利さと同時に「AIに読ませる情報・つなぐ範囲を絞る」という守りの設計をセットで示すと、信頼される提案になる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Vectra AI(プロンプトインジェクションの実CVE事例)</span><a class="go" href="https://www.vectra.ai/topics/prompt-injection">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">AIが“存在しない脆弱性(偽CVE)”を作り出す問題も──業務利用の前に「5ステップの検証」を、との注意喚起。AIにセキュリティ情報を調べさせると、実在しない脆弱性情報(偽のCVE)をもっともらしく生成してしまう事例が指摘されている。AIの回答をそのまま信じて対応すると、無駄な工数や誤った判断につながる。専門家は、AIが挙げた脆弱性情報は「公式データベースとの突き合わせ」など複数ステップで裏取りしてから使うよう呼びかけている。</div>
+      <p class="sum">AIは“嘘を自信満々に言う”ことがあり、セキュリティの分野でもそれが起きる、という話だ。守りを固めるためのAIが、かえって混乱の元になりかねない。士業の先生には「AIの答えは便利だが、重要な判断は必ず人が裏取りする」という原則を、セキュリティ健診の基本姿勢として伝えると分かりやすい。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Uravation(AIが作る偽の脆弱性情報・検証5ステップ・2026/9)</span><a class="go" href="https://uravation.com/media/ai-hallucinated-cve-verification-guide-2026/">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
