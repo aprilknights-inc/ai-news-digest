@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-10-08</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.10.08 THU</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">今朝は、最新モデルが“誰でも使える”段階へ一気に進んだ日。OpenAIはGPT-6を無料ユーザーも含む全員に、アンソロピックも安価なHaiku 5.5を投入し、価格と速度で使い分ける時代に入った。株式市場はエヌビディアの最高値更新のあと一服し、AIインフラには借金込みの巨額マネーが流れ込む。守る側でも「AIで脆弱性を点検する」動きが正式に広がり始めた。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>最新・高性能のAIが追加料金なしで誰でも使える段階に入り、「どのAIを使うか」より「どの仕事をどのモデルに任せるか」が実務の焦点になってきた。資金はAIインフラにさらに集中する一方、その力は攻撃にも防御にも使えるため、便利さと備えを同時に進めることが求められている。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">OpenAI、最新モデル「GPT-6」を無料ユーザーも含む全員のChatGPTに展開（10/7〜8）。有料は「GPT-6 Sol」、無料は「GPT-6 Luna」で従来の5.6世代を置き換える。回答を表示しながら考え続けられるようになり、調べものの最初の返答は従来比で平均44%速いという。事実の正確さも改善。あわせて画面の使い勝手を自動で整える「Intelligent UI（知的なUI）」も全員に提供し、“最新AIは有料の特権”という前提が崩れた。</div>
+      <p class="sum">いちばん新しいAIが、追加料金なしで誰でも使える段階に入った、という話だ。無料でも相当賢いモデルが標準になり、「どのAIを使うか」より「何を任せるか」を考える局面に進んでいる。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">OpenAI（GPT-6 Sol/Luna・Intelligent UI 全ユーザー展開・2026/10/7）</span><a class="go" href="https://deploymentsafety.openai.com/gpt-6-october">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">アンソロピックも小型モデル「Claude Haiku 5.5」を投入（10/7）。大量処理やコスト重視の用途に向く安価なモデルで、約2週間前の最上位「Opus 5.5」、高速・低コストの「Sonnet 5.5」に続く。両社とも「最上位から普及モデルまで」を短期間で出し切り、用途ごとに価格と速度で選べる品ぞろえが一気にそろった。</div>
+      <p class="sum">高い順・安い順でモデルを選べるようになってきた、という話だ。全部を最上位モデルでやる必要はなく、「ここは安いモデルで十分」と仕事ごとに使い分けると、費用を抑えながらAIを広く使える。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Anthropic（Claude Haiku 5.5・Opus/Sonnet 5.5に続く展開・2026/10/7）</span><a class="go" href="https://www.anthropic.com/news">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">米株、記録的高値から一服（10/7）。エヌビディアは週明けに最高値（約237ドル・時価総額6兆ドル目前）を付けナスダックも最高値を更新したが、7日は長期金利の上昇と原油高（1バレル100ドル近辺）を嫌気して反落。ダウは0.6%安、S&P500とナスダックも高値から約0.2%下げ、エヌビディアやAMDも最高値から小幅安となった。</div>
+      <p class="sum">AI関連株は高いところまで買われた後、少し息継ぎをした、という話だ。勢いは続いているが、金利や原油など「AI以外の要因」でも揺れる場面が出ており、過熱を冷静に見る目も要る局面になっている。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Yahoo Finance（米市場 10/7の値動き・エヌビディア最高値後に反落・2026）</span><a class="go" href="https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-7-dow-sp-500-nasdaq-080241833.html">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">AIインフラに“借金込み”の巨額マネー──スペースXが約400億ドルを債券と株式で調達し、データセンターをエヌビディアの次世代基盤「Vera Rubin」で固める計画。来年末までに約10GWの計算能力をうたい、エヌビディア自身もスペースX株に約210億ドルを出資。チップを売る側が買う側に出資する“循環”構造が、AI投資の過熱とともに改めて意識されている。</div>
+      <p class="sum">AIの計算設備をつくるために、巨額の借金と出資が飛び交っている、という話だ。需要が本物なら成長の源だが、売り手と買い手が資金で繋がる形は「期待が崩れたときの連鎖」も大きく、慎重に見る声が出ている。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Moneywise（スペースXの約400億ドル調達・エヌビディア基盤のデータセンター・2026）</span><a class="go" href="https://moneywise.com/investing/stocks/spacex-nvidia-orbital-data-center-vera-rubin-chips">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">「多重下請けSIビジネスは崩壊する」──ITRが“AI主導開発”時代を予測。AIが設計・実装を肩代わりすることで、人を多く並べて工数で稼ぐ従来型の受託・下請けモデルが成り立ちにくくなる、という見立て。企業のIT部門も含めて「AIを前提にした経営・開発モデル」への転換が迫られるとする。</div>
+      <p class="sum">人手の多さで稼ぐ受託の形が、AIで通用しにくくなる、という予測だ。「頭数より、AIを使って何を早く形にできるか」が問われる方向で、下請け構造の上にいる会社ほど早めの備えが要る。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">＠IT／ITR（AI主導開発と多重下請けSIの行方・予測）</span><a class="go" href="https://atmarkit.itmedia.co.jp/ait/articles/2511/12/news036.html">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">海外では“エージェント・ショア”の兆し──SI大手の需要はAI案件が下支え。2026年のSI市場分析では、顧客が従来型の作業やコンサルを減らす一方、その穴をAI関連の受注が埋めている構図。オフショア（海外委託）の採用を鈍らせ、代わりにAIエージェントに実装を任せる動き（“agent shore”）も出始め、単価や契約形態（固定価格へのシフト）にも影響しつつある。</div>
+      <p class="sum">「安い人手を海外に出す」代わりに「AIに実装を任せる」動きが出てきた、という話だ。実装だけの仕事は価格が下がりやすく、要件を整理して段取りできる人の価値が上がる──国内のSES・受託にも同じ波が効いてくる。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">UpperEdge（2026年SI市場 “agent shore”・AI案件と単価の変化・分析）</span><a class="go" href="https://upperedge.com/system-integrators/the-state-of-the-si-market-in-2026-ai-bookings-fixed-price-shifts-and-erp-delivery-gaps/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">アンソロピック、守る側にAIの“牙”を解放──「Cyber Verification Program（サイバー検証プログラム）」を拡大（10/6）。審査を通ったセキュリティ専門家に、通常は制限される高度なサイバー能力（＝攻撃にも使える解析力）と、安全のための制限を一部ゆるめたモデルを提供する。AIが脆弱性探しに強力に使える以上、まず“守る側”に先に使わせて備える、という発想だ。</div>
+      <p class="sum">攻撃にも転用できるAIの力を、まず防御側の専門家に正式に開放する動きだ、という話だ。「AIで守りを固める」時代に入りつつあり、自社のWebやシステムも“AIで点検される前提”で備える発想が要る。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Anthropic（Cyber Verification Program 拡大・2026/10/6）</span><a class="go" href="https://www.anthropic.com/news">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">誰でも使える最新AIが「サイバー・生物化学で高能力」──OpenAIはGPT-6を両分野で“High capability（悪用され得る高い能力）”と自己分類したうえで全ユーザーに公開。プロンプトインジェクション（細工した文章でAIを誤作動させる攻撃）への耐性は95〜97%と高めだが、裏を返せば数%はすり抜ける。便利さと悪用リスクが同じモデルに同居する前提が、いよいよ一般化した。</div>
+      <p class="sum">強力なAIが、悪用の懸念もあるまま誰の手にも渡る段階になった、という話だ。「うちは関係ない」では済まず、AIに何を読ませ・何をさせるか、どこから先は人が確認するかを、使う側が線引きしておくことが欠かせない。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">OpenAI（GPT-6システムカード・サイバー/生物化学"High capability"・プロンプトインジェクション耐性・2026/10/7）</span><a class="go" href="https://deploymentsafety.openai.com/gpt-6-october">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
