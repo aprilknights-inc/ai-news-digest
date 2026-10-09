@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-10-09</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.10.09 FRI</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">今朝は、AIを巡る空気が「止まらない成長」から「お金は続くのか」へ切り替わった日。OpenAIの実際の売上が市場で広く言われていた数字よりだいぶ小さいと伝わり、AI関連株は2日続けて下落。ダリオやノボグラッツら著名投資家が相次いで「バブル」に言及し、警戒が表に出てきた。足元では、広く使われ始めたAIエージェントが、昔からの「文章を仕込む攻撃」に今も弱いことが改めて示されている。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>AIに流れ込むお金と期待が「どこまで続くか」を市場が試し始めた。OpenAIの実売上が想定より小さいと伝わってAI関連株は続落し、"バブル"を巡る議論が表に出てきた。一方で、普及が進むAIエージェントは依然として基本的な攻撃（細工した文章でAIを誤作動させるプロンプトインジェクション）に弱いことが改めて示され、便利さと備えを同時に進める必要が続いている。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">OpenAIの「実際の売上」が市場想定より小さいと報道（10/8）。英フィナンシャル・タイムズとCNBCによると、OpenAIが投資家に示した年換算の売上は9月末時点で約500億ドルで、先月まで広く引用されていた約680億ドルを大きく下回る。680億ドルには提携先の売上（グロス）が含まれていたという。上場していない同社は「決算」を出さないため実像が見えにくく、巨額のAI投資の前提が問い直され始めた。</div>
+      <p class="sum">「ものすごく伸びている」とされてきたAIの旗艦企業の売上が、実は言われていたほど大きくないかもしれない、という話だ。数字の“見せ方”で受け取る印象が変わる好例で、AI関連のニュースや営業資料の数字も「何を含んだ数か」を確かめる習慣が要る。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">CNBC／FT（OpenAIの年換算売上 約500億ドル・広く引用の680億ドルは提携先込み・2026/10/8）</span><a class="go" href="https://www.bbntimes.com/technology/nasdaq-drops-1-25-to-27-193-34-as-openai-revenue-shortfall-sends-semiconductors-tumbling">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">著名投資家が相次いで「AIはバブル」と発言、警戒が主流に（10/7〜8）。レイ・ダリオに続き、マイク・ノボグラッツは「人生で最大のバブル」としつつ「それでも乗るべきだ」と発言。ブルームバーグが伝えたある市場ストラテジストは「AI相場がまもなく終わり、2008年以来最悪の暴落を招きかねない」と警告した。強気と弱気が同じ口から出るほど、見方が割れている。</div>
+      <p class="sum">「過熱かもしれない」という声が、もう特別な意見ではなくなってきた、という話だ。崩れると断言する人も、それでも乗れと言う人もいて、プロでも判断が分かれている。AIへの投資や設備の話は、威勢のよい数字だけで決めない慎重さが要る局面だ。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Bloomberg（ノボグラッツ「最大のバブルだが乗れ」10/7・ストラテジスト「2008年以来最悪の暴落も」10/8）</span><a class="go" href="https://www.bloomberg.com/news/articles/2026-10-08/ai-bubble-risks-worst-s-p-500-crash-since-2008-strategist-says">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">AI関連株が2日続落（10/8）。OpenAIの売上報道をきっかけに、ナスダックは1.25%安（27,193.34）、S&P500は0.47%安。半導体が売られ、エヌビディアは2.94%安（約230ドル）、AMDは約4%安。OpenAIと長期の計算契約を結ぶオラクルは約5.7%安となった。長期金利の上昇や原油高も重なり、週前半の最高値圏から一服色が強まっている。</div>
+      <p class="sum">AIの“本家”の売上が思ったほどでないと伝わり、関連株がまとめて下げた、という話だ。これまでは好材料ばかりが効いていたが、ここにきて「本当に見合う収益があるのか」を市場が確かめ始めた。AI銘柄に偏った投資は、一方向の値動きに注意が要る。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Yahoo Finance（米市場 10/8の終値・AI取引が反落・エヌビディア/AMD/オラクル下落・2026）</span><a class="go" href="https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-8-dow-sp-500-nasdaq-080537884.html">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">「買い支える資金は続くのか」という構造的な不安も。マイケル・バーリ（映画『マネー・ショート』の投資家）はメモリ大手マイクロンや新興のネビウスに弱気の賭け（2027年6月まで下落を見込む建玉）。HSBCの試算では、OpenAIが計画どおりデータセンターを整えるには2030年までに約2,070億ドルの追加資金が要るとされ、売上の伸び次第では巨額の計算契約を払いきれない恐れが指摘されている。</div>
+      <p class="sum">AIの“儲け”より“先に出ていくお金”の方が大きいのでは、という懸念だ。設備は何年分もの契約で先に確定する一方、売上はそれほど速く伸びていない。需要が本物でも資金繰りでつまずく筋があり、AI前提の投資・取引は「お金の続き方」まで見ておきたい。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">The Motley Fool／Bisnow（バーリのマイクロン等への弱気・2026/10/4／HSBC試算 OpenAIに2030年まで約2,070億ドル必要）</span><a class="go" href="https://www.bisnow.com/news/national/data-center-capital-markets/openai-207b-funding-gap-planned-data-center-capacity-132102">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">OWASPが「生成AI／エージェント悪用まとめ（2026年7〜9月）」を公開（10/8）。実際に起きた手口を列挙し、マイクロソフトの業務AI「Copilot」の欠陥（CoSnitch／CVE-2026-24301）では、1クリックで仕込んだ指示が実行され、連携済みアカウントの情報が漏れうること、細工した文章がAIの“記憶”に残り続けることが示された（修正済み・悪用の確認はなし）。業務に組み込んだAIが「正規の社員の一歩手前」の権限で被害源になりうる現実が整理された。</div>
+      <p class="sum">社内で使うAIアシスタントが、細工した文章1つで情報を外に出す“穴”になりうる、という話だ。便利な連携（メール・文書・チケット等）を増やすほど、AIに何を読ませ・何をさせるかの線引きが効いてくる。自社のAI活用も「点検される前提」で設計する発想が要る。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">OWASP Gen AI Security Project（Q3 2026 悪用まとめ・Copilot "CoSnitch"/CVE-2026-24301 など・2026/10/8）</span><a class="go" href="https://genai.owasp.org/2026/10/08/genai-and-agentic-ai-exploit-roundup-q3-2026/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">「プロンプトインジェクションは依然“未解決の構造問題”」──OWASP関係者が警告（Infosecurity Europe 2026）。細工した文章でAIを誤作動させるこの攻撃は、AIの仕組みそのものに根ざしており、決め手となる対策がまだ無い、という指摘。AIエージェントが急速に普及する一方で、“完全には防げない前提”で使うほかない状況が続いていると強調された。</div>
+      <p class="sum">AIを騙す基本的な攻撃に、まだ「これで安心」という解決策が無い、という話だ。だからこそ、重要な操作は人が最終確認する、外部の文章をうのみにさせない、といった運用側の歯止めが現実的な守りになる。“ツールを入れれば安全”ではない点を押さえておきたい。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Infosecurity Magazine（OWASP関係者「プロンプトインジェクションは未解決の構造問題」Infosecurity Europe 2026）</span><a class="go" href="https://www.infosecurity-magazine.com/news/infosec-europe-prompt-injection/">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
