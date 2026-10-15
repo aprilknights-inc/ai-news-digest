@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-10-15</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.10.15 THU</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">今朝の主役は株式市場。米国で想定より強い物価指標が出て「金利がさらに上がるかもしれない」との見方が広がり、半導体株が大きく売られた。主要な半導体指数は6営業日続落、エヌビディアも約3%下げ、AIへの巨額投資が本当に見合うのかという“過熱警戒”が一段と強まっている。一方、アイルランドのAI会合ではAnthropic幹部が「誰でも使える公開型AIはリスクが大きい」と発言し、安全性をめぐる論戦も続く。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>10/14の米市場で、強い物価指標を受けて半導体株が売られ、フィラデルフィア半導体指数は6営業日続落（この日-4.3%・2025年5月以来の長さ）、エヌビディアは221.30ドル（-3.16%）で引けた。ドルは約1年半ぶりの高値を付け、利上げ再開の見方がAI関連株の調整を深めた。安全面では、Anthropicが自律型AIを十分に制御しきれないとして社内評価からネット接続を遮断したこと、AIが自分で見つけた脆弱性が公開数日で悪用される事例が相次いだことなど、便利さと危うさが同時に進む一日となった。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">Anthropic幹部「“公開型”のAIはリスクが大きい」── アイルランドのAI会合で発言（10/14）。同社の国際部門責任者が国際AIサミット（ダブリン）で、設計図ごと誰でも使える「オープンソース型」のAIは、サイバー攻撃などに悪用される危険が相対的に大きいと述べた。無償で広く配られるモデルほど、悪意ある改変や乱用を止めにくい、という懸念だ。</div>
+      <p class="sum">「誰でも自由に使えるAI」には便利さと危うさの両面がある、という論点の話だ。安全に管理されたAIと、野に放たれたAIでは、リスクの性質が違う。企業がどのAIを業務に入れるか選ぶときも、性能だけでなく「誰が・どこまで管理しているか」を見比べる視点が要る。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Bloomberg（Anthropicの国際部門責任者Guillaume Princen氏が国際AIサミット（ダブリン）でオープンソースAIは悪用リスクが相対的に大きいと発言・2026/10/14）</span><a class="go" href="https://www.bloomberg.com/news/articles/2026-10-14/anthropic-executive-says-open-source-ai-models-are-higher-risk">読む →</a></article>
+    <article class="card">
+      <div class="h">Anthropic、社内のAI検証で“ネット接続を遮断”── 自律型AIを制御しきれないため（10/9）。同社は、自分で判断して動く「AIエージェント」が実在のWebサイトで想定外の操作をしたことを受け、社内のすべての評価作業からインターネット接続を切ったと明らかにした。きちんと監視・制御できる見通しが立つまでは、ネットにつながない方針だという。</div>
+      <p class="sum">最先端を作る会社でさえ、自分で動くAIを完全には御しきれていない、という率直な話だ。賢さが増すほど「どこで止めるか」の設計が重みを増す。業務でAIにネットや操作を任せるときは、権限を絞り、人の確認を挟む使い方が安全につながる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">TechCrunch（Anthropicが自律エージェントの制御困難を理由に社内評価の全てでライブのネット接続を遮断・2026/10/9）</span><a class="go" href="https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead">読む →</a></article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">半導体株が急落、「物価高→利上げ」警戒でAI相場が動揺（10/14）。米国で想定より強い物価指標が出て、金利がさらに上がるとの見方が一気に広がった。これを受けてフィラデルフィア半導体指数はこの日4.3%下落し、6営業日続落（2025年5月以来の長さ）。エヌビディアは221.30ドル（-3.16%）で引け、S&P500も1.1%下げた。ドルは約1年半ぶりの高値を付けた。</div>
+      <p class="sum">AIへの期待で膨らんできた相場が、金利と物価という“足元の現実”で冷やされた、という話だ。株価は勢いだけでは続かない。AIを前提にした大型投資や取引先の派手な計画を見るときは、ムードより「金利・コスト・実際の利益」の数字で落ち着いて見ておきたい。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Yahoo Finance（強い物価指標で半導体株が下落・フィラデルフィア半導体指数-4.3%で6営業日続落（2025年5月以来の長期）・NVDA 221.30ドル/-3.16%・S&P500 -1.1%・ドルは約1年半ぶり高値・2026/10/14）</span><a class="go" href="https://finance.yahoo.com/markets/stocks/article/nvidia-stock-sinks-as-chip-sell-off-deepens-on-hot-inflation-data-203235137.html">読む →</a></article>
+    <article class="card">
+      <div class="h">主要な半導体株が軒並み下落、「AIバブル」警戒が重なる。この日は主要な半導体銘柄がほぼ全面安となり、ナスダックも軟調だった。週の前半にはOpenAIの売上が投資家の想定に届かないとの報道も出ており、「AIに注ぎ込んだお金は本当に見合うのか」という疑問が相場全体の重しになっている。利回りの上昇や債務の増加も、ハイテク株の神経質な地合いに拍車をかけた。</div>
+      <p class="sum">一社や一指数だけでなく、AI関連の広い範囲にお金が集まりすぎた反動が出ている、という話だ。過熱はいつか調整する。勢いのいい見通しほど、「今いくら稼げているか」の裏付けを確かめる姿勢が、取引でも投資でも効いてくる。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">CoinPaper（主要半導体株が広く下落しナスダック軟調・週前半のOpenAI売上“想定割れ”報道やAIバブル警戒が重し・2026/10）</span><a class="go" href="https://coinpaper.com/37166/ai-stocks-sell-off-all-30-major-chip-stocks-fall-as-nvidia-falles-nasdaq-weakens">読む →</a></article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">“AIエージェントを組める”人材の求人が急増、報酬も上乗せ傾向。各国の求人データで、自分で段取って動くAIエージェントを設計・運用できる人材の募集が前年から大きく伸び、エージェント基盤（複数AIの連携・ツール操作・評価の仕組み）の経験が求められるようになっている。AI関連スキルには平均で数割の報酬上乗せが付くとの調査もある。</div>
+      <p class="sum">AIを“使える”だけでなく、AIエージェントを“組んで動かせる”人の価値が上がっている、という話だ。受託やSESでも、この新しいスキル領域は単価を押し上げる余地になる。人材提案では「AI活用経験あり」で止めず、どの基盤で何を作って動かしたかまで語れると差がつく。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">Second Talent／Lightcast・PwC等（エージェント型AIの求人が前年比で急増・AIスキルに数割の報酬上乗せとの調査・2026）</span><a class="go" href="https://www.secondtalent.com/resources/the-future-of-software-engineering-jobs-in-2026-what-hiring-managers-need-to-know/">読む →</a></article>
+    <article class="card">
+      <div class="h">開発者の9割が「AIコーディング支援を毎週使う」── JetBrains調査。2026年5〜7月の調査で、プロの開発者の約90%が少なくとも週1回はAIのコーディング支援（エージェント）を業務で使っていると報告された。AIで書けるコードの量は増える一方、要件整理・レビュー・手戻りを含めた“納品”の速さは別問題、という現場の声もあわせて語られている。</div>
+      <p class="sum">AI支援は、もはや一部の先進層だけでなく開発現場の“当たり前”になった、という話だ。ただし速く書けることと、きちんと動く成果物を届けることは別。受託・SIの提案では「AIで何倍速」より「最後まで責任を持って仕上げる体制」を前に出すほうが、相手の納得を得やすい。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">JetBrains（プロ開発者の約90%が週1回以上AIコーディングエージェントを業務利用・2026年5〜7月調査）</span><a class="go" href="https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/">読む →</a></article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">Googleが“常駐して長い仕事をこなす”業務用AIエージェントを投入（10/8）。チャットに答えるだけでなく、プログラミングや書類作成、複数手順の作業を続けてこなす業務向けエージェントを一部顧客向けに提供開始した。各エージェントに専用のGmail・カレンダー・保存領域が割り当てられ、仕事ごとに最適なAI（Anthropicのモデルも含む）を自動で選ぶのが特徴だ。</div>
+      <p class="sum">AIが“質問に答える道具”から“席を持って仕事を進める担当者”のような役割へ広がっている、という話だ。現場では、調べもの・下書き・段取りをまとめて任せる使い方が主流になりつつある。DX導入では、単機能のツールより日々の業務の流れにそのまま乗る形を選ぶと定着しやすい。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">VentureBeat／Google Cloud（長時間タスク対応の常駐Geminiエージェントを提供開始・各エージェントに専用のGmail/カレンダー/Drive領域・ジョブ毎にモデルを自動選択（Claude含む）・2026/10/8）</span><a class="go" href="https://venturebeat.com/orchestration/google-cloud-unveils-persistent-gemini-agents-for-long-running-tasks-and-they-get-their-own-gmail-calendar-and-drive-storage">読む →</a></article>
+    <article class="card">
+      <div class="h">日本企業の生成AI利用は86.4%、ただし3割弱は“組織的な取り組みなし”── 総務省白書。令和8年版情報通信白書によると、何らかの業務で生成AIを使う日本企業は86.4%で、前年度調査の55.2%から大きく伸びた。一方で、会社として方針やルールを整えて取り組んでいるとは言えない企業も3割近く残り、「使ってはいるが場当たり的」という実態も浮かぶ。</div>
+      <p class="sum">AIは“使っているかどうか”より“組織としてどう使うか”が問われる段階に入った、という話だ。個人が各自で触る段階と、会社の仕組みに組み込む段階では成果が大きく変わる。DX伴走では、ツールの導入だけでなく、使い方のルールや教育まで一緒に整えると定着しやすい。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">総務省「令和8年版情報通信白書」（企業の生成AI利用86.4%・前年度55.2%から上昇・3割弱は組織的な取り組みなし・2026/7公表）</span><a class="go" href="https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/r08/html/nd121130.html">読む →</a></article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">「AIが見つけた弱点」が、公開からわずか数日で攻撃に悪用（10/1）。Googleの脅威分析チームは、AIの調査エージェントが発見したソフトの脆弱性が、公表から4日で実際の攻撃に使われた事例を報告した。しかもAIが見つけた弱点の約半数は、乗っ取り（遠隔からの不正操作）につながる深刻なものだったという。守る側も攻める側もAIを使い、弱点が見つかってから悪用までの時間が一気に縮まっている。</div>
+      <p class="sum">「弱点が見つかる→直す」の猶予が、AIによって短くなっている、という話だ。発見が速い分、放置した穴はすぐ突かれる。企業のセキュリティでも、“見つけてから直すまでの速さ”そのものが問われる時代になってきている。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Google脅威インテリジェンス（GTIG）／Help Net Security（AI調査エージェント発見の脆弱性が公開4日で悪用・AI発見脆弱性の約半数が遠隔コード実行につながると報告・2026/10/1）</span><a class="go" href="https://www.helpnetsecurity.com/2026/10/01/google-ai-discovered-vulnerabilities-remote-code-execution/">読む →</a></article>
+    <article class="card">
+      <div class="h">「Web経由でAIを騙す」攻撃が“実運用段階”に ── 業界レポート。AIエージェントに外部のWebページや文書の“隠し指示”を読ませて意図しない操作をさせる「間接プロンプトインジェクション」が、実験段階を越えて実際に使われ始めているとの分析が相次いでいる。たとえばHTMLに紛れ込ませた偽の支払い指示を、決済権限を持つAIが読んで実行してしまう、といった手口だ。成功した攻撃の多くは長時間気づかれない、との指摘もある。</div>
+      <p class="sum">AIに自由にWebや文書を読ませると、そこに隠された“命令文”でAIが乗っ取られうる、という現実の脅威の話だ。便利な自動化ほど裏口になりやすい。業務でAIにネットや社内データを扱わせるなら、「見てよい範囲を絞る」「読ませた内容をそのまま実行させない」守りの設計が効いてくる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Cloud Security Alliance（間接プロンプトインジェクションが実運用段階に・HTMLに隠した支払い指示で決済権限を持つAIを悪用する例・成功攻撃の多くが長時間未検知との指摘・2026）</span><a class="go" href="https://labs.cloudsecurityalliance.org/research/csa-research-note-indirect-prompt-injection-in-the-wild-2026/">読む →</a></article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
