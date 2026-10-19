@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-10-19</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.10.19 MON</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">先週末は「AIにいくら投じ、どう回収するのか」という不安が相場を揺らした。金曜(10/16)の米株はナスダックが2.1%安、週間ではナスダックが4.5%下げて6月以来最悪の週となり、4週続いた上昇が止まった。きっかけはAI向けクラウドのCoreWeave。巨額の借金への警戒から同社の社債が“ほぼジャンク級”の利回りで取引され、そのチャートがXで一気に拡散した。賢さ競争の話題は続くが、今週末の主役は「お金」と「安全」。ルール作りも、AIを狙う攻撃も、同時に動き出している。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>10/16、米国株はAIインフラへの巨額投資を「借金で支える構図」への警戒が強まり、ナスダックが2.14%安(26,140)・S&P500が1.09%安。週間ではナスダックが4.5%下げて6月以来最悪の週となり、4週続いた上昇が止まった。エヌビディアは214.13ドル(-1.43%)で、10/6の最高値243.37ドル(時価総額約5.76兆ドル)から約12%下げた。発端のCoreWeave(AI向けクラウド)は社債が準ジャンク級の利回り(約15%)で取引され、そのチャートがXで拡散して株価が急落。韓国KOSPIも木曜に7%超下げてサーキットブレーカーが発動した一方、TSMCは過去最高益で「需要そのものは堅調」という綱引きが続く。ルール面ではAI各社や各国が規制の具体案を出し始め、安全面ではAIコーディング支援「OpenCode」で利用者のAPIキー漏えい(10/17開示)、VS CodeやMCP連携基盤で脆弱性修正が相次いだ。人材では、AIを“使いこなし・統治できる”開発職の求人が伸びる一方、駆け出し層は絞られる動きが鮮明になっている。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">市場と産業の問いが「AIはどれだけ伸びるか」から「巨額投資を回収できるのか」へ(10/16)。この日の米株急落は、AIの需要が鈍ったからではなく、データセンターなどへの巨額投資を主に借金でまかなう構図への不安が主因だった。象徴がAI向けクラウドのCoreWeaveで、同社の社債が“ほぼジャンク級”の高い利回りで取引され、「稼ぐ力より先に借金が膨らんでいないか」という疑念が業界全体に広がった。</div>
+      <p class="sum">AIへの期待は続くが、投資家は「派手な計画」より「それを支えるお金が続くか・採算に合うか」を見始めた、という話だ。取引先や提携先のAI構想を聞くときも、ムードではなく資金繰りと回収の見通しを落ち着いて確かめる姿勢が、これからの基本になる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">CNN／CNBC（AI関連株が債務懸念で急落・焦点は需要から投資回収へ・CoreWeaveの社債が高利回りで取引・2026/10/16）</span><a class="go" href="https://www.cnn.com/2026/10/16/investing/tech-stocks-ai-coreweave">読む →</a></article>
+    <article class="card">
+      <div class="h">AIの「ルール作り」が本格化 ── 各社・各国が規制の具体案を提示（報道、10/18前後）。報道によれば、Anthropic自身が米議会向けに限定的な「フロンティアAI」法案の素案を示し、差し迫った重大なリスクがある場合に限って当局が最先端モデルの公開・利用を止められる仕組みを提案した。中国はAIモデルやエージェントを安全保障に関わる技術とみなし、輸出管理の対象にする案を打ち出したとされる。</div>
+      <p class="sum">「作り手に任せた自主ルール」から「法律や国家の枠組み」へと、AIを縛る議論が一段進みつつある、という話だ。業種を問わず、今後はAIの使い方に外からのルールが増える前提で、社内の利用方針や記録の残し方を早めに整えておくと安心だ。（※一部は報道ベース・確定情報ではない）</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">FourWeekMBA／Deepgains他（Anthropicが米議会に限定的フロンティアAI法案を提案・中国はAIモデル/エージェントを輸出管理対象に・FTCがAI各社へ調査文書との報道・2026/10/18前後）※一部報道ベース</span><a class="go" href="https://fourweekmba.com/ai-weekly-roundup-18-oct-2026-anthropic-16-8b-quarter-10-debt/">読む →</a></article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">CoreWeaveの「社債利回りチャート」がXで拡散 ── 著名投資家の投稿が売りの引き金に。著名VCのチャマス・パリハピティヤ氏が、AI向けクラウドCoreWeaveの社債利回りが一時15%近くに達したグラフをXに投稿。イーロン・マスク氏が「Yikes（うわ…）」と反応するなど拡散し、同社株は10/16に約12%下落、オラクル・Nebius・デルなど関連株にも売りが波及した。</div>
+      <p class="sum">数字のグラフ1枚がSNSで広がっただけで、何兆円もの株が動く時代になった、という話だ。AI相場は空気で大きく振れやすい。情報に接するときは、バズっている勢いと、実際の中身（財務や採算）を切り分けて見る習慣が効いてくる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">SiliconAngle／247WallSt（CoreWeaveの社債利回り約15%のチャートをChamathがXに投稿・Muskが反応し拡散・CoreWeave-12%等でネオクラウド株が下落・2026/10/14〜16）</span><a class="go" href="https://siliconangle.com/2026/10/14/shares-of-oracle-neoclouds-drop-on-coreweave-debt-concerns/">読む →</a></article>
+    <article class="card">
+      <div class="h">エヌビディアのフアンCEOは「一時的な調整」と反論 ── 強気・弱気が真っ向からぶつかる。相場が崩れる中、フアンCEOはポッドキャスト等で今回の下げを「一時的な後退」と位置づけ、AIチップの注文は「ほぼ毎日入ってくる」と需要の強さを強調した。一方で「借金頼みの拡大は危うい」「自社開発チップが競合になる」とする弱気派も多く、市場心理は「極度の不安」に近づいている。</div>
+      <p class="sum">同じ材料を見ても「まだ伸びる」と「行き過ぎ」で見方が真っ二つ、という話だ。こういう局面では、どちらかの断定に乗りすぎないのが安全。足元の数字と資金の流れを見ながら、淡々と構えておきたい。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Traders Union／247WallSt（フアンCEOが売りを「一時的な調整」と反論・チップ注文は「ほぼ毎日」・弱気派は債務と自社チップ競合を警戒・投資家心理は「極度の不安」接近・2026/10月）</span><a class="go" href="https://tradersunion.com/news/stocks/show/3855490-nvidia-ceo-calls-ai/">読む →</a></article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">金曜10/16、米株はAI債務懸念で下落 ── 週間ではナスダック-4.5%で「6月以来最悪の週」。ナスダックは2.14%安の26,140、S&P500は1.09%安の7,659、ダウは小幅安。週を通してナスダックは4.5%下げ、4週続いた上昇が止まった。AIインフラ投資を借金でまかなう構図への不安に加え、根強い物価高や原油高も重しになった。</div>
+      <p class="sum">「賢いAIが出た／出ない」より、「投じたお金を回収できるのか」が相場を動かす主役になった、という話だ。AIブームの追い風を前提にした計画は、逆風も想定して少し幅を持たせておきたい局面だ。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Yahoo Finance／Eurasia Business News（ナスダック-2.14%=26,140・S&P500-1.09%=7,659・週間ナスダック-4.5%で6月以来最悪・AI債務懸念と物価/原油高が主因・2026/10/16）</span><a class="go" href="https://finance.yahoo.com/markets/stocks/articles/markets-news-oct-16-2026-103800633.html">読む →</a></article>
+    <article class="card">
+      <div class="h">エヌビディアは214.13ドル(-1.43%)、最高値から約12%下落 ── 半導体株は総じて軟調。エヌビディアは10/6の最高値243.37ドル（時価総額約5.76兆ドル）から約12%下げた。この日はマイクロンが5%超安、ブロードコムが4.5%安など、半導体全般に売りが広がった。発端のCoreWeaveは週内2度目の急落で約12%安となり、AIインフラ関連の重しとなった。</div>
+      <p class="sum">相場を引っ張ってきた半導体・AIインフラが、そろって調整している、という話だ。株価の上下に一喜一憂するより、「この流れがいつまで・どこまで続くのか」を落ち着いて見ておくのが、提案時の相場観として役立つ。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">heygotrade／TradingKey（NVDA 214.13ドル/-1.43%・10/6高値243.37ドル=時価総額約5.76兆ドルから約12%下落・Micron-5%超/Broadcom-4.5%・CoreWeave約-12%・2026/10/16）</span><a class="go" href="https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-october-16-2026/">読む →</a></article>
+    <article class="card">
+      <div class="h">韓国KOSPIは木曜に7%超安でサーキットブレーカー発動 ── 一方TSMCは過去最高益。米AI株安が世界に波及し、韓国の主要指数KOSPIは一時7%超下落して取引を一時停止する措置（サーキットブレーカー）が発動、SKハイニックスやサムスンも売られた。他方で台湾TSMCは過去最高益を計上し、AIチップ需要の底堅さも示した。市場は「過熱警戒」と「実需は堅調」の間で揺れている。</div>
+      <p class="sum">AIの調整は米国だけでなくアジアの株にも及ぶ一方、現場のチップ需要そのものは強い、という綱引きの状況だ。相場の悲観と、実際のビジネスの強さは必ずしも一致しない。ニュースの雰囲気だけで判断せず、数字で確かめる姿勢が効いてくる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Digital Today／各社報道（KOSPIが木曜7%超安でサーキットブレーカー発動・SKハイニックス/サムスンも下落・一方TSMCは過去最高益でAIチップ需要は堅調・2026/10/15〜16）</span><a class="go" href="https://digitaltoday.co.kr/en/view/116121/kospi-opens-lower-after-selloff-in-us-ai-stocks-kosdaq-also-falls">読む →</a></article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">AIを“使いこなす”開発職の求人が急増、一方で駆け出し層は絞られる。人材大手ランスタッドの分析では、AIを活用する開発職の求人は約600%伸び、従来型の開発職(+28%)を大きく上回った。米国のソフト開発の求人自体も2025年初から約15%増え、増加分の多くは経験者（シニア）向け。半面、スタンフォードの調査では駆け出し開発者の職は約20%減ったとされ、「経験者はより必要・新人は厳しい」という二極化が進む。</div>
+      <p class="sum">「AIが書くから人は要らない」ではなく、「AIを操れる経験者ほど引っ張りだこ」になっている、という話だ。SESの提案でも、“AIで何倍速”より「AIを使いこなし、最後まで仕上げられる経験者をそろえている」ことを前面に出すほうが、相手に刺さりやすい。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">Randstad Digital／Indeed・Stanford AI Index（AI活用開発職の求人+約600%vs従来型+28%・米ソフト求人は2025年初から+約15%でシニア主導・駆け出し開発職は-約20%・2026）</span><a class="go" href="https://www.ciodive.com/news/randstad-digital-AI-talent-software-development/823580/">読む →</a></article>
+    <article class="card">
+      <div class="h">企業が求め始めたのは「エージェントを統治・計測できる人材」── Visa・BlackRock・Citigroup等。調査会社GlobalDataによると、金融・決済大手を中心に、AIエージェントを“安全に運用・管理する”経験を持つ人材の採用が増えている。各社は、エージェントをどう統治し、効果をどう測り、既存の開発工程にどう組み込むかを標準化し始めており、規制業種では「後から説明できる統制（監査可能性）」が重視されている。</div>
+      <p class="sum">AI時代の価値は「コードを書く速さ」だけでなく、「安全に回す仕組みを作れること」に移りつつある、という話だ。受託・SIの現場でも、導入そのものより、運用ルール・効果測定・記録づくりまで伴走できることが、選ばれる理由になっていく。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">GlobalData（Visa/BlackRock/Citigroup等でエージェントAI運用・統治経験者の採用増・統治/計測/工程統合の標準化・規制業種で監査可能性重視・2026）</span><a class="go" href="https://www.globaldata.com/media/business-fundamentals/ai-coding-hiring-gains-momentum-as-industries-scale-real-world-use-cases-reveals-globaldata/">読む →</a></article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">Google Cloudが「Gemini エージェント」を発表 ── “統治しながら業務自動化”の基盤（10/8）。Google Cloudはイベント「Gemini at Work 2026」で、企業が業務自動化エージェントを作りやすくする新機能を発表した。権限の制御、安全なサンドボックス（隔離環境）、通信を管理するネットワークゲートウェイなどで、エージェントを“安全に囲いながら”動かせる点を前面に出す。日経（10/10）は、通信・金融・製造などでの利用を見込むと報じた。</div>
+      <p class="sum">「賢いAIを置く」段階から、「権限を絞り、安全に業務へ組み込む」段階へと、提供側の基盤が整い始めた、という話だ。DX導入では、こうした統治機能を“使う前提”で、どの業務にどこまで任せるかの線引きを最初から設計しておくと、後の混乱を防げる。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">Google Cloud／日本経済新聞（Gemini at Work 2026で「Geminiエージェント」発表・権限制御/サンドボックス/ネットワークゲートウェイで統治・通信/金融/製造で利用見込み・2026/10/8〜10）</span><a class="go" href="https://www.nikkei.com/article/DGXZQOGN09C7D0Z01C26A0000000/">読む →</a></article>
+    <article class="card">
+      <div class="h">現場の論点は「作る」から「安全に回す」へ ── 本番運用でガバナンス・効果測定が次の壁。エージェントを試す段階を越え、本番業務で動かす企業が増える中、難所は「どう統治し、効果をどう測り、記録を残すか」に移っている。各プラットフォームが権限制御や隔離環境などの“ガードレール”を競って整え始めたのも、この課題に応えるためだ。入れただけでは成果が見えにくく、運用設計が成否を分ける。</div>
+      <p class="sum">AIは「導入して終わり」ではなく、「使い方を決め、効果を測り続ける」ところで差がつく、という話だ。DX伴走では、導入と同時に「どこが・どれだけ楽になったか」を数字で追い、使い方のルールと記録を一緒に整えると、社内の納得が得やすい。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">GlobalData／Google Cloud（エージェントは本番運用フェーズへ・統治/計測/監査可能性が課題・各社がガードレール機能を整備・運用設計が成否を分ける・2026）</span><a class="go" href="https://www.globaldata.com/media/business-fundamentals/ai-coding-hiring-gains-momentum-as-industries-scale-real-world-use-cases-reveals-globaldata/">読む →</a></article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">AIコーディング支援「OpenCode」で利用者のAPIキー漏えい（10/17開示）。OpenCodeは、Console利用者の約1.4%について、各自が連携していたOpenAI・Anthropic・GoogleのAPIキーが「大規模な蒸留攻撃」で漏えいした恐れがあると通知した。原因は、退役予定だった旧コンソール系にキーが保管されていたこと。すでに不正課金の報告（Anthropicで約400ドル等）も出ており、同社はキーの即時失効・再発行を呼びかけている。</div>
+      <p class="sum">便利さのために「鍵（認証情報）」をツール側にため込むと、そこが丸ごと狙われる、という現実の事故だ。守りの基本は「鍵を預けっぱなしにしない」「使い回さない」「漏れたら即失効」。企業がAIツールを入れるときは、“どこに鍵が保管されるか”を導入前に確認することが、そのまま健診の勘所になる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Cyera／ground.news（OpenCodeがConsole利用者の約1.4%のOpenAI/Anthropic/Google APIキー漏えいを開示・原因は旧コンソール系の保管・大規模蒸留攻撃・不正課金報告あり・キー失効を推奨・2026/10/17）</span><a class="go" href="https://www.cyera.com/research/opencode-breach-what-happened-and-how-to-rotate-exposed-ai-api-keys">読む →</a></article>
+    <article class="card">
+      <div class="h">AIエージェント／連携基盤(MCP)の脆弱性が10月に相次ぎ修正 ── “つなぐ”部分が新たな攻撃面に。マイクロソフトはVS Codeの更新（10/13）でAIエージェント関連の欠陥を修正（外部の隠し命令で確認なしに設定ファイルを書き換えられる等）。AIと外部ツールをつなぐMCPの開発部品にも、利用者の認証トークンを無断で奪える脆弱性が見つかった（10/6）。研究（arXiv「ToFu」・10/9）は、118のMCPサーバ上の343ツールで253件の脆弱性を報告している。</div>
+      <p class="sum">AIを便利にする“外部連携”そのものが、新しい弱点になりつつある、という話だ。AIに社内ツールや外部データを自由につながせると、そこから乗っ取られうる。AIを業務に入れるなら、連携先を絞り、人の確認を挟み、部品を最新に保つ──“AIにも定期健診”の発想が効いてくる。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Microsoft(MSRC)／GitHub Advisory／arXiv（VS Code 1.141.1でCopilotエージェントのプロンプトインジェクション等を修正・10/13／MCP TypeScript SDKにOAuthトークン窃取のCVE・10/6／研究ToFuは118 MCPサーバの343ツールで253脆弱性・10/9・2026）</span><a class="go" href="https://safeguard.sh/resources/blog/vs-code-1-141-1-copilot-agent-mcp-sandbox-workspace-trust">読む →</a></article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
