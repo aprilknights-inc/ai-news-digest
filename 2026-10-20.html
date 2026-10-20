@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-10-20</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.10.20 TUE</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">先週末にAIインフラへの巨額投資の“採算”を疑う売りで急落した米国株は、週明け10/19に反発した（ナスダック+1.1%、S&P500+0.4%、エヌビディア+1.4%）。ただ「まだ続く不安」と「やはり需要は強い」の綱引きは終わっていない。相場の裏では“お金”と“統治”の話が一段進む。Anthropicは株式の約5%を社会還元の基金に回す方針を示し（上場は11月にもと報道）、Googleは長時間の自動作業に強い新モデル「Gemini 4 Argon」を投入、Claudeは人の手を離れて量子回路の設計記録を塗り替えたという。守りの話も現実味を増し、スペインではAIエージェントによる初の情報漏えいが当局に報告された。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>週明け10/19の米国株は、先週のAI債務懸念による急落から反発し、ナスダックが約1.1%高（約26,431）、S&P500が約0.4%高（約7,691）、エヌビディア+1.4%、テスラ+3.8%、AMD+1.8%と主力が買い戻された。ただ前週はナスダックが6月以来最悪の週で半導体指数(SOX)が約10%下げており、「反発が続くか」には慎重論も根強い。企業動向では、Anthropicが株式の約5%を社会還元の公益基金に充てる方針を表明（AIによる雇用の影響などに充当する構想・株主承認が前提で上場は11月にもと報道）、Googleは長時間の自律作業に向く新モデル「Gemini 4 Argon」を公開（10/13）、Claudeは人の介入なしの反復設計で量子回路を既存記録比で最大約17倍効率化したとAnthropicが報告した（10/16・第三者による再現はこれから）。安全面では、スペインのデータ保護当局(AEPD)がAIエージェントを使った初の情報漏えい通知を公表し、権限を持ちすぎたアカウントやAPIキーの危険を警告。コーディング支援AIでも、信頼できないリポジトリ経由でコードを実行させる手口(GitSpawn)やGitLabのAI基盤の重大な脆弱性(CVE-2026-90970)が報告された。日本ではNTT各社や富士通が、業務特化の生成AIサービス・エージェントを相次ぎ提供開始している。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">Anthropicが株式の約5%を“社会還元の基金”に ── AIの雇用影響にも充てる構想（10/18〜19）。AI大手Anthropicは、自社株の約5%を新設する公益基金に拠出する方針を明らかにした。基金はAIが社会にもたらす影響、とくに仕事が奪われる問題などへの対応に使うとされ、会社の価値が大きく上がれば拠出比率を上乗せする仕組みも検討。創業者らも持ち株の多くを寄付する意向で、実施には株主の承認が必要。報道では上場(IPO)は早ければ11月とも伝えられる。</div>
+      <p class="sum">「AIで大きく稼ぐ会社が、その果実を社会に戻す」という考え方を、株式という形で示した動き、という話だ。AIが雇用に与える影響を“経営課題”として正面から扱う企業が出てきたことは、今後の社内議論の前提になる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Al Jazeera／CNBC／Axios（Anthropicが株式の約5%を公益基金に拠出する方針・AIの雇用影響等に充当・会社価値上昇で上乗せ・創業者も持ち株寄付・株主承認が前提・IPOは11月にもと報道・2026/10/18〜19）</span><a class="go" href="https://www.aljazeera.com/economy/2026/10/19/anthropic-says-it-will-commit-5-of-shares-to-public-benefit-fund">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">モデル競争が再加速 ── Googleが長時間の自動作業に強い「Gemini 4 Argon」を公開（10/13）。Googleは、人が逐一指示しなくても多くの手順を自律的に進められる新モデル「Gemini 4 Argon」を一般公開した。大規模なコード改修、金融・法務の調査、脆弱性の発見など「長く走り続ける仕事」を想定。報道では Anthropic・Google・OpenAI がいずれも新モデルを準備中で、OpenAIは数週内に新型（Terra系）を投入かとも伝えられる。</div>
+      <p class="sum">AIの焦点が「1回の賢い回答」から「人の代わりに長時間作業をやり切るエージェント」へ移っている、という話だ。各社が同時に新型を出す局面では、特定の1社に賭けるより、用途ごとに使い分けられる体制を持っておくのが現実的だ。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">Google公式／HPCwire／The Information(Investing.com)（Gemini 4 Argonを10/13一般公開・長時間の自律作業/コード/金融/法務/脆弱性発見向け・Anthropic/Google/OpenAIが新モデル準備中・OpenAIはTerra系を数週内かと報道・2026/10/13〜）</span><a class="go" href="https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-availability">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">Claudeが“人の手を離れて”量子回路を設計、既存記録を最大約17倍更新 ── Anthropicが報告（10/16）。Anthropicは、ClaudeがAI同士の採点役と組んで設計と検証を何度も繰り返し、8種類の計算課題で既存の最良設計を上回る量子回路を自力で見つけたと発表。ある回路では部品数(ゲート)を従来比で約17分の1に、別の課題ではGoogleの構成比で約12分の1に減らしたという（いずれも自社報告で、第三者による再現はこれから）。</div>
+      <p class="sum">AIが「人の助けなしに、専門家の記録を塗り替える設計を見つけた」という点が驚きをもって受け止められた、という話だ。研究段階の数字とはいえ、AIが“考える道具”から“自分で成果を出す担い手”に近づきつつある象徴として語りやすい。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">Anthropic／Interesting Engineering（Claudeが自動評価役と反復設計し8課題で既存最良を上回る量子回路を発見・モジュラ逆元回路でゲート約17分の1・DQI復号でGoogle比約12分の1・53時間の自律実行・自社報告で未再現・2026/10/16）</span><a class="go" href="https://interestingengineering.com/ai-robotics/claude-quantum-circuit-design">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">OpenAIのアルトマンCEO、ヒト型ロボット開発を認める ── デモは2027年目標。サム・アルトマンCEOは、OpenAIがヒト型(ヒューマノイド)ロボットを開発していることを認め、2027年にデモを見せたいとの考えを示した。言葉や画面の中のAIから、現実世界で手足を動かすAIへ──という流れを象徴する発言として、Xで大きく話題になった。</div>
+      <p class="sum">AIの競争が、画面の中だけでなく「体を持って現実で動く」領域にも広がり始めた、という話だ。実用化はまだ先だが、“AIが物理的な作業もこなす”未来像は、経営の中長期シナリオを考えるうえでの話題として押さえておきたい。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">各社報道（Sam AltmanがOpenAIのヒューマノイドロボット開発を認め2027年にデモ目標と表明・2026/10/18前後）</span><a class="go" href="https://aiweekly.co/ai-news-today">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">週明け10/19の米国株は反発 ── ナスダック+1.1%、エヌビディア+1.4%で主力に買い戻し。先週AIインフラ投資の“借金頼み”への警戒で急落した反動で、10/19(月)の米国株は上昇。ナスダックは約1.1%高(約26,431)、S&P500は約0.4%高(約7,691)、エヌビディア+1.4%、テスラ+3.8%、AMD+1.8%、マイクロン約+3%と半導体も買い戻された。</div>
+      <p class="sum">下げた翌営業日に主力株が買い戻された、という話だ。相場の急な上下は当面続きやすい。日々の値動きに振り回されるより、「大きな流れとして需要は続くのか」を落ち着いて見ておくのが、提案時の相場観として役立つ。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Yahoo Finance／CNBC（10/19に米株反発・ナスダック+約1.1%=約26,431・S&P500+約0.4%=約7,691・NVDA+1.4%/テスラ+3.8%/AMD+1.8%/マイクロン約+3%・前週はナスダックが6月以来最悪の週・2026/10/19）</span><a class="go" href="https://www.cnbc.com/2026/10/19/stock-market-today-live-updates.html">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">ただし「反発が続くか」には慎重論 ── 前週はSOXが約10%安、“最悪の週”からの戻り。前週はナスダックが6月以来最悪の週となり、半導体株指数(SOX)は約10%下落、主要半導体で合計1.6兆ドル規模が吹き飛んだ後の反発だ。市場では「まだ荒い値動きが続く」との警戒が残り、社債(クレジット)市場は完全には楽観に転じていないとの指摘もある。</div>
+      <p class="sum">一日の反発で“底打ち”とは言い切れない、という話だ。AIブームの追い風を前提にした計画は、逆風も想定して少し幅を持たせておきたい局面。数字の雰囲気ではなく、資金の流れと採算で確かめる姿勢が効いてくる。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Yahoo Finance／CNBC（前週はナスダックが6月以来最悪の週・SOX約10%安で半導体に約1.6兆ドルの売り・反発後も戻りの持続に慎重論・クレジット市場は完全には楽観せずとの指摘・2026/10/16〜19）</span><a class="go" href="https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-futures-mixed-amid-volatile-week-112734828.html">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">AIがコードを書く時代でも、米ソフト開発の求人はむしろ増加 ── ただし“経験者”偏重（10/11報道）。コードの自動化が進む一方、米国のソフト開発求人は底から回復。Indeedの求人指数は10/9時点で78.1と、1年前の64.3から上向いた。ただし増加分の多くは経験者(シニア)やAI関連職で、AIを使いこなせる人ほど引く手あまた。半面、22〜25歳の若手の就業は2024年比で約2割減と、入り口は依然厳しい。</div>
+      <p class="sum">「AIで人が要らなくなる」ではなく、「AIを操れる経験者がより必要になる」方向だ、という話だ。SESの提案でも“AIで何倍速”より、「AIを使いこなし最後まで仕上げられる経験者をそろえている」ことを前面に出すほうが刺さりやすい。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">CNBC／Indeed（AIでコード自動化が進む一方で米ソフト開発求人は回復・Indeed求人指数78.1=1年前64.3から上昇・10/9・増加は経験者とAI職中心・22〜25歳の就業は2024年比約2割減・2026/10/11）</span><a class="go" href="https://www.cnbc.com/2026/10/11/ai-software-developer-jobs.html">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">一方で“入口”は狭く、契約・若手は絞られる ── 二極化が鮮明。AIエンジニア求人を分析すると約9割が正社員で、契約（コントラクト）型は約1割にとどまる。IT業界の人員削減も続き、2026年は10/15時点で約13.3万人が対象に。全体の求人は戻りつつも、割を食うのは若手と短期・契約層で、「経験者はより必要・新人と薄い契約は厳しい」という二極化が進む。</div>
+      <p class="sum">市場全体が回復しても、恩恵は一様ではない、という話だ。SES提案では“頭数”より、「AIを使いこなす経験者を、必要な期間しっかり伴走させる」価値を示すことが、単価と継続につながりやすい。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">Axial Search／layoffs.fyi（AIエンジニア求人の約90%が正社員・契約型は約9%・2026年のIT人員削減は10/15時点で約13.3万人・経験者偏重と若手/契約層の縮小という二極化・2026）</span><a class="go" href="https://axialsearch.com/insights/ai-engineering-job-demand">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">富士通、小売向け「4つのAIエージェント」と実行基盤を開発 ── 店舗運営と経営判断を高度化（10/14）。富士通は、小売業の店舗運営や経営判断を支える4種類のAIエージェントと、それらを動かす実行基盤を開発したと発表した。発注・在庫・接客・分析など、現場業務ごとに役割を持ったエージェントを組み合わせて使う想定で、業務特化型の“実務で使えるAI”を前面に出す。</div>
+      <p class="sum">「汎用の賢いAI」から「業務ごとに役割を決めた実務エージェント」へと、提供側の形が具体化してきた、という話だ。DX導入では“どの業務に・どこまで任せるか”を役割ごとに切り分けて設計すると、現場が使いやすく成果も見えやすい。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">クラウドWatch／富士通（富士通が小売業の店舗運営・経営判断を高度化する「4つのAIエージェント」と実行基盤を開発・業務特化型・2026/10/14）</span><a class="go" href="https://cloud.watch.impress.co.jp/docs/news/2147725.html">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">NTT各社も業務特化の生成AIサービスを相次ぎ投入 ── 自治体窓口・健康管理・物流へ（10月）。NTTグループは10月に入り、現場業務に生成AIを組み込んだサービスを続けて開始。自治体の窓口対応を支援する「RelAi 窓口アシスタント」(10/14・NTTアドバンステクノロジ)、健康管理システムに個別の健康アドバイスを加える機能(10/15・NTTテクノクロス)、熟練者のノウハウで分荷業務を自動化する「BUNTANT」(10/1・NTT AI-CIX)など、“身近な業務ごと”の実装が目立つ。</div>
+      <p class="sum">派手な新モデルより、「目の前の業務にどう効かせるか」で各社が競い始めた、という話だ。DX伴走でも、全社一気ではなく“効く業務を1つ選んで小さく入れ、効果を数字で見せる”進め方が、社内の納得を得やすい。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">NTTグループ各社リリース（NTTアドバンステクノロジ「RelAi 窓口アシスタント」10/14・NTTテクノクロスが健康管理に生成AI個別アドバイス10/15・NTT AI-CIXが分荷自動化「BUNTANT」10/1・業務特化の生成AIサービスを相次ぎ提供・2026/10）</span><a class="go" href="https://group.ntt/jp/newsrelease/2026/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">スペインの個人情報保護当局、AIエージェントによる“初の情報漏えい”を公表 ── 守る側の論点が変わる。スペインのデータ保護当局(AEPD)は、AIエージェントが関与した初の個人データ漏えい通知を受けたと公表した。報告によると、攻撃者側のエージェントがまず弱点を探し、正規のログイン情報で侵入、自力で欠陥を見つけて個人データの改ざんや請求書へのアクセスまで到達したという。当局は「権限を持ちすぎたアカウントやAPIキー・トークンを握ったエージェントは、気づかれる前にサービス間を動き回れる」と警告した。</div>
+      <p class="sum">「人ではなくAIが、自動で侵入から被害までやり切った」初の公的事例だ、という話だ。守りの勘所は“AIに持たせる権限を絞る・鍵を預けっぱなしにしない・異常をすぐ見つける”。企業にAIを入れる前に「このAIは何にアクセスでき、誰が止められるか」を確かめることが、そのまま健診の勘所になる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">AEPD／TNW／eWeek（スペインAEPDがAIエージェント関与の初の個人データ漏えい通知を公表・エージェントが探索→正規情報で侵入→自力で欠陥発見→個人データ改ざん/請求書アクセス・過剰権限アカウント/APIキー/トークンの危険を警告・2026/10前後報道）</span><a class="go" href="https://thenextweb.com/news/spain-aepd-first-data-breach-ai-agent">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">コーディング支援AIに新たな穴 ── 信頼できないリポジトリ経由でコードを実行させる「GitSpawn」。研究者は、悪意あるリポジトリがgitの設定を悪用し、Claude Code・Codex・Cursorなどの開発支援AIに勝手にコードを実行させられる手口(GitSpawn)を報告した。開発ツール横断で8件の欠陥が見つかり、公表時点で4件は未修正とされる。“AIに外部のコードやツールを触らせる”行為そのものが攻撃の入り口になりうる。</div>
+      <p class="sum">便利なAI開発ツールも、「素性の知れない物を触らせる」と乗っ取りの入り口になる、という話だ。AIを業務に入れるなら、触らせる対象を信頼できる範囲に絞り、人の確認を挟み、ツールを最新に保つ──“AIにも定期健診”の発想が効く。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">Adversa AI他（信頼できないリポジトリがgit設定を悪用しClaude Code/Codex/Cursor等にコード実行させる「GitSpawn」・開発ツール横断で8件の欠陥・公表時点で4件未修正・2026/10）</span><a class="go" href="https://adversa.ai/blog/top-ai-coding-agent-security-resources-october-2026/">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">GitLabのAI基盤に重大な脆弱性(CVE-2026-90970)、10/2に修正 ── AIの“指示欄”が突破口に。GitLabは10/2、AI機能「Duo Agent」に関する深刻な脆弱性(危険度9.9/10)を修正した。認証済みの利用者が細工した“作業手順(フロー)”を使うと、AIの指示テンプレートの隔離を破ってサーバ上でコマンドを実行できたという。AIに渡す指示文やテンプレートの扱いが、新たな弱点になりうることを示す。</div>
+      <p class="sum">AIへの「指示の受け渡し」部分が、そのまま侵入口になりうる、という話だ。社内でAIを業務に組み込むときは、“誰がどんな指示を入れられるか”と“AIがどこまで実行できるか”をセットで設計・点検しておくことが、事故を防ぐ基本になる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">GitLab／各社報道（GitLabがAI機能Duo Agent関連の重大脆弱性CVE-2026-90970=CVSS9.9を10/2修正・認証済み利用者が細工フローで指示テンプレートの隔離を破りコマンド実行・サーバ側テンプレートインジェクション・2026/10/2）</span><a class="go" href="https://adversa.ai/blog/top-ai-agent-security-resources-october-2026/">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
