@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-10-27</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.10.27 TUE</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">AIをめぐるお金の話が一気に表に出た一日。Claudeを開発するAnthropic(アンソロピック)が米国での株式上場(IPO)を申請し、売上と赤字の“実額”を初めて公開した。上半期で売上は約1.6兆円まで急拡大する一方、会計上の赤字は約8兆円という桁違いの数字で、AIバブルへの期待と警戒が同時に強まっている。市場では週明け10/26の米株がハイテク中心に反発。今週は米国の金融政策会合(FOMC)の結果が水曜(10/28)に出て、マイクロソフトやグーグルなど巨大テックの決算も重なる。現場寄りの話題では、生成AIを“業務にどこまで任せるか”と、その裏側のセキュリティ・人材の話が続く。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>Anthropic(Claudeの開発元)が10/26に米ナスダックへの上場申請書(S-1)を公開し、ティッカー「ANT」で上場を目指すと明らかにした。書類では上半期の売上が約163億ドル(前年同期の約12億ドルから急増)、純損失が約807億ドル(うち約724億ドルは転換社債などの評価替えによる会計上の非現金損失)、第2四半期は約9.7億ドルの営業黒字と開示された。市場では週明け10/26の米株が反発し、S&P500は約7,677(+0.70%)、ナスダックは約26,169(+0.82%)、ダウは約52,362(+0.28%)。今週はFOMCの結果が水曜10/28に出る(市場は金利据え置き予想が優勢)ほか、マイクロソフト・アルファベット(グーグル)・アマゾンの決算が集中する。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">Anthropicが米国上場を申請 ── 売上・赤字の“実額”を初公開、ティッカーは「ANT」。Claude(クロード)を開発するAnthropicが10/26、米ナスダックへの上場申請書(S-1)を公開した。書類によると、2026年上半期の売上は約163億ドルで前年同期の約12億ドルから十数倍に急拡大。一方で純損失は約807億ドルにのぼるが、その大半(約724億ドル)は転換社債や新株予約権の“評価替え”による会計上の損失(実際の現金流出ではない)で、本業ベースでは第2四半期に約9.7億ドルの営業黒字を計上した。計算基盤(クラウド)への支出は上半期だけで約90億ドルと、昨年1年分(約73億ドル)を上回る。上場は11月中旬との見方が出ている。</div>
+      <p class="sum">生成AIの先頭集団がついに“通信簿”を公開した、という話だ。売上の伸びはすさまじいが、同じくらい「計算基盤にいくら使うか」が重く、AIビジネスは稼ぐ力と投資の重さがセットで見られる段階に入った。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">FinanceFeeds／Yahoo Finance／Dealroom(Anthropicが2026/10/26にS-1公開・ナスダックにティッカーANTで上場目指す・上半期売上約163億ドル＝前年同期約12億ドルから急増・純損失約807億ドルのうち約724億ドルは転換社債等の評価替えによる非現金損失・Q2は営業黒字約9.7億ドル・上半期の計算基盤支出は約90億ドルで2025年通年の約73億ドル超・上場は11月中旬との観測・数値は報道ベースで確定前)</span><a class="go" href="https://finance.yahoo.com/technology/live/anthropic-ipo-live-updates-frontier-ai-lab-discloses-revenue-and-risks-in-highly-anticipated-s-1-filing-141702607.html">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">OpenAIとGoogle Cloudが提携 ── OpenAIの最新モデルをグーグルのクラウド基盤でも使えるように。ライバル関係にあるOpenAIとGoogle(グーグル)が、クラウド分野で手を組んだと報じられた。OpenAIの最新モデルやコーディング支援エージェント「Codex」の仕組みを、Google Cloudの「Model Garden」経由で企業が使えるようにするもの。企業はGoogle Cloudの購買画面から契約でき、既存のグーグルクラウド利用枠を充当できるという。モデルを作る会社と、それを配るクラウドが、競合同士でも相互に乗り入れる動きが広がっている。</div>
+      <p class="sum">「どのAIを使うか」と「どのクラウドで動かすか」の組み合わせが、競合の垣根を越えて自由になりつつある、という話だ。利用する側は、特定の1社に縛られずにモデルを選びやすくなる。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">Anicca週次AIまとめ(2026/10/26・OpenAIとGoogle Cloudが提携・OpenAIの最新モデルとCodexエージェントのワークフローをGoogle CloudのModel Garden経由で提供・企業はGoogle Cloud Marketplaceから購入し既存GCP利用枠を充当可能・一部は二次情報)</span><a class="go" href="https://anicca.co.uk/blog/2026-10-26-ai-in-marketing-management/">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">「Claude Opus 5.5 vs GPT-6」のベンチマーク比較が開発者界隈で話題 ── コーディングと価格が焦点。AnthropicのClaude Opus 5.5(9/22公開)とOpenAIの最新GPT-6系について、どちらがプログラミング用途で優れているかの比較がX・Redditで盛り上がっている。独立系の指標「Artificial Analysis Intelligence Index」ではOpus 5.5が58点、GPT-6 Solが48点。Anthropic自身の計測でもコーディング課題でOpus 5.5が優位とされる。ただし「同条件での横並び検証はまだ出そろっていない」「数値はベンダー公表が中心」との慎重な声も多く、価格(Opusは入力/出力100万トークンあたり4ドル/20ドル)と性能のバランスで選ぶ議論になっている。</div>
+      <p class="sum">最新AIの“どれが賢いか”は、もはや作業内容(コーディングか文章か)と価格で選ぶ時代だ、という話だ。派手な点数より「自分の仕事で安定して使えるか」で見極める空気が開発者の間で強い。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">NeuralTrust／Artificial Analysis／X trending等(Claude Opus 5.5は9/22公開・AA Intelligence IndexでOpus 5.5が58点・GPT-6 Solが48点・コーディング比較が開発者間で話題・同条件の横並び検証は未整備でベンダー公表値が中心との指摘・Opusの価格は入力4ドル/出力20ドル(100万トークン)・2026年10月)</span><a class="go" href="https://neuraltrust.ai/blog/claude-opus-5-5-vs-gpt-6-sol-benchmark">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">週明け10/26の米株は反発 ── AnthropicのIPO申請がAI相場を再点火。10/26(月)の米国株は、S&P500が約0.70%高の約7,677、ナスダック総合が約0.82%高の約26,169、ダウ工業株30種が約0.28%高の約52,362と、ハイテク中心に反発した。前の2週間はS&P500とナスダックが連続で下げていたが、AnthropicがIPOを申請したことでAIへの資金の流れが再び意識された。一方でメタ(Meta)はAIインフラ投資の資金調達を発表したことで約2%下落。「AIに投資する企業」と「AIで稼ぐ期待」が入り混じり、個別に明暗が分かれている。</div>
+      <p class="sum">AI相場は一本調子ではなく、ニュース次第で上下しやすい地合いが続く、という話だ。大型IPOの申請のような“話題”で戻す一方、巨額投資の発表には警戒も出る、神経質な相場。</p>
+      <div class="meta"><span class="chip">相場観</span><span class="src">Yahoo Finance／TheStreet／Motley Fool(2026/10/26の米株=S&P500約7,677・+0.70%・ナスダック約26,169・+0.82%・ダウ約52,362・+0.28%でハイテク中心に反発・前2週はS&P500とナスダックが連続安・AnthropicのIPO申請でAI相場が再点火・MetaはAIインフラ向け資金調達発表で約2%安・一部指数値は出所により差)</span><a class="go" href="https://finance.yahoo.com/markets/live/stock-market-today-monday-october-26-dow-sp-500-nasdaq-101153035.html">読む →</a></div>
+    </article>
+    <article class="card">
+      <div class="h">今週は「FOMC＋巨大テック決算」が集中 ── 金利は水曜10/28に判明、据え置き予想が優勢。米国の金融政策会合(FOMC)は10/27〜28の日程で開かれ、金利の結果は水曜10/28の米東部午後に発表される。現在の政策金利は3.75〜4.00%で、市場では今回は据え置きとの見方が優勢(据え置き確率は8割超との試算もある)。同じ週にマイクロソフト、アルファベット(グーグル)、アマゾンなどの決算が重なり、投資家の関心は各社が「AIにいくら設備投資を積み増すか」に集中している。金利と決算が同じ週に出そろうため、相場の振れが大きくなりやすい。</div>
+      <p class="sum">「金利の先行き」と「巨大テックのAI投資額」が同じ週に出そろう、という話だ。好決算でも“投資の重さ”が意識されて株が売られる場面があり、一喜一憂しすぎないのが無難。</p>
+      <div class="meta"><span class="chip">相場観</span><span class="src">FedRateCalc／IFC Markets／Yahoo Finance(FOMCは2026/10/27〜28開催・金利発表は10/28米東部午後・現行の政策金利は3.75〜4.00%・市場は据え置き予想が優勢で据え置き確率8割超の試算も・同週にマイクロソフト/アルファベット/アマゾン等の決算が集中・焦点はAI設備投資の積み増し)</span><a class="go" href="https://www.cnbc.com/2026/10/26/stock-market-today-live-updates.html">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">AI関連のエンジニア単価は上昇傾向 ── ただし「AIを触れる」だけでは上がりにくい。国内SES・フリーランス市場の民間集計では、生成AIやLLM(大規模言語モデル)に関わる案件の単価が相対的に高く、前年比で約2割上がったとの集計もある。一方で、ある調査(Findy、回答265人)を引用した分析では、AIを高度に活用する層の月単価は低活用層より約10万円高いものの、「実際に単価が上がった」のは生産性を上げられた人の約4割にとどまるという。PoC(試し導入)止まりの経験は単価差がほぼ付かず、本番システムへの実装実績が評価の分かれ目になっている。仕様書どおりに作るだけの定型実装は、AIによる自動化の影響を最も受けやすいとされる。</div>
+      <p class="sum">受託・SESでも「AIが使える」より「AIを本番の業務に組み込んだ実績があるか」で単価が決まり始めた、という話だ(数値は民間集計)。これから伸びるのは、作る力に“業務に効かせる力”を足せる人材。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">hydy／ses-base／Lassic等のSES・IT人材単価集計(生成AI・LLM関連の案件単価が相対的に高く前年比約2割上昇の集計あり・Findy調査(n=265)引用でAI高活用層は月単価が低活用層より約10万円高いが単価上昇は生産性向上組の約4割・PoC止まりは単価差ほぼ無し・本番実装実績が評価の分かれ目・定型実装はAI自動化の影響大・いずれも事業者/民間の推計で相場観として)</span><a class="go" href="https://lp.hydy.jp/blog/ai-katsuyou-tanka-premium-data">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">生成AIの“時間削減”事例が具体化 ── 大企業で年数十万時間規模の効果報告。国内企業の生成AI活用で、削減した業務時間を具体的な数字で示す例が増えている。まとめ記事の紹介によれば、パナソニック コネクトは社内AIアシスタントで年間約44.8万時間を削減(2024年度)、ソフトバンクは社内規程をAIで検索する仕組みで約2.5カ月で約2,800時間を創出、宮崎銀行は日本IBMと共同開発した生成AIで融資稟議書の作成時間を約95%削減したとされる。いずれも「特定の業務に絞って試し、効果を確認してから全社に広げる」スモールスタートの流れが共通している。</div>
+      <p class="sum">生成AIは「入れるか」より「どの業務で、どれだけ時間が浮いたか」を測る段階に来た、という話だ(数値は各社公表の紹介)。最初から全社に広げず、効く業務を1つ決めて小さく試すのが成功例の共通点。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">mirai-works／AI PICKS等の国内導入事例まとめ(パナソニック コネクトが社内AIアシスタントで年約44.8万時間削減(2024年度)・ソフトバンクが社内規程のAI検索で約2.5カ月で約2,800時間創出・宮崎銀行が日本IBMと共同開発の生成AIで融資稟議書作成を約95%削減・スモールスタート→全社展開が共通・数値は各社公表値の記事紹介で独立検証は未確認)</span><a class="go" href="https://mirai-works.co.jp/business-pro/business-column/generative-ai-case-study">読む →</a></div>
+    </article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">IPAの「10大脅威2026」でAI利用のリスクが初の上位に ── 現実の被害も報告され始めた。IPA(情報処理推進機構)の「情報セキュリティ10大脅威 2026」では、AIの利用をめぐるサイバーリスクが初めて上位(第3位)に入った。背景には、AIに外部の文章やファイルを読ませる使い方の拡大がある。2026年には実被害も報告され、マイクロソフトのCopilot Studioの脆弱性(CVE-2026-21520)や、Salesforceの業務AIで攻撃者宛てにデータが送られた問題、開発ツールCursorでの“ゼロクリック”でのコード実行(DuneSlide)などが明らかになった。いずれも、AIに仕込まれた“隠し命令”(プロンプトインジェクション)が引き金になりうる点が共通している。</div>
+      <p class="sum">AIの悪用リスクが「理屈の警告」から「実際の事故」に変わってきた、という話だ。AIを業務に入れるときは、「何を・どこまでAIに読ませ・どこへ送れるか」を最初に決めて、人の最終確認を残しておくのが基本。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">IPA「情報セキュリティ10大脅威 2026」／ai-garage／fidx等の解説(IPAの10大脅威2026でAI利用のサイバーリスクが初めて第3位に・2026年の事例としてMicrosoft Copilot Studioの脆弱性CVE-2026-21520・Salesforceの業務AIで攻撃者宛てにデータ送信・開発ツールCursorのゼロクリックでコード実行につながるDuneSlide等・いずれもプロンプトインジェクションが関与しうる・一部は二次情報/解説ベース)</span><a class="go" href="https://ai-garage.jp/column/ai-security-incidents-2026/">読む →</a></div>
+    </article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
