@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-10-29</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.10.29 THU</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">昨日(10/28)は「決算とFOMCが同日に出そろう一日」だった。米連邦準備制度(FOMC)は政策金利を3.75〜4.00%で据え置き(2人が利上げを主張した賛成10・反対2)、同じ日に決算を出したマイクロソフトは好調(クラウドAzureが前年比48%増)で時間外に株高、一方グーグル親会社アルファベットは売上・利益がそろって市場予想を下回り、時間外で約1割下げた。焦点は各社が膨らませ続けるAI設備投資で、マイクロソフトは今年の投資額を約1,700億ドルへ、アルファベットは約1,950〜2,050億ドルへと過去最高水準に引き上げている。モデル競争ではグーグルが最強モデル「Gemini 4 Carbon」を公開(サイバー防御特化、まずは防御側に限定提供)。話題面ではOpenAIとAnthropicが相次ぎ「計算の難問に関する25年来の定説(指数時間仮説)を自社AIが覆した」と主張し、提唱者らが検証に動いた。安全面では、AIエージェントが大手AI企業Anthropicの社内システムに12時間で侵入したと報じられた。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>米FOMCは10/28に政策金利を3.75〜4.00%で据え置き(賛成10・反対2、反対2人は利上げ主張)、声明は物価が「依然高い」として次の判断には追加情報を待つ姿勢。同日決算のマイクロソフトは売上約923億ドル(前年比+19%)・Azure +48%で時間外に株高、アルファベットはクラウドが約307億ドルへ倍増も売上・EPSが予想未達でほぼ4年ぶりの「売上・利益そろって未達」となり時間外で約1割安。巨大テックのAI設備投資は過去最高水準(MSは年約1,700億ドル、Alphabetは2026通年を約1,950〜2,050億ドルへ上方修正)で、採算が市場の最大論点に。10/28の米株終値はS&P500約7,744(+0.28%)・ナスダック26,549.85(+0.27%)・ダウ52,475(+0.19%)、半導体指数SOXはSKハイニックスの好決算で+1.75%。モデルではグーグルが最強モデル「Gemini 4 Carbon」を公開(サイバー防御特化・限定提供・AA知能指数v5.0で首位)。OpenAIとAnthropicは自社AIが「指数時間仮説(ETH)」を覆したと相次ぎ主張し、提唱者らが外部検証を組織(いずれも査読前)。セキュリティではAIエージェントが12時間でAnthropic社内の一部(給与・社内チャット等)に到達したと報道、Anthropicは範囲は限定的で当日遮断と反論。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">グーグルが最強モデル「Gemini 4 Carbon」を公開 ── サイバー防御に特化、まずは“守る側”に限定提供。グーグル(DeepMind)が10/28、自社最強をうたう新モデル「Gemini 4 Carbon(カーボン)」を公開した。特徴は「サイバーセキュリティ」と「長時間の自律作業(数日がかりの作業を続ける能力)」で、ソフトの弱点(脆弱性)を見つける課題で88.2%、欠陥を直す課題で71.0%を記録したと自社計測で示す。独立系の総合知能ランキング(Artificial Analysis Index v5.0、より難しくした最新版)では59点で首位に返り咲いたとされる。価格は入力100万トークンあたり2ドル／出力10ドル。注目は提供方法で、一般公開やAPIより先に、審査を通った“サイバー防御の担い手”(Fairwindプログラム)へ限定提供する。2週間前の「Gemini 4 Argon」に続く投入で、OpenAI・Anthropicとの競争が背景にある。</div>
+      <p class="sum">「まず攻撃より防御に使わせる」という出し方が目を引く、という話だ。AIは弱点探しにも悪用されうるため、グーグルは“守りに先に配る”形をとった。数値はいずれも自社公表で、第三者の検証はこれからという段階。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">Google公式ブログ／Reuters／VentureBeat／Interesting Engineering等(2026/10/28公開・Gemini 4 Carbonは自社最強モデルでサイバー防御と長時間自律作業に特化・脆弱性発見88.2%(SEC-bench Pro)/悪用54.8%(ExploitGym)/修正71.0%(CWE-bench)は自社計測・Artificial Analysis Index v5.0で59点首位・価格は入力100万トークン2ドル/出力10ドルでArgonと同水準・一般提供やAPIより先に審査済みのサイバー防御者向けFairwindプログラムに限定提供・2週間前のGemini 4 Argonに続く・ベンチは自社公表で独立検証は未了)</span><a class="go" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/">読む →</a></div></article>
+    <article class="card">
+      <div class="h">巨大テックのAI設備投資が“過去最高”に膨張 ── 決算で判明、採算が市場最大の論点に。10/28に決算を出したマイクロソフトとアルファベット(グーグル親会社)は、ともにクラウド事業が大きく伸びる一方、AI向けの設備投資(データセンター・半導体)を一段と積み増した。マイクロソフトの最高財務責任者は今年(暦年)の投資額が約1,700億ドルに達し、今四半期だけで500億ドル超になると説明。アルファベットは2026年通年の投資計画を従来の約1,800〜1,900億ドルから約1,950〜2,050億ドルへ引き上げた。アルファベットは本業の現金収支(フリーキャッシュフロー)が2四半期続けてマイナスになり、投資の重さが鮮明に。市場では「売上は伸びているが、AI投資を回収できるのか」という問いが決算の評価軸になっている。</div>
+      <p class="sum">AIを支える土台(インフラ)への投資が、各社とも桁違いに膨らんでいる、という話だ。ここまで使って見合う収益が出るのかが問われ始め、好決算でも投資の大きさで株が売られる場面が出ている。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">CNBC／Fortune／Investing.com／BigGo Finance等(2026/10/28決算・マイクロソフトは暦年設備投資が約1,700億ドル・当四半期は500億ドル超と説明・第1四半期capexは452億ドル・アルファベットは2026通年設備投資計画を約1,950〜2,050億ドルへ上方修正・Google Cloud売上約307億ドルへ倍増・アルファベットはFCFが2四半期連続マイナスで自社株買いなし・数値は各社開示と報道ベースで出所により差)</span><a class="go" href="https://fortune.com/2026/10/28/microsofts-cloud-growth-accelerates-and-so-too-does-the-spending/">読む →</a></div></article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">OpenAIとAnthropicが相次ぎ「25年来の定説をAIが覆した」と主張 ── “ビットコインは大丈夫か”でX騒然。OpenAIとAnthropicが相次いで、自社AIが「指数時間仮説(ETH)」という計算理論の難しい予想を覆す証明を作ったと主張し、X(旧Twitter)や研究者界隈で大きな話題になった。ETHは「ある種の問題は、現実的な時間では解けないほど計算が爆発的に増える」という1999年来の前提で、暗号(ネットの安全を支える仕組み)の難しさを議論する土台にもなってきた。ただ両社の論文はまだ査読(第三者チェック)前で、外部の確認は済んでいない。提唱した研究者らは外部検証チームを立ち上げたが「関与は証明の保証ではない」と明言。OpenAIは「現行の暗号が破られることを意味するとは考えていない」とし、報道も「ビットコイン等は当面安全」との見方で一致している。</div>
+      <p class="sum">「AIが人間の難問を解き始めた」という派手な話だが、まだ“主張”の段階で検証中、という話だ。暗号が破られるという話ではない。新技術のニュースは、見出しの大きさと確定度は別物として受け取るのが安全。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">TechCrunch／mlq.ai／WebProNews／BeInCrypto等(2026年10月下旬・OpenAIが「指数時間仮説(ETH)は偽」とする論文、Anthropicも自社AI(Claude)による反証を主張・いずれも査読前で外部確認は未了・両者とも3-SAT問題の準指数時間アルゴリズムを記述しLean形式化あり・ETH提唱者のImpagliazzo/Paturi/Williamsが外部レビューを組織し「関与は証明の保証ではない」・OpenAIは暗号への影響は無いと見るとコメント・現行暗号やビットコインは当面安全との論調・公開日付は出所で10/17〜10/26と差)</span><a class="go" href="https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/">読む →</a></div></article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">10/28はFOMC据え置き＋決算で小幅高、ただし引け後にアルファベットが約1割安。米FOMC(金融政策会合)は10/28、政策金利を3.75〜4.00%で据え置いた(賛成10・反対2で、反対した2人は0.25%利上げを主張)。声明は物価が「依然高い」として追加情報を待つ姿勢を示し、ロイター調査では100人の全員が12月の利上げを予想。株式の終値はS&P500が約7,744(+0.28%)、ナスダック総合が26,549.85(+0.27%)、ダウが52,475.10(+0.19%)と小幅高。半導体指数SOXはSKハイニックスの好決算で+1.75%の11,684と堅調だった。ただし取引終了後(時間外)に温度差が出て、決算が市場予想を下回ったアルファベットが約10%下落、好決算のマイクロソフトは約3%超上昇した。</div>
+      <p class="sum">金利の見通しと巨大テックの決算が同じ日に出て、相場は小動きで通過したが、“中身”で勝ち負けがはっきり分かれた、という話だ。指数が静かでも個別株は大きく振れており、「AI関連なら一律に上がる」局面ではなくなってきた。</p>
+      <div class="meta"><span class="chip">相場観</span><span class="src">CNBC／Fox Business／Yahoo Finance／24/7 Wall St./BBN Times等(2026/10/28・FOMCは政策金利3.75〜4.00%で据え置き・賛成10反対2でCookとHammackが0.25%利上げを主張・声明は物価「依然高い」で追加情報待ち・ロイター調査で100人全員が12月利上げ予想・終値はS&P500約7,744/+0.28%・ナスダック26,549.85/+0.27%・ダウ52,475.10/+0.19%・SOXは+1.75%で11,684(SKハイニックス好決算)・時間外でアルファベット約10%安/マイクロソフト約3%超高・時間外騰落率は時点で差)</span><a class="go" href="https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html">読む →</a></div></article>
+    <article class="card">
+      <div class="h">決算の中身 ── マイクロソフトはAzure+48%で増収増益、アルファベットはクラウド倍増も“利益未達”。マイクロソフトの決算(会計年度第1四半期)は売上が約923億ドル(前年比+19%、市場予想の約907億ドルを上回る)、クラウドAzureが48%増の約332億ドルと加速し、次四半期も49〜50%増の見通しを示した。一方アルファベットは売上が約1,276億ドル(+25%)とほぼ市場予想どおりだが小幅に届かず、1株利益(調整後)が約2.67ドルで予想の約3.02ドルを下回った。Google Cloudは約307億ドルへほぼ倍増したものの、本業の検索広告が+12%と伸びが鈍く、ほぼ4年ぶりに「売上・利益そろって予想未達」となった。巨額のAI投資が利益を圧迫する構図が、両社の明暗を分けた。</div>
+      <p class="sum">クラウドとAIで売上は伸びているのに、投資の重さで利益がついてこない会社が出てきた、という話だ。「売上が伸びれば株が上がる」とは限らず、投資がいつ回収に回るかが見られている。</p>
+      <div class="meta"><span class="chip">相場観</span><span class="src">CNBC／Yahoo Finance／Motley Fool／BigGo Finance等(2026/10/28決算・マイクロソフト会計Q1は売上約923億ドル/+19%で予想約907億ドル超・Azure +48%で約332億ドル・次四半期Azureは+49〜50%見通し・アルファベットQ3は売上約1,276億ドル/+25%で予想を小幅に未達・調整後EPS約2.67ドルが予想約3.02ドルを下回る・Google Cloud約307億ドルへ倍増・検索広告+12%・ほぼ4年ぶりに売上と利益がそろって未達・一部数値は出所により差)</span><a class="go" href="https://www.cnbc.com/2026/10/28/microsoft-msft-q1-earnings-report-2027.html">読む →</a></div></article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">IT人材は“二極化”が加速 ── AIで一人開発が可能になり「人数で売る」モデルに逆風、コンサル職の単価は上昇。民間メディアの分析では、経済産業省の試算(2030年に最大79万人のIT人材不足)を引きつつ、不足は先端分野に偏り、従来型の人材は余り気味になる「二極化」が進むと指摘される。AIエンジニアやデータサイエンティストは需要が供給を大きく上回り、同じ職種でもスキルによる年収差が最大3倍以上に開いているとの集計も。フリーランス向けの分析は、AIエージェントの実用化で「以前は複数人で作った規模のシステムを一人で組めるようになった」とし、人月(人数×月数)で見積もる受託や、人数で売るSESの前提が崩れうると論じる。一方で、AIコンサルタントなど“AIをどう業務に効かせるか”を担う職種の平均単価は上がっているという。</div>
+      <p class="sum">「手を動かす人数」で売る形は厳しくなり、「AIを業務にどう効かせるか」を設計・助言できる人の価値が上がっている、という話だ(数値は民間集計)。受託・SESは“工数の提供”から“成果と活用設計の提供”へ軸足を移すほど強い。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">atsoho／app-tatsujin／koubo等のSES・IT人材分析記事(経産省試算で2030年に最大79万人のIT人材不足・先端分野に偏り従来型は余剰化する二極化・AI/データ職は需要超過で同一職種内のスキル別年収差が最大3倍以上との集計・AIエージェント実用化で一人開発が可能になり人月見積もり/人数売りの前提が崩れうると指摘・AIコンサル等コンサル職種の平均単価は上昇・いずれもブログ/民間推計で一次確認は未了、相場観として)</span><a class="go" href="https://atsoho.com/blog/it-salary-ranking-2026">読む →</a></div></article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">国内のAIエージェント活用が“全社運用”の段階へ ── Google Cloud事例集が121社に、金融大手も本番導入。Google Cloud(グーグルの法人向けクラウド)が国内の生成AI活用事例集を10月版に更新し、121社(11社を新規追加)に拡大した。新規分には、約5,000名の従業員へのAI(Gemini)一斉導入や、社内のAI利用状況・コストを一元管理する仕組みなど、「個別の実験」から「全社で運用する」段階の取り組みが並ぶ。金融では、三菱UFJ銀行が約4万人を対象に生成AIを導入し稟議書作成や社内マニュアル参照に活用、三井住友銀行はSakana AIと、情報収集から分析・事実確認までを複数のAIが分担して提案書を自動生成する取り組みを進める。バックオフィスでは、経理向けエージェントで経費精算の工数を全社で年間約1.5万時間削減した例も紹介されている。</div>
+      <p class="sum">生成AIが「一部署の試し」から「全社員・基幹業務で回す」段階に進み、使う量と管理(コストやルール)の仕組みづくりが課題になってきた、という話だ(数値は各社公表の紹介)。効く業務を一つ決めて小さく測り、効果を見て全社に広げる型は変わらない。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">Google Cloud Japan公式ブログ(2026年10月更新)(国内生成AI活用事例集を10月版に更新し121社・11社新規追加・約5,000名へのGemini一斉導入やLLMゲートウェイでの利用/コスト管理など全社運用段階の事例・三菱UFJ銀行は約4万人対象に生成AIを導入し稟議書作成/社内マニュアル参照等に活用・三井住友銀行はSakana AIと複数エージェントで提案書自動生成・経理向けエージェントで経費精算を全社で年間約1.5万時間削減の例・数値は各社公表の紹介で独立検証は未了)</span><a class="go" href="https://cloud.google.com/blog/ja/products/ai-machine-learning/latest-examples-of-generative-ai-applications-from-121-companies-released?hl=ja">読む →</a></div></article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">AIエージェントが大手AI企業Anthropicに“12時間で侵入” ── 弱点は本体でなく「外部の業務ソフト」。元政府効率化チーム(DOGE)出身者が作ったセキュリティ新興企業Cathedral(カテドラル)が、自社のAIエージェント(人に代わり自動で作業するAI)を使い、Claude(クロード)の開発元Anthropicの社内データに12時間足らずで到達したと公表した。Cathedral側は、社内会議の記録・従業員の給与・採用オファー・社内チャット(Slack)にまで達したと主張。ただし侵入口はAnthropicの中核システムではなく、同社が使う「第三者の業務ソフト(SaaS)」経由だった。Anthropicは範囲はもっと狭く、営業・人事・ITの一部(取引先の連絡先や基本的なアカウント情報など)にとどまり、顧客の会話・ソースコード・AIの中身(モデル)には触れられておらず、監視で一部を検知して当日中にアクセスを遮断したと反論している。</div>
+      <p class="sum">自社がどれだけ守りを固めても、“使っている外部サービス”が穴になりうる、という話だ。しかもAIが攻撃側の作業を一気に速める。健診でも「自社だけでなく、連携している外部ツール・委託先まで含めて点検できているか」が勘所になる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">Washington Post報道／Fast Company／Digital Trends／BigGo Finance等(2026年10月26〜28日・セキュリティ新興Cathedral(元DOGE出身者設立、7月に1.6億ドル調達・評価額14億ドル)がAIエージェントで12時間未満にAnthropic社内データへ到達と主張・会議記録/給与/採用オファー/社内Slackに到達と主張・侵入口は中核でなく第三者業務ソフト(SaaS)経由・バグ報奨金制度経由で報告・Anthropicは範囲は営業/人事/ITの一部に限定で顧客会話やコード/モデルは無事、監視で一部検知し当日遮断と反論・ドラフト報告書と双方の声明に基づく報道で範囲の独立検証は未了)</span><a class="go" href="https://finance.biggo.com/news/cec37813-33ca-438a-8885-8d915b8b05ab">読む →</a></div></article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
