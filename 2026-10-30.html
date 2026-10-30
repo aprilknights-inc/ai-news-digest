@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- 今朝のAI ─ 日次テンプレート。ルーティンは構造を厳守し、本文(各.sec内)と日付トークンだけ差し替える。CSSはstyle.css、保存/共有はapp.jsに固定。ニュースが無いセクションは丸ごと削除してよい。 -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今朝のAI ─ 2026-10-30</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast reveal">
+    <div class="kicker"><span>DAILY AI BRIEF</span><b>2026.10.30 FRI</b></div>
+    <h1 class="title">今朝のAI<span class="dot">.</span></h1>
+    <p class="standfirst">昨日(10/29)は「巨大テックの決算週が出そろい、AI投資の重さが相場の主役になった一日」だった。最後に残っていたアマゾンが取引終了後に決算を発表。クラウド(AWS)は前年比39%増とほぼ5年ぶりの速さで伸びたが、利益・売上はともに市場予想に届かず(ダブルミス)、2026年の設備投資見通しを約2,200億ドルに据え置いたこともあり、株価は時間外で下落した。日中の取引でも前日に決算を出したアルファベット(グーグル親会社)が約11%安、マイクロソフトとメタは小幅高と明暗が割れた。技術面ではグーグルDeepMindが、音声つきの仮想世界をその場で作る新しい「ワールドモデル」Genie 4を公開した(10/27)。市場では著名投資家マイケル・バーリ氏がAI大手に10億ドル超の弱気ベットを公表したことで「AIバブル論争」が一段と過熱した。セキュリティ面では、IPAがAIエージェントを“情報漏えいの経路”として整理した短信を出し、アンスロピックも自社AIが主要OS・ブラウザの欠陥を連鎖させる実証を公表した。</p>
+  </header>
+
+  <section class="take reveal">
+    <div class="lbl">今日の要点</div>
+    <p>巨大テック4社(マイクロソフト・アルファベット・メタ・アマゾン)の決算が出そろい、いずれもAI向け設備投資を過去最高水準へ積み増した(目安はMS約1,700億ドル、アルファベット約1,950〜2,050億ドル、メタ約1,350〜1,450億ドル、アマゾン約2,200億ドル)。10/29に取引終了後に決算を出したアマゾンは、AWSが約460億ドル(前年比+39%)とほぼ5年ぶりの伸びを示した一方、EPSは1.89ドル・売上は約2,019億ドルでいずれも予想を下回り(ダブルミス)、第4四半期の売上見通し(2,400〜2,470億ドル)も市場予想をやや下回ったため株価は時間外で約7〜10%下落。日中はアルファベットが約11%安、マイクロソフトとメタは小幅高と割れた。技術面ではグーグルDeepMindが音声つきで操作できるワールドモデル「Genie 4」を公開(10/27、審査済みテスター限定)。相場では著名投資家マイケル・バーリ氏がエヌビディア・パランティアへ合計10億ドル超のプット(下落で利益)を公表し、減価償却と設備投資の過大さを問題視、「AIバブル論争」が過熱。セキュリティではIPAが「AIセキュリティ短信」10月号でAIエージェントを情報漏えいの経路として整理(Agentforce悪用「SalesBleed」等)、アンスロピックは未公開AIがChrome/Safari/Android/Windows/Linuxの欠陥を連鎖させPoCを作った研究を公表した。数値は各社開示・報道ベースで、一部は二次情報・時点差を含む。</p>
+  </section>
+
+  <!-- 各セクション 2〜3本。該当ニュースが無い日はそのsectionごと削除。カード=.card/.h/.sum/.meta(.chip+.src+a.go)。保存/共有ボタンはapp.jsが自動付与するので書かなくてよい。 -->
+
+  <section class="sec s-global reveal">
+    <div class="sec-head"><span class="ico">🌐</span><h2>大きな潮流</h2><span class="cnt">今日これだけは</span></div>
+    <article class="card">
+      <div class="h">巨大テックのAI投資が“過去最高”の軍拡に ── 決算週で4社そろって上方修正、採算が最大論点。10/28〜10/29に決算を出したマイクロソフト・アルファベット(グーグル親会社)・メタ・アマゾンは、クラウドやAIで売上を伸ばす一方、AI向けの設備投資(データセンターや半導体)を一段と積み増した。今年の投資額の目安はマイクロソフトが約1,700億ドル、アルファベットが約1,950〜2,050億ドル、メタが約1,350〜1,450億ドル(前年の約700億ドルからほぼ倍)、アマゾンが約2,200億ドル。各社とも本業の現金収支(フリーキャッシュフロー)が投資の重さで圧迫され、アルファベットは2四半期連続のマイナス、アマゾンも直近1年の累計で約424億ドルのマイナスとなった。市場の問いは「売上は伸びても、これだけの投資を回収できるのか」に集中している。</div>
+      <p class="sum">AIを支える土台への投資が、どの大手も桁違いに膨らみ続けている、という話だ。好決算でも「投資が重すぎる」と見なされれば株が売られる局面になっており、“AIなら一律に買い”ではなくなってきた。</p>
+      <div class="meta"><span class="chip">経営判断</span><span class="src">CNBC／24/7 Wall St./Yahoo Finance／Investing.com等(2026/10/28〜29決算・暦年AI設備投資の目安はMS約1,700億ドル／アルファベット2026通年約1,950〜2,050億ドル／メタ2026約1,350〜1,450億ドル(2025約700億ドルから倍増)／アマゾン2026約2,200億ドル・アルファベットはFCFが2四半期連続マイナス・アマゾンはTTMフリーキャッシュフロー約-424億ドル・数値は各社開示と報道ベースで出所・時点により差)</span><a class="go" href="https://247wallst.com/investing/2026/10/29/alphabet-sinks-11-as-ai-spending-pushes-cash-flow-negative-again-microsoft-and-meta-edge-higher-amazon-slips/">読む →</a></div></article>
+    <article class="card">
+      <div class="h">グーグルDeepMindが「Genie 4」公開(10/27) ── 音声つきで動く仮想世界をその場で生成、文章で操作できる“ワールドモデル”。グーグルのAI研究部門DeepMind(ディープマインド)が、新しい「ワールドモデル」Genie 4(ジーニー4)を公開した(10/27、まずは審査を通った試験利用者に限定)。ワールドモデルとは、画像や動画だけでなく「動かせる仮想の世界」をAIがその場(リアルタイム)で作り出す技術のこと。Genie 4は、映像に合わせて環境音・音楽・登場人物のセリフまでAIが同時に生成する(DeepMind初)。利用者は会話の途中に文章で「人物を足す」「天気を変える」などと指示して世界を書き換えられる。長く続けると細部がぶれる・文字が読みにくいといった限界も明言されており、当面は研究・ゲーム・ロボットの事前訓練などでの活用が見込まれる。</div>
+      <p class="sum">AIが「文章や画像」だけでなく「操作できる世界そのもの」を作り始めた、という話だ。すぐ業務に効く技術ではないが、“AIはここまで来ている”を示す分かりやすい一歩で、将来の研修・シミュレーション・接客体験づくりなどにつながる芽になる。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">Google DeepMind公式ブログ／TechCrunch／DataCamp／MarkTechPost等(2026/10/27公開・Genie 4はリアルタイムのワールドモデルで映像に加え環境音/音楽/対話をネイティブ生成(DeepMind初)・文章で途中から人物追加や天候変更などの操作が可能・Gemini系モデルで世界の一貫性を保持・まず審査済みテスター限定でProject Genie/Gemini API等へ順次拡大・長時間で細部が崩れる/文字の可読性や音声精度は未解決・ベンチや価格は未公表・Gemini側の具体モデル名は出所で差)</span><a class="go" href="https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/">読む →</a></div></article>
+  </section>
+
+  <section class="sec s-buzz reveal">
+    <div class="sec-head"><span class="ico">🔥</span><h2>Xでバズってる</h2><span class="cnt">AINews発</span></div>
+    <article class="card">
+      <div class="h">「AIバブル論争」が決算週で過熱 ── “ビッグ・ショート”のバーリ氏が10億ドル超の弱気ベット。2008年の金融危機を当てたことで知られる投資家マイケル・バーリ氏が、AI相場の中心であるエヌビディアとパランティアに対し、株価下落で利益が出る「プット」を合計10億ドル超ぶん持っていると公表し、X(旧Twitter)や市場で大きな話題になった。氏の主張の柱は「巨大テックはAI用半導体を長く使えることにして減価償却(資産の目減り分を費用に計上)を小さく見せ、利益を実際より良く見せている」というもので、2026〜2028年で約1,760億ドル分が過少計上との試算も示す。巨大テックの決算で投資の重さが意識された週だっただけに、「AI投資は回収できるのか」という議論に火が付いた形だ。一方で「バブル論それ自体がバブルだ」とする反論もあり、見方は割れている。</div>
+      <p class="sum">「AIへの投資は過熱しすぎでは」という警戒論が、決算をきっかけに一段と大きくなっている、という話だ。強気・弱気どちらが正しいかはまだ分からないが、“AI関連株は中身を見て選ぶ”局面になっている点は押さえておきたい。</p>
+      <div class="meta"><span class="chip">相場観</span><span class="src">Outlook Business／Benzinga／Barchart／Seeking Alpha等(2026年・バーリ氏のScionがエヌビディア/パランティアのプットを計10億ドル超保有と報道(NVDA約187百万ドル/PLTR約912百万ドル規模)・減価償却の過少計上を2026〜28で約1,760億ドルと試算(本人推計、Ares Management調査を引用)・ポジション公表は2025年後半以降で決算週に論争が再燃・反論もあり評価は分かれる・数値は報道と本人試算ベース)</span><a class="go" href="https://www.outlookbusiness.com/deeptech/artificial-intelligence/the-big-short-michael-burry-man-who-predicted-2008-crisis-is-now-betting-against-ai-bubble">読む →</a></div></article>
+  </section>
+
+  <section class="sec s-stock reveal">
+    <div class="sec-head"><span class="ico">📈</span><h2>AI関連の株・マーケット</h2><span class="cnt">幅広く</span></div>
+    <article class="card">
+      <div class="h">アマゾン決算(10/29) ── AWSが+39%とほぼ5年ぶりの加速、だが利益・売上は“ダブルミス”で株は時間外安。アマゾンの第3四半期(7〜9月)決算は、1株利益(EPS)が1.89ドル(予想の約1.96ドルを下回る)、売上が約2,019億ドル(予想の約2,023億ドルを小幅に下回る)と、利益・売上そろって予想未達(ダブルミス)となった。好材料はクラウドのAWSで、売上約460億ドル・前年比39%増とほぼ5年ぶりの速さに加速し、2027〜2028年も40%超の成長を見込むと説明。ただしAI向け投資がかさみ、直近1年のフリーキャッシュフローは約424億ドルのマイナスに。2026年の設備投資見通しは約2,200億ドルに据え置いた。さらに第4四半期(年末商戦)の売上見通し2,400〜2,470億ドルが市場予想(約2,445億ドル)をやや下回る可能性があり、株価は取引終了後に約7〜10%下落した。</div>
+      <p class="sum">クラウドの本業は力強く伸びているのに、AI投資の重さとガイダンスの慎重さで株が売られた、という話だ。前日のアルファベットと同じく、「伸びていても投資が重いと売られる」決算週の流れが続いた。</p>
+      <div class="meta"><span class="chip">相場観</span><span class="src">CNBC／Yahoo Finance／Benzinga／Deadline等(2026/10/29取引終了後に決算・EPS 1.89ドル(予想約1.96ドル)未達・売上約2,019億ドル(予想約2,023億ドル)未達でダブルミス・AWS売上約460億ドル/+39%でほぼ5年ぶりの加速・2027〜28も+40%超見通し・TTMフリーキャッシュフロー約-424億ドル・2026設備投資見通し約2,200億ドル据え置き・Q4売上ガイダンス2,400〜2,470億ドル(予想約2,445億ドル)・時間外で約7〜10%安(下落率は時点で差)・数値は開示と報道ベース)</span><a class="go" href="https://www.cnbc.com/2026/10/29/amazon-amzn-q3-earnings-report-2026.html">読む →</a></div></article>
+    <article class="card">
+      <div class="h">決算週の“明暗” ── アルファベット約11%安、マイクロソフトとメタは小幅高、アマゾンは時間外安。10/29の取引では、前日(10/28)に決算を出したアルファベットが、巨額のAI投資で本業の現金収支が再びマイナスになったことを嫌気され約11%下落した。一方、同じく前日に決算を出したマイクロソフトとメタは小幅高と底堅く、同じ「AI投資拡大」でも市場の受け止めが分かれた。そして取引終了後に決算を出したアマゾンが時間外で下落。指数自体は大きく崩れていないものの、個別銘柄では勝ち負けがはっきり分かれる展開となり、「AI関連なら一律に上がる」相場ではなくなってきたことが改めて示された。</div>
+      <p class="sum">同じ“AI投資を増やす決算”でも、市場の評価が銘柄ごとに割れている、という話だ。指数が静かでも中身は荒く、どの会社が投資を利益に変えられそうかで選別が進んでいる。</p>
+      <div class="meta"><span class="chip">相場観</span><span class="src">24/7 Wall St./CNBC／Yahoo Finance等(2026/10/29・前日決算のアルファベットが約11%安(AI投資でFCF再びマイナス)・マイクロソフトとメタは小幅高・アマゾンは取引終了後の決算で時間外安・指数は小動きだが個別は明暗が分かれる展開・騰落率は時点・出所で差)</span><a class="go" href="https://247wallst.com/investing/2026/10/29/alphabet-sinks-11-as-ai-spending-pushes-cash-flow-negative-again-microsoft-and-meta-edge-higher-amazon-slips/">読む →</a></div></article>
+  </section>
+
+  <section class="sec s-ses reveal">
+    <div class="sec-head"><span class="ico">💼</span><h2>SES / SI × AI</h2><span class="cnt">受託・人材</span></div>
+    <article class="card">
+      <div class="h">AIコーディング支援(Copilot/Cursor)を使うエンジニアの単価は上がるのか ── “使うほど上がる”とは限らない現実。フリーランスやSES向けの分析では、GitHub CopilotやCursor(どちらもAIがコードを書く手助けをするツール)を使いこなすエンジニアほど単価が上がる、という見方と、AIで誰でも書けるようになる分だけ単価が下がる、という見方の両方がある。民間の集計では、コードの50%以上をAIで生成している層の平均月単価は約84万円で、活用度が低い層より約10万円高い一方、「生産性が上がった」と感じている人のうち、直近1年で実際に月単価が上がったのは約4割にとどまるという。AIツールを“使えること”自体はもはや差別化になりにくく、「AIで何を・どれだけ速く仕上げ、成果につなげたか」を示せるかで単価の二極化が進む、と整理されている。</div>
+      <p class="sum">「AIを使っている」だけでは単価は上がりにくく、“成果と速さを見せられる人”に報酬が寄っている、という話だ(数値は民間集計)。受託・SESも、工数ではなく「AIを使って何をどれだけ早く出せるか」を売りにするほど強くなる。</p>
+      <div class="meta"><span class="chip">SES提案</span><span class="src">atsoho等のSES・フリーランス向け単価分析記事(Copilot/Cursor活用と単価の関係・コードの50%以上をAI生成する層の平均月単価は約84万円で低活用層より約10万円高・生産性向上を実感した層でも直近1年で月単価が上がったのは約4割・AI活用“できる”こと自体は差別化になりにくく成果提示で二極化、との整理・いずれもブログ/登録者ベースの民間集計で一次確認は未了、相場観として)</span><a class="go" href="https://atsoho.com/blog/copilot-cursor-engineer-rate">読む →</a></div></article>
+  </section>
+
+  <section class="sec s-dx reveal">
+    <div class="sec-head"><span class="ico">⚙️</span><h2>DX × AI</h2><span class="cnt">現場導入</span></div>
+    <article class="card">
+      <div class="h">契約書チェック・社内文書づくりをAIで ── Nextcloud×Difyの「AIファイルサーバ構築サービス」が10/29提供開始。社内の文書を保管する基盤(Nextcloud)と、生成AIアプリを手軽に作れる仕組み(Dify)をつないだ「AIファイルサーバ構築サービス」が10月29日に提供を始めた。社内に貯まった文書に対して、内容の確認・要約・必要情報の抜き出し・登録・チェックリスト作成などをAIで自動化でき、契約書のチェックや社内文書の作成といった定型的で手間のかかる作業を効率化できるという。自社のサーバ内で文書を扱える構成のため、外部にデータを出したくない中小企業や士業の現場でも検討しやすいのが特徴とされる。</div>
+      <p class="sum">「よくある社内作業(契約書チェック・文書作成)」に的を絞った、現場で使いやすいAIサービスが出てきた、という話だ。大がかりなシステムより、“手間な定型業務を一つ自動化する”小さな一歩が、中小・士業では現実的な入り口になる。</p>
+      <div class="meta"><span class="chip">伴走事業</span><span class="src">＠Press(プレスリリース、2026/10/29提供開始)(Nextcloud×DifyによるAIファイルサーバ構築サービス・社内文書の内容確認/要約/情報抽出/登録/チェックリスト作成等を自動化・契約書チェックや社内文書作成の効率化・自社環境で文書を扱える構成・内容は提供元発表ベース)</span><a class="go" href="https://www.atpress.ne.jp/news/642347">読む →</a></div></article>
+    <article class="card">
+      <div class="h">業務での生成AIは定着、一方で「AI疲れ」56% ── 入れて終わりでなく“使い方・休憩”の設計が課題に。週3日以上、業務で生成AIを使う500人への民間調査では、84.6%が「生成AIで業務が効率化した」と実感する一方、56.0%が「AIを使うときに疲れや負担を感じる(AI疲れ)」と答えた。常にAIと向き合うことで気疲れしたり、出てきた答えの確認・手直しに神経を使ったりする様子がうかがえる。生成AIが現場に根づいてきたからこそ、「とにかく導入する」段階から、「無理なく続けられる使い方(どの業務にどう使うか、休憩や分担をどう設計するか)」を整える段階へと、課題が移りつつある。</div>
+      <p class="sum">生成AIは現場に定着しつつあるが、“入れれば万事解決”ではなく、使う人の負担をどう抑えるかが次の課題、という話だ。導入支援でも「どの業務に・どこまで任せ・人はどこを見るか」を一緒に線引きしてあげることが効いてくる。</p>
+      <div class="meta"><span class="chip">提案根拠</span><span class="src">＠Press(辻利/片岡物産「AI活用と休憩の実態調査」、2026年)(週3日以上業務で生成AIを使う500人対象・84.6%が業務効率化を実感・56.0%がAI利用時の疲労や負担(AI疲れ)を実感・内容は調査主体の発表ベースで対象は限定的、参考値として)</span><a class="go" href="https://www.atpress.ne.jp/news/2243936">読む →</a></div></article>
+  </section>
+
+  <section class="sec s-secure reveal">
+    <div class="sec-head"><span class="ico">🛡</span><h2>Webセキュリティ × AI</h2><span class="cnt">健診事業</span></div>
+    <article class="card">
+      <div class="h">IPA「AIセキュリティ短信」10月号 ── AIエージェントが“情報漏えいの経路”に。Agentforce悪用「SalesBleed」等を整理。情報処理推進機構(IPA、国の情報セキュリティの中核機関)が公表した「AIセキュリティ短信」10月号は、人に代わって自動で作業するAI(AIエージェント)そのものが、情報漏えいの入り口になりうるリスクを主要テーマに据えた。具体例として、営業支援AI(Agentforce)を悪用し、利用者が気づかないうちに(ゼロクリックで)情報を抜き取る「SalesBleed」や、AIエージェントが社内の画像約1万3,000枚を外部(GitHub)に公開してしまった事例などが挙げられている。AIに権限と自動実行を与えるほど、仕込まれた不正な指示(プロンプトインジェクション)や設定ミスが、そのまま情報流出につながりやすくなる、という指摘だ。</div>
+      <p class="sum">「AIに仕事を任せる」ほど、そのAI自身が情報漏えいの通り道になりうる、という話だ。健診でも「業務を任せているAI・エージェントに、どこまでの権限と自動実行を許しているか」を点検項目に加える勘所になる。</p>
+      <div class="meta"><span class="chip">健診トーク</span><span class="src">IPA「AIセキュリティ短信」10月号／JAPANSecuritySummit Update等(2026年10月・AIエージェントが情報漏えい経路になるリスクを主題・Agentforce悪用のゼロクリック情報窃取「SalesBleed」・AIエージェントが社内画像約1.3万枚をGitHubで公開した事例等を整理・プロンプトインジェクションや設定ミスのリスクを指摘・紹介記事ベースで一次資料(IPA原文)の確認を推奨)</span><a class="go" href="https://japansecuritysummit.org/2026/10/15102/">読む →</a></div></article>
+    <article class="card">
+      <div class="h">アンスロピックが研究公表(10/27) ── 未公開AIがChrome・Safari・Android・Windows・Linuxの欠陥を“連鎖”させ実証コードを生成。Claude(クロード)の開発元アンスロピックが、まだ一般公開していない自社AIの検証結果を公表した(10/27)。それによると、このAIは主要なブラウザ(Chrome・Safari)やOS(Android・Windows・Linux)に潜む複数の欠陥(脆弱性)を見つけ、それらを組み合わせて実際に悪用できる実証コード(PoC=概念実証のための攻撃プログラム)を作り上げたという。守る側には「AIで弱点を先回りして見つけ、直す」力になる一方、同じ能力は攻撃側にも使われうる。AIが“弱点探しと攻撃の組み立て”を一気に速める現実が、また一つ具体的な形で示された。</div>
+      <p class="sum">AIは、守りにも攻めにも使える“弱点発見の加速装置”になりつつある、という話だ。攻撃の準備がこれまでより速く・安くなる前提で、基本の対策(更新・権限の最小化・外部ツールの点検)を前倒しで固めておくことが効く。</p>
+      <div class="meta"><span class="chip">セミナーネタ</span><span class="src">Anthropic(セキュリティ研究、2026/10/27)／各種報道(未公開モデルがChrome/Safari/Android/Windows/Linuxの脆弱性を発見し連鎖させてPoCエクスプロイトを生成したと公表・防御(脆弱性の先回り発見・修正)と悪用の両面がある・内容は公表元発表ベースで独立検証は未了)</span><a class="go" href="https://www.anthropic.com/news">読む →</a></div></article>
+  </section>
+
+  <footer class="foot reveal">
+    <span><a href="./favorites.html">★ お気に入り</a> ／ <a href="./index.html">バックナンバー</a></span>
+    <span>毎平日 10:00 JST 自動更新</span>
+  </footer>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
